@@ -48,7 +48,7 @@ for c in obj_cols:
     if cand is not None:
         df[c] = cand
 
-out_path = Path("Izzy/cleaned.csv")
+out_path = Path("cleaned.csv")
 df.to_csv(out_path, index=False)
 
 '''
