@@ -45,6 +45,7 @@ donation_summary = (
     .reindex(labels)
 )#sums up the money by donation range 
 
+plt.figure(figsize=(10,10))
 plt.pie(
     donation_summary,
     labels=donation_summary.index,
@@ -65,6 +66,7 @@ count_summary = (
 )
 #counts the number of donors per donation range 
 
+plt.figure(figsize=(10,10))
 plt.pie( 
     count_summary, #values of the pie 
     labels=count_summary.index, #labels for the pie 
