@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 from pathlib import Path
 import pandas as pd
-
  
 repo_root = Path(__file__).resolve().parents[2] #creates a root relative to this file 
 csv_path = repo_root / 'scripts' / 'Izzy' / 'cleaned.csv' #accesses cleaned.csv using Path "/"
@@ -16,7 +15,19 @@ monthly_donations = (
     .sum() #sums up the total by year + month 
     .reset_index() #assigns a new index and turns the old one into a column
 )
-
+def pie_maker(size1, size2, values, labels, autopct, startangle, colors, shadow, title):
+    '''Creates a pie chart with the given parameters.''' 
+    plt.figure(figsize=(size1,size2))
+    plt.pie(
+        values,
+        labels=labels,
+        autopct=autopct,
+        startangle=startangle,
+        colors=colors,
+        shadow=shadow
+    )
+    plt.title(title)
+    plt.show()
 
 df = pd.DataFrame(monthly_donations) #turned monthly donations into dataframe
 pf = pd.DataFrame(data) #turned the parsed data into a dataframe
@@ -45,40 +56,21 @@ donation_summary = (
     .reindex(labels)
 )#sums up the money by donation range 
 
-plt.figure(figsize=(10,10))
-plt.pie(
-    donation_summary,
-    labels=donation_summary.index,
-    autopct='%1.1f%%',
-    startangle=90,
-    colors=colors, #i like colors, need to figure how to change font 
-    shadow=True 
-    
-)
 
-plt.title('Distribution of Donations by Range')
-plt.show()
-
+#counts the number of donors per donation range  
 count_summary = (
     pf['donation_range']
     .value_counts()
     .reindex(labels)
 )
-#counts the number of donors per donation range 
 
-plt.figure(figsize=(10,10))
-plt.pie( 
-    count_summary, #values of the pie 
-    labels=count_summary.index, #labels for the pie 
-    autopct='%1.1f%%', #formatting 
-    startangle=90, #rotation 
-    colors=['#ff9999','#66b3ff','#99ff99','#ffcc99'], #colors!
-    shadow=True
-)
+#shows the distribution of donations by range
+pie_maker(10,10, donation_summary, donation_summary.index, '%1.1f%%', 90, colors, True, 'Distribution of Donations by Range')
 
-plt.title('Percentage of Donors per Donation Range')
-plt.show()
+pie_maker(10,10, count_summary, count_summary.index, '%1.1f%%', 90, colors, True, 'Distribution of Donors by Range')
 
 
 print(monthly_donations) # checking values are being represented correctly
 
+
+#generate pychart as image 
