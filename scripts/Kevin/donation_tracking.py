@@ -18,10 +18,10 @@ monthly_donations = (
 )
 
 
-df = pd.DataFrame(monthly_donations)
-pf = pd.DataFrame(data)
+df = pd.DataFrame(monthly_donations) #turned monthly donations into dataframe
+pf = pd.DataFrame(data) #turned the parsed data into a dataframe
 
-max_value = monthly_donations['total_gifts_amount'].max()
+max_value = monthly_donations['total_gifts_amount'].max() #found the max amount donated
 
 #bar chart
 for year, group in monthly_donations.groupby('Year'): #opens a new chart window for each year 
@@ -65,12 +65,12 @@ count_summary = (
 )
 #counts the number of donors per donation range 
 
-plt.pie(
-    count_summary,
-    labels=count_summary.index,
-    autopct='%1.1f%%',
-    startangle=90,
-    colors=['#ff9999','#66b3ff','#99ff99','#ffcc99'],
+plt.pie( 
+    count_summary, #values of the pie 
+    labels=count_summary.index, #labels for the pie 
+    autopct='%1.1f%%', #formatting 
+    startangle=90, #rotation 
+    colors=['#ff9999','#66b3ff','#99ff99','#ffcc99'], #colors!
     shadow=True
 )
 
