@@ -4,9 +4,6 @@ import calendar
 
 getcontext().prec = 32
 
-df = pd.read_csv("scripts/Izzy/cleaned.csv")
-df["last_gift_date"] = pd.to_datetime(df["last_gift_date"]) # transforming last gift date column to datetime
-
 def donations_precise(df: pd.DataFrame) -> pd.Series:
     '''
     converts the dollar amounts to Decimal objects to maintain precision
@@ -105,4 +102,50 @@ def data_per_year(df: pd.DataFrame) -> pd.DataFrame:
 
     return res
 
-print(data_per_year(df))
+# functions for use with new data as of october 22nd:
+
+def shared_values(df1: pd.DataFrame, df2: pd.DataFrame, col: str) -> list:
+    '''
+    for two dfs with a common column name, checks how many values are in the column in both dfs 
+    '''
+    return list(set(df1[col]).intersection(set(df2[col])))
+
+def unique_values(df1: pd.DataFrame, df2: pd.DataFrame, col: str) -> tuple:
+    '''
+    for two dfs with a common column name, checks how many values are unique to each df
+    '''
+    shared = shared_values(df1, df2, col)
+    df1_unique = df1[~df1[col].isin(shared)][col]
+    df2_unique = df2[~df2[col].isin(shared)][col]
+    return (len(df1_unique), len(df2_unique))
+
+def merge_on_id(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
+    '''
+    merge based on account id 
+    also combines columns with the same name in the merged dataframe
+    by default, take the _y value since it is from df2 which is more recent, if null take _x value
+    '''
+    df = df1.merge(df2, on="account_id", how="outer")
+    for col in df.columns:
+        if col.endswith("_x"):
+            base = col[:-2]
+            y_col = base + "_y"
+            if y_col in df.columns:
+                df[base] = df[y_col].combine_first(df[col])
+                df = df.drop(columns=[col, y_col])
+    df["gifts_past_18m"] = df.pop("gifts_past_18m") # moving this to the end
+    return df
+
+def most_frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
+    '''
+    returns n most frequent donors with account id, total amount, date of last donation, and number of donations in past 18 months
+    '''
+    sorted_donations = df.sort_values(by="gifts_past_18m", ascending=False)
+    top_donors = sorted_donations[:n]
+    return top_donors[["account_id", "total_gifts_amount", "last_gift_date", "gifts_past_18m"]]
+
+def num_donations_past_18m(df: pd.DataFrame) -> int:
+    '''
+    returns total number of donations made in the past 18 months
+    '''
+    return sum(df["gifts_past_18m"])
