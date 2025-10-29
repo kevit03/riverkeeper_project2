@@ -71,14 +71,13 @@ def geocode_records(records, limit=100, delay=0.2, cache_file="scripts/Kevin/geo
 
 
 
-geocode_records(records, limit = len(records), delay= .1)
+geocode_records(records, limit = 1000, delay= .1)
 map = folium.Map(location=[40.7128, -74.0060], zoom_start=5) # Centered on New York City
 
 # Prepare data for FastMarkerCluster
 latitude = [a['Latitude'] for a in records if a['Latitude'] is not None]
 longitude = [a['Longitude'] for a in records if a['Longitude'] is not None]
 locations = list(zip(latitude, longitude))
-
 
 FastMarkerCluster(data=locations).add_to(map)
 
