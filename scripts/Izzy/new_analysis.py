@@ -35,15 +35,10 @@ print("\ntop inactive donors:\n", top_donors(inactive, 10))
 print("\nmost frequent active donors:\n", most_frequent_donors(active, 10))
 
 # number of donations that have been made in the past 18 months
-#print("\nnumber of donations in the past 18 months:", num_donations_past_18m(active))
+print("\nnumber of donations in the past 18 months:", num_donations_past_18m(active))
 
-# new month and year counts
-'''
 print(month_counts(df1))
 print(month_counts(df))
-
-
-
 
 print(year_counts(df))
 print(year_counts(df1))
@@ -52,4 +47,3 @@ print(year_counts(df1))
 # new data per year table
 data_per_year = data_per_year(df)
 print(data_per_year)
-'''
