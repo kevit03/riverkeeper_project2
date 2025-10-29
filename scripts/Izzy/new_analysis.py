@@ -9,10 +9,12 @@ df1["last_gift_date"] = pd.to_datetime(df1["last_gift_date"])
 df2["last_gift_date"] = pd.to_datetime(df2["last_gift_date"])
 df2.rename(columns={'total_gifts_all_time': 'total_gifts_amount', "number_of_gifts_past_18_months": "gifts_past_18m"}, inplace=True)
 
-
 # looking at how many account ids appear in both datasets vs how many are unique to each dataset
 print(len(shared_values(df1, df2, "account_id")))
-print(unique_values(df1, df2, "account_id"))
+print("\ndonors unique to first dataset:")
+print(unique_values(df1, df2, "account_id")[0])
+print("\ndonors unique to second dataset:")
+print(unique_values(df1, df2, "account_id")[1])
 
 # merging datasets
 df = merge_on_id(df1, df2)
@@ -33,12 +35,21 @@ print("\ntop inactive donors:\n", top_donors(inactive, 10))
 print("\nmost frequent active donors:\n", most_frequent_donors(active, 10))
 
 # number of donations that have been made in the past 18 months
-print("\nnumber of donations in the past 18 months:", num_donations_past_18m(active))
+#print("\nnumber of donations in the past 18 months:", num_donations_past_18m(active))
 
 # new month and year counts
+'''
+print(month_counts(df1))
 print(month_counts(df))
+
+
+
+
 print(year_counts(df))
+print(year_counts(df1))
+
 
 # new data per year table
 data_per_year = data_per_year(df)
 print(data_per_year)
+'''
