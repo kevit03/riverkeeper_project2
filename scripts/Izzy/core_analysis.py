@@ -115,9 +115,9 @@ def unique_values(df1: pd.DataFrame, df2: pd.DataFrame, col: str) -> tuple:
     for two dfs with a common column name, checks how many values are unique to each df
     '''
     shared = shared_values(df1, df2, col)
-    df1_unique = df1[~df1[col].isin(shared)][col]
-    df2_unique = df2[~df2[col].isin(shared)][col]
-    return (len(df1_unique), len(df2_unique))
+    df1_unique = df1[~df1[col].isin(shared)]
+    df2_unique = df2[~df2[col].isin(shared)]
+    return (df1_unique, df2_unique)
 
 def merge_on_id(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     '''
