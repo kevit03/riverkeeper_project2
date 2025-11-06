@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from decimal import Decimal, getcontext
 import calendar
 
@@ -44,6 +45,12 @@ def unique_donors(df: pd.DataFrame) -> int:
     returns the number of unique donors
     '''
     return len(df["account_id"].unique())
+
+def unique_cities(df: pd.DataFrame) -> int:
+    '''
+    returns the number of unique cities
+    '''
+    return len(df["city"].str.lower().unique())
 
 def categorize_donors(df: pd.DataFrame) -> pd.Series:
     '''
@@ -148,4 +155,79 @@ def num_donations_past_18m(df: pd.DataFrame) -> int:
     '''
     returns total number of donations made in the past 18 months
     '''
-    return sum(df["gifts_past_18m"])
+    return (df["gifts_past_18m"].sum())
+
+# functions for location-based statistics
+
+abbr = ["AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "IA", 
+    "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO",
+    "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK",
+    "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI",
+    "WV", "WY"]
+
+def state_donations(df: pd.DataFrame, state: str) -> pd.DataFrame:
+    '''
+    returns subset of the data with donations in the given state
+    '''
+    if state.upper() not in abbr:
+        raise ValueError("Input must be a valid U.S state abbreviation")
+    return df[df["state"] == state.upper()]
+
+def city_donations(df: pd.DataFrame, city: str, state: str) -> pd.DataFrame:
+    '''
+    returns subset of the data with donations in the given city
+    '''
+    return df[(df["city"].str.lower() == str(city).lower()) & (df["state"] == state.upper())]
+
+def stats_by_state(df: pd.DataFrame) -> pd.DataFrame:
+    '''
+    returns a dataframe where index is state abbreviations
+    columns are:
+        1. number of donors from that state
+        2. number of unique cities donated from in that state
+        3. total donation amount
+        4. donations in the past 18 months
+        5. last time someone made a donation from that state
+    '''
+    columns = ["donors", "unique_cities", "total_gifts_amount", "last_gift_date", "gifts_past_18m"]
+    res = pd.DataFrame(index=abbr, columns=columns)
+    for state in abbr:
+        data = state_donations(df, state)
+        res.loc[state, "donors"] = unique_donors(data)
+        res.loc[state, "unique_cities"] = unique_cities(data)
+        res.loc[state, "total_gifts_amount"] = total_donations(data)
+        res.loc[state, "last_gift_date"] = (data["last_gift_date"].max()).date()
+        res.loc[state, "gifts_past_18m"] = (data["gifts_past_18m"].sum())
+    res = res.sort_values(by="donors", ascending=False)
+    return res
+
+def stats_by_city(df: pd.DataFrame) -> pd.DataFrame:
+    '''
+    returns a dataframe where index is state abbreviations
+    columns are:
+        1. number of donors from that state
+        2. number of unique cities donated from in that state
+        3. total donation amount
+        4. donations in the past 18 months
+        5. last time someone made a donation from that state
+    '''
+    columns = ["state", "donors", "total_gifts_amount", "last_gift_date", "gifts_past_18m"]
+
+    # getting all unique combos of city and state where neither are nan
+    cities = list(set(zip(df["city"].str.title(), df["state"])))
+    cities = [city for city in cities if isinstance(city[0],str) and isinstance(city[1],str)]
+
+    city_names = [cities[0] for city in cities]
+    res = pd.DataFrame(index=city_names, columns=columns)
+
+    for index in range(len(cities)):
+        city, state = cities[index]
+        data = city_donations(df, city, state)
+        res.loc[city, "state"] = state
+        res.loc[city, "donors"] = unique_donors(data)
+        res.loc[city, "total_gifts_amount"] = total_donations(data)
+        res.loc[city, "last_gift_date"] = (data["last_gift_date"].max()).date()
+        res.loc[city, "gifts_past_18m"] = (data["gifts_past_18m"].sum())
+    res = res.sort_values(by="donors", ascending=False)
+    return res
+
