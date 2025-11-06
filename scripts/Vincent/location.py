@@ -57,8 +57,7 @@ def disambiguate_address(address: dict, location_name: str) -> list:
 
 def export(df: pd.DataFrame, filename: str) -> None:
     '''
-    This function exports the given address to a csv file.
-    WARNING: 'filename' must NOT exist or it will be overwritten.
+    This function exports the given address to a csv file. If file exists, data will be appended as long as the formats match.
 
     Args:
         address (pd.DataFrame): a pandas DataFrame containing all the addresses to export; the elements must be in the order of 'Location' -> 'Country' -> 'City' -> 'Borough' -> 'County
@@ -67,6 +66,17 @@ def export(df: pd.DataFrame, filename: str) -> None:
     Returns:
         None: does not return anything.
     '''
+    # grab files
+    my_file = Path(filename)
+    df_exists = pd.DataFrame()
+
+    # check if file exists, if it does read file and combine
+    if my_file.is_file():
+        df_exists = pd.read_csv(my_file)
+        df_exists = df_exists[df.columns]
+
+    df = pd.concat([df, df_exists], ignore_index=True)
+
     # formatting filename properly
     if (filename[len(filename)-4 : len(filename)] != ".csv"):
         filename += ".csv"
@@ -117,6 +127,9 @@ def run_queries(addressList: list, filename: str) -> None:
     # counter variable
     queried = 0
 
+    # initialize the pandas DataFrame
+    df_forcsv = pd.DataFrame()
+
     # iterate over each query
     for address in addressList:
         # rate limit on the 100th query
@@ -135,9 +148,6 @@ def run_queries(addressList: list, filename: str) -> None:
 
         # sleep to rate limit
         sleep(3)
-
-        # initialize the pandas DataFrame
-        df_forcsv = pd.DataFrame()
 
         # successful response indicates 200
         if response.status_code == 200:
