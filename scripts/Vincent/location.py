@@ -59,7 +59,7 @@ def disambiguate_address(address: dict, location_name: str) -> list:
 def export(df: pd.DataFrame, filename: str) -> None:
     '''
     This function exports the given address to a csv file.
-    WARNING: 'filename' must NOT exist or it will be overwritten.
+    WARNING: if 'filename' exists, then the new locations will be appended to the end of this '.csv' file permanently
 
     Args:
         address (pd.DataFrame): a pandas DataFrame containing all the addresses to export; the elements must be in the order of 'Location' -> 'Country' -> 'City' -> 'Borough' -> 'County
