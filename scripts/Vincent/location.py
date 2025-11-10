@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from time import sleep
 import requests
+import sys
 
 def disambiguate_address(address: dict, location_name: str) -> list:
     '''
@@ -57,7 +58,8 @@ def disambiguate_address(address: dict, location_name: str) -> list:
 
 def export(df: pd.DataFrame, filename: str) -> None:
     '''
-    This function exports the given address to a csv file. If file exists, data will be appended as long as the formats match.
+    This function exports the given address to a csv file.
+    WARNING: 'filename' must NOT exist or it will be overwritten.
 
     Args:
         address (pd.DataFrame): a pandas DataFrame containing all the addresses to export; the elements must be in the order of 'Location' -> 'Country' -> 'City' -> 'Borough' -> 'County
@@ -99,6 +101,11 @@ def generate_queries(stored_file: str, new_file) -> list:
     # read files
     df_stored = pd.read_csv(stored_file)
     df_new = pd.read_csv(new_file)
+
+    # check 
+    if (len(df_stored) == 0):
+        print("Your storage file is empty! Cannot generate queries.")
+        return
     
     # filter by New York entries and generate set of entries from the stored file
     df_stored = df_stored[df_stored['State'] == "NY"]
@@ -108,8 +115,13 @@ def generate_queries(stored_file: str, new_file) -> list:
     df_new.drop("Unnamed: 0", axis=1, inplace=True)
     new_set = set(df_new['Location'])
 
-    # generate unique list and return
-    return list(stored_set - new_set)
+    # generate unique list
+    toRet = list(stored_set - new_set)
+    if len(toRet) == 0:
+        print("There are no unique locations inside the storage file that don't already exist in your new file!")
+        return
+
+    return toRet;
 
 def run_queries(addressList: list, filename: str) -> None:
     ''' 
@@ -125,7 +137,7 @@ def run_queries(addressList: list, filename: str) -> None:
         None: does not return anything.
     '''
     # counter variable
-    queried = 0
+    queried = 1
 
     # initialize the pandas DataFrame
     df_forcsv = pd.DataFrame()
@@ -133,21 +145,26 @@ def run_queries(addressList: list, filename: str) -> None:
     # iterate over each query
     for address in addressList:
         # rate limit on the 100th query
-        if (queried % 100 == 0):
+        if (queried % 5 == 0):
             sleep(10)
         
-        # append "New York" tag to avoid location ambiguity
+        # append "New York" tag to avoid location ambiguity and format
         query = address + " new york"
         query = query.replace(" ", "+")
 
+        print(query)
+
         # hard-coded URL template to access Photon's API
         URL = f"https://photon.komoot.io/api/?q={query}"
+
+        print(URL)
 
         # fetch!
         response = requests.get(URL)
 
         # sleep to rate limit
-        sleep(3)
+        
+        sleep(np.random.randint(5, 90))
 
         # successful response indicates 200
         if response.status_code == 200:
@@ -156,30 +173,45 @@ def run_queries(addressList: list, filename: str) -> None:
             # relevant attributes will then be stored under the proprties field
             # to confirm this you can try following the link yourself
             result = response.json().get("features", [])
+            print(result)
             final_address = disambiguate_address(result[0]['properties'], address);
+            print(result[0]["properties"])
     
             # format a temporary dataframe with new data
             df_tmp = pd.DataFrame(data=np.array(final_address).T, columns=['Location', 'Country', 'City', 'Borough', 'County'])
             df_tmp['Country'] = df_tmp['Country'].map(lambda x : x.upper())
-
+            
             # concatenation logic
             if (len(df_forcsv) == 0):
-                df_forcsv = df_tmp
+                df_forcsv = df_tmp.copy(deep=True)
             else:
                 df_forcsv = pd.concat([df_forcsv, df_tmp], ignore_index=True)
-        
+
+
         # increment the number of queries by 1
         queried = queried + 1;
-                
     # export all the queries into the selected '.csv' file
     export(df_forcsv, filename)
+    print("First 30 queries have been run!")
 
 def main():
-    stored_file = "../../data/Riverkeeper_Donors_for_NYU_Biokind_Project-10.22.25.csv"
-    new_file = "RiverKeeper_Donors_Unique_Locations.csv"
+    # check for usage
+    if len(sys.argv) != 3:
+        print("This is not how you use the program!")
+        print("Usage: python location.py <input_file> <output_file>")
 
+    # hard-coded paths:
+    # "../../data/Riverkeeper_Donors_for_NYU_Biokind_Project-10.22.25.csv" for input
+    # "RiverKeeper_Donors_Unique_Locations.csv" for output
+
+    stored_file = sys.argv[1]
+    new_file = sys.argv[2]
+
+    # run program
     addressList = generate_queries(stored_file, new_file)
-    run_queries(addressList, new_file)
+    if addressList != None:
+        addressList = addressList[0:30] # only run 30 queries at a time
+        run_queries(addressList, new_file)
 
 if (__name__ == "__main__"):
     main()
