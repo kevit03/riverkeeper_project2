@@ -75,8 +75,8 @@ def export(df: pd.DataFrame, filename: str) -> None:
     # check if file exists, if it does read file and combine
     if my_file.is_file():
         df_exists = pd.read_csv(my_file)
-        df_exists = df_exists[df.columns]
 
+    # concatenate the two dataframes
     df = pd.concat([df, df_exists], ignore_index=True)
 
     # formatting filename properly
