@@ -1,130 +1,217 @@
 import numpy as np
 import pandas as pd
-from geopy.geocoders import Nominatim
-from pathlib import Path
 from time import sleep
+import requests
+import sys
 
-# OBJECTIVE: Split City columns into Four columns
-# 1 Country Code
-# 2 City
-# 3 Borough
-# 4 County
-
-# read in data
-df = pd.read_csv("../Izzy/cleaned.csv")
-
-# format to take care of NaNs
-df['city'] = df[['city']].fillna("?")
-df['state'] = df[['state']].fillna("?")
-
-# new feature creation 
-df['location'] = df['city'] + ", " + df['state']
-
-# create a list of unique values so we don't actually go through every possible item
-# self-check has shown this array contains 1283 values
-item = df['location'].value_counts().index.to_numpy()
-
-# this removes the value of "?, ?" which is generated from both the city and state being empty...
-item = np.delete(item, [1])
-
-# function
-def geolocate(x, lower, upper, places):
-    ''' Create an array that attempts to find specific details about a location such as City, Borough, County
-    Args:
-        x: the list of locations, should be unique
-        lower: the lower range of indexes to find locations of, needed to avoid being ratelimited
-        upper: the upper range of indexes to find locations of, difference between upper and lower cannot be greater than 500
-        places: a dictionary to store the list of locations
-    Returns:
-        A dictionary, key is the entry taken from x and value is another dictionary, which contains the relevant address details
+def disambiguate_address(address: dict, location_name: str) -> list:
     '''
-    # constructor set up to use for geocoding
-    geolocator = Nominatim(user_agent="tutorial") #EnergyHire    
+    A function that takes a JSON object containing an addresses attributes and breaks them into four specific categories: locality, district, city, and country code
+    Geographical order from smallest area to largest: locality --> district --> city --> country code
 
-    # iterate over every row in X
-    while lower < upper:
-        # if out of bounds, end
-        if (lower > len(x)):
-            break
+    Args:
+        address (dict): a dictionary that contains attributes relating to the specific address
+        location_name (str): a string that represents the original location name
+    
+    Returns:
+        list: an array containing the address broken into the 4 aforementioned categories plus the name of the place itself
+    '''
 
-        # grab location name
-        place = x[lower]
+    # initialize empty arrays
+    city = []
+    district = [] 
+    county = []
+    country_code = []
+    location_ref = []
 
-        # get location data
-        loc = geolocator.geocode(place, addressdetails=True)
+    # location array
+    location_ref.append(location_name)
 
-        # the raw property breaks down the address into specific components which we will need
-        # the address indexer helps us limit our data down to relevant details
-        places[place] = loc.raw['address']
+    # input features accordingly
+    if address['type'] == 'county':
+        county.append(address['name'])
+    elif 'county' in address:
+        county.append(address['county'])   
+    else:
+        county.append(" ")
+
+    if address['type'] == 'city':
+        city.append(address['name'])
+    elif 'city' in address:
+        city.append(address['city'])
+    else:
+        city.append(" ")
+
+    if address['type'] == 'district':
+        district.append(address['name'])
+    elif 'district' in address:
+        district.append(address['district'])
+    else:
+        district.append(" ")
+
+    if 'countrycode' in address:
+        country_code.append(address['countrycode'])
+    else:
+        country_code.append("US")
+
+    return [location_ref, country_code, city, district, county]
+
+def export(df: pd.DataFrame, filename: str) -> None:
+    '''
+    This function exports the given address to a csv file.
+    WARNING: if 'filename' exists, then the new locations will be appended to the end of this '.csv' file permanently
+
+    Args:
+        address (pd.DataFrame): a pandas DataFrame containing all the addresses to export; the elements must be in the order of 'Location' -> 'Country' -> 'City' -> 'Borough' -> 'County
+        filename (str): a string containing the name of the csv file you plan to export to
+
+    Returns:
+        None: does not return anything.
+    '''
+    # grab files
+    my_file = Path(filename)
+    df_exists = pd.DataFrame()
+
+    # check if file exists, if it does read file and combine
+    if my_file.is_file():
+        df_exists = pd.read_csv(my_file)
+        df_exists = df_exists[df.columns]
+
+    df = pd.concat([df, df_exists], ignore_index=True)
+
+    # formatting filename properly
+    if (filename[len(filename)-4 : len(filename)] != ".csv"):
+        filename += ".csv"
+    
+    # export
+    df.to_csv(filename)
+
+def generate_queries(stored_file: str, new_file) -> list:
+    '''
+    A function that reads in an existing '.csv' file, compares its entries to the new file given to it,
+    and returns a list containing entries that exist in the new_file but NOT the stored_file.
+    
+    Args:
+        stored_file (str): a string representing where the stored file exists. This is the file that "stores" new entries into it. 
+        new_file (str): a string representing where the new file exists. This is the file that will be used to generate entries from.
+
+    Returns:
+        list: a list containing unique entries existing in the new_file and not the stored_file. If none exist, [] will be returned.
+    '''
+    # read files
+    df_stored = pd.read_csv(stored_file)
+    df_new = pd.read_csv(new_file)
+
+    # check 
+    if (len(df_stored) == 0):
+        print("Your storage file is empty! Cannot generate queries.")
+        return
+    
+    # filter by New York entries and generate set of entries from the stored file
+    df_stored = df_stored[df_stored['State'] == "NY"]
+    stored_set = set(df_stored['City'].value_counts().index.to_numpy())
+
+    # format the new file properly and also generate the set 
+    df_new.drop("Unnamed: 0", axis=1, inplace=True)
+    new_set = set(df_new['Location'])
+
+    # generate unique list
+    toRet = list(stored_set - new_set)
+    if len(toRet) == 0:
+        print("There are no unique locations inside the storage file that don't already exist in your new file!")
+        return
+
+    return toRet;
+
+def run_queries(addressList: list, filename: str) -> None:
+    ''' 
+    A function that runs queries on the list of addresses, compiles them into a pandas DataFrame and exports them to a new csv. 
+    In order to abide by Photon's policies and API usage, these requests are severely rate limited at one request every 3 seconds.
+    If the number of queries passed exceeds 100, every 100th query will wait an extra 10 seconds.
+
+    Args:
+        addressList (list): list of addresses to run queries on
+        filename (str): a string representing the filename to create the .csv file. If the ".csv" file already exists, the address queries will be appended to the end of the existing ".csv" file.
+
+    Returns:
+        None: does not return anything.
+    '''
+    # counter variable
+    queried = 1
+
+    # initialize the pandas DataFrame
+    df_forcsv = pd.DataFrame()
+
+    # iterate over each query
+    for address in addressList:
+        # rate limit on the 100th query
+        if (queried % 5 == 0):
+            sleep(10)
         
-        # next row
-        lower += 1;
+        # append "New York" tag to avoid location ambiguity and format
+        query = address + " new york"
+        query = query.replace(" ", "+")
+
+        print(query)
+
+        # hard-coded URL template to access Photon's API
+        URL = f"https://photon.komoot.io/api/?q={query}"
+
+        print(URL)
+
+        # fetch!
+        response = requests.get(URL)
+
+        # sleep to rate limit
+        
+        sleep(np.random.randint(5, 90))
+
+        # successful response indicates 200
+        if response.status_code == 200:
+            # our address will be located under the property of 'features'
+            # since this returns a list, we want to grab the most relevant list of attributes which would be the first one
+            # relevant attributes will then be stored under the proprties field
+            # to confirm this you can try following the link yourself
+            result = response.json().get("features", [])
+            print(result)
+            final_address = disambiguate_address(result[0]['properties'], address);
+            print(result[0]["properties"])
     
-        # sleep for tres segundos to avoid timeouts
-        sleep(3)
+            # format a temporary dataframe with new data
+            df_tmp = pd.DataFrame(data=np.array(final_address).T, columns=['Location', 'Country', 'City', 'Borough', 'County'])
+            df_tmp['Country'] = df_tmp['Country'].map(lambda x : x.upper())
+            
+            # concatenation logic
+            if (len(df_forcsv) == 0):
+                df_forcsv = df_tmp.copy(deep=True)
+            else:
+                df_forcsv = pd.concat([df_forcsv, df_tmp], ignore_index=True)
 
-    # return our places
-    return places
 
-# create our global variable of places
-geoList = {}
+        # increment the number of queries by 1
+        queried = queried + 1;
+    # export all the queries into the selected '.csv' file
+    export(df_forcsv, filename)
+    print("First 30 queries have been run!")
 
-# the algorithm cannot handle more than 500 at a time without severely being rate limited
-for i in range(3):
-    geoList = geolocate(item, i * 500, ((i + 1) * 500) - 1, geoList)
+def main():
+    # check for usage
+    if len(sys.argv) != 3:
+        print("This is not how you use the program!")
+        print("Usage: python location.py <input_file> <output_file>")
 
-# now that we have our full list of locations
-# we can loop through the actual data and start generating columns
+    # hard-coded paths:
+    # "../../data/Riverkeeper_Donors_for_NYU_Biokind_Project-10.22.25.csv" for input
+    # "RiverKeeper_Donors_Unique_Locations.csv" for output
 
-# column placeholders
-city = []
-borough = [] # not consistent in general
-county = []
-country_code = []
+    stored_file = sys.argv[1]
+    new_file = sys.argv[2]
 
-# iterate through the new locations
-for item in df['location']:
-    # if its an empty location don't fill in anything
-    if item == "?, ?":
-        city.append(" ")
-        borough.append(" ")
-        county.append(" ")
-        country_code.append(" ")
+    # run program
+    addressList = generate_queries(stored_file, new_file)
+    if addressList != None:
+        addressList = addressList[0:30] # only run 30 queries at a time
+        run_queries(addressList, new_file)
 
-    # city array
-    if 'city' in geoList[item]:
-        city.append(geoList[item]['city'])
-    elif 'town' in geoList[item]:
-        city.append(geoList[item]['town'])
-    # if neither key exists for this address, leave it blank
-    else:
-        city.append(" ")
-
-    # county array
-    if 'county' in geoList[item]:
-        county.append(geoList[item]['county'])
-    # if key doesn't exist for this address, leave it blank
-    else:
-        county.append(" ")
-    
-    # country_code array
-    if "country_code" in geoList[item]:
-        country_code.append(geoList[item]['country_code'])
-    # if key doesn't exist for this address, leave it blank
-    else:
-        country_code.append(" ")
-
-    # borough array
-    if 'municipality' in geoList[item]:
-        borough.append(geoList[item]['municipality'])
-    elif 'suburb' in geoList[item]:
-        borough.append(geoList[item]['suburb'])
-    # if neither key exists for this address, leave it blank
-    else:
-        borough.append(" ")
-
-# column assignment
-df['borough'] = borough
-df['county'] = county
-df['country_code'] = country_code
-df['city'] = city
+if (__name__ == "__main__"):
+    main()
