@@ -75,8 +75,8 @@ def export(df: pd.DataFrame, filename: str) -> None:
     # check if file exists, if it does read file and combine
     if my_file.is_file():
         df_exists = pd.read_csv(my_file)
-        df_exists = df_exists[df.columns]
 
+    # concatenate the two dataframes
     df = pd.concat([df, df_exists], ignore_index=True)
 
     # formatting filename properly
@@ -86,10 +86,11 @@ def export(df: pd.DataFrame, filename: str) -> None:
     # export
     df.to_csv(filename)
 
-def generate_queries(stored_file: str, new_file) -> list:
+def generate_queries(stored_file: str, new_file: str) -> list:
     '''
     A function that reads in an existing '.csv' file, compares its entries to the new file given to it,
     and returns a list containing entries that exist in the new_file but NOT the stored_file.
+    The stored file must contain columns labeled 'country', 'city', and 'state'
     
     Args:
         stored_file (str): a string representing where the stored file exists. This is the file that "stores" new entries into it. 
@@ -107,13 +108,31 @@ def generate_queries(stored_file: str, new_file) -> list:
         print("Your storage file is empty! Cannot generate queries.")
         return
     
-    # filter by New York entries and generate set of entries from the stored file
-    df_stored = df_stored[df_stored['State'] == "NY"]
-    stored_set = set(df_stored['City'].value_counts().index.to_numpy())
+    # dictionary to hold states
+    states = {"NY": "New York", "AL": "Alabama", "AK": "Alaska", "AZ": " Arizona", "AR": "Arkansas", "ID": "Idaho",
+            "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "FL": "Florida",
+            "KY": "Kentucky", "OH": "Ohio", "LA": "Louisiana", "OK": "Oklahoma", "ME": "Maine", "OR": "Oregon",
+            "MD": "Maryland", "PA": "Pennsylvania", "MA": "Massachussets", "PR": "Puerto Rico", "MI": "Michigan",
+            "RI": "Rhode Island", "MN": "Minnesota", "SC": "South Carolina", "MS": "Mississippi", "SD": "South Dakota",
+            "MO": "Missouri", "TN": "Tennessee", "MT": "Montana", "TX": "Texas", "NE": "Nebraska", "GA": "Georgia", 
+            "NV": "Nevada", "UT": "Utah", "GU": "Guam", "NH": "New Hampshire", "VT": "Vermont", "HI": "Hawaii",
+            "NJ": "New Jersey", "VA": "Virginia", "NM": "New Mexico", "IL": "Illinois", "WA": "Washington",
+            "IN": "Indiana", "NC": "North Carolina", "WV": "West Virginia", "IA": "Iowa", "ND": "North Dakota",
+            "WI": "Wisconsin", "KS": "Kansas", "WY": "Wyoming"}
+
+    # filter by country
+    df_stored = df_stored[df_stored['country'] == "United States"]
+
+    # append states to the location name
+    df_stored['state'] = df_stored['state'].apply(lambda x : states.get(x, ""))
+    df_stored['location'] = df_stored['city'] + ", " + df_stored['state']
+
+    # now create the set of new locations
+    stored_set = set(df_stored['location'].value_counts().index.to_numpy())
 
     # format the new file properly and also generate the set 
     df_new.drop("Unnamed: 0", axis=1, inplace=True)
-    new_set = set(df_new['Location'])
+    new_set = set(df_new['location'])
 
     # generate unique list
     toRet = list(stored_set - new_set)
@@ -148,9 +167,9 @@ def run_queries(addressList: list, filename: str) -> None:
         if (queried % 5 == 0):
             sleep(10)
         
-        # append "New York" tag to avoid location ambiguity and format
-        query = address + " new york"
-        query = query.replace(" ", "+")
+        # format query for ease
+        query = address
+        query = query.replace(",", "").replace(" ", "+")
 
         print(query)
 
@@ -163,8 +182,7 @@ def run_queries(addressList: list, filename: str) -> None:
         response = requests.get(URL)
 
         # sleep to rate limit
-        
-        sleep(np.random.randint(5, 90))
+        sleep(np.random.randint(5, 60))
 
         # successful response indicates 200
         if response.status_code == 200:
@@ -173,26 +191,34 @@ def run_queries(addressList: list, filename: str) -> None:
             # relevant attributes will then be stored under the proprties field
             # to confirm this you can try following the link yourself
             result = response.json().get("features", [])
-            print(result)
+
+            # check if somehow the given address did not yield anything
+            if result == []:
+                print(query + " did not yield any results.")
+                continue;
+            
+            # otherwise continue processing
             final_address = disambiguate_address(result[0]['properties'], address);
             print(result[0]["properties"])
     
             # format a temporary dataframe with new data
-            df_tmp = pd.DataFrame(data=np.array(final_address).T, columns=['Location', 'Country', 'City', 'Borough', 'County'])
-            df_tmp['Country'] = df_tmp['Country'].map(lambda x : x.upper())
+            df_tmp = pd.DataFrame(data=np.array(final_address).T, columns=['location', 'country', 'city', 'borough', 'county'])
+            df_tmp['country'] = df_tmp['country'].map(lambda x : x.upper())
             
+            # verbose commenting
+            print(query + " has been processed.")
+
             # concatenation logic
             if (len(df_forcsv) == 0):
                 df_forcsv = df_tmp.copy(deep=True)
             else:
                 df_forcsv = pd.concat([df_forcsv, df_tmp], ignore_index=True)
 
-
         # increment the number of queries by 1
         queried = queried + 1;
+    
     # export all the queries into the selected '.csv' file
     export(df_forcsv, filename)
-    print("First 30 queries have been run!")
 
 def main():
     # check for usage
