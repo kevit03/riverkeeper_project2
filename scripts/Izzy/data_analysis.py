@@ -4,12 +4,11 @@ from decimal import Decimal, getcontext
 import calendar
 
 getcontext().prec = 32
-df = pd.read_csv("data/merged_data.csv")
 
-def categorize_donors(df: pd.DataFrame) -> pd.Series:
+def categorize_donors(df: pd.DataFrame) -> pd.DataFrame:
     '''
     adds a column to the dataset categorizing donors based on amount
-    returns value counts for categories
+    returns the new dataframe with that column
     categories come from riverkeeper's website: https://engage.riverkeeper.org/give:
         donors of $20 or more receive email newsletters, invitations, etc.
         donors of $50 or more receive the opportunity to vote on the Board of Directors at an annual Membership meeting
@@ -30,6 +29,7 @@ def clean(df: pd.DataFrame) -> None:
     df["Number of Gifts Past 18 Months"] = pd.to_numeric(df["Number of Gifts Past 18 Months"])
     df["Last Gift Date"] = pd.to_datetime(df["Last Gift Date"])
     df = categorize_donors(df)
+
 
 # basic stats
 
@@ -105,14 +105,16 @@ def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
         last gift date,
         donations in past 18 months
     '''
+    df = df.replace("", np.nan)
     sorted_donations = df.copy().sort_values(by="Total Gifts (All Time)", ascending=False)
     top_donors = sorted_donations[:n].copy()
     top_donors["Total Gifts (All Time)"] = top_donors["Total Gifts (All Time)"].apply(lambda x: '${:,.2f}'.format(x))
+    top_donors["Last Gift Date"] = top_donors["Last Gift Date"].dt.date
     top_donors["Number of Gifts Past 18 Months"] = top_donors["Number of Gifts Past 18 Months"].astype(int)
     top_donors.reset_index(drop=True, inplace=True)
     return top_donors[["Account ID", "City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
 
-def frequent_donors(dp: pd.DataFrame, n: int) -> pd.DataFrame:
+def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
     returns n most frequent donors with 
         account id, 
@@ -122,9 +124,11 @@ def frequent_donors(dp: pd.DataFrame, n: int) -> pd.DataFrame:
         last gift date,
         donations in past 18 months
     '''
-    sorted_donations = df.copy().sort_values(by="Number of Gifts Past 18 Months", ascending=False)
+    df = df.replace("", np.nan)
+    sorted_donations = df.copy().sort_values(by=["Number of Gifts Past 18 Months", "Total Gifts (All Time)"], ascending=False)
     frequent_donors = sorted_donations[:n].copy()
     frequent_donors["Total Gifts (All Time)"] = frequent_donors["Total Gifts (All Time)"].apply(lambda x: '${:,.2f}'.format(x))
+    frequent_donors["Last Gift Date"] = frequent_donors["Last Gift Date"].dt.date
     frequent_donors["Number of Gifts Past 18 Months"] = frequent_donors["Number of Gifts Past 18 Months"].astype(int)
     frequent_donors.reset_index(drop=True, inplace=True)
     return frequent_donors[["Account ID", "City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
@@ -158,12 +162,14 @@ def stats_by_state(df: pd.DataFrame) -> pd.DataFrame:
         donations in the past 18 months,
         most recent donation date
     '''
-    # copy data and drop rows where state is null
+    # copy data and drop rows where there is no state
+    df["State"] = df["State"].replace("", np.nan)
     data = df.copy().dropna(subset=["State"])
 
     # group by city and create dataframe
     g = data.groupby("State")
     res = pd.DataFrame({
+        "Cities" : g["City"].nunique(),
         "Donors" : g["Account ID"].nunique(),
         "Total Gifts (All Time)" : g["Total Gifts (All Time)"].sum(),
         "Number of Gifts Past 18 Months" : g["Number of Gifts Past 18 Months"].sum().astype(int)
@@ -188,6 +194,7 @@ def stats_by_city(df: pd.DataFrame) -> pd.DataFrame:
         most recent donation date
     '''
     # copy data and drop rows where city or state are null
+    df = df.replace("", np.nan)
     data =  df.copy().dropna(subset=["City", "State"])
 
     # group by city and state and create dataframe
@@ -211,6 +218,7 @@ def stats_no_location(df: pd.DataFrame) -> pd.DataFrame:
         Number of Gifts Past 18 Months
     '''
     res = pd.DataFrame(index = ["Country Only", "No Location"])
+    df = df.replace("", np.nan)
 
     # country only
     data = df[df["City"].isnull() & (df["State"].isnull()) & df["Country"].notnull()]
@@ -244,16 +252,5 @@ def stats_by_month(df: pd.DataFrame) -> pd.DataFrame:
     g = df.groupby(df["Last Gift Date"].dt.month.rename("Month"))
     res = pd.DataFrame({"Donors" : g["Account ID"].nunique()})
     res.index = calendar.month_abbr[1:]
+    res.index.name = "Month"
     return res
-
-clean(df)
-print(basic_stats(df))
-print(active_donors(df))
-print(inactive_donors(df))
-print(top_donors(df, 15))
-print(frequent_donors(df, 20))
-print(stats_by_state(df))
-print(stats_by_city(df))
-print(stats_by_year(df))
-print(stats_by_month(df))
-print(stats_no_location(df))

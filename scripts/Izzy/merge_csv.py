@@ -1,18 +1,6 @@
 import pandas as pd
 
-def shared_and_unique_rows(df1: pd.DataFrame, df2: pd.DataFrame, col: str) -> tuple:
-    '''
-    takes two dataframes with a common column and returns a tuple of 
-        number of shared rows, 
-        number of rows unique to dataframe 1,
-        number of rows unique to dataframe 2
-    '''
-    shared = list(set(df1[col]).intersection(set(df2[col])))
-    df1_unique = df1[~df1[col].isin(shared)]
-    df2_unique = df2[~df2[col].isin(shared)]
-    return (len(shared), df1_unique.shape[0], df2_unique.shape[0])
-
-def merge_csv(fp_old: str, fp_new: str) -> pd.DataFrame:
+def merge_csv(df_old: pd.DataFrame, df_new: pd.DataFrame, save=True) -> pd.DataFrame:
     '''
     takes old csv filepath and updated csv filepath, merges into one dataframe, saves as a csv, and returns the merged dataframe \n
     columns of csvs should be 
@@ -27,9 +15,6 @@ def merge_csv(fp_old: str, fp_new: str) -> pd.DataFrame:
         Number of Gifts Past 18 Months
     and any column except Account ID can appear in only one csv
     '''
-    # read old and new csv to dataframe
-    df_old = pd.read_csv(fp_old)
-    df_new = pd.read_csv(fp_new)
 
     # make sure dataframe columns match
     df_old.rename(columns={"Total Gifts Amount": "Total Gifts (All Time)"}, inplace=True)
@@ -37,7 +22,10 @@ def merge_csv(fp_old: str, fp_new: str) -> pd.DataFrame:
     print(df_new.columns)
 
     # display number of shared rows and rows unique to each dataset
-    rows = shared_and_unique_rows(df_old, df_new, "Account ID")
+    shared = list(set(df_old["Account ID"]).intersection(set(df_new["Account ID"])))
+    df1_unique = df_old[~df_old["Account ID"].isin(shared)]
+    df2_unique = df_new[~df_new["Account ID"].isin(shared)]
+    rows = (len(shared), df1_unique.shape[0], df2_unique.shape[0])
     print(f"Merging {rows[0]} shared rows, {rows[1]} rows unique to old dataset, and {rows[2]} rows unique to new dataset.")
 
     # outer merge on account id
@@ -65,11 +53,11 @@ def merge_csv(fp_old: str, fp_new: str) -> pd.DataFrame:
     df_merged["State"] = df_merged["State"].str.upper()
     df_merged["Country"] = df_merged["Country"].str.title()
 
-    # convert merged dataframe to csv
-    df_merged.to_csv("merged_data.csv", index=False)
+    if save:
+        # convert merged dataframe to csv
+        df_merged.to_csv("merged_data.csv", index=False)
 
-    return df_merged
+        # convert new rows to csv
+        df2_unique.to_csv("new_data.csv", index=False)
 
-fp1 = "data/Riverkeeper_Donors.csv"
-fp2 = "data/Riverkeeper_Donors_for_NYU_Biokind_Project-10.22.25.csv"
-merge_csv(fp1, fp2)
+    return df_merged, df2_unique
