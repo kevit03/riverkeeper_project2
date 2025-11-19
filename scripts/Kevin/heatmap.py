@@ -71,7 +71,7 @@ def geocode_records(records, limit=100, delay=0.2, cache_file="scripts/Kevin/geo
 
 
 
-geocode_records(records, limit = 8000, delay= 0)
+geocode_records(records, limit = 8000, delay= .2)
 map = folium.Map(location=[40.7128, -74.0060], zoom_start=5) # Centered on New York City
 
 # Prepare data for FastMarkerCluster
@@ -81,18 +81,6 @@ locations = list(zip(latitude, longitude))
 
 FastMarkerCluster(data=locations).add_to(map)
 
-# Alternative: Add individual circle markers
-# for record in records: 
-#     coords = (record.get('Latitude'), record.get('Longitude'))
-#     if coords[0] is not None and coords[1] is not None:
-#         folium.CircleMarker(
-#             location=coords,
-#             radius=5,
-#             popup=f"{record['City']}, {record['State']}",
-#             color='blue',
-#             fill=True,
-#             fill_color='blue'
-#         ).add_to(map)
 
 map.save("scripts/Kevin/donor_map.html")
 print("Map has been saved to data/donor_map.html")
