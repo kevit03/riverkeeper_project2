@@ -1,86 +1,124 @@
-import csv; 
-from geopy.geocoders import Nominatim
-import time 
-import folium
-from folium.plugins import FastMarkerCluster
-import pandas as pd 
-
-
-geolocator = Nominatim(user_agent="heatmap_script", timeout = 10)
-
-filename = 'data/Riverkeeper_Donors.csv' 
-keys = ["City", "State", "Country",] #keys to extract from the CSV
-records = [] #List to hold the extracted records
-
-#Read the CSV and extract the relevant fields "keys" defined above 
-with open(filename, 'r', encoding='utf-8') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        record = {key: row.get(key, "") for key in keys}
-        record["Latitude"] = None
-        record["Longitude"] = None
-        records.append(record)
-
-
-# unused data processing code
-# df = pd.DataFrame(records)
-# donor_counts = df.groupby("City").size().reset_index(name="Count")
-
-
-# Geocode the first 'limit' records with a delay between requests   
+import csv
 import json
+import time
+from collections import defaultdict
 
-def geocode_records(records, limit=100, delay=0.2, cache_file="scripts/Kevin/geocode_cache.json"):
-    # Try to load existing cache
+from geopy.geocoders import Nominatim
+import folium
+from folium.plugins import MarkerCluster, HeatMap
+
+
+# Load CSV
+filename = "data/Riverkeeper_Donors.csv"
+fields = ["City", "State", "Country"]
+records = []
+
+with open(filename, "r", encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        entry = {key: row.get(key, "") for key in fields}
+        entry["Latitude"] = None
+        entry["Longitude"] = None
+        records.append(entry)
+
+
+# Geocode
+def geocode_records(data, limit=100, delay=0.2, cache_path="scripts/Kevin/geocode_cache.json"):
     try:
-        with open(cache_file, 'r') as f:
+        with open(cache_path, "r") as f:
             cache = json.load(f)
     except FileNotFoundError:
         cache = {}
 
-    for place in records[:limit]:
-        query = f"{place['City']}, {place['State']}, {place['Country']}"
+    for entry in data[:limit]:
+        query = f"{entry['City']}, {entry['State']}, {entry['Country']}"
 
-        # If already cached, reuse
         if query in cache:
-            lat, lon = cache[query]
-            place['Latitude'], place['Longitude'] = lat, lon
+            entry["Latitude"], entry["Longitude"] = cache[query]
             continue
 
-        # Otherwise, make a new geocoding call
         try:
-            location = geolocator.geocode(query)
-            if location:
-                lat, lon = location.latitude, location.longitude
-                cache[query] = (lat, lon)
-                place['Latitude'], place['Longitude'] = lat, lon
+            loc = geolocator.geocode(query)
+            if loc:
+                lat, lon = loc.latitude, loc.longitude
             else:
-                cache[query] = (None, None)
-                place['Latitude'], place['Longitude'] = (None, None)
-        except Exception as e:
-            print(f"Error geocoding {query}: {e}")
-            cache[query] = (None, None)
-            place['Latitude'], place['Longitude'] = (None, None)
+                lat, lon = None, None
+        except Exception:
+            lat, lon = None, None
 
+        cache[query] = (lat, lon)
+        entry["Latitude"], entry["Longitude"] = lat, lon
         time.sleep(delay)
 
-    # Save updated cache to file
-    with open(cache_file, 'w') as f:
+    with open(cache_path, "w") as f:
         json.dump(cache, f, indent=2)
 
 
+geolocator = Nominatim(user_agent="heatmap_script", timeout=10)
+geocode_records(records, limit=8000, delay=0.2)
 
 
-geocode_records(records, limit = 8000, delay= .2)
-map = folium.Map(location=[40.7128, -74.0060], zoom_start=5) # Centered on New York City
-
-# Prepare data for FastMarkerCluster
-latitude = [a['Latitude'] for a in records if a['Latitude'] is not None]
-longitude = [a['Longitude'] for a in records if a['Longitude'] is not None]
-locations = list(zip(latitude, longitude))
-
-FastMarkerCluster(data=locations).add_to(map)
+# Count donors
+counts = defaultdict(int)
+for rec in records:
+    lat = rec["Latitude"]
+    lon = rec["Longitude"]
+    if lat is not None and lon is not None:
+        counts[(lat, lon)] += 1
 
 
-map.save("scripts/Kevin/donor_map.html")
-print("Map has been saved to data/donor_map.html")
+# Map
+m = folium.Map(location=[40.7128, -74.0060], zoom_start=5)
+
+
+# Cluster JS using encoded class donor-XX
+cluster_js = """
+function(cluster) {
+    var markers = cluster.getAllChildMarkers();
+    var total = 0;
+
+    markers.forEach(function(m) {
+        var cls = m.options.icon.options.className;
+        var match = cls.match(/donor-(\\d+)/);
+        if (match) {
+            total += parseInt(match[1]);
+        }
+    });
+
+    var color = "blue";
+    if (total < 11) color = "green";
+    else if (total < 51) color = "blue";
+    else if (total < 151) color = "orange";
+    else color = "red";
+
+    return L.divIcon({
+        html: '<div style="background-color:' + color +
+              '; border-radius:20px; width:40px; height:40px; display:flex; ' +
+              'align-items:center; justify-content:center; color:white; ' +
+              'font-weight:bold;">' + total + '</div>',
+        className: 'donor-cluster',
+        iconSize: new L.Point(40, 40)
+    });
+}
+"""
+
+
+cluster_group = MarkerCluster(icon_create_function=cluster_js).add_to(m)
+
+
+# REAL markers with encoded donor labels in class name
+for (lat, lon), num in counts.items():
+    folium.Marker(
+        location=[lat, lon],
+        popup=f"{num} donors here",
+        icon=folium.Icon(color="blue", icon="info-sign", prefix="fa", class_name=f"donor-{num}")
+    ).add_to(cluster_group)
+
+
+# Heatmap
+heat_points = [[lat, lon, num] for (lat, lon), num in counts.items()]
+HeatMap(heat_points, radius=20, blur=15).add_to(m)
+
+
+m.save("scripts/Kevin/donor_map.html")
+print("Saved map to scripts/Kevin/donor_map.html")
