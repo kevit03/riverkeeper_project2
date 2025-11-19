@@ -9,9 +9,12 @@ from folium.plugins import MarkerCluster, HeatMap
 
 
 # Load CSV
-filename = "data/Riverkeeper_Donors.csv"
+filename = "/Users/yuchuansun/riverkeeper_project2/data/Riverkeeper_Donors.csv"
 fields = ["City", "State", "Country"]
 records = []
+
+def build_map():
+    return m
 
 with open(filename, "r", encoding="utf-8") as f:
     reader = csv.DictReader(f)
@@ -111,8 +114,10 @@ for (lat, lon), num in counts.items():
     folium.Marker(
         location=[lat, lon],
         popup=f"{num} donors here",
-        icon=folium.Icon(color="blue", icon="info-sign", prefix="fa", class_name=f"donor-{num}")
+        icon=folium.Icon(color="blue", class_name=f"donor-{num}")
     ).add_to(cluster_group)
+
+
 
 
 # Heatmap
