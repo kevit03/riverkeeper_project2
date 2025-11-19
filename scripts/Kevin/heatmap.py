@@ -58,7 +58,7 @@ def geocode_records(data, limit=100, delay=0.2, cache_path="scripts/Kevin/geocod
 
 
 geolocator = Nominatim(user_agent="heatmap_script", timeout=10)
-geocode_records(records, limit=8000, delay=0.2)
+geocode_records(records, limit=len(records), delay=0.2)
 
 
 # Count donors
