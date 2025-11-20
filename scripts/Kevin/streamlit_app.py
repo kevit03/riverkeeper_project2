@@ -1,8 +1,7 @@
 import streamlit as st
 from streamlit_folium import st_folium
 
-# Import your map builder function from your main script
-# Change "heatmap" to whatever your file is named WITHOUT .py
+#change "heatmap" to whatever your file is named to whatever .py
 from heatmap import build_map  
 
 
@@ -25,8 +24,9 @@ except Exception as e:
 
 
 # Render folium map inside Streamlit
+import copy
 st_folium(
-    folium_map,
+    copy.deepcopy(folium_map),
     width=1500,
     height=900
 )

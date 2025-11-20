@@ -118,9 +118,7 @@ for (lat, lon), num in counts.items():
     ).add_to(cluster_group)
 
 
-
-
-# Heatmap
+#heatmap that adds the color blur 
 heat_points = [[lat, lon, num] for (lat, lon), num in counts.items()]
 HeatMap(heat_points, radius=20, blur=15).add_to(m)
 
