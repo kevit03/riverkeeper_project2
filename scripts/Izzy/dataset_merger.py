@@ -30,7 +30,6 @@ def run():
 
     st.header("Dataset Merger")
     st.write("Upload a new dataset below to merge with the existing dataset.")
-    st.space(size="small")
 
     # load dataset into the user's session if it does not already exist
     if "df" not in st.session_state:
