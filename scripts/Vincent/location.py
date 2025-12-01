@@ -1,8 +1,10 @@
+import re
+import sys
+import requests
 import numpy as np
 import pandas as pd
 from time import sleep
-import requests
-import sys
+from pathlib import Path
 
 def disambiguate_address(address: dict, location_name: str) -> list:
     '''
@@ -79,6 +81,11 @@ def export(df: pd.DataFrame, filename: str) -> None:
     # concatenate the two dataframes
     df = pd.concat([df, df_exists], ignore_index=True)
 
+    # drop columns that contain the name "Unnamed"
+    for column in df.columns:
+        if re.search("Unnamed", column) != None:
+            df = df.drop(columns=column)
+
     # formatting filename properly
     if (filename[len(filename)-4 : len(filename)] != ".csv"):
         filename += ".csv"
@@ -86,22 +93,22 @@ def export(df: pd.DataFrame, filename: str) -> None:
     # export
     df.to_csv(filename)
 
-def generate_queries(stored_file: str, new_file: str) -> list:
+def generate_queries(stored_file: str, new_file: pd.DataFrame) -> list:
     '''
     A function that reads in an existing '.csv' file, compares its entries to the new file given to it,
     and returns a list containing entries that exist in the new_file but NOT the stored_file.
     The stored file must contain columns labeled 'country', 'city', and 'state'
     
     Args:
-        stored_file (str): a string representing where the stored file exists. This is the file that "stores" new entries into it. 
-        new_file (str): a string representing where the new file exists. This is the file that will be used to generate entries from.
+        stored_file (str): a string representing where the stored file exists. This is the file that "stores" new entries into it (the OUTPUT file). 
+        new_file (pd.DataFrame): contains the data that existed within the INPUT file 
 
     Returns:
         list: a list containing unique entries existing in the new_file and not the stored_file. If none exist, [] will be returned.
     '''
     # read files
-    df_stored = pd.read_csv(stored_file)
-    df_new = pd.read_csv(new_file)
+    df_stored = new_file
+    df_new = pd.read_csv(stored_file)
 
     # check 
     if (len(df_stored) == 0):
@@ -131,7 +138,6 @@ def generate_queries(stored_file: str, new_file: str) -> list:
     stored_set = set(df_stored['location'].value_counts().index.to_numpy())
 
     # format the new file properly and also generate the set 
-    df_new.drop("Unnamed: 0", axis=1, inplace=True)
     new_set = set(df_new['location'])
 
     # generate unique list
@@ -140,7 +146,8 @@ def generate_queries(stored_file: str, new_file: str) -> list:
         print("There are no unique locations inside the storage file that don't already exist in your new file!")
         return
 
-    return toRet;
+    # return new locations
+    return toRet
 
 def run_queries(addressList: list, filename: str) -> None:
     ''' 
@@ -178,11 +185,17 @@ def run_queries(addressList: list, filename: str) -> None:
 
         print(URL)
 
-        # fetch!
-        response = requests.get(URL)
+        # this is to ensure the program doesn't crash in case of a Time Out errors
+        try:
+            # try fetching!
+            response = requests.get(URL)
+        except:
+            # if we get a TimeOut request, break out of the loop
+            print("To abide by Photon's request, currently unable to generate ALL the current queries. Please rerun this program after a couple of minutes. Current progress has been saved!")
+            break
 
         # sleep to rate limit
-        sleep(np.random.randint(5, 60))
+        sleep(np.random.randint(1, 5))
 
         # successful response indicates 200
         if response.status_code == 200:
@@ -220,6 +233,85 @@ def run_queries(addressList: list, filename: str) -> None:
     # export all the queries into the selected '.csv' file
     export(df_forcsv, filename)
 
+def validate(filename: str) -> pd.DataFrame:
+    '''
+    A function that verifies that the input file contains the proper column names
+
+    Args:
+        filename (str): path to the file
+    
+    Returns:
+        pd.DataFrame: the proper file in the form specified if the file fails verification, None will be returned
+    '''
+    # temp vars
+    column_names = ["account_id", "city", "state", "country", "total_gifts_amount", "last_gift_date", "gifts_past_18m"]
+    column_names_2 = ["Account ID", "City" ,"State", "Country", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]
+    missing_cols = []
+    
+    # read file
+    data = pd.read_csv(filename)
+
+    # check each column
+    for i in range(len(column_names)):
+        # if the column doesn't exist in the dataframe
+        if column_names[i] not in data.columns and column_names_2[i] not in data.columns:
+            # add the columns to missing
+            missing_cols.append(column_names[i])
+    
+    # validation logic
+    if (len(missing_cols) != 0):
+        # return None and the missing columns otherwise
+        return None, missing_cols
+    else:
+        # return the dataframe if verification has succeeded
+        return data, missing_cols
+
+def merge(new_file: str, stored_file: pd.DataFrame) -> list:
+    '''
+    A function that merges the location data and returns a new csv
+
+    Args:
+        new_file (str): the output file
+        stored_file (pd.DataFrame): the data containing the input file
+
+    Returns:
+        None, directly creates the csv file immediately
+    '''
+    # generate file and create temporary column
+    cached_locations = pd.read_csv(new_file)
+
+    # dictionary to hold states
+    states = {"NY": "New York", "AL": "Alabama", "AK": "Alaska", "AZ": " Arizona", "AR": "Arkansas", "ID": "Idaho",
+            "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "FL": "Florida",
+            "KY": "Kentucky", "OH": "Ohio", "LA": "Louisiana", "OK": "Oklahoma", "ME": "Maine", "OR": "Oregon",
+            "MD": "Maryland", "PA": "Pennsylvania", "MA": "Massachussets", "PR": "Puerto Rico", "MI": "Michigan",
+            "RI": "Rhode Island", "MN": "Minnesota", "SC": "South Carolina", "MS": "Mississippi", "SD": "South Dakota",
+            "MO": "Missouri", "TN": "Tennessee", "MT": "Montana", "TX": "Texas", "NE": "Nebraska", "GA": "Georgia", 
+            "NV": "Nevada", "UT": "Utah", "GU": "Guam", "NH": "New Hampshire", "VT": "Vermont", "HI": "Hawaii",
+            "NJ": "New Jersey", "VA": "Virginia", "NM": "New Mexico", "IL": "Illinois", "WA": "Washington",
+            "IN": "Indiana", "NC": "North Carolina", "WV": "West Virginia", "IA": "Iowa", "ND": "North Dakota",
+            "WI": "Wisconsin", "KS": "Kansas", "WY": "Wyoming"}
+
+    # append states to the location name
+    stored_file['state'] = stored_file['state'].apply(lambda x : states.get(x, ""))
+    stored_file['location'] = stored_file['city'] + ", " + stored_file['state']
+
+    # perform merge operation
+    stored_file = stored_file.merge(cached_locations, how='left', on='location')
+
+    # reformat columns properly
+    for column in stored_file.columns:
+        if re.search("Unnamed", column) != None or column in ["country_y", "city_y", "location"]:
+            stored_file = stored_file.drop(columns=column)
+        elif column in ["city_x", "country_x"]:
+            stored_file = stored_file.rename(columns={column: column[:-2]}) 
+
+    # reorder columns
+    stored_file = stored_file.iloc[:, [0, 1, 10, 9, 2, 5, 3, 4, 6, 7, 8]]    
+
+    # export
+    stored_file.to_csv("Biokind_Donor_Information.csv", index=False)
+
 def main():
     # check for usage
     if len(sys.argv) != 3:
@@ -230,14 +322,23 @@ def main():
     # "../../data/Riverkeeper_Donors_for_NYU_Biokind_Project-10.22.25.csv" for input
     # "RiverKeeper_Donors_Unique_Locations.csv" for output
 
-    stored_file = sys.argv[1]
-    new_file = sys.argv[2]
+    stored_file = sys.argv[1] # input file
+    new_file = sys.argv[2] # output file
 
-    # run program
-    addressList = generate_queries(stored_file, new_file)
+    # first validate files
+    res, missing_cols = validate(stored_file)
+
+    # validation logic
+    if (type(res) != type(pd.DataFrame())):
+        print("The provided input file is not valid, as it lacks the following columns:" + " ".join(missing_cols))
+
+    # generate a list of locations not found and update them
+    addressList = generate_queries(new_file, res)
     if addressList != None:
-        addressList = addressList[0:30] # only run 30 queries at a time
         run_queries(addressList, new_file)
+
+    # now add the updated locations to the input file
+    merge(new_file, res)
 
 if (__name__ == "__main__"):
     main()

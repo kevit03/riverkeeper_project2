@@ -37,7 +37,7 @@ def donations_precise(df: pd.DataFrame) -> pd.Series:
     '''
     converts dollar amounts to Decimal objects to maintain precision
     '''
-    precise = df["Total Gifts (All Time)"].apply(lambda x: Decimal(str(x)))
+    precise = df["Total Gifts (All Time)"].map(lambda x: Decimal(str(x)))
     return precise
 
 def total_donations(df: pd.DataFrame) -> float:
@@ -53,7 +53,9 @@ def median_total_donation(df: pd.DataFrame) -> float:
     return round(donation_median, 2)
 
 def modal_total_donation(df: pd.DataFrame) -> float:
-    donation_mode = donations_precise(df).value_counts().index[0]
+    donation_mode = donations_precise(df).mode()
+    if isinstance(donation_mode, pd.Series):
+        donation_mode = donation_mode.iloc[0]
     return round(donation_mode, 2)
 
 def basic_stats(df: pd.DataFrame) -> pd.DataFrame:
@@ -82,7 +84,7 @@ def active_donors(df: pd.DataFrame) -> pd.DataFrame:
     '''
     active = df[df["Number of Gifts Past 18 Months"] > 0]
     res = basic_stats(active)
-    res["Average Gifts Past 18 Months"] = active["Number of Gifts Past 18 Months"].mean().round(2)
+    res["Average Gifts Past 18 Months"] = round(active["Number of Gifts Past 18 Months"].mean(), 2)
     res.rename(columns={"Donors": "Active Donors"}, inplace=True)
     return res
 
@@ -251,6 +253,5 @@ def stats_by_month(df: pd.DataFrame) -> pd.DataFrame:
     '''
     g = df.groupby(df["Last Gift Date"].dt.month.rename("Month"))
     res = pd.DataFrame({"Donors" : g["Account ID"].nunique()})
-    res.index = calendar.month_abbr[1:]
-    res.index.name = "Month"
+    res.index = pd.Index(calendar.month_abbr[1:], name="Month")
     return res
