@@ -146,16 +146,46 @@ legend_html = f"""
     position: fixed; 
     top: 50px; 
     left: 50px; 
-    width: 280px; 
-    background-color: white;
-    border: 2px solid grey; 
-    z-index: 9999; 
-    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px 18px;
+    width: 300px;
     font-size: 14px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 1px solid #d0d0d0;
+    font-family: 'Inter', sans-serif;
 ">
-<b>Unmapped Entries Summary</b><br><br>
-Missing geocodes: <span style='color:red;'>{invalid_count + kansas_count}</span><br>
+    <div style="
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #eee;
+    ">
+        Unmapped Entries Summary
+    </div>
+
+    <div style="margin-bottom: 6px;">
+        <span style="color:#444;">Missing geocodes:</span>
+        <span style="float:right; color:#c0392b; font-weight:600;">{invalid_count}</span>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+        <span style="color:#444;">Kansas FallBack Removed:</span>
+        <span style="float:right; color:#c0392b; font-weight:600;">{kansas_count}</span>
+    </div>
+
+    <div style="
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 1px solid #eee;
+        font-weight: 600;
+        color:#1d4ed8;
+    ">
+        Total excluded:
+        <span style="float:right;">{invalid_count + kansas_count}</span>
+    </div>
 </div>
 """
 
@@ -201,7 +231,7 @@ cluster_group = MarkerCluster(icon_create_function=cluster_js).add_to(m)
 for (lat, lon), num in counts.items():
     folium.Marker(
         location=[lat, lon],
-        popup=f"{num} donors here",
+        popup=f"{num} donor(s) here",
         icon=folium.Icon(color="blue", class_name=f"donor-{num}")
     ).add_to(cluster_group)
 
