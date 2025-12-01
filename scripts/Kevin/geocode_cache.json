@@ -399,10 +399,10 @@
     40.8164458,
     -74.2210643
   ],
-"Parsiappany, NY, United States": [
-  40.8579,
-  -74.4250
-], 
+  "Parsiappany, NY, United States": [
+    40.8579,
+    -74.425
+  ],
   "New City, NY, United States": [
     41.1509835,
     -73.9897782
@@ -447,10 +447,10 @@
     43.326025,
     -73.8419293
   ],
-"Stuyversant, NY, United States": [
-  42.3904,
-  -73.7696
-], 
+  "Stuyversant, NY, United States": [
+    42.3904,
+    -73.7696
+  ],
   "BROOKLYN, NY, United States": [
     40.6526006,
     -73.9497211
@@ -519,10 +519,10 @@
     42.3875968,
     -71.0994968
   ],
-"Queens Vlg, NY, United States": [
-  40.7150,
-  -73.7440
-], 
+  "Queens Vlg, NY, United States": [
+    40.715,
+    -73.744
+  ],
   "Spring Green, WI, United States": [
     43.1769367,
     -90.0680478
@@ -1055,10 +1055,10 @@
     40.849566,
     -73.6471225
   ],
-"Sierra Mas, CA, United States": [
-  34.1617,
-  -118.0528
-], 
+  "Sierra Mas, CA, United States": [
+    34.1617,
+    -118.0528
+  ],
   "Woodside, NY, United States": [
     40.7453798,
     -73.9054145
@@ -1155,10 +1155,10 @@
     42.479526,
     -73.7695669
   ],
-"Rhinbeck, NY, United States": [
-  41.9330,
-  -73.9137
-], 
+  "Rhinbeck, NY, United States": [
+    41.933,
+    -73.9137
+  ],
   "Portchester, NY, United States": [
     40.9924338,
     -73.6755052
@@ -1311,10 +1311,10 @@
     34.0194704,
     -118.491227
   ],
-"Norht Creek, NY, United States": [
-  43.7006,
-  -73.9825
-], 
+  "Norht Creek, NY, United States": [
+    43.7006,
+    -73.9825
+  ],
   "Locust Valley, NY, United States": [
     40.8775225,
     -73.5723052
@@ -1813,7 +1813,7 @@
   ],
   "\u00c3\u20aclbany, NY, United States": [
     42.6526,
-  -73.7562
+    -73.7562
   ],
   "Westport, CT, United States": [
     41.1414855,
@@ -1967,10 +1967,10 @@
     42.9006863,
     -73.3516087
   ],
-"Cortland Manor, NY, United States": [
-  41.2634,
-  -73.8949
-], 
+  "Cortland Manor, NY, United States": [
+    41.2634,
+    -73.8949
+  ],
   "Jamaica Plain, MA, United States": [
     42.3116046,
     -71.1143838
@@ -2019,10 +2019,10 @@
     41.4444519,
     -74.0052642
   ],
- "Pasadena, part-time Larchmont, CA, United States": [
-  34.1478,
-  -118.1445
-], 
+  "Pasadena, part-time Larchmont, CA, United States": [
+    34.1478,
+    -118.1445
+  ],
   "Brookline, MA, United States": [
     42.332918,
     -71.1187829
@@ -2571,14 +2571,14 @@
     41.4448133,
     -74.0155219
   ],
-"Binghampton, NY, United States": [
-  42.0987,
-  -75.9180
-],
-"Phoencicia, NY, United States": [
-  42.0840,
-  -74.3154
-],
+  "Binghampton, NY, United States": [
+    42.0987,
+    -75.918
+  ],
+  "Phoencicia, NY, United States": [
+    42.084,
+    -74.3154
+  ],
   "Wyckoff, NJ, United States": [
     41.0095417,
     -74.1729222
@@ -2587,10 +2587,10 @@
     42.8941269,
     -74.4099745
   ],
-"Sunny Island Beach, FL, United States": [
-  25.9390,
-  -80.1250
-], 
+  "Sunny Island Beach, FL, United States": [
+    25.939,
+    -80.125
+  ],
   "Leonia, NJ, United States": [
     40.8617353,
     -73.9880495
@@ -2715,10 +2715,10 @@
     40.8531553,
     -74.1137537
   ],
-"Mout Bethel, PA, United States": [
-  40.8887,
-  -75.1010
-], 
+  "Mout Bethel, PA, United States": [
+    40.8887,
+    -75.101
+  ],
   "Bayonne, NJ, United States": [
     40.6687141,
     -74.1143091
@@ -2771,10 +2771,10 @@
     42.7489669,
     -73.5573377
   ],
-"Rensseler, NY, United States": [
-  42.6420,
-  -73.7429
-], 
+  "Rensseler, NY, United States": [
+    42.642,
+    -73.7429
+  ],
   "Goldens Bridge, NY, United States": [
     41.2871685,
     -73.6633145
@@ -3003,10 +3003,10 @@
     39.0258405,
     -77.0750246
   ],
-"Addisleigh Park, NY, United States": [
-  40.6893,
-  -73.7697
-], 
+  "Addisleigh Park, NY, United States": [
+    40.6893,
+    -73.7697
+  ],
   "Scottsdale, AZ, United States": [
     33.4942189,
     -111.926018
@@ -3155,10 +3155,10 @@
     42.7135472,
     -73.2094566
   ],
-"Kent Lakes, NY, United States": [
-  41.4670,
-  -73.7490
-], 
+  "Kent Lakes, NY, United States": [
+    41.467,
+    -73.749
+  ],
   "Williamsburg, NY, United States": [
     40.714622,
     -73.95345
@@ -3243,10 +3243,10 @@
     32.9515472,
     -96.9034244
   ],
-"Cordtlandt Manor, NY, United States": [
-  41.2634,
-  -73.8949
-], 
+  "Cordtlandt Manor, NY, United States": [
+    41.2634,
+    -73.8949
+  ],
   "Iowa City, IA, United States": [
     41.6612561,
     -91.5299106
@@ -3491,10 +3491,10 @@
     42.064906,
     -72.5129296
   ],
-"Leominster, Herefordshire, , United States": [
-  52.2250,
-  -2.7390
-], 
+  "Leominster, Herefordshire, , United States": [
+    52.225,
+    -2.739
+  ],
   "Mattituck, NY, United States": [
     41.0119055,
     -72.5505388
@@ -3603,10 +3603,10 @@
     43.1714488,
     -73.3301547
   ],
-"Tarryown, NY, United States": [
-  41.0762,
-  -73.8587
-], 
+  "Tarryown, NY, United States": [
+    41.0762,
+    -73.8587
+  ],
   "Ruby, NY, United States": [
     42.0181472,
     -74.0148606
@@ -3775,10 +3775,10 @@
     41.7883108,
     -69.99001
   ],
-"Dalmar, NY, United States": [
-  42.6220,
-  -73.8337
-], 
+  "Dalmar, NY, United States": [
+    42.622,
+    -73.8337
+  ],
   "Sloatsburg, NY, United States": [
     41.1545395,
     -74.192924
@@ -3787,10 +3787,10 @@
     40.4667713,
     -74.6607144
   ],
-"Agartala, , United States": [
-  23.8315,
-  91.2868
-], 
+  "Agartala, , United States": [
+    23.8315,
+    91.2868
+  ],
   "Hampton Park, NJ, United States": [
     40.5380653,
     -74.3770086
@@ -3851,10 +3851,10 @@
     35.1235374,
     -120.5785796
   ],
-"SunNew Yorkside, NY, United States": [
-  40.7433,
-  -73.9196
-], 
+  "SunNew Yorkside, NY, United States": [
+    40.7433,
+    -73.9196
+  ],
   "Greenlawn, NY, United States": [
     40.8608685,
     -73.3633136
@@ -3887,14 +3887,14 @@
     41.8305937,
     -69.9740491
   ],
- "Mamaronek, NY, United States": [
-  40.9487,
-  -73.7326
-],
-"Castleton-on-Hudson, NY, USA, NY, United States": [
-  42.5184,
-  -73.7526
-], 
+  "Mamaronek, NY, United States": [
+    40.9487,
+    -73.7326
+  ],
+  "Castleton-on-Hudson, NY, USA, NY, United States": [
+    42.5184,
+    -73.7526
+  ],
   "Potsdam, NY, United States": [
     44.6697996,
     -74.9813349
@@ -3935,10 +3935,10 @@
     39.4284503,
     -74.4957076
   ],
-"Montreal, QC, United States": [
-  45.5019,
-  -73.5674
-], 
+  "Montreal, QC, United States": [
+    45.5019,
+    -73.5674
+  ],
   "HOPEWELL, NJ, United States": [
     40.3892726,
     -74.7618285
@@ -4019,10 +4019,10 @@
     42.5645204,
     -74.4637542
   ],
-"Balston Lake, NY, United States": [
-  42.9381,
-  -73.8668
-], 
+  "Balston Lake, NY, United States": [
+    42.9381,
+    -73.8668
+  ],
   "Beulah Valley, CO, United States": [
     38.0722286,
     -104.9663765
@@ -4512,9 +4512,9 @@
     -73.7349207
   ],
   "Schenecady, NY, United States": [
-  42.8142,
-  -73.9396
-], 
+    42.8142,
+    -73.9396
+  ],
   "Cortland, NY, United States": [
     42.5842136,
     -76.0704906
@@ -4540,17 +4540,17 @@
     -73.872635
   ],
   "Rinebeck, NY, United States": [
-  41.9330,
-  -73.9137
-], 
+    41.933,
+    -73.9137
+  ],
   "Lake Hill, NY, United States": [
     42.0673131,
     -74.1870881
   ],
-"Taghanic, NY, United States": [
-  42.0831,
-  -73.6935
-], 
+  "Taghanic, NY, United States": [
+    42.0831,
+    -73.6935
+  ],
   "Glendale, NY, United States": [
     40.7014917,
     -73.8868028
@@ -4635,10 +4635,10 @@
     41.4444519,
     -74.0052642
   ],
-"Corttlandt Manor, NY, United States": [
-  41.2634,
-  -73.8949
-], 
+  "Corttlandt Manor, NY, United States": [
+    41.2634,
+    -73.8949
+  ],
   "Bloomington, NY, United States": [
     41.8789815,
     -74.0440293
@@ -4655,10 +4655,10 @@
     40.6081591,
     -74.2776468
   ],
-"West New Yo, NJ, United States": [
-  40.7879,
-  -74.0143
-], 
+  "West New Yo, NJ, United States": [
+    40.7879,
+    -74.0143
+  ],
   "Madison, CT, United States": [
     41.2794282,
     -72.5983151
@@ -4695,10 +4695,10 @@
     38.7251776,
     -105.607716
   ],
-"Ballston Lakes, NY, United States": [
-  42.9400,
-  -73.8700
-], 
+  "Ballston Lakes, NY, United States": [
+    42.94,
+    -73.87
+  ],
   "Grandview-On-Hudson, NY, United States": [
     41.4444519,
     -74.0052642
@@ -4871,10 +4871,10 @@
     43.007994,
     -73.4392637
   ],
-"Fort Montgonery, NY, United States": [
-  41.3270,
-  -73.9885
-], 
+  "Fort Montgonery, NY, United States": [
+    41.327,
+    -73.9885
+  ],
   "Miami, FL, United States": [
     25.7741566,
     -80.1935973

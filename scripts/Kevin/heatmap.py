@@ -71,7 +71,13 @@ for rec in records:
 
 
 # Map
-m = folium.Map(location=[40.7128, -74.0060], zoom_start=5)
+m = folium.Map(
+    location=[40.7128, -74.0060],
+    zoom_start=5,
+    max_bounds=True,
+    world_copy_jump=False
+)
+# removes the ability to drag the world to the left or right infinitely 
 
 
 # Cluster JS using encoded class donor-XX

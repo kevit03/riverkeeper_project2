@@ -12,8 +12,7 @@ st.set_page_config(
 
 st.title("Donor Map Viewer")
 
-st.write("Below is your interactive donor map. Zoom in to inspect markers. Popups show donor counts when clicked.")
-
+st.write("This is a visual representation of the donors and their respective locations")
 
 # Build your folium map
 try:
