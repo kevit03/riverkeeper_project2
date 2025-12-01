@@ -9,12 +9,13 @@ from folium.plugins import MarkerCluster, HeatMap
 
 
 # Load CSV
-filename = "/Users/yuchuansun/riverkeeper_project2/data/Riverkeeper_Donors.csv"
+filename = "data/Riverkeeper_Donors.csv"
 fields = ["City", "State", "Country"]
 records = []
 
 def build_map():
     return m
+
 
 with open(filename, "r", encoding="utf-8") as f:
     reader = csv.DictReader(f)
@@ -25,7 +26,55 @@ with open(filename, "r", encoding="utf-8") as f:
         records.append(entry)
 
 
-# Geocode
+def is_kansas(lat, lon):
+    try:
+        lat = float(lat)
+        lon = float(lon)
+    except:
+        return False
+
+    return (36.99 <= lat <= 40.01) and (-102.06 <= lon <= -94.58)
+
+
+# Coordinate validator
+def is_valid_coordinate(lat, lon):
+    try:
+        lat = float(lat)
+        lon = float(lon)
+    except:
+        return False
+
+    if abs(lat) > 90 or abs(lon) > 180:
+        return False
+
+    if lat == 0 and lon == 0:
+        return False
+
+    return True
+
+    # reject None
+    if lat is None or lon is None:
+        return False            
+    
+    # reject strings like "40.8" or "NaN"
+    if not isinstance(lat, (int, float)) or not isinstance(lon, (int, float)):
+        return False
+
+    # reject extreme impossible values
+    if abs(lat) > 90 or abs(lon) > 180:
+        return False
+
+    # reject (0,0)
+    if lat == 0 and lon == 0:
+        return False
+
+    return True
+
+
+
+
+
+# Geocoding
 def geocode_records(data, limit=100, delay=0.2, cache_path="scripts/Kevin/geocode_cache.json"):
     try:
         with open(cache_path, "r") as f:
@@ -61,23 +110,57 @@ geolocator = Nominatim(user_agent="heatmap_script", timeout=10)
 geocode_records(records, limit=len(records), delay=0.2)
 
 
-# Count donors
+# Count donors, but skip invalid coordinates
 counts = defaultdict(int)
+invalid_count = 0
+kansas_count = 0
+
 for rec in records:
     lat = rec["Latitude"]
     lon = rec["Longitude"]
-    if lat is not None and lon is not None:
-        counts[(lat, lon)] += 1
+
+    if not is_valid_coordinate(lat, lon):
+        invalid_count += 1
+        continue
+
+    # NEW: detect Kansas fallback values
+    if is_kansas(lat, lon):
+        kansas_count += 1
+        continue
+
+    counts[(lat, lon)] += 1
 
 
-# Map
+# Create map with no infinite horizontal scrolling
 m = folium.Map(
     location=[40.7128, -74.0060],
     zoom_start=5,
     max_bounds=True,
     world_copy_jump=False
 )
-# removes the ability to drag the world to the left or right infinitely 
+
+
+# Sidebar legend for invalid locations
+legend_html = f"""
+<div style="
+    position: fixed; 
+    top: 50px; 
+    left: 50px; 
+    width: 280px; 
+    background-color: white;
+    border: 2px solid grey; 
+    z-index: 9999; 
+    padding: 12px;
+    font-size: 14px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+">
+<b>Unmapped Entries Summary</b><br><br>
+Missing geocodes: <span style='color:red;'>{invalid_count + kansas_count}</span><br>
+</div>
+"""
+
+
+m.get_root().html.add_child(folium.Element(legend_html))
 
 
 # Cluster JS using encoded class donor-XX
@@ -111,11 +194,10 @@ function(cluster) {
 }
 """
 
-
 cluster_group = MarkerCluster(icon_create_function=cluster_js).add_to(m)
 
 
-# REAL markers with encoded donor labels in class name
+# Add real markers
 for (lat, lon), num in counts.items():
     folium.Marker(
         location=[lat, lon],
@@ -124,10 +206,11 @@ for (lat, lon), num in counts.items():
     ).add_to(cluster_group)
 
 
-#heatmap that adds the color blur 
+# Heatmap
 heat_points = [[lat, lon, num] for (lat, lon), num in counts.items()]
 HeatMap(heat_points, radius=20, blur=15).add_to(m)
 
 
+# Save output
 m.save("scripts/Kevin/donor_map.html")
 print("Saved map to scripts/Kevin/donor_map.html")
