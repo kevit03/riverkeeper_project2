@@ -20,6 +20,7 @@ Thumbs.db
 # Data files
 *.csv
 *.json
+!geocode_cache.json
 *.xls
 *.xlsx
 *.parquet
