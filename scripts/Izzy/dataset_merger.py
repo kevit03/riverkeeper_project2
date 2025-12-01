@@ -9,8 +9,11 @@ PATH = "donor_data.csv"
 # load existing data if the file exists
 # if it does not exist, create an empty dataframe
 def load_data():
-        if os.path.exists(PATH) and os.path.getsize(PATH) == 0:
-            return pd.read_csv(PATH)
+        if os.path.exists(PATH):
+            try:
+                return pd.read_csv(PATH)
+            except:
+                 return pd.DataFrame()
         else:
             df = pd.DataFrame()
             df.to_csv(PATH, index=False)
@@ -19,6 +22,7 @@ def load_data():
 # save data to csv
 def save_data(df):
     df.to_csv(PATH, index=False)
+    st.write(f"Saved file at: {os.path.abspath(PATH)}")
 
 def run():
 
