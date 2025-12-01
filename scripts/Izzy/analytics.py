@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from data_analysis import *
 import plotly.express as px
+import sys
+from pathlib import Path
 
 st.set_page_config(
     page_title="Donor Analytics",
@@ -10,10 +12,13 @@ st.set_page_config(
     layout="wide"
 )
 
+sys.path.insert(0, str(Path("../Vincent").resolve()))
+import location
+
 def run():
 
     # clean data
-    data = clean(st.session_state.df)
+    bk_data = clean(st.session_state.df)
 
     # convert to biokind format
 

@@ -9,7 +9,7 @@ PATH = "donor_data.csv"
 # load existing data if the file exists
 # if it does not exist, create an empty dataframe
 def load_data():
-        if os.path.exists(PATH):
+        if os.path.exists(PATH) and os.path.getsize(PATH) == 0:
             return pd.read_csv(PATH)
         else:
             df = pd.DataFrame()
@@ -47,9 +47,7 @@ def run():
         # save the merged data and update the session state
         save_data(merged_df)
         st.session_state.df = merged_df
-
         st.success("Merged CSV saved and updated!")
-        st.space(size="small")
 
         # display new data
         st.write("Merged Dataset:")
