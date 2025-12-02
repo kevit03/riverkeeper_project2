@@ -140,7 +140,7 @@ def generate_queries(stored_file: str, new_file: pd.DataFrame) -> list:
     toRet = list(stored_set - new_set)
     if len(toRet) == 0:
         print("There are no unique locations inside the storage file that don't already exist in your new file!")
-        sys.exit(1)
+        return
 
     # return new locations
     return toRet
