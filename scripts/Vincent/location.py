@@ -206,7 +206,7 @@ def run(input_file: str):
     # "RiverKeeper_Donors_Unique_Locations.csv" for output
 
     new_file = input_file # input file
-    stored_file = "RiverKeeper_Donors_Unique_Locations.csv" # output file
+    stored_file = "../../data/RiverKeeper_Donors_Unique_Locations.csv" # output file
 
     # first validate files, if successful, will return the read in csv values
     res, missing_cols = validate(new_file)
