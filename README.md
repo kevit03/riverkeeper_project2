@@ -9,6 +9,14 @@ This project is a data driven initiatve built by the Biokind Team at NYU to anal
 
 [Geopy](https://geopy.readthedocs.io/en/stable/) - used to geocode and geocache 
 
+## Key Features 
+Global Interactive Heatmap 
+
+Automated Geocaching 
+
+Partitioned Diagrams from Given Data 
+
+Data Cleaning of Over 8,000 entries 
 
 
 
