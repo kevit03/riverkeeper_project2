@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import os
 from merge_csv import merge_csv
 
@@ -24,6 +23,10 @@ def save_data(df):
     df.to_csv(PATH, index=False)
     st.write(f"Saved file at: {os.path.abspath(PATH)}")
 
+# load dataset into the user's session if it does not already exist
+if "df" not in st.session_state:
+    st.session_state.df = load_data()
+
 def run():
 
     st.set_page_config(
@@ -34,10 +37,6 @@ def run():
 
     st.header("Dataset Merger")
     st.write("Upload a new dataset below to merge with the existing dataset.")
-
-    # load dataset into the user's session if it does not already exist
-    if "df" not in st.session_state:
-        st.session_state.df = load_data()
 
     # button to upload new csv
     uploaded_file = st.file_uploader("", type="csv")

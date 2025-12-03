@@ -20,7 +20,7 @@ def categorize_donors(df: pd.DataFrame) -> pd.DataFrame:
     df.loc[df["Total Gifts (All Time)"] >= 250, "Category"] = "250+"
     return df
 
-def clean(df: pd.DataFrame) -> None:
+def clean(df: pd.DataFrame) -> pd.DataFrame:
     '''
     converts numeric data to numeric types and dates to datetime type and adds the category column
     '''
@@ -28,7 +28,7 @@ def clean(df: pd.DataFrame) -> None:
     df["Total Gifts (All Time)"] = pd.to_numeric(df["Total Gifts (All Time)"])
     df["Number of Gifts Past 18 Months"] = pd.to_numeric(df["Number of Gifts Past 18 Months"])
     df["Last Gift Date"] = pd.to_datetime(df["Last Gift Date"])
-    df = categorize_donors(df)
+    return df
 
 
 # basic stats
@@ -100,7 +100,6 @@ def inactive_donors(df: pd.DataFrame) -> pd.DataFrame:
 def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
     returns top n donors with 
-        account id, 
         city,
         state,
         total amount,
@@ -114,7 +113,7 @@ def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     top_donors["Last Gift Date"] = top_donors["Last Gift Date"].dt.date
     top_donors["Number of Gifts Past 18 Months"] = top_donors["Number of Gifts Past 18 Months"].astype(int)
     top_donors.reset_index(drop=True, inplace=True)
-    return top_donors[["Account ID", "City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
+    return top_donors[["City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
 
 def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
@@ -133,7 +132,7 @@ def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     frequent_donors["Last Gift Date"] = frequent_donors["Last Gift Date"].dt.date
     frequent_donors["Number of Gifts Past 18 Months"] = frequent_donors["Number of Gifts Past 18 Months"].astype(int)
     frequent_donors.reset_index(drop=True, inplace=True)
-    return frequent_donors[["Account ID", "City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
+    return frequent_donors[["City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
 
 # stats by location
 

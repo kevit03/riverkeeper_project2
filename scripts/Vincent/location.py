@@ -214,7 +214,8 @@ def run(input_file: str):
     # validation logic
     if (type(res) != type(pd.DataFrame())):
         print("The provided input file is not valid, as it lacks the following columns:" + " ".join(missing_cols))
-
+        return
+    
     # generate a list of locations not found and update them
     addressList = generate_queries(stored_file, res)
     if addressList != None:
@@ -262,7 +263,7 @@ def run_queries(addressList: list, filename: str) -> None:
         URL = f"https://photon.komoot.io/api/?q={query}"
 
         # decoding
-        # print(URL)
+        print(URL)
 
         # this is to ensure the program doesn't crash in case of a Time Out errors
         try:
