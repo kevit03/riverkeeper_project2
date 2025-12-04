@@ -18,38 +18,38 @@ def disambiguate_address(address: dict, location_name: str) -> list:
     Returns:
         list: an array containing the address broken into the 4 aforementioned categories plus the name of the place itself
     '''
-
-    # initialize empty arrays
+    
     city = []
-    district = [] 
+    district = []
     county = []
     country_code = []
-    location_ref = []
+    location_ref = [location_name]
 
-    # location array
-    location_ref.append(location_name)
-
-    # input features accordingly
-    if address['type'] == 'county':
-        county.append(address['name'])
-    elif 'county' in address:
-        county.append(address['county'])   
-    else:
-        county.append(" ")
-
-    if address['type'] == 'city':
-        city.append(address['name'])
-    elif 'city' in address:
-        city.append(address['city'])
+    # City / locality handling
+    if address.get("type") in ["city", "locality", "town", "village"]:
+        city.append(address.get("name", " "))
+    elif "city" in address:
+        city.append(address["city"])
+    elif "locality" in address:
+        city.append(address["locality"])
     else:
         city.append(" ")
 
-    if address['type'] == 'district':
-        district.append(address['name'])
-    elif 'district' in address:
-        district.append(address['district'])
+    # District (borough)
+    if address.get("type") == "district":
+        district.append(address.get("name", " "))
+    elif "district" in address:
+        district.append(address["district"])
     else:
         district.append(" ")
+
+    # County
+    if address.get("type") == "county":
+        county.append(address.get("name", " "))
+    elif "county" in address:
+        county.append(address["county"])
+    else:
+        county.append(" ")
 
     country_code.append("US")
 
