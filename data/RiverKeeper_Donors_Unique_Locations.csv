@@ -1,1285 +1,1247 @@
 ,Location,Country,City,Borough,County
-0,"Malden On Hudson, New York",US,Saugerties,Malden-on-Hudson,Ulster
-1,"Old Lyme, Connecticut",US,Old Lyme, ,Lower Connecticut River Valley Planning Region
-2,"Bordeaux, ",FR,Bordeaux, ,Gironde
-3,"Surbiton, ",GB,Surbiton,Surbiton, 
-4,"Salisbury, North Carolina",US,Salisbury, ,Rowan
-5,"Ardsley-On-Hudson, New York",US,Irvington,Ardsley-on-Hudson,Westchester
-6,"Annandale-On-Hudson, New York",US,Red Hook,Annandale-on-Hudson,Dutchess
-7,"Agartala, ",IN,Agartala, ,Mohanpur
-8,"Malden-On-Hudson, New York",US,Saugerties,Malden-on-Hudson,Ulster
-9,"Dushanbe, ",TJ,Душанбе, , 
-10,"Cornwall-On-Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
-11,"Leominster, Herefordshire, ",GB,Leominster, ,Herefordshire
-12,"Hopewell, New Jersey",US,Hopewell, ,Mercer
-13,"London, ",GB,London, , 
-14,"Marblehead, Massachussets",US,Marblehead, ,Essex County
-15,"Avon-By-The-Sea, New Jersey",US,Avon-by-the-Sea, ,Monmouth
-16,"Milan, ",IT,Milano, ,Milano
-17,"Township Of Washington, New Jersey",US,Township of Washington, ,Bergen
-18,"Bangor, Maine",US,Bangor, ,Penobscot
-19,"Castleton-On-Hudson, Ny, Usa, New York",US,Castleton-on-Hudson, ,Rensselaer
-20,"Shelby, North Carolina",US,Shelby, ,Cleveland County
-21,"Harpswell, Maine",US,Harpswell, ,Cumberland
-22,"Clinton, Oklahoma",US,Clinton, ,Custer
-23,"Williamsburg, New York",US,New York,Brooklyn, 
-24,"Wolverine Lake, Michigan",US,Commerce Charter Township,Wolverine Lake,Oakland
-25,"West Chazy, New York",US,Chazy,West Chazy,Clinton
-26,"Northwood, ",GB,London,Northwood, 
-27,"Sunnew Yorkside, New York",US,Yorkshire, ,Cattaraugus
-28,"Berlin, ",DE,Berlin, , 
-29,"Castleton-On-Hudson, New York",US,Castleton-on-Hudson, ,Rensselaer
-30,"Ã€Lbany, New York",US,New York, , 
-31,"New York City, New York",US,New York,Manhattan,  
-32,"Englewood Cliffs, New Jersey",US,Englewood Cliffs, ,Bergen
-33,"Acton, Massachussets",US,Acton, ,Middlesex County
-34,"Avon-by-the-Sea, New Jersey",US,Avon-by-the-Sea, ,Monmouth
-35,"Somerville, Massachussets",US,Somerville, ,Middlesex
-36,"Gulfport, Florida",US,Gulfport, ,Pinellas
-37,"Redding Center, Connecticut",US,Redding, ,Western Connecticut Planning Region
-38,"Guttenberg, New Jersey",US,Guttenberg, ,Hudson
-39,"Ramsey, New Jersey",US,Ramsey, ,Bergen
-40,"Port St Lucie, Florida",US,Port Saint Lucie, ,Saint Lucie
-41,"Medford, Oregon",US,Medford, ,Jackson
-42,"Hampton Park, New Jersey",US,Stillwater, ,Sussex
-43,"Little Silver, New Jersey",US, ,Little Silver,Monmouth
-44,"Wardsboro, Vermont",US,Wardsboro, ,Windham County
-45,"Salisbury, Connecticut",US,Salisbury, ,Northwest Hills Planning Region
-46,"Bluffton, South Carolina",US,Bluffton, ,Beaufort
-47,"Warminster, Pennsylvania",US,Warminster Township, ,Bucks
-48,"West End, North Carolina",US,West End, ,Moore
-49,"Branford, Connecticut",US,Branford, ,South Central Connecticut Planning Region
-50,"Matamoras, Pennsylvania",US,Matamoras, ,Pike
-51,"Wheaton, Illinois",US,Wheaton, ,DuPage County
-52,"Glastonbury, Connecticut",US,Glastonbury, ,Capitol Planning Region
-53,"Sun Prairie, Wisconsin",US,Sun Prairie, ,Dane
-54,"Gladstone, Oregon",US,Gladstone, ,Clackamas
-55,"Salisbury, Massachussets",US,Salisbury, ,Essex County
-56,"Greenwich, Connecticut",US,Greenwich, ,Western Connecticut Planning Region
-57,"Herndon, Virginia",US,Herndon, ,Fairfax
-58,"San Diego, California",US,San Diego, ,San Diego
-59,"Upper Montclair, New Jersey",US,Montclair,Upper Montclair,Essex
-60,"New Milford, New Jersey",US,New Milford, ,Bergen
-61,"Teaneck, New Jersey",US,Teaneck, ,Bergen
-62,"Swampscott, Massachussets",US,Swampscott, ,Essex County
-63,"Oxford, Ohio",US,Oxford, ,Butler
-64,"Fort Lee, New Jersey",US,Fort Lee, ,Bergen
-65,"Surfside, Florida",US,Surfside, ,Miami-Dade
-66,"Orlando, Florida",US,Orlando, ,Orange County
-67,"Princeton, New Jersey",US,Princeton,Princeton Center,Mercer
-68,"New Gretna, New Jersey",US,Bass River Township,New Gretna,Burlington
-69,"Barrington, New Jersey",US,Barrington, ,Camden
-70,"Minneapolis, Minnesota",US,Minneapolis, ,Hennepin
-71,"Milford, Connecticut",US,Milford, ,South Central Connecticut Planning Region
-72,"La Jolla, California",US,San Diego,La Jolla,San Diego
-73,"Iowa City, Iowa",US,Iowa City, ,Johnson
-74,"Gettysburg, Pennsylvania",US,Gettysburg, ,Adams
-75,"Lexington, South Carolina",US, , ,Lexington
-76,"Rahway, New Jersey",US,Rahway, ,Union
-77,"Green Cove Springs, Florida",US,Green Cove Springs, ,Clay
-78,"Sherman Oaks, California",US,Los Angeles,Sherman Oaks,Los Angeles
-79,"Preston, Maryland",US,Preston, ,Caroline
-80,"Clinton, New Jersey",US,Clinton, ,Hunterdon
-81,"Spring Mills, Pennsylvania",US,Gregg Township,Spring Mills,Centre
-82,"Falmouth, Massachussets",US,Falmouth, ,Barnstable
-83,"Shenandoah, Pennsylvania",US,Shenandoah, ,Schuylkill
-84,"Roseland, New Jersey",US,Roseland, ,Essex
-85,"Woodside, California",US,Woodside, ,San Mateo
-86,"Clarksburg, Massachussets",US,Clarksburg, ,Berkshire
-87,"Homosassa, Florida",US,Homosassa, ,Citrus
-88,"Bowling Green, Ohio",US,Bowling Green, ,Wood
-89,"Powell, Tennessee",US,Powell, ,Knox
-90,"Milton, Georgia",US,Milton, ,Fulton
-91,"Virginia Beach, Virginia",US,Virginia Beach, , 
-92,"Vero Beach, Florida",US,Vero Beach, ,Indian River County
-93,"Bloomfield, New Jersey",US,Bloomfield, ,Essex
-94,"Westfield, Massachussets",US,Westfield, ,Hampden
-95,"Stockton, California",US,Stockton, ,San Joaquin
-96,"Cedar Grove, New Jersey",US,Cedar Grove, ,Essex
-97,"Union City, New Jersey",US,Union City, ,Hudson
-98,"Scituate, Massachussets",US,Scituate, ,Plymouth
-99,"Gurnee, Illinois",US,Gurnee, ,Lake County
-100,"The Villages, Florida",US,The Villages, ,Sumter
-101,"Marietta, Georgia",US,Marietta, ,Cobb
-102,"Amherst, Massachussets",US,Amherst, ,Hampshire
-103,"Beulah Valley, Colorado",US, ,Beulah Valley,Pueblo
-104,"Woodbury, Connecticut",US,Woodbury, ,Naugatuck Valley Planning Region
-105,"Dumont, New Jersey",US,Dumont, ,Bergen
-106,"Little Falls, New Jersey",US,Little Falls, ,Passaic
-107,"Albuquerque, New Mexico",US,Albuquerque, ,Bernalillo
-108,"Demarest, New Jersey",US,Demarest, ,Bergen
-109,"South Orange, New Jersey",US,South Orange, ,Essex
-110,"Cincinnati, Ohio",US,Cincinnati, ,Hamilton
-111,"Upper Saddle River, New Jersey",US,Upper Saddle River, ,Bergen
-112,"Irvington, New Jersey",US,Irvington, ,Essex
-113,"Montreal, ",CA,Montréal, ,Agglomération de Montréal
-114,"Aptos, California",US,Seacliff, ,Santa Cruz
-115,"Eureka Springs, Arkansas",US,Eureka Springs, ,Carroll
-116,"Nutley, New Jersey",US,Nutley, ,Essex
-117,"Wyckoff, New Jersey",US,Wyckoff, ,Bergen
-118,"Placida, Florida",US, ,Placida,Charlotte
-119,"Union, New Jersey",US, , ,Union
-120,"Ferndale, Washington",US,Ferndale, ,Whatcom
-121,"Livingston, Montana",US,Livingston, ,Park
-122,"Englewood, New Jersey",US,Englewood, ,Bergen
-123,"Spring Green, Wisconsin",US,Spring Green, ,Sauk
-124,"Hernando, Florida",US, , ,Hernando
-125,"East Haven, Connecticut",US,East Haven, ,South Central Connecticut Planning Region
-126,"Fanwood, New Jersey",US,Fanwood, ,Union
-127,"Stamford, Connecticut",US,Stamford, ,Western Connecticut Planning Region
-128,"Ho Ho Kus, New Jersey",US,Ho-Ho-Kus, ,Bergen
-129,"Stratford, Connecticut",US,Stratford, ,Greater Bridgeport Planning Region
-130,"Plano, Texas",US,Plano, ,Collin
-131,"Mesa,  Arizona",US,Mesa, ,Maricopa
-132,"Falls Village, Connecticut",US,Canaan,Falls Village,Northwest Hills Planning Region
-133,"Ventura, California",US,Ventura, ,Ventura
-134,"North Bay Village, Florida",US,North Bay Village, ,Miami-Dade
-135,"Stirling, New Jersey",US,Long Hill,Stirling,Morris
-136,"Glendale, Massachussets",US,Stockbridge,Glendale,Berkshire
-137,"Sebastopol, California",US,Sebastopol, ,Sonoma
-138,"Manalapan, New Jersey",US,Manalapan, ,Monmouth
-139,"Wilmington, Delaware",US,Wilmington, ,New Castle
-140,"Yellow Springs, Ohio",US,Yellow Springs, ,Greene
-141,"Clearwater, Florida",US,Clearwater, ,Pinellas
-142,"Storrs, Connecticut",US,Mansfield,Storrs,Capitol Planning Region
-143,"Irwin, Pennsylvania",US,Irwin, ,Westmoreland
-144,"SALISBURY, North Carolina",US,Salisbury, ,Rowan
-145,"Hamden, Connecticut",US,Hamden, ,South Central Connecticut Planning Region
-146,"Highlands, North Carolina",US,Highlands, ,Macon
-147,"Hood River, Oregon",US,Hood River, ,Hood River
-148,"Tampa, Florida",US,Tampa, ,Hillsborough
-149,"Fort Collins, Colorado",US,Fort Collins, ,Larimer
-150,"West Columbia, South Carolina",US,West Columbia, ,Lexington
-151,"Matawan, New Jersey",US,Matawan, ,Monmouth
-152,"Roanoke, Virginia",US,Roanoke, , 
-153,"Norwich, Vermont",US,Norwich, ,Windsor County
-154,"Florissant, Missouri",US,Florissant, ,Saint Louis County
-155,"Bound Brook, New Jersey",US,Bound Brook, ,Somerset
-156,"Huntingdon Valley, Pennsylvania",US,Lower Moreland Township,Huntingdon Valley,Montgomery
-157,"Hutchinson, Minnesota",US,Hutchinson, ,McLeod
-158,"Lake Oswego, Oregon",US,Lake Oswego, ,Clackamas
-159,"Newark, New Jersey",US,Newark, ,Essex
-160,"West Newton, Massachussets",US,Newton, ,Middlesex
-161,"Chesapeake, Virginia",US,Chesapeake, , 
-162,"Coral Gables, Florida",US,Coral Gables, ,Miami-Dade
-163,"Somerset, New Jersey",US, , ,Somerset
-164,"Tarzana, California",US,Los Angeles,Tarzana,Los Angeles
-165,"Hillsborough, New Jersey",US,Hillsborough Township, ,Somerset
-166,"Nashville, Tennessee",US,Nashville, ,Davidson
-167,"Winchester, Virginia",US,Winchester, , 
-168,"Union Beach, New Jersey",US,Union Beach, ,Monmouth
-169,"Sanibel, Florida",US,Sanibel, ,Lee
-170,"Downey, California",US,Downey, ,Los Angeles
-171,"Goshen, Connecticut",US,Goshen, ,Northwest Hills Planning Region
-172,"Fort Wayne, Indiana",US,Fort Wayne, ,Allen
-173,"Bedminster, New Jersey",US,Bedminster, ,Somerset
-174,"Hopkins, South Carolina",US, ,Hopkins,Richland
-175,"Monmouth Junction, New Jersey",US,South Brunswick,Monmouth Junction,Middlesex
-176,"Hartford, Connecticut",US,Hartford, ,Capitol Planning Region
-177,"Glenwood Springs, Colorado",US,Glenwood Springs, ,Garfield
-178,"Lexington, Massachussets",US,Lexington, ,Middlesex County
-179,"Dingmans Ferry, Pennsylvania",US,Delaware Township,Dingmans Ferry,Pike
-180,"Charlotte, North Carolina",US,Charlotte, ,Mecklenburg
-181,"Oak Creek, Colorado",US,Oak Creek, ,Routt
-182,"Bishops Corner, Connecticut",US,Southington,Bishops Corner,Capitol Planning Region
-183,"Sierra Mas, California",MX,Tijuana, ,Municipio de Tijuana
-184,"Old Tappan, New Jersey",US,Old Tappan, ,Bergen
-185,"Brewster, Massachussets",US,Brewster, ,Barnstable
-186,"New Haven, Connecticut",US,New Haven, ,South Central Connecticut Planning Region
-187,"Norcross, Georgia",US,Norcross, ,Gwinnett
-188,"Marco Island, Florida",US,Marco Island, ,Collier
-189,"West Lebanon, New Hampshire",US,Lebanon,West Lebanon,Grafton
-190,"Decatur, Georgia",US, , ,Decatur
-191,"Norfolk, Massachussets",US, , ,Norfolk
-192,"Martinsville, New Jersey",US,Bridgewater Township,Martinsville,Somerset
-193,"Lincoln, Massachussets",US,Lincoln, ,Middlesex County
-194,"Encino, California",US,Los Angeles,Encino,Los Angeles
-195,"Ridgefield, Connecticut",US,Ridgefield, ,Western Connecticut Planning Region
-196,"clinton, Oklahoma",US,Clinton, ,Custer
-197,"Fairfield, Connecticut",US,Fairfield, ,Greater Bridgeport Planning Region
-198,"Halethorpe, Maryland",US,Arbutus,Halethorpe,Baltimore County
-199,"Lodi, New Jersey",US,Lodi, ,Bergen
-200,"Franconia, New Hampshire",US,Franconia, ,Grafton
-201,"Safety Harbor, Florida",US,Safety Harbor, ,Pinellas
-202,"Cliffside Park, New Jersey",US,Cliffside Park, ,Bergen
-203,"Sacramento, California",US,Sacramento, ,Sacramento
-204,"Bethel, Connecticut",US,Bethel, ,Western Connecticut Planning Region
-205,"Blairstown, New Jersey",US,Blairstown, ,Warren
-206,"Miami, Florida",US,Miami, ,Miami-Dade
-207,"Easton, Maryland",US,Easton, ,Talbot
-208,"Toronto, ",CA,Toronto, ,Golden Horseshoe
-209,"Ridgefield Park, New Jersey",US,Ridgefield Park, ,Bergen
-210,"St. Simons Island, Georgia",US,St. Simons, ,Glynn
-211,"Richmond, Virginia",US,Richmond, , 
-212,"Norwalk, Connecticut",US,Norwalk, ,Western Connecticut Planning Region
-213,"Reston, Virginia",US,Reston, ,Fairfax
-214,"Wilton, Connecticut",US,Wilton, ,Western Connecticut Planning Region
-215,"Tuscon,  Arizona",US, , ,Pima
-216,"Tulsa, Oklahoma",US,Tulsa, ,Tulsa
-217,"Laramie, Wyoming",US,Laramie, ,Albany
-218,"Newcastle, Maine",US,Newcastle, ,Lincoln
-219,"West Sacramento, California",US,West Sacramento, ,Yolo
-220,"Leander, Texas",US,Leander, ,Williamson
-221,"Springfield, New Jersey",US,Springfield Township, ,Union
-222,"Napa, California",US,Napa, ,Napa
-223,"Long Beach, California",US,Long Beach, ,Los Angeles
-224,"Moorestown, New Jersey",US,Moorestown, ,Burlington
-225,"Williamstown, Massachussets",US,Williamstown, ,Berkshire
-226,"BANGOR, Maine",US,Bangor, ,Penobscot
-227,"Orleans, Massachussets",US,Orleans, ,Barnstable
-228,"Bal Harbour, Florida",US,Bal Harbour Village, ,Miami-Dade
-229,"Needham, Massachussets",US,Needham, ,Norfolk
-230,"Clarendon, Vermont",US,Clarendon, ,Rutland County
-231,"Saint Louis, Missouri",US,Saint Louis, , 
-232,"Midlothian, Virginia",US,Midlothian, ,Chesterfield
-233,"Allentown, Pennsylvania",US,Allentown, ,Lehigh
-234,"Los Ranchos, New Mexico",US,Los Ranchos de Albuquerque, ,Bernalillo
-235,"Seattle, Washington",US,Seattle, ,King
-236,"Charlevoix, Michigan",US, , ,Charlevoix
-237,"Des Moines, Iowa",US,Des Moines, ,Polk
-238,"Holmdel, New Jersey",US,Holmdel Township, ,Monmouth
-239,"Pinellas Park, Florida",US,Pinellas Park, ,Pinellas
-240,"Asbury Park, New Jersey",US,Asbury Park, ,Monmouth
-241,"Haworth, New Jersey",US,Haworth, ,Bergen
-242,"Weston, Connecticut",US,Weston, ,Western Connecticut Planning Region
-243,"Branchville, New Jersey",US,Branchville, ,Sussex
-244,"Morris Plains, New Jersey",US,Morris Plains, ,Morris
-245,"Dedham, Massachussets",US,Dedham, ,Norfolk
-246,"Jacksonville, Florida",US,Jacksonville, ,Duval
-247,"Hazlet, New Jersey",US,Hazlet, ,Monmouth
-248,"Franklin Lakes, New Jersey",US,Franklin Lakes, ,Bergen
-249,"Placerville, Colorado",US, ,Placerville,San Miguel
-250,"Naples, Florida",US,Naples, ,Collier
-251,"Rockville, Maryland",US,Rockville, ,Montgomery
-252,"Middlebury, Vermont",US,Middlebury, ,Addison
-253,"Basking Ridge, New Jersey",US,Bernards Township,Basking Ridge,Somerset
-254,"Newtonville, Massachussets",US,Newton,Newtonville,Middlesex
-255,"Bridport, Vermont",US, ,Bridport,Addison
-256,"Saco, Maine",US,Saco, ,York
-257,"South Amboy, New Jersey",US,South Amboy, ,Middlesex
-258,"Norfolk, Virginia",US,Norfolk, , 
-259,"Metuchen, New Jersey",US,Metuchen, ,Middlesex
-260,"Mishawaka, Indiana",US,Mishawaka, ,Saint Joseph
-261,"MAPLEWOOD, New Jersey",US,Maplewood, ,Essex
-262,"Northborough, Massachussets",US,Northborough, ,Worcester County
-263,"Annapolis, Maryland",US,Annapolis, ,Anne Arundel
-264,"East Longmeadow, Massachussets",US,East Longmeadow, ,Hampden County
-265,"Overland Park, Kansas",US,Overland Park, ,Johnson
-266,"Akron, Ohio",US,Akron, ,Summit
-267,"Atlanta, Georgia",US,Atlanta, ,Fulton
-268,"Palm City, Florida",US,Palm City, ,Martin
-269,"Howell, New Jersey",US,Howell Township, ,Monmouth
-270,"Sheffield, Massachussets",US,Sheffield, ,Berkshire
-271,"Milltown, New Jersey",US,Milltown, ,Middlesex
-272,"Naugatuck, Connecticut",US,Naugatuck, ,Naugatuck Valley Planning Region
-273,"Montville, New Jersey",US,Montville, ,Morris
-274,"Miami Beach, Florida",US,Miami Beach, ,Miami-Dade
-275,"Portland, Maine",US,Portland, ,Cumberland
-276,"Gerrardstown, West Virginia",US, ,Gerrardstown,Berkeley
-277,"Stockbridge, Massachussets",US,Stockbridge, ,Berkshire
-278,"North Egremont, Massachussets",US,Egremont, ,Berkshire
-279,"Austin, Texas",US,Austin, ,Travis
-280,"Bantam, Connecticut",US,Litchfield,Bantam,Northwest Hills Planning Region
-281,"Williamsburg, Virginia",US,Williamsburg, , 
-282,"Durham, New Hampshire",US,New Durham, ,Strafford
-283,"Mesquite, Texas",US,Mesquite, ,Dallas
-284,"Highlands, New Jersey",US,Highlands, ,Monmouth
-285,"Evanston, Illinois",US,Evanston, ,Cook County
-286,"Bridgeport, Connecticut",US,Bridgeport, ,Greater Bridgeport Planning Region
-287,"Wayne, New Jersey",US,Wayne, ,Passaic
-288,"Hume, Virginia",US, ,Hume,Fauquier
-289,"Chester, New Jersey",US,Chester, ,Morris
-290,"Gahanna, Ohio",US,Gahanna, ,Franklin County
-291,"Madison, Wisconsin",US,Madison,Bowens Addition,Dane
-292,"Malvern, Pennsylvania",US,Malvern, ,Chester
-293,"Weybridge, Vermont",US,Weybridge, ,Addison
-294,"Wrightstown, New Jersey",US,Wrightstown, ,Burlington
-295,"Lakewood Township, New Jersey",US,Lakewood Township, ,Ocean
-296,"Shelburne, Vermont",US,Shelburne, ,Chittenden
-297,"Beverly, New Jersey",US,Beverly, ,Burlington
-298,"Anderson, South Carolina",US,Anderson, ,Anderson
-299,"Danbury, Connecticut",US,Danbury, ,Western Connecticut Planning Region
-300,"Wallington, New Jersey",US,Wallington, ,Bergen
-301,"Sarasota, Florida",US,Sarasota, ,Sarasota
-302,"Greensboro, North Carolina",US,Greensboro, ,Guilford
-303,"Melbourne, Florida",US,Melbourne, ,Brevard County
-304,"Great Barrington, Massachussets",US,Great Barrington, ,Berkshire
-305,"Fort Pierce, Florida",US,Fort Pierce, ,Saint Lucie
-306,"New Providence, New Jersey",US,New Providence, ,Union
-307,"Warwick, Rhode Island",US,Warwick, ,Kent
-308,"Whiting, New Jersey",US,Manchester Township,Whiting,Ocean
-309,"River Vale, New Jersey",US,River Vale, ,Bergen
-310,"Carrollton, Texas",US,Carrollton, ,Dallas
-311,"Caldwell, New Jersey",US,Caldwell, ,Essex
-312,"Bethesda, Maryland",US,Bethesda, ,Montgomery
-313,"Leonia, New Jersey",US,Leonia, ,Bergen
-314,"Williamsport, Pennsylvania",US,Williamsport, ,Lycoming
-315,"Greenfield, Massachussets",US,Greenfield, ,Franklin County
-316,"Eagle, Idaho",US,Eagle, ,Ada
-317,"Voorhees, New Jersey",US,Voorhees Township, ,Camden
-318,"Mattawan, Michigan",US,Mattawan, ,Van Buren
-319,"Renick, West Virginia",US, ,Renicks Valley,Greenbrier
-320,"Andover, Massachussets",US,Andover, ,Essex County
-321,"Lewes, Delaware",US,Lewes, ,Sussex
-322,"Morristown, New Jersey",US,Morristown, ,Morris
-323,"Tallahassee, Florida",US,Tallahassee, ,Leon
-324,"Chevy Chase, Maryland",US,Town of Chevy Chase, ,Montgomery
-325,"Millburn, New Jersey",US,Millburn, ,Essex
-326,"California, Pennsylvania",US,California, ,Washington
-327,"Belle Mead, New Jersey",US,Montgomery Township, ,Somerset
-328,"Waterbury, Connecticut",US,Waterbury, ,Naugatuck Valley Planning Region
-329,"Philo, California",US,Philo, ,Mendocino
-330,"Brielle, New Jersey",US,Brielle,Brielle Borough,Monmouth
-331,"East Brunswick, New Jersey",US,East Brunswick, ,Middlesex
-332,"Ridgeway, South Carolina",US,Ridgeway, ,Fairfield
-333,"Hamilton, New Jersey",US,Hamilton Township, ,Mercer
-334,"Southport, Connecticut",US,Southport,Southport,Greater Bridgeport Planning Region
-335,"Putney, Vermont",US,Putney, ,Windham County
-336,"Harrington Park, New Jersey",US,Harrington Park, ,Bergen
-337,"San Antonio, Texas",US,San Antonio, ,Bexar
-338,"Edgewater, New Jersey",US,Edgewater, ,Bergen
-339,"Waitsfield, Vermont",US,Waitsfield, ,Washington
-340,"Worthington, Massachussets",US,Worthington, ,Hampshire
-341,"Absecon, New Jersey",US,Absecon, ,Atlantic
-342,"Rutherford, New Jersey",US,East Rutherford, ,Bergen
-343,"Ashburn, Virginia",US,Ashburn, ,Loudoun
-344,"Indiana, Pennsylvania",US, , ,Indiana
-345,"Kennett Square, Pennsylvania",US,Kennett Square, ,Chester
-346,"Riverdale, New Jersey",US,Riverdale, ,Morris
-347,"Gainesville, Florida",US,Gainesville, ,Alachua
-348,"Kalamazoo, Michigan",US,Kalamazoo, ,Kalamazoo
-349,"Columbus, North Carolina",US, , ,Columbus
-350,"Port Townsend, Washington",US,Port Townsend, ,Jefferson
-351,"Sandy Hook, Connecticut",US,Newtown,Sandy Hook,Western Connecticut Planning Region
-352,"Norwood, New Jersey",US,Norwood, ,Bergen
-353,"Brookfield, Connecticut",US,Brookfield, ,Western Connecticut Planning Region
-354,"Aberdeen, New Jersey",US,Aberdeen Township, ,Monmouth
-355,"Paterson, New Jersey",US,Paterson, ,Passaic
-356,"Arlington Heights, Illinois",US,Arlington Heights, ,Cook County
-357,"Summit, New Jersey",US,Summit, ,Union
-358,"Darien, Connecticut",US,Darien, ,Western Connecticut Planning Region
-359,"Jamaica Plain, Massachussets",US,Boston,Jamaica Plain,Suffolk
-360,"Santa Fe, New Mexico",US,Santa Fe, ,Santa Fe
-361,"Chatham, New Jersey",US,Chatham, ,Morris
-362,"Ashland, Virginia",US,Ashland, ,Hanover
-363,"Cupertino, California",US,Cupertino, ,Santa Clara
-364,"Great Falls, Virginia",US,Great Falls, ,Fairfax
-365,"Hillsdale, New Jersey",US,Hillsdale, ,Bergen
-366,"San Francisco, California",US,San Francisco, , 
-367,"Vernon, New Jersey",US,Harding Township,New Vernon,Morris
-368,"Oakland, New Jersey",US,Oakland, ,Bergen
-369,"Succasunna, New Jersey",US,Roxbury Township,Succasunna,Morris
-370,"North Haledon, New Jersey",US,North Haledon, ,Passaic
-371,"Edison, New Jersey",US,Edison, ,Middlesex
-372,"Midland Park, New Jersey",US,Midland Park, ,Bergen
-373,"Bergenfield, New Jersey",US,Bergenfield, ,Bergen
-374,"Point Pleasant, New Jersey",US,Point Pleasant, ,Ocean
-375,"Prescott,  Arizona",US,Prescott, ,Yavapai
-376,"Montvale, New Jersey",US,Montvale, ,Bergen
-377,"Warren, New Jersey",US, , ,Warren
-378,"Pullman, Washington",US,Pullman, ,Whitman
-379,"Closter, New Jersey",US,Closter, ,Bergen
-380,"Tucker, Georgia",US,Tucker, ,DeKalb
-381,"Oakland, California",US,Oakland, ,Alameda County
-382,"North Yarmouth, Maine",US,North Yarmouth, ,Cumberland
-383,"Rehoboth, Massachussets",US,Rehoboth, ,Bristol
-384,"Riverside, Connecticut",US,Greenwich,Riverside,Western Connecticut Planning Region
-385,"Mout Bethel, Pennsylvania",US,Bethel Park, ,Allegheny
-386,"Jersey City, New Jersey",US,Jersey City, ,Hudson
-387,"Nokomis, Florida",US,Nokomis, ,Sarasota
-388,"Bryn Mawr, Pennsylvania",US,Lower Merion Township,Bryn Mawr,Montgomery
-389,"Woodland Hills, California",US,Los Angeles,Woodland Hills-Warner Center Neighborhood Council District,Los Angeles
-390,"Princeton Junction, New Jersey",US,West Windsor,Princeton Junction,Mercer
-391,"Keene, New Hampshire",US,Keene, ,Cheshire
-392,"West New York, New Jersey",US,West New York, ,Hudson
-393,"Verona, New Jersey",US,Verona, ,Essex
-394,"Bridgewater, Connecticut",US,Bridgewater, ,Western Connecticut Planning Region
-395,"South Bound Brook, New Jersey",US,South Bound Brook, ,Somerset
-396,"Beverly Hills, California",US,Beverly Hills, ,Los Angeles
-397,"Auburn, ",US,Auburn, ,King
-398,"Sparta, New Jersey",US,Sparta Township, ,Sussex
-399,"Menlo Park, California",US,Menlo Park, ,San Mateo
-400,"Sewell, New Jersey",US,Mantua Township,Sewell,Gloucester
-401,"Crownsville, Maryland",US,Crownsville, ,Anne Arundel
-402,"Silver Spring, Maryland",US,Silver Spring, ,Montgomery
-403,"Corona Del Mar, California",US,Newport Beach, ,Orange
-404,"fair lawn, New Jersey",US,Fair Lawn, ,Bergen
-405,"El Sobrante, California",US,El Sobrante, ,Contra Costa
-406,"Santa Monica, California",US,Santa Monica, ,Los Angeles
-407,"Elkins Park, Pennsylvania",US,Cheltenham Township,Elkins Park Gardens,Montgomery
-408,"South Pasadena, California",US,South Pasadena, ,Los Angeles
-409,"Westwood, New Jersey",US,Westwood, ,Bergen
-410,"Glen Rock, New Jersey",US,Glen Rock, ,Bergen
-411,"Santa Maria, California",US,Santa Maria, ,Santa Barbara
-412,"Raleigh, North Carolina",US,Raleigh, ,Wake
-413,"Kensington, Maryland",US,Kensington, ,Montgomery
-414,"Takoma Park, Maryland",US,Takoma Park, ,Montgomery
-415,"Park Ridge, New Jersey",US,Park Ridge, ,Bergen
-416,"Alexandria, Virginia",US,Alexandria, , 
-417,"Boonton, New Jersey",US,Boonton, ,Morris
-418,"Allston, Massachussets",US,Boston,Allston,Suffolk
-419,"Concord, Massachussets",US,Concord, ,Middlesex County
-420,"Jewett City, Connecticut",US,Pachaug,Jewett City,Southeastern Connecticut Planning Region
-421,"Montclair, New Jersey",US,Montclair, ,Essex
-422,"Santa Ana, California",US,Santa Ana, ,Orange
-423,"Brattleboro, Vermont",US,Brattleboro, ,Windham County
-424,"Weldon Spring, Missouri",US,Weldon Spring, ,Saint Charles County
-425,"Bayonne, New Jersey",US,Bayonne, ,Hudson
-426,"Westerly, Rhode Island",US,Westerly, ,Washington
-427,"Santa Rosa, California",US,Santa Rosa, ,Sonoma
-428,"Evansville, Indiana",US,Evansville, ,Vanderburgh
-429,"Mahwah, New Jersey",US,Mahwah, ,Bergen
-430,"Silver City, New Mexico",US,Silver City, ,Grant
-431,"Sunny Island Beach, Florida",US,Sunny Isles Beach, ,Miami-Dade
-432,"Fort Lauderdale, Florida",US,Fort Lauderdale, ,Broward County
-433,"Kensington, California",US,Kensington, ,Contra Costa
-434,"St. Augustine, Florida",US,Saint Augustine, ,Saint Johns
-435,"Avon, Connecticut",US,Avon, ,Capitol Planning Region
-436,"Wolverine lake, Michigan",US,Commerce Charter Township,Wolverine Lake,Oakland
-437,"Scottsdale,  Arizona",US,Scottsdale, ,Maricopa
-438,"Lincoln University, Pennsylvania",US,Lincoln University, ,Chester
-439,"Ketchum, Idaho",US,Ketchum, ,Blaine
-440,"Westport, Connecticut",US,Westport, ,Western Connecticut Planning Region
-441,"Sharon, Connecticut",US,Sharon, ,Northwest Hills Planning Region
-442,"Boulder, Colorado",US,Boulder, ,Boulder
-443,"Corinth, Vermont",US, ,Cookville,Orange
-444,"Green Valley,  Arizona",US,Sahuarita, ,Pima
-445,"Lakeville, Massachussets",US,Lakeville, ,Plymouth
-446,"Yonkers, Virginia",US,Yonkers, ,Westchester
-447,"Ada, Michigan",US, ,Ada Township,Kent
-448,"Collinsville, Connecticut",US,Canton,Collinsville,Capitol Planning Region
-449,"Northford, Connecticut",US,North Branford,Northford,South Central Connecticut Planning Region
-450,"Chicago, Illinois",US,Chicago, ,Cook County
-451,"HOPEWELL, New Jersey",US,Hopewell, ,Mercer
-452,"Aventura, Florida",US,Aventura, ,Miami-Dade
-453,"Villanova, Pennsylvania",US,Radnor Township,Villanova,Delaware
-454,"Secaucus, New Jersey",US,Secaucus, ,Hudson
-455,"Stroudsburg, Pennsylvania",US,Stroudsburg, ,Monroe
-456,"Northridge, California",US,Northridge,Northridge East Neighborhood Council District,Los Angeles
-457,"Vineyard Haven, Massachussets",US,West Tisbury, ,Dukes
-458,"Chico, California",US,Chico, ,Butte
-459,"Alameda, California",US,Alameda, ,Alameda County
-460,"Merion Station, Pennsylvania",US,Upper Merion Township,Conshohocken Station,Montgomery
-461,"Hudson, Ohio",US,Hudson, ,Summit
-462,"Madison, Connecticut",US,Madison, ,South Central Connecticut Planning Region
-463,"Ofallon, Illinois",US,Odin, ,Marion
-464,"Mendham, New Jersey",US,Mendham, ,Morris
-465,"Old Greenwich, Connecticut",US,Greenwich,Old Greenwich,Western Connecticut Planning Region
-466,"Attleboro, Massachussets",US,North Attleborough, ,Bristol
-467,"Providence, Rhode Island",US,Providence, ,Providence
-468,"Fort Washington, Pennsylvania",US,Upper Dublin Township,Fort Washington,Montgomery
-469,"Eastham, Massachussets",US,Easthampton, ,Hampshire
-470,"Venice, Florida",US,Venice, ,Sarasota
-471,"Flemington, New Jersey",US,Flemington, ,Hunterdon
-472,"Parsippany, New Jersey",US,Parsippany-Troy Hills, ,Morris
-473,"Riverside, Illinois",US,Riverside, ,Cook County
-474,"Pasadena, California",US,Pasadena, ,Los Angeles
-475,"Alpha, New Jersey",US,Alpha, ,Warren
-476,"Lawrenceville, New Jersey",US,Lawrence Township,Lawrenceville,Mercer
-477,"Carnegie, Pennsylvania",US,Pittsburgh, ,Allegheny
-478,"Salt Lake City, Utah",US,Salt Lake City, ,Salt Lake
-479,"Charlottesville, Virginia",US,Charlottesville, , 
-480,"Laurel Springs, New Jersey",US,Laurel Springs, ,Camden
-481,"Paramus, New Jersey",US,Paramus, ,Bergen
-482,"Hoboken, New Jersey",US,Hoboken, ,Hudson
-483,"Jackson, New Jersey",US,Jackson Township, ,Ocean
-484,"Arroyo Grande, California",US,Arroyo Grande, ,San Luis Obispo
-485,"Cheverly, Maryland",US,Cheverly, ,Prince George's
-486,"Troy, Michigan",US,Troy, ,Oakland
-487,"Arlington, Virginia",US, , ,Arlington
-488,"Westerville, Ohio",US,Westerville, ,Franklin County
-489,"Highland, Maryland",US,Highland, ,Howard
-490,"Santa Cruz, California",US,Santa Cruz, ,Santa Cruz
-491,"Sonoma, California",US, , ,Sonoma
-492,"Acworth, Georgia",US,Acworth, ,Cobb
-493,"Sausalito, California",US,Sausalito, ,Marin
-494,"Port Charlotte, Florida",US,Port Charlotte, ,Charlotte
-495,"Shenandoah Junction, West Virginia",US,Shenandoah Junction,Duffields,Jefferson
-496,"Saint Petersburg, Florida",US,Saint Petersburg, ,Pinellas
-497,"Port Saint Lucie, Florida",US,Port Saint Lucie, ,Saint Lucie
-498,"Scotch Plains, New Jersey",US,Scotch Plains, ,Union
-499,"Easton, Connecticut",US,Easton, ,Greater Bridgeport Planning Region
-500,"Houston, Texas",US,Houston, ,Harris
-501,"Sacremento, California",US, , ,Sacramento
-502,"Falmouth, Maine",US,Falmouth, ,Cumberland
-503,"West New Yo, New Jersey",US,West New York, ,Hudson
-504,"Huntersville, North Carolina",US,Huntersville, ,Mecklenburg
-505,"North Bergen, New Jersey",US,North Bergen, ,Hudson
-506,"Newbury, New Hampshire",US,Newbury, ,Merrimack
-507,"Cambridge, Massachussets",US,Cambridge, ,Middlesex
-508,"New Canaan, Connecticut",US,New Canaan, ,Western Connecticut Planning Region
-509,"Winter Park, Florida",US,Winter Park, ,Orange County
-510,"Mill Valley, California",US,Mill Valley, ,Marin
-511,"Watertown, Massachussets",US,Watertown, ,Middlesex County
-512,"Randolph, Vermont",US,Randolph, ,Orange
-513,"Township of Washington, New Jersey",US,Township of Washington, ,Bergen
-514,"Hackensack, New Jersey",US,Hackensack, ,Bergen
-515,"Claremont, California",US,Claremont, ,Los Angeles
-516,"Kinnelon, New Jersey",US,Kinnelon, ,Morris
-517,"Lakewood, Colorado",US,Lakewood, ,Jefferson
-518,"West Orange, New Jersey",US,West Orange, ,Essex
-519,"Bonita Springs, Florida",US,Bonita Springs, ,Lee
-520,"Buxton, Maine",US,Buxton, ,York
-521,"Cullman, Alabama",US, , ,Cullman
-522,"Brookline, Massachussets",US,Brookline, ,Norfolk
-523,"Waldwick, New Jersey",US,Waldwick, ,Bergen
-524,"Lancaster, Pennsylvania",US,Lancaster, ,Lancaster
-525,"Cape Coral, Florida",US,Cape Coral, ,Lee
-526,"Bridgton, Maine",US,Bridgton, ,Cumberland
-527,"Sisters, Oregon",US,Sisters, ,Deschutes
-528,"Falls Church, Virginia",US,Falls Church, , 
-529,"Harwinton, Connecticut",US,Harwinton, ,Northwest Hills Planning Region
-530,"Newton, New Jersey",US,Newton, ,Sussex
-531,"North Caldwell, New Jersey",US,North Caldwell, ,Essex
-532,"Dayton, Texas",US,Dayton, ,Liberty
-533,"Boca Raton, Florida",US,Boca Raton, ,Palm Beach
-534,"Rolling Meadows, Illinois",US,Rolling Meadows, ,Cook County
-535,"New Milford, Connecticut",US,New Milford, ,Western Connecticut Planning Region
-536,"Richmond, California",US,Richmond, ,Contra Costa
-537,"Columbia, Missouri",US,Columbia, ,Boone
-538,"Palm Beach, Florida",US,West Palm Beach, ,Palm Beach
-539,"Chapel Hill, North Carolina",US,Chapel Hill, ,Orange
-540,"Bradenton, Florida",US,Bradenton, ,Manatee
-541,"Redding, Connecticut",US,Redding, ,Western Connecticut Planning Region
-542,"Portland, Oregon",US,Portland, ,Multnomah
-543,"Williamsport, Indiana",US,Williamsport, ,Warren
-544,"Cranford, New Jersey",US,Cranford, ,Union
-545,"Durham, North Carolina",US,Durham, ,Durham
-546,"Wyndmoor, Pennsylvania",US,Springfield Township, ,Montgomery
-547,"Boston, Massachussets",US,Boston, ,Suffolk
-548,"Lebanon, New Jersey",US,Lebanon, ,Hunterdon
-549,"Oklahoma City, Oklahoma",US,Oklahoma City, ,Oklahoma
-550,"Wynnewood, Pennsylvania",US,Lower Merion Township,Wynnewood,Montgomery
-551,"Asheville, North Carolina",US,Asheville, ,Buncombe
-552,"North Andover, Massachussets",US, ,North Andover,Essex County
+0,"Naples, Florida",US,Naples, ,Collier
+1,"Jewett City, Connecticut",US,Pachaug,Jewett City,Southeastern Connecticut Planning Region
+2,"Wheaton, Illinois",US,Wheaton, ,DuPage County
+3,"Pearl River, New York",US,Pearl River, ,Rockland
+4,"Cairo, New York",US,Cairo, ,Greene County
+5,"Pinellas Park, Florida",US,Pinellas Park, ,Pinellas
+6,"Oakland, New Jersey",US,Oakland, ,Bergen
+7,"Bayside, New York",US,Bayside,Queens, 
+8,"Cold Spring, New York",US,Cold Spring, ,Putnam
+9,"Wappingers Falls, New York",US,Wappingers Falls, ,Dutchess
+10,"Middle Village, New York",US,Middle Village,Queens, 
+11,"Port Jervis, New York",US,Port Jervis, ,Orange
+12,"Melrose, New York",US,New York,The Bronx, 
+13,"Kinnelon, New Jersey",US,Kinnelon, ,Morris
+14,"Scituate, Massachussets",US,Scituate, ,Plymouth
+15,"Richmondville, New York",US,Richmondville,Richmondville,Schoharie
+16,"Circleville, New York",US,Wallkill,Circleville,Orange
+17,"Briarwood, New York",US,New York,Queens, 
+18,"Melbourne, Florida",US,Melbourne, ,Brevard County
+19,"Dedham, Massachussets",US,Dedham, ,Norfolk
+20,"Glasco, New York",US,Saugerties,Glasco,Ulster
+21,"Salisbury Mills, New York",US,Blooming Grove,Salisbury Mills,Orange
+22,"Douglaston, New York",US,New York,Queens, 
+23,"Durham, North Carolina",US,Durham, ,Durham
+24,"West Coxsackie, New York",US,Coxsackie,West Coxsackie,Greene County
+25,"Muttontown, New York",US,Muttontown, ,Nassau
+26,"Montville, New Jersey",US,Montville, ,Morris
+27,"Wesley Hills, New York",US,Wesley Hills, ,Rockland
+28,"Ulster Park, New York",US,Lincoln Park, ,Ulster
+29,"Tuscon,  Arizona",US, , ,Pima
+30,"Buxton, Maine",US,Buxton, ,York
+31,"Chester, New York",US,Chester,Chester,Orange
+32,"Milton, Georgia",US,Milton, ,Fulton
+33,"Coram, New York",US,Brookhaven,Coram,Suffolk
+34,"Queensbury, New York",US,Queensbury, ,Warren
+35,"South Pasadena, California",US,South Pasadena, ,Los Angeles
+36,"Des Moines, Iowa",US,Des Moines, ,Polk
+37,"Stony Point, New York",US,Stony Point, ,Rockland
+38,"Hudson, Ohio",US,Hudson, ,Summit
+39,"Hastings on Hudson, New York",US,Hastings-on-Hudson, ,Westchester
+40,"Redding Center, Connecticut",US,Redding, ,Western Connecticut Planning Region
+41,"Somers, New York",US,Somers, ,Westchester
+42,"Boiceville, New York",US,Olive,Boiceville,Ulster
+43,"Queens, New York",US,New York,Queens, 
+44,"Riverdale, New Jersey",US,Riverdale, ,Morris
+45,"Grandview On Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
+46,"Homosassa, Florida",US,Homosassa, ,Citrus
+47,"Wallkill, New York",US,Wallkill, ,Orange
+48,"Santa Maria, California",US,Santa Maria, ,Santa Barbara
+49,"Arlington, Texas",US,Arlington, ,Tarrant County
+50,"Laramie, Wyoming",US,Laramie, ,Albany
+51,"San Francisco, California",US,San Francisco, , 
+52,"Vernon, New Jersey",US,Harding Township,New Vernon,Morris
+53,"Somerville, Massachussets",US,Somerville, ,Middlesex
+54,"Tarzana, California",US,Los Angeles,Tarzana,Los Angeles
+55,"West End, North Carolina",US,West End, ,Moore
+56,"Lake George, New York",US,Lake George,Lake George,Warren
+57,"White Sulphur Springs, New York",US,Liberty,White Sulphur Springs,Sullivan
+58,"Copake, New York",US,Copake, ,Columbia
+59,"Sarasota, Florida",US,Sarasota, ,Sarasota
+60,"North River, New York",US,Islip,North Great River,Suffolk
+61,"Clifton Park, New York",US,Clifton Park, ,Saratoga
+62,"Rensselaerville, New York",US,Rensselaerville, ,Albany
+63,"Putnam Valley, New York",US,Putnam Valley, ,Putnam
+64,"Arroyo Grande, California",US,Arroyo Grande, ,San Luis Obispo
+65,"Cassadaga, New York",US,Stockton,Cassadaga,Chautauqua
+66,"Glenwood Springs, Colorado",US,Glenwood Springs, ,Garfield
+67,"Scarborough, New York",US,Scarborough,Briarcliff Manor,Westchester
+68,"Acworth, Georgia",US,Acworth, ,Cobb
+69,"Tallahassee, Florida",US,Tallahassee, ,Leon
+70,"Moriches, New York",US,Brookhaven,Moriches,Suffolk
+71,"Darien, Georgia",US,Darien, ,McIntosh
+72,"Long island City, New York",US,Long Island City,Queens, 
+73,"Islip, New York",US,Islip, ,Suffolk
+74,"West Islip, New York",US,Islip,West Islip,Suffolk
+75,"Mohegan Lake, New York",US,Yorktown,Lake Mohegan,Westchester
+76,"Old Tappan, New Jersey",US,Old Tappan, ,Bergen
+77,"Hillsdale, New Jersey",US,Hillsdale, ,Bergen
+78,"Glen Oaks, New York",US,Glen Oaks,Queens, 
+79,"Bardonia, New York",US,Bardonia, ,Rockland
+80,"Allendale, New Jersey",US,Allendale, ,Bergen
+81,"Glens Falls, New York",US,Glens Falls, ,Warren
+82,"North Egremont, Massachussets",US,Egremont, ,Berkshire
+83,"Woodbury, Connecticut",US,Woodbury, ,Naugatuck Valley Planning Region
+84,"Bridgehampton, New York",US,Southampton,Bridgehampton,Suffolk
+85,"West New Yo, New Jersey",US,West New York, ,Hudson
+86,"Marietta, Georgia",US,Marietta, ,Cobb
+87,"Attleboro, Massachussets",US,North Attleborough, ,Bristol
+88,"Spuyten Duyvil, New York",US,New York,The Bronx, 
+89,"Chappaqua, New York",US,Chappaqua, ,Westchester
+90,"Alexandria, Virginia",US,Alexandria, , 
+91,"Briarcliff, New York",US,Ossining,Briarcliff Manor,Westchester
+92,"Orangeburg, New York",US,Orangeburg, ,Rockland
+93,"Charlotte, North Carolina",US,Charlotte, ,Mecklenburg
+94,"Eastham, Massachussets",US,Easthampton, ,Hampshire
+95,"Kensington, Maryland",US,Kensington, ,Montgomery
+96,"Granite Springs, New York",US,Somers,Granite Springs,Westchester
+97,"Verona, New Jersey",US,Verona, ,Essex
+98,"Tucker, Georgia",US,Tucker, ,DeKalb
+99,"Woodside, California",US,Woodside, ,San Mateo
+100,"Goshen, Connecticut",US,Goshen, ,Northwest Hills Planning Region
+101,"Stormville, New York",US,East Fishkill,Stormville,Dutchess
+102,"Roseland, New Jersey",US,Roseland, ,Essex
+103,"Glen Rock, New Jersey",US,Glen Rock, ,Bergen
+104,"Florham Park, New Jersey",US,Florham Park, ,Morris
+105,"Bishops Corner, Connecticut",US,Southington,Bishops Corner,Capitol Planning Region
+106,"Corfu, New York",US,Pembroke,Corfu,Genesee
+107,"Jefferson Valley, New York",US,Yorktown,Shrub Oak,Westchester
+108,"new york, New York",US,New York, , 
+109,"Great Falls, Virginia",US,Great Falls, ,Fairfax
+110,"SALISBURY, North Carolina",US,Salisbury, ,Rowan
+111,"Castleton-on-Hudson, NY, USA, New York",US,Castleton-on-Hudson, ,Rensselaer
+112,"Green Cove Springs, Florida",US,Green Cove Springs, ,Clay
+113,"Accord, New York",US,Rochester,Accord,Ulster
+114,"Cupertino, California",US,Cupertino, ,Santa Clara
+115,"Menands, New York",US,Colonie,Menands,Albany
+116,"Geneseo, New York",US,Geneseo, ,Livingston
+117,"Boston, Massachussets",US,Boston, ,Suffolk
+118,"East Hampton, New York",US,East Hampton,East Hampton,Suffolk
+119,"FLUSHING, New York",US,Flushing,Queens, 
+120,"Nelsonville, New York",US,Philipstown,Nelsonville,Putnam
+121,"Caldwell, New Jersey",US,Caldwell, ,Essex
+122,"Babylon, New York",US,Babylon,Babylon,Suffolk
+123,"Santa Fe, New Mexico",US,Santa Fe, ,Santa Fe
+124,"Cambridge, Massachussets",US,Cambridge, ,Middlesex
+125,"Cedar Grove, New Jersey",US,Cedar Grove, ,Essex
+126,"Mahopac, New York",US,Carmel,Mahopac Falls,Putnam
+127,"Fort Lee, New Jersey",US,Fort Lee, ,Bergen
+128,"Riverside, Illinois",US,Riverside, ,Cook County
+129,"Lindenhurst, New York",US,Babylon,Lindenhurst,Suffolk
+130,"Minneapolis, Minnesota",US,Minneapolis, ,Hennepin
+131,"East Rockaway, New York",US,East Rockaway, ,Nassau
+132,"Vero Beach, Florida",US,Vero Beach, ,Indian River County
+133,"South Richmond Hill, New York",US,New York,Queens, 
+134,"Matawan, New Jersey",US,Matawan, ,Monmouth
+135,"Maplewood, New Jersey",US,Maplewood, ,Essex
+136,"Mamaronek, New York",US,Mamaroneck, ,Westchester
+137,"Villanova, Pennsylvania",US,Radnor Township,Villanova,Delaware
+138,"Warwick, Rhode Island",US,Warwick, ,Kent
+139,"Edison, New Jersey",US,Edison, ,Middlesex
+140,"Union, New Jersey",US, , ,Union
+141,"Maitland, Florida",US,Maitland, ,Orange County
+142,"Burlington, Vermont",US,Burlington, ,Chittenden
+143,"Napa, California",US,Napa, ,Napa
+144,"MAPLEWOOD, New Jersey",US,Maplewood, ,Essex
+145,"Gainesville, Florida",US,Gainesville, ,Alachua
+146,"Warren, New Jersey",US, , ,Warren
+147,"Ridgewood, New Jersey",US,Ridgewood, ,Bergen
+148,"Mesa,  Arizona",US,Mesa, ,Maricopa
+149,"Tuxedo Park, New York",US,Tuxedo,Tuxedo Park,Orange
+150,"ALBANY, New York",US,Albany, ,Albany
+151,"Thornwood, New York",US,Mount Pleasant,Thornwood,Westchester
+152,"Kensington, California",US,Kensington, ,Contra Costa
+153,"Croton Falls, New York",US,North Salem,Croton Falls,Westchester
+154,"Coxsackie, New York",US,Coxsackie,Coxsackie,Greene County
+155,"Croton on Hudson, New York",US,Cortlandt,Croton-on-Hudson,Westchester
+156,"Schenecady, New York",US,Schenectady, ,Schenectady County
+157,"fair lawn, New Jersey",US,Fair Lawn, ,Bergen
+158,"Monsey, New York",US,Monsey, ,Rockland
+159,"Castleton on Hudson, New York",US,Castleton-on-Hudson, ,Rensselaer
+160,"Highland Lakes, New Jersey",US,Vernon Township, ,Sussex
+161,"Ferndale, Washington",US,Ferndale, ,Whatcom
+162,"Peekskill, New York",US,Peekskill, ,Westchester
+163,"Rocky Point, New York",US,Brookhaven,Rocky Point,Suffolk
+164,"Long Island City, New York",US,Long Island City,Queens, 
+165,"Gornment, New York",US,New York, , 
+166,"West Haverstraw, New York",US,Haverstraw,West Haverstraw,Rockland
+167,"Port Townsend, Washington",US,Port Townsend, ,Jefferson
+168,"New York, New York",US,New York, , 
+169,"Elka Park, New York",US,Hunter,Elka Park,Greene County
+170,"Lake Hill, New York",US,East Fishkill,Hillside Lake,Dutchess
+171,"Mill Valley, California",US,Mill Valley, ,Marin
+172,"Bethel, Connecticut",US,Bethel, ,Western Connecticut Planning Region
+173,"Montreal, ",US,Montréal, ,Agglomération de Montréal
+174,"Allston, Massachussets",US,Boston,Allston,Suffolk
+175,"River Edge, New Jersey",US,River Edge, ,Bergen
+176,"Carle Place, New York",US,Carle Place, ,Nassau
+177,"Succasunna, New Jersey",US,Roxbury Township,Succasunna,Morris
+178,"Renick, West Virginia",US, ,Renicks Valley,Greenbrier
+179,"Winchester, Virginia",US,Winchester, , 
+180,"Garnerville, New York",US,Haverstraw,Garnerville,Rockland
+181,"Englewood, New Jersey",US,Englewood, ,Bergen
+182,"Keene, New York",US,Keene, ,Essex
+183,"Baldwin, New York",US,Baldwin, ,Nassau
+184,"Stroudsburg, Pennsylvania",US,Stroudsburg, ,Monroe
+185,"Roxbury, New York",US,Roxbury, ,Delaware
+186,"Glenford, New York",US,Hurley,Glenford,Ulster
+187,"East Nassau, New York",US,Nassau,East Nassau,Rensselaer
+188,"Hillsborough, New Jersey",US,Hillsborough Township, ,Somerset
+189,"Princeton, New Jersey",US,Princeton, ,Mercer
+190,"Mattituck, New York",US,Southold,Mattituck,Suffolk
+191,"San Diego, California",US,San Diego, ,San Diego
+192,"Spencerport, New York",US,Spencerport, ,Monroe County
+193,"Scarsdale, New York",US,Scarsdale, ,Westchester
+194,"Lakewood Township, New Jersey",US,Lakewood Township, ,Ocean
+195,"East Amherst, New York",US,Clarence,East Amherst,Erie County
+196,"Hamilton, New Jersey",US,Hamilton Township, ,Mercer
+197,"Voorheesville, New York",US,New Scotland,Voorheesville,Albany
+198,"Howell, New Jersey",US,Howell Township, ,Monmouth
+199,"Summit, New Jersey",US,Summit, ,Union
+200,"Lake Grove, New York",US,Brookhaven,Lake Grove,Suffolk
+201,"Burnt Hills, New York",US,Ballston,Burnt Hills,Saratoga
+202,"Santa Monica, California",US,Santa Monica, ,Los Angeles
+203,"Oak Creek, Colorado",US,Oak Creek, ,Routt
+204,"Greene, New York",US, , ,Greene County
+205,"Rhinecliff, New York",US,Rhinebeck,Rhinecliff,Dutchess
+206,"Keene, New Hampshire",US,Keene, ,Cheshire
+207,"Kalamazoo, Michigan",US,Kalamazoo, ,Kalamazoo
+208,"New Milford, New Jersey",US,New Milford, ,Bergen
+209,"Woodmere, New York",US,Woodmere, ,Nassau
+210,"Sleightsburg, New York",US,Esopus,Sleightsburg,Ulster
+211,"Ballston Lakes, New York",US,Ballston, ,Saratoga
+212,"Lexington, Massachussets",US,Lexington, ,Middlesex County
+213,"Indiana, Pennsylvania",US, , ,Indiana
+214,"Randolph, Vermont",US,Randolph, ,Orange
+215,"Cornwall on Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
+216,"Halesite, New York",US,Huntington,Fort Hill,Suffolk
+217,"Seaford, New York",US,Seaford, ,Nassau
+218,"Ridgefield Park, New Jersey",US,Ridgefield Park, ,Bergen
+219,"Beverly, New Jersey",US,Beverly, ,Burlington
+220,"Centereach, New York",US,Brookhaven,Centereach,Suffolk
+221,"East Meadow, New York",US,East Meadow, ,Nassau
+222,"Croton-On-Hudson, New York",US,Cortlandt,Croton-on-Hudson,Westchester
+223,"Mastic Beach, New York",US,Brookhaven,Mastic Beach,Suffolk
+224,"Kennett Square, Pennsylvania",US,Kennett Square, ,Chester
+225,"Rye Brook, New York",US,Rye Brook, ,Westchester
+226,"Old Greenwich, Connecticut",US,Greenwich,Old Greenwich,Western Connecticut Planning Region
+227,"Palm Beach, Florida",US,West Palm Beach, ,Palm Beach
+228,"Tenafly, New Jersey",US,Tenafly, ,Bergen
+229,"Harrington Park, New Jersey",US,Harrington Park, ,Bergen
+230,"Riverdale, New York",US,Riverdale,The Bronx, 
+231,"Ridgeway, South Carolina",US,Ridgeway, ,Fairfield
+232,"Malden-on-Hudson, New York",US,Saugerties,Malden-on-Hudson,Ulster
+233,"Tivoli, New York",US,Red Hook,Tivoli,Dutchess
+234,"Bal Harbour, Florida",US,Bal Harbour Village, ,Miami-Dade
+235,"Nashville, Tennessee",US,Nashville, ,Davidson
+236,"Mountainville, New York",US,Cornwall,Mountainville,Orange
+237,"Hopkins, South Carolina",US, ,Hopkins,Richland
+238,"Fort Montgomery, New York",US,Fort Montgomery, ,Orange
+239,"Pawling, New York",US,Pawling,Pawling,Dutchess
+240,"Utica, New York",US,Utica, ,Oneida
+241,"Absecon, New Jersey",US,Absecon, ,Atlantic
+242,"Schuylerville, New York",US,Schuylerville, ,Saratoga
+243,"Galesville, Wisconsin",US,Galesville, ,Trempealeau
+244,"Argyle, New York",US,Argyle,Argyle,Washington
+245,"West Redding, Connecticut",US,Redding, ,Western Connecticut Planning Region
+246,"Westwood, New Jersey",US,Westwood, ,Bergen
+247,"Blooming Grove, New York",US,South Blooming Grove, ,Orange
+248,"BROOKLYN, New York",US,New York,Brooklyn, 
+249,"Collinsville, Connecticut",US,Canton,Collinsville,Capitol Planning Region
+250,"Hampton Park, New Jersey",US,Stillwater, ,Sussex
+251,"West Babylon, New York",US,Babylon,West Babylon,Suffolk
+252,"Williamsburg, Virginia",US,Williamsburg, , 
+253,"Newton, New Jersey",US,Newton, ,Sussex
+254,"Medford, Oregon",US,Medford, ,Jackson
+255,"Westland, Michigan",US,Westland, ,Wayne
+256,"Haverstraw, New York",US,Haverstraw,Haverstraw,Rockland
+257,"Hume, Virginia",US, ,Hume,Fauquier
+258,"Clintondale, New York",US,Plattekill,Clintondale,Ulster
+259,"Clinton, New Jersey",US,Clinton, ,Hunterdon
+260,"Worthington, Massachussets",US,Worthington, ,Hampshire
+261,"Webster, New York",US,Webster,Webster,Monroe County
+262,"Freeport, New York",US,Freeport, ,Nassau
+263,"Massapequa, New York",US,Massapequa, ,Nassau
+264,"Newbury, New Hampshire",US,Newbury, ,Merrimack
+265,"Olean, New York",US,Olean, ,Cattaraugus
+266,"Roanoke, Virginia",US,Roanoke, , 
+267,"Gerrardstown, West Virginia",US, ,Gerrardstown,Berkeley
+268,"Fort Ann, New York",US,Fort Ann,Fort Ann,Washington
+269,"Millerton, New York",US,Millerton, ,Dutchess
+270,"Grandview-On-Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
+271,"Castleton On Hudson, New York",US,Castleton-on-Hudson, ,Rensselaer
+272,"Cordtlandt Manor, New York",US,Cortlandt, ,Westchester
+273,"Monmouth Junction, New Jersey",US,South Brunswick,Monmouth Junction,Middlesex
+274,"Olivebridge, New York",US,Olive,Olivebridge,Ulster
+275,"Wingdale, New York",US,Wingdale, ,Dutchess
+276,"Philo, California",US,Philo, ,Mendocino
+277,"Williamsport, Indiana",US,Williamsport, ,Warren
+278,"Kill Buck, New York",US,Great Valley,Kill Buck,Cattaraugus
+279,"Norht Creek, New York",US,Yonkers, ,Westchester
+280,"Rensselaer, New York",US, , ,Rensselaer
+281,"La Jolla, California",US,San Diego,La Jolla,San Diego
+282,"Central Islip, New York",US,Islip,Central Islip,Suffolk
+283,"Coral Gables, Florida",US,Coral Gables, ,Miami-Dade
+284,"Hartford, Connecticut",US,Hartford, ,Capitol Planning Region
+285,"New Milford, Connecticut",US,New Milford, ,Western Connecticut Planning Region
+286,"Elmont, New York",US,Elmont, ,Nassau
+287,"Wilton, Connecticut",US,Wilton, ,Western Connecticut Planning Region
+288,"Whitestone, New York",US,Whitestone,Queens, 
+289,"Marmora, New Jersey",US,Upper Township,Marmora,Cape May
+290,"Chevy Chase, Maryland",US,Town of Chevy Chase, ,Montgomery
+291,"Tuxedo Road, New York",US,Tuxedo,Tuxedo Park,Orange
+292,"Gansevoort, New York",US,New York,Manhattan, 
+293,"Storrs, Connecticut",US,Mansfield,Storrs,Capitol Planning Region
+294,"Westhampton Beach, New York",US,Southampton,Westhampton Beach,Suffolk
+295,"Southampton, New York",US,Southampton,Southampton,Suffolk
+296,"Southport, Connecticut",US,Southport,Southport,Greater Bridgeport Planning Region
+297,"Port Henry, New York",US,Moriah,Port Henry,Essex
+298,"Hutchinson, Minnesota",US,Hutchinson, ,McLeod
+299,"Connelly, New York",US,Esopus,Connelly,Ulster
+300,"Wainscott, New York",US,East Hampton,Wainscott,Suffolk
+301,"Dayton, Texas",US,Dayton, ,Liberty
+302,"NEW YORK, New York",US,New York, , 
+303,"Woodhaven, New York",US,Woodhaven,Queens, 
+304,"Port Washington, New York",US,Port Washington, ,Nassau
+305,"Mount Tremper, New York",US,Shandaken, ,Ulster
+306,"Neversink, New York",US,Neversink, ,Sullivan
+307,"Howard Beach, New York",US,New York,Queens, 
+308,"Avon, Connecticut",US,Avon, ,Capitol Planning Region
+309,"Leeds, New York",US,Catskill,Leeds,Greene County
+310,"Harrison, New York",US,Harrison, ,Westchester
+311,"Albany, New York",US,Albany, ,Albany
+312,"Northborough, Massachussets",US,Northborough, ,Worcester County
+313,"Carmel, New York",US,Carmel, ,Putnam
+314,"West Hurley, New York",US,Hurley,West Hurley,Ulster
+315,"Hannacroix, New York",US,New Baltimore,Hannacroix,Greene County
+316,"Greenwich, New York",US,New York,Manhattan, 
+317,"Water Mill, New York",US,Southampton,Water Mill,Suffolk
+318,"Evansville, Indiana",US,Evansville, ,Vanderburgh
+319,"Bridgton, Maine",US,Bridgton, ,Cumberland
+320,"Dumont, New Jersey",US,Dumont, ,Bergen
+321,"Buchanan, New York",US,Cortlandt,Buchanan,Westchester
+322,"Balston Lake, New York",US,Lakeview, ,Nassau
+323,"Edgewater, New Jersey",US,Edgewater, ,Bergen
+324,"Ny, New York",US,New York, , 
+325,"Piermont, New York",US,Piermont, ,Rockland
+326,"Grand Gorge, New York",US,Roxbury,Grand Gorge,Delaware
+327,"Fort Lauderdale, Florida",US,Fort Lauderdale, ,Broward County
+328,"Naples, New York",US,Naples,Naples,Ontario
+329,"Rensseler, New York",US, , ,Rensselaer
+330,"Athens, New York",US,Athens,Athens,Greene County
+331,"Halethorpe, Maryland",US,Arbutus,Halethorpe,Baltimore County
+332,"Stuyvesant Falls, New York",US,Stuyvesant,Stuyvesant Falls,Columbia
+333,"orangeburg, New York",US,Orangeburg, ,Rockland
+334,"Bethlehem, Pennsylvania",US,Bethlehem, ,Northampton
+335,"Brielle, New Jersey",US,Brielle,Brielle Borough,Monmouth
+336,"Kingston, ",US,Kingston, ,Kingston
+337,"West New York, New Jersey",US,West New York, ,Hudson
+338,"South Bound Brook, New Jersey",US,South Bound Brook, ,Somerset
+339,"Township of Washington, New Jersey",US,Township of Washington, ,Bergen
+340,"New york, New York",US,New York, , 
+341,"Kings Park, New York",US,Smithtown,Kings Park,Suffolk
+342,"West Tisbury, Massachussets",US,West Tisbury, ,Dukes
+343,"Yonkers, New York",US,Yonkers, ,Westchester
+344,"Elizaville, New York",US,Livingston,Elizaville,Columbia
+345,"Livingston, Montana",US,Livingston, ,Park
+346,"Tucson,  Arizona",US,Tucson, ,Pima
+347,"Clinton, New York",US, , ,Clinton
+348,"Stony Brook, New York",US,Stony Brook University,Stony Brook,Suffolk
+349,"Mt Vernon, New York",US,Mount Vernon, ,Westchester
+350,"Rolling Meadows, Illinois",US,Rolling Meadows, ,Cook County
+351,"Weston, Connecticut",US,Weston, ,Western Connecticut Planning Region
+352,"Union Beach, New Jersey",US,Union Beach, ,Monmouth
+353,"Union City, New Jersey",US,Union City, ,Hudson
+354,"Tarryown, New York",US,Tarrytown, ,Westchester
+355,"El Sobrante, California",US,El Sobrante, ,Contra Costa
+356,"Stewart Manor, New York",US,Stewart Manor, ,Nassau
+357,"Pasadena, California",US,Pasadena, ,Los Angeles
+358,"Norwalk, Connecticut",US,Norwalk, ,Western Connecticut Planning Region
+359,"Fishkill, New York",US,Fishkill,Fishkill,Dutchess
+360,"Malvern, Pennsylvania",US,Malvern, ,Chester
+361,"Gulfport, Florida",US,Gulfport, ,Pinellas
+362,"Austin, Texas",US,Austin, ,Travis
+363,"Acton, Massachussets",US,Acton, ,Middlesex County
+364,"Patchogue, New York",US,Brookhaven,Patchogue,Suffolk
+365,"Tolland, Connecticut",US, , ,Capitol Planning Region
+366,"Rye, New York",US,Rye, ,Westchester
+367,"Ellenville, New York",US,Wawarsing,Ellenville,Ulster
+368,"College Point, New York",US,College Point,Queens, 
+369,"Bovina Center, New York",US,Bovina Center,Bovina,Delaware
+370,"Wilmington, Delaware",US,Wilmington, ,New Castle
+371,"Long Beach, California",US,Long Beach, ,Los Angeles
+372,"Cooperstown, New York",US,Cooperstown, ,Otsego
+373,"Clarendon, Vermont",US,Clarendon, ,Rutland County
+374,"South Fallsburg, New York",US,Fallsburg,South Fallsburg,Sullivan
+375,"Haworth, New Jersey",US,Haworth, ,Bergen
+376,"Callicoon Center, New York",US,Town of Callicoon,Callicoon Center,Sullivan
+377,"Tulsa, Oklahoma",US,Tulsa, ,Tulsa
+378,"Roslyn, New York",US,Roslyn, ,Nassau
+379,"Woodland Hills, California",US,Woodland Hills,Woodland Hills-Warner Center Neighborhood Council District,Los Angeles
+380,"Ozone Park, New York",US,Ozone Park,Queens, 
+381,"Cincinnati, Ohio",US,Cincinnati, ,Hamilton
+382,"Johnsburg, New York",US,Johnsburg, ,Warren
+383,"Spencertown, New York",US,Austerlitz,Spencertown,Columbia
+384,"Cudahy, Wisconsin",US,Cudahy, ,Milwaukee County
+385,"New Paltz, New York",US,New Paltz,New Paltz,Ulster
+386,"Ho Ho Kus, New Jersey",US,Ho-Ho-Kus, ,Bergen
+387,"Woodbury, New York",US,Woodbury, ,Nassau
+388,"Sayville, New York",US,Islip,Sayville,Suffolk
+389,"Carrollton, Texas",US,Carrollton, ,Dallas
+390,"Hillsdale, New York",US,Hillsdale, ,Columbia
+391,"Kingston, New York",US,Kingston, ,Ulster
+392,"Wayne, New Jersey",US,Wayne, ,Passaic
+393,"Hartsdale, New York",US,Hartsdale, ,Westchester
+394,"South Salem, New York",US,Lewisboro,South Salem,Westchester
+395,"Amsterdam, New York",US,New York,Manhattan, 
+396,"Jamaica Plain, Massachussets",US,Boston,Jamaica Plain,Suffolk
+397,"White Plains, New York",US,White Plains, ,Westchester
+398,"Annapolis, Maryland",US,Annapolis, ,Anne Arundel
+399,"West Park, New York",US,New York,Manhattan, 
+400,"Corinth, Vermont",US, ,Cookville,Orange
+401,"Mamaroneck, New York",US,Mamaroneck, ,Westchester
+402,"Norfolk, Massachussets",US, , ,Norfolk
+403,"Kinderhook, New York",US,Kinderhook,Kinderhook,Columbia
+404,"Milton, New York",US,Milton, ,Saratoga
+405,"Auburn, ",US,Auburn, ,King
+406,"Clarksburg, Massachussets",US,Clarksburg, ,Berkshire
+407,"Andover, Massachussets",US,Andover, ,Essex County
+408,"Jamestown, New York",US,Jamestown, ,Chautauqua
+409,"Williamsville, New York",US,Amherst,Williamsville,Erie County
+410,"Lincoln University, Pennsylvania",US,Lincoln University, ,Chester
+411,"Brattleboro, Vermont",US,Brattleboro, ,Windham County
+412,"Bridport, Vermont",US, ,Bridport,Addison
+413,"Florissant, Missouri",US,Florissant, ,Saint Louis County
+414,"New Windsor, New York",US,New Windsor, ,Orange
+415,"Aberdeen, New Jersey",US,Aberdeen Township, ,Monmouth
+416,"Flagler Beach, Florida",US,Flagler Beach, ,Flagler
+417,"Riverside, Connecticut",US,Greenwich,Riverside,Western Connecticut Planning Region
+418,"Beacon, New York",US,Beacon, ,Dutchess
+419,"Marco Island, Florida",US,Marco Island, ,Collier
+420,"Shelburne, Vermont",US,Shelburne, ,Chittenden
+421,"Rego Park, New York",US,New York,Queens, 
+422,"Sleepy Hollow, New York",US,Mount Pleasant,Sleepy Hollow,Westchester
+423,"Cape Coral, Florida",US,Cape Coral, ,Lee
+424,"Lewes, Delaware",US,Lewes, ,Sussex
+425,"Demarest, New Jersey",US,Demarest, ,Bergen
+426,"Portland, Oregon",US,Portland, ,Multnomah
+427,"Los Angeles, California",US,Los Angeles, ,Los Angeles
+428,"Eagle, Idaho",US,Eagle, ,Ada
+429,"Safety Harbor, Florida",US,Safety Harbor, ,Pinellas
+430,"Shrub Oak, New York",US,Yorktown,Shrub Oak,Westchester
+431,"South Orange, New Jersey",US,South Orange, ,Essex
+432,"Salem, New York",US,New Salem, ,York County
+433,"Schodack Landing, New York",US,Schodack,Schodack Landing,Rensselaer
+434,"Green Island, New York",US,Green Island, ,Albany
+435,"Stirling, New Jersey",US,Long Hill,Stirling,Morris
+436,"Washington, ",US,Washington, , 
+437,"Barnegat, New Jersey",US,Barnegat Township, ,Ocean
+438,"Roscoe, New York",US,Rockland,Roscoe,Sullivan
+439,"new york city, New York",US,New York,Manhattan, 
+440,"Newcomb, New York",US, ,Newcomb,Essex
+441,"Ardsley, New York",US,Ardsley, ,Westchester
+442,"Putnam valley, New York",US,Putnam Valley, ,Putnam
+443,"Silver Spring, Maryland",US,Silver Spring, ,Montgomery
+444,"Rosendale, New York",US,Rosendale,Tillson,Ulster
+445,"Queens Vlg, New York",US,New York,Queens, 
+446,"Climax, New York",US,Coxsackie,Climax,Greene County
+447,"Richmond, New York",US,Richmondville,Richmondville,Schoharie
+448,"Clinton Corners, New York",US,Clinton Corners, ,Dutchess
+449,"Santa Ana, California",US,Santa Ana, ,Orange
+450,"Fayetteville, New York",US,Manlius,Fayetteville,Onondaga
+451,"Holmes, New York",US,New York,Manhattan, 
+452,"Crownsville, Maryland",US,Crownsville, ,Anne Arundel
+453,"Thiells, New York",US,Haverstraw,Thiells,Rockland
+454,"Briarcliff Manor, New York",US,Ossining,Briarcliff Manor,Westchester
+455,"Wolverine lake, Michigan",US,Commerce Charter Township,Wolverine Lake,Oakland
+456,"Walton, New York",US,Walton,Walton,Delaware
+457,"Gahanna, Ohio",US,Gahanna, ,Franklin County
+458,"Croton, New York",US,Cortlandt,Croton-on-Hudson,Westchester
+459,"Belle Mead, New Jersey",US,Montgomery Township, ,Somerset
+460,"Elkins Park, Pennsylvania",US,Elkins Park,Elkins Park Gardens,Montgomery
+461,"Sandy Hook, Connecticut",US,Newtown,Sandy Hook,Western Connecticut Planning Region
+462,"North Tonawanda, New York",US,North Tonawanda, ,Niagara
+463,"Eldred, New York",US,Highland,Eldred,Sullivan
+464,"Glenham, New York",US,Fishkill,Glenham,Dutchess
+465,"Seattle, Washington",US,Seattle, ,King
+466,"Rome, New York",US,Rome, ,Oneida
+467,"Norcross, Georgia",US,Norcross, ,Gwinnett
+468,"Hughsonville, New York",US,Wappinger,Hughsonville,Dutchess
+469,"West Columbia, South Carolina",US,West Columbia, ,Lexington
+470,"West Lebanon, New Hampshire",US,Lebanon,West Lebanon,Grafton
+471,"Parsiappany, New York",US,New York, , 
+472,"Sausalito, California",US,Sausalito, ,Marin
+473,"Brentwood, New York",US,Islip,Brentwood,Suffolk
+474,"Tillson, New York",US,Rosendale,Tillson,Ulster
+475,"SLEEPY HOLLOW, New York",US,Mount Pleasant,Sleepy Hollow,Westchester
+476,"Tonawanda, New York",US,Tonawanda, ,Erie County
+477,"North Bergen, New Jersey",US,North Bergen, ,Hudson
+478,"Kerhonkson, New York",US,Wawarsing,Kerhonkson,Ulster
+479,"Columbiaville, New York",US,Stockport,Columbiaville,Columbia
+480,"Glen Cove, New York",US,Glen Cove, ,Nassau
+481,"Richmond Hill, New York",US,Richmond Hill,Queens, 
+482,"Richmond, Virginia",US,Richmond, , 
+483,"Schroon Lake, New York",US,Schroon Lake, ,Essex
+484,"East Greenville, Pennsylvania",US,East Greenville, ,Montgomery
+485,"Alfred, New York",US,Alfred,Alfred,Allegany
+486,"Goldens Bridge, New York",US,Lewisboro,Goldens Bridge,Westchester
+487,"clinton, Oklahoma",US,Clinton, ,Custer
+488,"Baltimore, Maryland",US,Baltimore, , 
+489,"Marlboro, New York",US,Marlboro, ,Ulster
+490,"Westerlo, New York",US,Westerlo, ,Albany
+491,"Newtonville, Massachussets",US,Newton,Newtonville,Middlesex
+492,"Arlington, Virginia",US, , ,Arlington
+493,"Kent Lakes, New York",US,Lake Carmel, ,Putnam
+494,"Shokan, New York",US,Shokan, ,Ulster
+495,"Lackawanna, New York",US,Lackawanna, ,Erie County
+496,"Williamsport, Pennsylvania",US,Williamsport, ,Lycoming
+497,"Williamstown, Massachussets",US,Williamstown, ,Berkshire
+498,"Altamont, New York",US,Guilderland,Altamont,Albany
+499,"West Orange, New Jersey",US,West Orange, ,Essex
+500,"Cohoes, New York",US,Cohoes, ,Albany
+501,"Pittsford, New York",US,Pittsford,Pittsford,Monroe County
+502,"New Canaan, Connecticut",US,New Canaan, ,Western Connecticut Planning Region
+503,"Midlothian, Virginia",US,Midlothian, ,Chesterfield
+504,"Potsdam, New York",US,Potsdam,Potsdam,Saint Lawrence
+505,"Irvington, New York",US,Irvington, ,Westchester
+506,"Tannersville, New York",US,Hunter,Tannersville,Greene County
+507,"VERPLANCK, New York",US,Cortlandt,Verplanck,Westchester
+508,"Calverton, New York",US,Riverhead,Calverton,Suffolk
+509,"Bedford Corners, New York",US,Bedford,Bedford Four Corners,Westchester
+510,"Ancramdale, New York",US,Ancram,Ancramdale,Columbia
+511,"Secaucus, New Jersey",US,Secaucus, ,Hudson
+512,"Katonah, New York",US,Bedford,Katonah,Westchester
+513,"NY, New York",US,New York, , 
+514,"BANGOR, Maine",US,Bangor, ,Penobscot
+515,"Cobleskill, New York",US,Cobleskill,Cobleskill,Schoharie
+516,"Corttlandt Manor, New York",US,Cortlandt, ,Westchester
+517,"Hamden, Connecticut",US,Hamden, ,South Central Connecticut Planning Region
+518,"Florida, New York",US,Florida, ,Montgomery
+519,"Romulus, New York",US, ,Romulus,Seneca
+520,"Verplanck, New York",US,Cortlandt,Verplanck,Westchester
+521,"Manalapan, New Jersey",US,Manalapan, ,Monmouth
+522,"Bloomfield, New York",US,Bloomfield, ,Ontario
+523,"Port St Lucie, Florida",US,Port Saint Lucie, ,Saint Lucie
+524,"Merion Station, Pennsylvania",US,Upper Merion Township,Conshohocken Station,Montgomery
+525,"North Woodmere, New York",US,South Valley Stream,North Woodmere,Nassau
+526,"Lawrenceville, New Jersey",US,Lawrence Township,Lawrenceville,Mercer
+527,"Congers, New York",US,Congers, ,Rockland
+528,"Preston, Maryland",US,Preston, ,Caroline
+529,"Chestnut Ridge, New York",US,Chestnut Ridge, ,Rockland
+530,"Beulah Valley, Colorado",US, ,Beulah Valley,Pueblo
+531,"Columbus, North Carolina",US, , ,Columbus
+532,"Milltown, New Jersey",US,Milltown, ,Middlesex
+533,"Princeton Junction, New Jersey",US,West Windsor,Princeton Junction,Mercer
+534,"Tarrytown, New York",US,Tarrytown, ,Westchester
+535,"East Northport, New York",US,Huntington,East Northport,Suffolk
+536,"Bedford Hills, New York",US,Bedford,Bedford Hills,Westchester
+537,"Putney, Vermont",US,Putney, ,Windham County
+538,"Claremont, California",US,Claremont, ,Los Angeles
+539,"Garrison, New York",US,Garrison,Garrison,Putnam
+540,"Oceanside, New York",US,Oceanside, ,Nassau
+541,"Bronx, New York",US,New York,The Bronx, 
+542,"Nokomis, Florida",US,Nokomis, ,Sarasota
+543,"Harwinton, Connecticut",US,Harwinton, ,Northwest Hills Planning Region
+544,"Flushing, New York",US,Flushing,Queens, 
+545,"Hunter, New York",US,New York,Manhattan, 
+546,"Niverville, New York",US,Kinderhook,Niverville,Columbia
+547,"Sacramento, California",US,Sacramento, ,Sacramento
+548,"Port Saint Lucie, Florida",US,Port Saint Lucie, ,Saint Lucie
+549,"Averill Park, New York",US,Sand Lake,Averill Park,Rensselaer
+550,"Waccabuc, New York",US,Lewisboro,Waccabuc,Westchester
+551,"Delanson, New York",US,Delanson,Duanesburg,Schenectady County
+552,"Stanfordville, New York",US,Stanfordville, ,Dutchess
 553,"Las Vegas, Nevada",US,Las Vegas, ,Clark
-554,"Maplewood, New Jersey",US,Maplewood, ,Essex
-555,"Pittsburgh, Pennsylvania",US,Pittsburgh, ,Allegheny
-556,"Baltimore, Maryland",US,Baltimore, , 
-557,"Galesville, Wisconsin",US,Galesville, ,Trempealeau
-558,"Highland Lakes, New Jersey",US,Vernon Township, ,Sussex
-559,"Monterey, Massachussets",US,Monterey, ,Berkshire
-560,"Kingston, ",JM,Kingston, ,Kingston
-561,"Parkville, Missouri",US,Parkville, ,Platte
-562,"Warrenton, Oregon",US,Warrenton, ,Clatsop
-563,"New Orleans, Louisiana",US,New Orleans, ,Orleans Parish
-564,"West Redding, Connecticut",US,Redding, ,Western Connecticut Planning Region
-565,"Burlington, Vermont",US,Burlington, ,Chittenden
-566,"Jupiter, Florida",US,Jupiter, ,Palm Beach
-567,"Ocala, Florida",US,Ocala, ,Marion
-568,"Summerville, South Carolina",US,Summerville, ,Dorchester
-569,"Dallas, Texas",US,Dallas, ,Dallas
-570,"Somerville, New Jersey",US,Somerville, ,Somerset
-571,"Tucson,  Arizona",US,Tucson, ,Pima
-572,"Haverford, Pennsylvania",US,Lower Merion Township,Haverford,Montgomery
-573,"Darien, Georgia",US,Darien, ,McIntosh
-574,"Plymouth Meeting, Pennsylvania",US,Whitemarsh, ,Montgomery
-575,"Arlington, Texas",US,Arlington, ,Tarrant County
-576,"Riverview, Florida",US,Riverview, ,Hillsborough
-577,"West Tisbury, Massachussets",US,West Tisbury, ,Dukes
-578,"Maitland, Florida",US,Maitland, ,Orange County
-579,"Suwanee, Georgia",US,Suwanee, ,Gwinnett
-580,"Fair Lawn, New Jersey",US,Fair Lawn, ,Bergen
-581,"Arlington, Massachussets",US,Arlington, ,Middlesex
-582,"East Orange, New Jersey",US,East Orange, ,Essex
-583,"Berkeley Heights, New Jersey",US,Berkeley Heights, ,Union
-584,"Allendale, New Jersey",US,Allendale, ,Bergen
-585,"Los Angeles, California",US,Los Angeles, ,Los Angeles
-586,"Whitingham, Vermont",US,Jacksonville,Whitingham,Windham County
-587,"Cudahy, Wisconsin",US,Cudahy, ,Milwaukee County
-588,"Ridgewood, New Jersey",US,Ridgewood, ,Bergen
-589,"Westland, Michigan",US,Westland, ,Wayne
-590,"Mars, Pennsylvania",US,Mars, ,Butler County
-591,"Rivervale, New Jersey",US,River Vale,Rivervale,Bergen
-592,"Stockton, New Jersey",US,Stockton, ,Hunterdon
-593,"Cresskill, New Jersey",US,Cresskill, ,Bergen
-594,"Cos Cob, Connecticut",US,Greenwich,Cos Cob,Western Connecticut Planning Region
-595,"Lake Hopatcong, New Jersey",US,Hopatcong, ,Sussex
-596,"New Fairfield, Connecticut",US,New Fairfield, ,Western Connecticut Planning Region
-597,"Tenafly, New Jersey",US,Tenafly, ,Bergen
-598,"Florham Park, New Jersey",US,Florham Park, ,Morris
-599,"Atlantic Highlands, New Jersey",US,Atlantic Highlands, ,Monmouth
-600,"Dover, New Hampshire",US,Dover, ,Strafford
-601,"Millis, Massachussets",US,Millis, ,Norfolk
-602,"Newton, Massachussets",US,Newton, ,Middlesex
-603,"Sea Isle City, New Jersey",US,Sea Isle City, ,Cape May
-604,"Eliot, Maine",US,Eliot, ,York
-605,"Philadelphia, Pennsylvania",US,Philadelphia, ,Philadelphia
-606,"River Edge, New Jersey",US,River Edge, ,Bergen
-607,"Indianapolis, Indiana",US,Indianapolis, ,Marion County
-608,"Clifton, New Jersey",US,Clifton, ,Passaic
-609,"Haymarket, Virginia",US,Haymarket, ,Prince William
-610,"Marmora, New Jersey",US,Upper Township,Marmora,Cape May
-611,"West Hartford, Connecticut",US,West Hartford, ,Capitol Planning Region
-612,"Chamblee, Georgia",US,Chamblee, ,DeKalb
-613,"Bethlehem, Pennsylvania",US,Bethlehem, ,Northampton
-614,"Fort Myers, Florida",US,Fort Myers, ,Lee
-615,"Flagler Beach, Florida",US,Flagler Beach, ,Flagler
-616,"East Greenville, Pennsylvania",US,East Greenville, ,Montgomery
-617,"Washington, ",US,Washington, , 
-618,"Tolland, Connecticut",US, , ,Capitol Planning Region
-619,"West Caldwell, New Jersey",US,West Caldwell, ,Essex
-620,"Livingston, New Jersey",US,Livingston, ,Essex
-621,"Cave Creek,  Arizona",US,Cave Creek, ,Maricopa
-622,"Barnegat, New Jersey",US,Barnegat Township, ,Ocean
-623,"Woodbury, New York",US,Woodbury, ,Nassau
-624,"Addisleigh Park, New York",US,La Crescenta,Highway Highlands,Los Angeles
-625,"Verplank, New York",US,New Windsor, ,Orange
-626,"Guilderland, New York",US,Guilderland, ,Albany
-627,"Rosendale, New York",US,Rosendale,Tillson,Ulster
-628,"ALBANY, New York",US,Albany, ,Albany
-629,"Manorville, New York",US,Brookhaven,Manorville,Suffolk
-630,"Cornwall on Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
-631,"Blooming Grove, New York",US,South Blooming Grove, ,Orange
-632,"Lake Peekskill, New York",US,Putnam Valley,Lake Peekskill,Putnam
-633,"Philmont, New York",US,Claverack,Philmont,Columbia
-634,"Waccabuc, New York",US,Lewisboro,Waccabuc,Westchester
-635,"Romulus, New York",US, ,Romulus,Seneca
-636,"Greenwich, New York",US,New York,Manhattan, 
-637,"Saratoga Springs, New York",US,Saratoga Springs, ,Saratoga
-638,"Tillson, New York",US,Rosendale,Tillson,Ulster
-639,"New Hampton, New York",US,East Hampton,East Hampton,Suffolk
-640,"Babylon, New York",US,Babylon,Babylon,Suffolk
-641,"Millbrook, New York",US,Millbrook, ,Dutchess
-642,"Brooklyn, New York",US,New York,Brooklyn, 
-643,"Cassadaga, New York",US,Stockton,Cassadaga,Chautauqua
-644,"Rochester, New York",US,Rochester, ,Monroe County
-645,"Ridgewood, New York",US,New York,Queens, 
-646,"Ny, New York",US,New York, , 
-647,"Pomona, New York",US,Haverstraw,Pomona,Rockland
-648,"New Hempstead, New York",US,New Hempstead, ,Rockland
-649,"Breezy Point, New York",US,New York,Queens, 
-650,"Willow, New York",GB, ,Newton-le-Willows,North Yorkshire
-651,"Tuckahoe, New York",US,Southampton,Tuckahoe,Suffolk
-652,"Mt Vernon, New York",US,Mount Vernon, ,Westchester
-653,"Wainscott, New York",US,East Hampton,Wainscott,Suffolk
-654,"Cragsmoor, New York",US,Wawarsing,Cragsmoor,Ulster
-655,"Fleetwood, New York",US,Mount Vernon, ,Westchester
-656,"Wynantskill, New York",US,Wynantskill, ,Rensselaer
-657,"Palenville, New York",US,Catskill,Palenville,Greene County
-658,"Loudonville, New York",US,Colonie,Loudonville,Albany
-659,"Corona, New York",US,New York,Queens County, 
-660,"Carle Place, New York",US,Carle Place, ,Nassau
-661,"North Chatham, New York",US,Chatham,North Chatham,Columbia
-662,"Sag Harbor, New York",US,East Hampton,Sag Harbor,Suffolk
-663,"Sparkill, New York",US,Sparkill, ,Rockland
-664,"VERPLANCK, New York",US,Cortlandt,Verplanck,Westchester
-665,"Malden on Hudson, New York",US,Saugerties,Malden-on-Hudson,Ulster
-666,"Roosevelt Island, New York",US,New York,Manhattan, 
-667,"Bedford Hills, New York",US,Bedford,Bedford Hills,Westchester
-668,"Rinebeck, New York",US,New York, , 
-669,"North River, New York",US,Islip,North Great River,Suffolk
-670,"SLEEPY HOLLOW, New York",US,Mount Pleasant,Sleepy Hollow,Westchester
-671,"Wappinger, New York",US,Wappinger, ,Dutchess
-672,"Beaver Dams, New York",US,Catlin,Beaver Dams,Chemung
-673,"new york, New York",US,New York, , 
-674,"Franklin, New York",US, , ,Franklin
-675,"Parsiappany, New York",US,New York, , 
-676,"West Hampton, New York",US,Southampton,West Hampton Dunes,Suffolk
-677,"West Haverstraw, New York",US,Haverstraw,West Haverstraw,Rockland
-678,"Hurley, New York",US,Hurley,Hurley,Ulster
-679,"Sound Beach, New York",US,Miller Place,Sound Beach,Suffolk
-680,"Southampton, New York",US,Southampton,Southampton,Suffolk
-681,"East Rockaway, New York",US,East Rockaway, ,Nassau
-682,"Grand Gorge, New York",US,Roxbury,Grand Gorge,Delaware
-683,"Wesley Hills, New York",US,Wesley Hills, ,Rockland
-684,"Briarwood, New York",US,New York,Queens, 
-685,"Whitestone, New York",US,New York,Queens, 
-686,"Valley stream, New York",US,Valley Stream, ,Nassau
-687,"BROOKLYN, New York",US,New York,Brooklyn, 
-688,"Ruby, New York",US,Ulster,Ruby,Ulster
-689,"Fort Edward, New York",US,Fort Edward,Fort Edward,Washington
-690,"White Sulphur Springs, New York",US,Liberty,White Sulphur Springs,Sullivan
-691,"Hempstead, New York",US,Hempstead, ,Nassau
-692,"Stillwater, New York",US,Stillwater,Stillwater,Saratoga
-693,"Woodridge, New York",US,Fallsburg,Woodridge,Sullivan
-694,"East Durham, New York",US,Durham,East Durham,Greene County
-695,"Averill Park, New York",US,Sand Lake,Averill Park,Rensselaer
-696,"Richmond, New York",US, ,Richmondville,Schoharie
-697,"Lake Success, New York",US,Lake Success, ,Nassau
-698,"Highland Mills, New York",US,Woodbury,Highland Mills,Orange
-699,"new york city, New York",US,New York,Manhattan, 
-700,"Hannacroix, New York",US,New Baltimore,Hannacroix,Greene County
-701,"Williamsville, New York",US,Amherst,Williamsville,Erie County
-702,"Bloomfield, New York",US,Bloomfield, ,Ontario
-703,"Hastings On Hudson, New York",US,Hastings-on-Hudson, ,Westchester
-704,"Sleightsburg, New York",US,Esopus,Sleightsburg,Ulster
-705,"Montrose, New York",US,Cortlandt,Montrose,Westchester
-706,"Old Tappan, New York",US,Tappan, ,Rockland
-707,"Norht Creek, New York",US,Yonkers, ,Westchester
-708,"Castleton-on-Hudson, New York",US,Castleton-on-Hudson, ,Rensselaer
-709,"Scarborough, New York",US,Scarborough,Briarcliff Manor,Westchester
-710,"Greenville, New York",US,Greenville, ,Orange
-711,"Campbell Hall, New York",US,Hamptonburgh,Campbell Hall,Orange
-712,"Rock Tavern, New York",US,New Windsor,Rock Tavern,Orange
-713,"New Hartford, New York",US,New Hartford, ,Oneida
-714,"Queens Vlg, New York",US,New York,Queens, 
-715,"East Elmhurst, New York",US,New York,Queens, 
-716,"Cazenovia, New York",US,Cazenovia,Cazenovia,Madison
-717,"Lake Grove, New York",US,Brookhaven,Lake Grove,Suffolk
-718,"Brentwood, New York",US,Islip,Brentwood,Suffolk
-719,"Rome, New York",US,Rome, ,Oneida
-720,"South Fallsburg, New York",US,Fallsburg,South Fallsburg,Sullivan
-721,"Far Rockaway, New York",US,New York,Queens, 
-722,"Stuyversant, New York",US,New York, , 
-723,"Valley Stream, New York",US,Valley Stream, ,Nassau
-724,"Brightwaters, New York",US,Islip,Brightwaters,Suffolk
-725,"Buchanan, New York",US,Cortlandt,Buchanan,Westchester
-726,"Great Neck, New York",US,Great Neck, ,Nassau
-727,"Fort Montgomery, New York",US,Fort Montgomery, ,Orange
-728,"Cortland, New York",US, , ,Cortland
-729,"Niverville, New York",US,Kinderhook,Niverville,Columbia
-730,"Croton On Hudson, New York",US,Cortlandt,Croton-on-Hudson,Westchester
-731,"Bardonia, New York",US,Bardonia, ,Rockland
-732,"Inwood, New York",US,New York,Manhattan, 
-733,"Briarcliff, New York",US,Ossining,Briarcliff Manor,Westchester
-734,"Rocky Point, New York",US,Brookhaven,Rocky Point,Suffolk
-735,"Armonk, New York",US,Armonk, ,Westchester
-736,"Orangeburg, New York",US,Orangeburg, ,Rockland
-737,"Monsey, New York",US,Monsey, ,Rockland
-738,"FLUSHING, New York",US,New York,Queens, 
-739,"Hampton Bays, New York",US,Southampton,Hampton Bays,Suffolk
-740,"Sea Cliff, New York",US,Sea Cliff, ,Nassau
-741,"Nassau, New York",US, , ,Nassau
-742,"Otisville, New York",US,Mount Hope,Otisville,Orange
-743,"Pawling, New York",US,Pawling,Pawling,Dutchess
-744,"Kent Cliffs, New York",US,Kent,Kent Cliffs,Putnam
-745,"Cross River, New York",US,Bedford, ,Westchester
-746,"Van Etten, New York",US,Van Etten, ,Chemung
-747,"Clintondale, New York",US,Plattekill,Clintondale,Ulster
-748,"Jericho, New York",US,Jericho, ,Nassau
-749,"Duanesburg, New York",US, ,Duanesburg,Schenectady County
-750,"Cairo, New York",US,Cairo, ,Greene County
-751,"NEw York, New York",US,New York, , 
-752,"Dalmar, New York",US,New York, , 
-753,"Bloomingburg, New York",US,Bloomingburg, ,Sullivan
-754,"Laurel, New York",US,Southold,Laurel,Suffolk
-755,"Grahamsville, New York",US,Neversink,Grahamsville,Sullivan
-756,"Grandview, New York",US,East Greenbush, ,Rensselaer
-757,"Newcomb, New York",US, ,Newcomb,Essex
-758,"Altamont, New York",US,Guilderland,Altamont,Albany
-759,"Rego Park, New York",US,New York,Queens, 
-760,"Eddyville, New York",US,Ulster,Eddyville,Ulster
-761,"Chester, New York",US,Chester,Chester,Orange
-762,"Port Jervis, New York",US,Port Jervis, ,Orange
-763,"South Richmond Hill, New York",US,New York,Queens, 
-764,"Queensbury, New York",US,Queensbury, ,Warren
-765,"Franklin Square, New York",US,Franklin Square, ,Nassau
-766,"Smithtown, New York",US,Smithtown, ,Suffolk
-767,"Cobleskill, New York",US,Cobleskill,Cobleskill,Schoharie
-768,"Claverack, New York",US,Claverack, ,Columbia
-769,"Cherry Valley, New York",US,Cherry Valley,Cherry Valley,Otsego
-770,"Slate Hill, New York",US,Wawayanda,Slate Hill,Orange
-771,"East Chatham, New York",US,Chatham,East Chatham,Columbia
-772,"Grandview-On-Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
-773,"Staatsburg, New York",US,Hyde Park,Staatsburg,Dutchess
-774,"Port Washington, New York",US,Port Washington, ,Nassau
-775,"West Babylon, New York",US,Babylon,West Babylon,Suffolk
-776,"Alfred, New York",US,Alfred,Alfred,Allegany
-777,"Eldred, New York",US,Highland,Eldred,Sullivan
-778,"Balston Lake, New York",US,Lakeview, ,Nassau
-779,"Olmstedville, New York",US, ,Minerva,Essex
-780,"Bovina Center, New York",US, ,Bovina,Delaware
-781,"cortlandt manor, New York",US,Cortlandt,Croton-on-Hudson,Westchester
-782,"Locust Valley, New York",US,Locust Valley, ,Nassau
-783,"Elmhurst, New York",US,New York,Queens, 
-784,"NY, New York",US,New York, , 
-785,"Circleville, New York",US,Wallkill,Circleville,Orange
-786,"Maspeth, New York",US,New York,Queens, 
-787,"Delanson, New York",US, ,Duanesburg,Schenectady County
-788,"Roslyn Heights, New York",US,Roslyn Heights, ,Nassau
-789,"Bloomington, New York",US,Rosendale,Bloomington,Ulster
-790,"Coeymans Hollow, New York",US,Coeymans,Coeymans Hollow,Albany
-791,"Wilmington, New York",US, ,Wilmington,Essex
-792,"Mechanicville, New York",US,Mechanicville, ,Saratoga
-793,"Haverstraw, New York",US,Haverstraw,Haverstraw,Rockland
-794,"Slingerlands, New York",US,Bethlehem,Slingerlands,Albany
-795,"Congers, New York",US,Congers, ,Rockland
-796,"Melrose, New York",US,New York,The Bronx, 
-797,"Copake, New York",US,Copake, ,Columbia
-798,"Sau, New York",US,Saugerties,Saugerties,Ulster
-799,"Mamaronek, New York",US,Mamaroneck, ,Westchester
-800,"Amityville, New York",US,Babylon,Amityville,Suffolk
-801,"Niagara Falls, New York",US,Niagara Falls, ,Niagara
-802,"Ballston Spa, New York",US,Milton,Ballston Spa,Saratoga
-803,"Glendale, New York",US,La Crescenta,Highway Highlands,Los Angeles
-804,"Purchase, New York",US,Rye Brook, ,Westchester
-805,"Napanoch, New York",US,Wawarsing,Napanoch,Ulster
-806,"Johnstown, New York",US,Johnstown, ,Fulton
-807,"Waterford, New York",US,Waterford,Waterford,Saratoga
-808,"Pleasant Valley, New York",US,Pleasant Valley, ,Dutchess
-809,"Hauppauge, New York",US,Smithtown,Hauppauge,Suffolk
-810,"Sugar Loaf, New York",US,Chester,Sugar Loaf,Orange
-811,"Castleton, New York",US,Castleton-on-Hudson, ,Rensselaer
-812,"Clifton Park, New York",US,Clifton Park, ,Saratoga
-813,"East Hampton, New York",US,East Hampton,East Hampton,Suffolk
-814,"Castleton-on-Hudson, NY, USA, New York",US,Castleton-on-Hudson, ,Rensselaer
-815,"Lake George, New York",US,Lake George,Lake George,Warren
-816,"Kew Gardens, New York",US,New York,Queens, 
-817,"Elmont, New York",US,Elmont, ,Nassau
-818,"Valhalla, New York",US,Mount Pleasant,Valhalla,Westchester
-819,"Kenmore, New York",US,Town of Tonawanda,Kenmore,Erie County
-820,"Malden Bridge, New York",US,Chatham,Malden Bridge,Columbia
-821,"Woodhaven, New York",US,New York,Queens, 
-822,"College Point, New York",US,New York,Queens, 
-823,"East Greenbush, New York",US,East Greenbush, ,Rensselaer
-824,"Long Beach, New York",US,Long Beach, ,Nassau
-825,"Cornwall On Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
-826,"Canandaigua, New York",US,Canandaigua, ,Ontario
-827,"Jackson Heights, New York",US,New York,Queens, 
-828,"Clinton, New York",US, , ,Clinton
-829,"Chelsea, New York",US,New York,Manhattan, 
-830,"Schroon Lake, New York",US,Schroon Lake, ,Essex
-831,"Crompond, New York",US,Yorktown,Crompond,Westchester
-832,"Douglaston, New York",US,New York,Queens, 
-833,"Tuxedo Park, New York",US,Tuxedo,Tuxedo Park,Orange
-834,"Straatsburg, New York",US,New York, , 
-835,"Stuyvesant, New York",US,New York,Brooklyn, 
-836,"Auburn, New York",US,Auburn, ,Cayuga
-837,"Craryville, New York",US,Copake,Craryville,Columbia
-838,"Northport, New York",US,Huntington,Northport,Suffolk
-839,"Dover Plains, New York",US,Dover Plains,Bains Corner,Dutchess
-840,"Croton Falls, New York",US,North Salem,Croton Falls,Westchester
-841,"Holmes, New York",US,New York,Manhattan, 
-842,"SunNew Yorkside, New York",US,Yorkshire, ,Cattaraugus
-843,"Hillburn, New York",US,Town of Ramapo,Hillburn,Rockland
-844,"Lackawanna, New York",US,Lackawanna, ,Erie County
-845,"Watermill, New York",US,Southampton, ,Suffolk
-846,"Rockville Center, New York",US,Rockville Centre, ,Nassau
-847,"Hicksville, New York",US,Hicksville, ,Nassau
-848,"Mountainville, New York",US,Cornwall,Mountainville,Orange
-849,"Coxsackie, New York",US,Coxsackie,Coxsackie,Greene County
-850,"sleepy hollow, New York",US,Mount Pleasant,Sleepy Hollow,Westchester
-851,"Kent Lakes, New York",US,Lake Carmel, ,Putnam
-852,"Nelsonville, New York",US,Philipstown,Nelsonville,Putnam
-853,"Hensonville, New York",US,Windham,Hensonville,Greene County
-854,"West Islip, New York",US,Islip,West Islip,Suffolk
-855,"Water Mill, New York",US,Southampton,Water Mill,Suffolk
-856,"Stewart Manor, New York",US,Stewart Manor, ,Nassau
-857,"Corttlandt Manor, New York",US,Cortlandt, ,Westchester
-858,"Granite Springs, New York",US,Somers,Granite Springs,Westchester
-859,"West Harrison, New York",US,Harrison, ,Westchester
-860,"Riverdale, New York",US,New York,The Bronx, 
-861,"Elka Park, New York",US,Hunter,Elka Park,Greene County
-862,"Syracuse, New York",US,Syracuse, ,Onondaga
-863,"Mt. Kisco, New York",US,Mount Kisco, ,Westchester
-864,"Tuxedo Road, New York",US,Tuxedo,Tuxedo Park,Orange
-865,"Port Chester, New York",US,Port Chester, ,Westchester
-866,"Tonawanda, New York",US,Tonawanda, ,Erie County
-867,"Ridge, New York",US,Brookhaven,Ridge,Suffolk
-868,"Barrytown, New York",US,Red Hook,Barrytown,Dutchess
-869,"Newark, New York",US,Newark, ,Wayne
-870,"brooklyn, New York",US,New York,Brooklyn, 
-871,"Central Islip, New York",US,Islip,Central Islip,Suffolk
-872,"Islip, New York",US,Islip, ,Suffolk
-873,"Green Island, New York",US,Green Island, ,Albany
-874,"Stanfordville, New York",US,Stanfordville, ,Dutchess
-875,"Spencerport, New York",US,Spencerport, ,Monroe County
-876,"Coram, New York",US,Brookhaven,Coram,Suffolk
-877,"Jamaica Estates, New York",US,New York,Queens, 
-878,"Rhinbeck, New York",US,Rhinebeck,Rhinecliff,Dutchess
-879,"Valatie, New York",US,Kinderhook,Valatie,Columbia
-880,"Rockaway Beach, New York",US,New York,Queens, 
-881,"Tannersville, New York",US,Hunter,Tannersville,Greene County
-882,"Grandview On Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
-883,"Floral Park, New York",US,Floral Park, ,Nassau
-884,"Spencertown, New York",US,Austerlitz,Spencertown,Columbia
-885,"Columbiaville, New York",US,Stockport,Columbiaville,Columbia
-886,"Portchester, New York",US,Wingdale, ,Dutchess
-887,"Narrowsburg, New York",US,Tusten,Narrowsburg,Sullivan
-888,"Climax, New York",US,Coxsackie,Climax,Greene County
-889,"Stormville, New York",US,East Fishkill,Stormville,Dutchess
-890,"Lloyd Harbor, New York",US,Huntington,Lloyd Harbor,Suffolk
-891,"Tarryown, New York",US,Tarrytown, ,Westchester
-892,"Spring Valley, New York",US,Spring Valley, ,Rockland
-893,"Plattsburgh, New York",US,Plattsburgh, ,Clinton
-894,"Cortland Manor, New York",US,Cortlandt,Croton-on-Hudson,Westchester
-895,"Westerlo, New York",US,Westerlo, ,Albany
-896,"Walden, New York",US,Montgomery,Walden,Orange
-897,"North Salem, New York",US,North Salem, ,Westchester
-898,"Queens, New York",US,New York,Queens, 
-899,"Westbury, New York",US,Westbury, ,Nassau
-900,"Shrub Oak, New York",US,Yorktown,Shrub Oak,Westchester
-901,"Niskayuna, New York",US,Niskayuna, ,Schenectady County
-902,"DOBBS FERRY, New York",US,Dobbs Ferry, ,Westchester
-903,"Florida, New York",US,Florida, ,Montgomery
-904,"Patterson, New York",US,Patterson, ,Putnam
-905,"Pine Plains, New York",US,Pine Plains, ,Dutchess
-906,"Greenlawn, New York",US,Huntington,Greenlawn,Suffolk
-907,"New York Mills, New York",US,Whitestown,New York Mills,Oneida
-908,"Dumont, New York",US,Dumont, ,Bergen
-909,"Pearl River, New York",US,Pearl River, ,Rockland
-910,"Woodmere, New York",US,Woodmere, ,Nassau
-911,"Cambridge, New York",US,Cambridge, ,Washington
-912,"Massapequa, New York",US,Massapequa, ,Nassau
-913,"Harrison, New York",US,Harrison, ,Westchester
-914,"Hawthorne, New York",US,Mount Pleasant,Hawthorne,Westchester
-915,"Goldens Bridge, New York",US,Lewisboro,Goldens Bridge,Westchester
-916,"Rockville Centre, New York",US,Rockville Centre, ,Nassau
-917,"Cooperstown, New York",US,Cooperstown, ,Otsego
-918,"Chestnut Ridge, New York",US,Chestnut Ridge, ,Rockland
-919,"Monticello, New York",US,Monticello, ,Sullivan
-920,"Peru, New York",US,Peru, ,Clinton
-921,"Glasco, New York",US,Saugerties,Glasco,Ulster
-922,"Olivebridge, New York",US,Olive,Olivebridge,Ulster
-923,"Manhasset, New York",US,Manhasset, ,Nassau
-924,"Lindenhurst, New York",US,Babylon,Lindenhurst,Suffolk
-925,"Voorheesville, New York",US,New Scotland,Voorheesville,Albany
-926,"Rensselaerville, New York",US,Rensselaerville, ,Albany
-927,"Saint James, New York",US,Smithtown,Saint James,Suffolk
-928,"Dolgeville, New York",US,Manheim,Dolgeville,Herkimer
-929,"West Seneca, New York",US,West Seneca, ,Erie County
-930,"West Sand Lake, New York",US,Sand Lake,West Sand Lake,Rensselaer
-931,"Ghent, New York",US,Ghent, ,Columbia
-932,"Seaford, New York",US,Seaford, ,Nassau
-933,"Ancramdale, New York",US,Ancram,Ancramdale,Columbia
-934,"Rensselaer, New York",US, , ,Rensselaer
-935,"Huntington, New York",US,Huntington, ,Suffolk
-936,"Wassaic, New York",US,Amenia,Wassaic,Dutchess
-937,"South Salem, New York",US,Lewisboro,South Salem,Westchester
-938,"Menands, New York",US,Colonie,Menands,Albany
-939,"Tomkins Cove, New York",US,Stony Point,Tomkins Cove,Rockland
-940,"Kinderhook, New York",US,Kinderhook,Kinderhook,Columbia
-941,"orangeburg, New York",US,Orangeburg, ,Rockland
-942,"Pittsford, New York",US,Pittsford,Pittsford,Monroe County
-943,"Lake Luzerne, New York",US,Lake Luzerne, ,Warren
-944,"Roslyn, New York",US,Roslyn, ,Nassau
-945,"Atlantic Beach, New York",US,Atlantic Beach, ,Nassau
-946,"Sayville, New York",US,Islip,Sayville,Suffolk
-947,"Hughsonville, New York",US,Wappinger,Hughsonville,Dutchess
-948,"Blauvelt, New York",US,Blauvelt, ,Rockland
-949,"Callicoon, New York",US,Callicoon, ,Sullivan
-950,"Jamestown, New York",US,Jamestown, ,Chautauqua
-951,"Milton, New York",US,Milton, ,Saratoga
-952,"Merrick, New York",US,Merrick, ,Nassau
-953,"Wappinger Falls, New York",US,Wappingers Falls, ,Dutchess
-954,"hudson, New York",US, , , 
-955,"Lagrangeville, New York",US,Lagrangeville, ,Dutchess
-956,"Sunnyside, New York",US,New York,Queens, 
-957,"Oneonta, New York",US,Oneonta, ,Otsego
-958,"Hoosick Falls, New York",US, ,Hoosick,Rensselaer
-959,"Leeds, New York",US,Catskill,Leeds,Greene County
-960,"Pine Bush, New York",US,Pine Bush, ,Orange
-961,"Charlotteville, New York",US,Summit,Charlotteville,Schoharie
-962,"KINGSTON, New York",US,Kingston, ,Ulster
-963,"Mattituck, New York",US,Southold,Mattituck,Suffolk
-964,"Salem, New York",US,New Salem, ,York County
-965,"Shelter Island Heights, New York",US,Shelter Island,Shelter Island Heights,Suffolk
-966,"Westhampton Beach, New York",US,Southampton,Westhampton Beach,Suffolk
-967,"Corfu, New York",US,Pembroke,Corfu,Genesee
-968,"Stony Brook, New York",US,Brookhaven,Stony Brook,Suffolk
-969,"Montebello, New York",US,Montebello, ,Rockland
-970,"Wallkill, New York",US,Wallkill, ,Orange
-971,"Callicoon Center, New York",US,Town of Callicoon,Callicoon Center,Sullivan
-972,"New Hamburg, New York",US,New Hamburg, ,Dutchess
-973,"East Jewett, New York",US, ,Jewett,Greene County
-974,"Ancram, New York",US,Ancram, ,Columbia
-975,"Rockaway Park, New York",US,New York,Queens, 
-976,"Amherst, New York",US,Amherst, ,Erie County
-977,"Mount Upton, New York",US,Guilford,Mount Upton,Chenango
-978,"Phoencicia, New York",US,Shandaken,Phoenicia,Ulster
-979,"North Tonawanda, New York",US,North Tonawanda, ,Niagara
-980,"Roscoe, New York",US,Rockland,Roscoe,Sullivan
-981,"Rotterdam Junction, New York",US,Rotterdam,Rotterdam Junction,Schenectady County
-982,"Sparrowbush, New York",US,Livingston, ,Columbia
-983,"Cochecton, New York",US,Cochecton, ,Sullivan
-984,"Malden-on-Hudson, New York",US,Saugerties,Malden-on-Hudson,Ulster
-985,"Kill Buck, New York",US,Great Valley,Kill Buck,Cattaraugus
-986,"NEW YORK, New York",US,New York, , 
-987,"Rye Brook, New York",US,Rye Brook, ,Westchester
-988,"Patchogue, New York",US,Brookhaven,Patchogue,Suffolk
-989,"West Hurley, New York",US,Hurley,West Hurley,Ulster
-990,"Central Valley, New York",US,New York,Manhattan, 
-991,"West Camp, New York",US,New York,Manhattan, 
-992,"Delhi, New York",US,Delhi,Delhi,Delaware
-993,"Geneseo, New York",US,Geneseo, ,Livingston
-994,"Verplanck, New York",US,Cortlandt,Verplanck,Westchester
-995,"Sharon Springs, New York",US,Sharon Springs, ,Schoharie
-996,"Lake Hill, New York",US,East Fishkill,Hillside Lake,Dutchess
-997,"Honeoye Falls, New York",US,Mendon,Honeoye Falls,Monroe County
-998,"Vestal, New York",US,Vestal, ,Broome
-999,"Oakland Gardens, New York",US,New York,Queens, 
-1000,"Garden City, New York",US,Garden City, ,Nassau
-1001,"Connelly, New York",US,Esopus,Connelly,Ulster
-1002,"Little Neck, New York",US,New York,Queens, 
-1003,"Millwood, New York",US,Millwood,Tompkins Corners,Westchester
-1004,"Millerton, New York",US,Millerton, ,Dutchess
-1005,"Broadalbin, New York",US,Broadalbin, ,Fulton
-1006,"Ballston Lakes, New York",US,Ballston, ,Saratoga
-1007,"South Nyack, New York",US,Nyack, ,Rockland
-1008,"Gornment, New York",US,New York, , 
-1009,"Utica, New York",US,Utica, ,Oneida
-1010,"Lake Katrine, New York",US,Lake Katrine, ,Ulster
-1011,"Levittown, New York",US,Levittown, ,Nassau
-1012,"woodside, New York",US,New York,Queens, 
-1013,"Hollis, New York",US,New York,Queens, 
-1014,"Queens Village, New York",US,New York,Queens, 
-1015,"Castleton On Hudson, New York",US,Castleton-on-Hudson, ,Rensselaer
-1016,"Mastic Beach, New York",US,Brookhaven,Mastic Beach,Suffolk
-1017,"Lexington, New York",US,New York,Manhattan, 
-1018,"Moriches, New York",US,Brookhaven,Moriches,Suffolk
-1019,"Petersburg, New York",US,Petersburgh, ,Rensselaer
-1020,"East Nassau, New York",US,Nassau,East Nassau,Rensselaer
-1021,"Medford, New York",US,Brookhaven,Medford,Suffolk
-1022,"Greene, New York",US, , ,Greene County
-1023,"Highmount, New York",US,Shandaken,Highmount,Ulster
-1024,"Haines Falls, New York",US,Hunter,Haines Falls,Greene County
-1025,"West Coxsackie, New York",US,Coxsackie,West Coxsackie,Greene County
-1026,"Phoenicia, New York",US,Shandaken,Phoenicia,Ulster
-1027,"Elmsford, New York",US,Elmsford, ,Westchester
-1028,"Muttontown, New York",US,Muttontown, ,Nassau
-1029,"Earlville, New York",US,Hamilton,Earlville,Madison
-1030,"Ardsley-on-Hudson, New York",US,Irvington,Ardsley-on-Hudson,Westchester
-1031,"Glens Falls, New York",US,Glens Falls, ,Warren
-1032,"Corinth, New York",US,Corinth,Corinth,Saratoga
-1033,"Potsdam, New York",US,Potsdam,Potsdam,Saint Lawrence
-1034,"Mohegan Lake, New York",US,Yorktown,Lake Mohegan,Westchester
-1035,"Corning, New York",US,Corning, ,Steuben
-1036,"Malden, New York",US,Saugerties,Malden-on-Hudson,Ulster
-1037,"Keene, New York",US,Keene, ,Essex
-1038,"New Baltimore, New York",US,New Baltimore, ,Greene County
-1039,"Port Henry, New York",US,Moriah,Port Henry,Essex
-1040,"Freeport, New York",US,Freeport, ,Nassau
-1041,"Schenecady, New York",US,Schenectady, ,Schenectady County
-1042,"Lincolndale, New York",US,Somers,Lincolndale,Westchester
-1043,"Clinton Corners, New York",US,Clinton Corners, ,Dutchess
-1044,"New york, New York",US,New York, , 
-1045,"Neversink, New York",US,Neversink, ,Sullivan
-1046,"Annandale-on-Hudson, New York",US,Red Hook,Annandale-on-Hudson,Dutchess
-1047,"Lynbrook, New York",US,Lynbrook, ,Nassau
-1048,"Ballston Lake, New York",US,Ballston,Ballston Lake,Saratoga
-1049,"Shokan, New York",US,Shokan, ,Ulster
-1050,"West Hempstead, New York",US,West Hempstead, ,Nassau
-1051,"Fort Montgonery, New York",US, , ,Montgomery
-1052,"Plainview, New York",US,Plainview, ,Nassau
-1053,"Taghanic, New York",US,New York, , 
-1054,"Amenia, New York",US,Amenia, ,Dutchess
-1055,"East Northport, New York",US,Huntington,East Northport,Suffolk
-1056,"South Setauket, New York",US,Brookhaven,South Setauket,Suffolk
-1057,"Mount Tremper, New York",US,Shandaken, ,Ulster
-1058,"Baldwinsville, New York",US,Lysander,Baldwinsville,Onondaga
-1059,"Cordtlandt Manor, New York",US,Cortlandt, ,Westchester
-1060,"North Bellmore, New York",US,North Bellmore, ,Nassau
-1061,"Ellenville, New York",US,Wawarsing,Ellenville,Ulster
-1062,"Williston Park, New York",US,Williston Park, ,Nassau
-1063,"Unadilla, New York",US,Unadilla,Unadilla,Otsego
-1064,"Fort Ann, New York",US,Fort Ann,Fort Ann,Washington
-1065,"Pine Hill, New York",US,Shandaken,Pine Hill,Ulster
-1066,"Teoti, New York",US,New York, , 
-1067,"West Fulton, New York",US,Caroga,Caroga Lake,Fulton
-1068,"Washingtonville, New York",US,Washingtonville, ,Orange
-1069,"Cortlandt, New York",US,Cortlandt, ,Westchester
-1070,"Thornwood, New York",US,Mount Pleasant,Thornwood,Westchester
-1071,"Garnerville, New York",US,Haverstraw,Garnerville,Rockland
-1072,"bronx, New York",US,New York,The Bronx, 
-1073,"Endicott, New York",US,Endicott, ,Broome
-1074,"North Massapequa, New York",US,North Massapequa, ,Nassau
-1075,"Burnt Hills, New York",US,Ballston,Burnt Hills,Saratoga
-1076,"Oceanside, New York",US,Oceanside, ,Nassau
-1077,"Grandview-on-Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
-1078,"Walton, New York",US,Walton,Walton,Delaware
-1079,"Spencer, New York",US,Spencer,Spencer,Tioga
-1080,"Rexford, New York",US,Clifton Park,Rexford,Saratoga
-1081,"Poughkeepsie Town, New York",US,Town of Poughkeepsie, ,Dutchess
-1082,"Wingdale, New York",US,Wingdale, ,Dutchess
-1083,"Newfane, New York",US,Newfane, ,Niagara
-1084,"Windham, New York",US,Windham, ,Greene County
-1085,"Setauket, New York",US,Brookhaven,Setauket,Suffolk
-1086,"Hunter, New York",US,New York,Manhattan, 
-1087,"Olean, New York",US,Olean, ,Cattaraugus
-1088,"Binghampton, New York",US,Binghamton, ,Broome
-1089,"Rensseler, New York",US, , ,Rensselaer
-1090,"Bellport, New York",US,Brookhaven,Bellport,Suffolk
-1091,"Hillsdale, New York",US,Hillsdale, ,Columbia
-1092,"Glen Oaks, New York",US,New York,Queens, 
-1093,"Huntington Station, New York",US,Huntington,Huntington Station,Suffolk
-1094,"Hastings-On-Hudson, New York",US,Hastings-on-Hudson, ,Westchester
-1095,"Marlboro, New York",US,Marlboro, ,Ulster
-1096,"Round Lake, New York",US,Malta,Round Lake,Saratoga
-1097,"North White Plains, New York",US,White Plains, ,Westchester
-1098,"Gansevoort, New York",US,New York,Manhattan, 
-1099,"Glen Cove, New York",US,Glen Cove, ,Nassau
-1100,"Maryknoll, New York",US,Lackawanna, ,Erie County
-1101,"East Amherst, New York",US,Clarence,East Amherst,Erie County
-1102,"Richmondville, New York",US, , ,Schoharie County
-1103,"Putnam valley, New York",US,Town of Putnam Valley, ,Putnam County
-1104,"Baldwin, New York",US,Baldwin,Town of Hempstead,Nassau County
-1105,"Carmel, New York",US,Town of Carmel, ,Putnam County
-1106,"Carmel Hamlet, New York",US,Town of Carmel, ,Putnam County
-1107,"Milan, New York",US, , ,Dutchess County
-1108,"Salisbury Mills, New York",US,Town of Cornwall,Town of Blooming Grove,Orange County
-1109,"Croton, New York",US,Village of Croton-on-Hudson, ,Westchester County
-1110,"Johnsburg, New York",US, , ,Warren County
-1111,"North Woodmere, New York",US,South Valley Stream,Town of Hempstead,Nassau County
-1112,"Wantagh, New York",US,Wantagh,Town of Hempstead,Nassau County
-1113,"Cottekill, New York",US, , ,Ulster County
-1114,"Salt Point, New York",US, ,Town of Pleasant Valley,Dutchess County
-1115,"Herkimer, New York",US, , ,Herkimer County
-1116,"Spuyten Duyvil, New York",US,City of New York,The Bronx,Bronx County
-1117,"Poughquag, New York",US,Town of Beekman, ,Dutchess County
-1118,"Rockaway Point, New York",US,City of New York,Queens,Queens County
-1119,"Willsboro, New York",US, , ,Essex County
-1120,"Long island City, New York",US,City of New York,Queens,Queens County
-1121,"Quogue, New York",US,Town of Southampton, ,Suffolk County
-1122,"Montgomery, New York",US, , ,Montgomery County
-1123,"Richmond Hill, New York",US,City of New York,Queens,Queens County
-1124,"Sloatsburg, New York",US, ,Town of Ramapo,Rockland County
-1125,"Selkirk, New York",US,Town of Bethlehem, ,Albany County
-1126,"Cropseyville, New York",US, , ,Rensselaer County
-1127,"Jamaica, New York",US,City of New York,Queens,Queens County
-1128,"Bedford Corners, New York",US, , ,Cattaraugus County
-1129,"Upper Nyack, New York",US, ,Town of Clarkstown,Rockland County
-1130,"Rock Hill, New York",US, ,Town of Thompson,Sullivan County
-1131,"CHAPPAQUA, New York",US, ,Town of New Castle,Westchester County
-1132,"Argyle, New York",US, , ,Washington County
-1133,"Ravena, New York",US, , ,Albany County
-1134,"Cohoes, New York",US,City of Cohoes, ,Albany County
-1135,"Roxbury, New York",US, , ,Delaware County
-1136,"West Shokan, New York",US, ,Town of Olive,Ulster County
-1137,"Centereach, New York",US,Centereach, ,Suffolk County
-1138,"Amsterdam, New York",US,City of Amsterdam, ,Montgomery County
-1139,"Middle Village, New York",US,City of New York,Queens,Queens County
-1140,"Glen Head, New York",US, ,Town of Oyster Bay,Nassau County
-1141,"EAST NORTHPORT, New York",US,East Northport, ,Suffolk County
-1142,"Old Westbury, New York",US, ,Town of North Hempstead,Nassau County
-1143,"New Hyde Park, New York",US,Village of New Hyde Park,Town of North Hempstead,Nassau County
-1144,"Bridgehampton, New York",US,Town of Southampton, ,Suffolk County
-1145,"East Meadow, New York",US,East Meadow,Town of Hempstead,Nassau County
-1146,"Howard Beach, New York",US,City of New York,Queens,Queens County
-1147,"Margaretville, New York",US, ,Town of Middletown,Delaware County
-1148,"Latham, New York",US,Town of Colonie, ,Albany County
-1149,"Ozone Park, New York",US,City of New York,Queens,Queens County
-1150,"Webster, New York",US,Village of Webster, ,Monroe County
-1151,"Naples, New York",US, , ,Ontario County
-1152,"Mineola, New York",US, ,Town of North Hempstead,Nassau County
-1153,"Liberty, New York",US,Town of Liberty, ,Sullivan County
-1154,"Cuyler, New York",US, , ,Cortland County
-1155,"Calverton, New York",US,Town of Riverhead, ,Suffolk County
-1156,"Highland Falls, New York",US, ,Town of Highlands,Orange County
-1157,"Castleton on Hudson, New York",US, ,Town of Schodack,Rensselaer County
-1158,"Fayetteville, New York",US,Village of Fayetteville, ,Onondaga County
-1159,"Halesite, New York",US,Town of Huntington, ,Suffolk County
-1160,"Scotia, New York",US, ,Town of Glenville,Schenectady County
-1161,"Stuyvesant Falls, New York",US, , ,Columbia County
-1162,"Elizaville, New York",US, , ,Columbia County
-1163,"Eastchester, New York",US,Town of Eastchester, ,Westchester County
-1164,"Watervliet, New York",US,City of Watervliet, ,Albany County
-1165,"Schodack Landing, New York",US, ,Town of Schodack,Rensselaer County
-1166,"Jefferson Valley, New York",US,Town of Yorktown, ,Westchester County
-1167,"Freeville, New York",US, , ,Tompkins County
-1168,"Wurtsboro, New York",US, ,Town of Mamakating,Sullivan County
-1169,"Glenford, New York",US, , ,Ulster County
-1170,"Binghamton, New York",US,City of Binghamton, ,Broome County
-1171,"Esopus, New York",US, , ,Ulster County
-1172,"Unionville, New York",US, ,Town of Minisink,Orange County
-1173,"East Islip, New York",US,East Islip, ,Suffolk County
-1174,"Schuylerville, New York",US, ,Town of Saratoga,Saratoga County
-1175,"Kings Park, New York",US,Town of Smithtown, ,Suffolk County
-1176,"Oyster Bay, New York",US, ,Town of Oyster Bay,Nassau County
-1177,"Thiells, New York",US,Thiells, ,Rockland County
-1178,"Guilderland Center, New York",US, , ,Albany County
-1179,"Andes, New York",US, , ,Delaware County
-1180,"West Park, New York",US, , ,Ulster County
-1181,"Croton-On-Hudson, New York",US,Village of Croton-on-Hudson, ,Westchester County
-1182,"Boiceville, New York",US, ,Town of Olive,Ulster County
-1183,"Kerhonkson, New York",US, ,Town of Rochester,Ulster County
-1184,"Glenham, New York",US,Town of Fishkill, ,Dutchess County
-1185,"New York, New York",US,City of New York, , 
-1186,"Ossining, New York",US,Village of Ossining, ,Westchester County
-1187,"Bronx, New York",US,City of New York,The Bronx,Bronx County
-1188,"Croton-on-Hudson, New York",US,Village of Croton-on-Hudson, ,Westchester County
-1189,"Sleepy Hollow, New York",US,Village of Sleepy Hollow, ,Westchester County
-1190,"Tarrytown, New York",US,Village of Tarrytown,Town of Greenburgh,Westchester County
-1191,"Poughkeepsie, New York",US,City of Poughkeepsie, ,Dutchess County
-1192,"Nyack, New York",US,Village of Nyack,Town of Orangetown,Rockland County
-1193,"Kingston, New York",US,City of Kingston, ,Ulster County
-1194,"Rhinebeck, New York",US, , ,Dutchess County
-1195,"?, New York",US, , , 
-1196,"Yonkers, New York",US,City of Yonkers, ,Westchester County
-1197,"Hastings-on-Hudson, New York",US,Village of Hastings-on-Hudson,Town of Greenburgh,Westchester County
-1198,"New Paltz, New York",US,Town of New Paltz, ,Ulster County
-1199,"Garrison, New York",US, ,Town of Philipstown,Putnam County
-1200,"Peekskill, New York",US,City of Peekskill, ,Westchester County
-1201,"Saugerties, New York",US, , ,Ulster County
-1202,"Irvington, New York",US,Village of Irvington,Town of Greenburgh,Westchester County
-1203,"Cold Spring, New York",US, ,Town of Philipstown,Putnam County
-1204,"Newburgh, New York",US,City of Newburgh, ,Orange County
-1205,"Beacon, New York",US,City of Beacon, ,Dutchess County
-1206,"Albany, New York",US,City of Albany, ,Albany County
-1207,"White Plains, New York",US,City of White Plains, ,Westchester County
-1208,"Dobbs Ferry, New York",US,Village of Dobbs Ferry,Town of Greenburgh,Westchester County
-1209,"Cortlandt Manor, New York",US,Town of Somers, ,Westchester County
-1210,"Red Hook, New York",US,Village of Red Hook, ,Dutchess County
-1211,"Hudson, New York",US,City of Hudson, ,Columbia County
-1212,"Yorktown Heights, New York",US,Town of Yorktown, ,Westchester County
-1213,"Briarcliff Manor, New York",US,Village of Briarcliff Manor, ,Westchester County
-1214,"Delmar, New York",US,Town of Bethlehem, ,Albany County
-1215,"Pleasantville, New York",US,Village of Pleasantville, ,Westchester County
-1216,"Staten Island, New York",US,City of New York,Staten Island, 
-1217,"New City, New York",US,New City,Town of Clarkstown,Rockland County
-1218,"Scarsdale, New York",US,Village of Scarsdale, ,Westchester County
-1219,"Woodstock, New York",US, , ,Ulster County
-1220,"Piermont, New York",US, ,Town of Orangetown,Rockland County
-1221,"Wappingers Falls, New York",US,Village of Wappingers Falls,Town of Wappinger,Dutchess County
-1222,"Germantown, New York",US, , ,Columbia County
-1223,"Putnam Valley, New York",US,Town of Putnam Valley, ,Putnam County
-1224,"Hartsdale, New York",US, ,Town of Greenburgh,Westchester County
-1225,"Hyde Park, New York",US,Town of Hyde Park, ,Dutchess County
-1226,"Chappaqua, New York",US, ,Town of New Castle,Westchester County
-1227,"Bronxville, New York",US,Village of Bronxville, ,Westchester County
-1228,"Athens, New York",US, , ,Greene County
-1229,"Troy, New York",US,City of Troy, ,Rensselaer County
-1230,"Flushing, New York",US,City of New York,Queens,Queens County
-1231,"Katonah, New York",US,Town of Bedford,Katonah,Westchester County
-1232,"New Rochelle, New York",US,City of New Rochelle, ,Westchester County
-1233,"Fishkill, New York",US,Town of Fishkill, ,Dutchess County
-1234,"Mount Kisco, New York",US,Village/Town of Mount Kisco, ,Westchester County
-1235,"Valley Cottage, New York",US,Valley Cottage,Town of Clarkstown,Rockland County
-1236,"Catskill, New York",US, , ,Greene County
-1237,"Highland, New York",US,Highland, ,Ulster County
-1238,"Astoria, New York",US,City of New York,Queens,Queens County
-1239,"Ulster Park, New York",US, , ,Ulster County
-1240,"Palisades, New York",US, ,Town of Orangetown,Rockland County
-1241,"Port Ewen, New York",US, , ,Ulster County
-1242,"Larchmont, New York",US,Village of Larchmont, ,Westchester County
-1243,"Stony Point, New York",US,Town of Stony Point, ,Rockland County
-1244,"West Nyack, New York",US, ,Town of Clarkstown,Rockland County
-1245,"Brewster, New York",US,Village of Brewster,Town of Southeast,Putnam County
-1246,"Long Island City, New York",US,City of New York,Queens,Queens County
-1247,"Nanuet, New York",US,Nanuet,Town of Clarkstown,Rockland County
-1248,"Stone Ridge, New York",US, , ,Ulster County
-1249,"Forest Hills, New York",US,City of New York,Queens,Queens County
-1250,"New Windsor, New York",US,Town of New Windsor, ,Orange County
-1251,"Bedford, New York",US,Town of Bedford, ,Westchester County
-1252,"Mamaroneck, New York",US,Town of Mamaroneck, ,Westchester County
-1253,"Cornwall-on-Hudson, New York",US,Town of Cornwall, ,Orange County
-1254,"Tivoli, New York",US, , ,Dutchess County
-1255,"Monroe, New York",US,Town of Monroe, ,Orange County
-1256,"Hopewell Junction, New York",US,Town of East Fishkill, ,Dutchess County
-1257,"Schenectady, New York",US,City of Schenectady, ,Schenectady County
-1258,"Rye, New York",US,City of Rye, ,Westchester County
-1259,"Suffern, New York",US,Village of Suffern,Town of Ramapo,Rockland County
-1260,"High Falls, New York",US, , ,Ulster County
-1261,"Gardiner, New York",US, , ,Ulster County
-1262,"Bayside, New York",US,City of New York,Queens,Queens County
-1263,"Mahopac, New York",US,Mahopac, ,Putnam County
-1264,"Somers, New York",US,Town of Somers, ,Westchester County
-1265,"Tappan, New York",US,Tappan,Town of Orangetown,Rockland County
-1266,"Chatham, New York",US, , ,Columbia County
-1267,"Ithaca, New York",US,Town of Ithaca, ,Tompkins County
-1268,"Pelham, New York",US,Town of Pelham, ,Westchester County
-1269,"Mount Vernon, New York",US,City of Mount Vernon, ,Westchester County
-1270,"Warwick, New York",US,Town of Warwick, ,Orange County
-1271,"Pound Ridge, New York",US,Town of Pound Ridge, ,Westchester County
-1272,"Hastings on Hudson, New York",US,Village of Hastings-on-Hudson,Town of Greenburgh,Westchester County
-1273,"Accord, New York",US, ,Town of Rochester,Ulster County
-1274,"Bearsville, New York",US, , ,Ulster County
-1275,"Ardsley, New York",US,Village of Ardsley,Town of Greenburgh,Westchester County
-1276,"Croton on Hudson, New York",US,Village of Croton-on-Hudson, ,Westchester County
-1277,"Cornwall, New York",US,Town of Cornwall, ,Orange County
-1278,"Woodside, New York",US,City of New York,Queens,Queens County
-1279,"Glenmont, New York",US,Town of Bethlehem, ,Albany County
-1280,"Goshen, New York",US,Village of Goshen, ,Orange County
-1281,"Middletown, New York",US,City of Middletown, ,Orange County
-1282,"Buffalo, New York",US,Buffalo, ,Erie County
-1283,"Rhinecliff, New York",US, , ,Dutchess County
+554,"Dingmans Ferry, Pennsylvania",US,Delaware Township,Dingmans Ferry,Pike
+555,"Petersburg, New York",US,Petersburgh, ,Rensselaer
+556,"Stratford, Connecticut",US,Stratford, ,Greater Bridgeport Planning Region
+557,"Upper Saddle River, New Jersey",US,Upper Saddle River, ,Bergen
+558,"Eureka Springs, Arkansas",US,Eureka Springs, ,Carroll
+559,"Pleasantville, New York",US,Mount Pleasant,Pleasantville,Westchester
+560,"Millis, Massachussets",US,Millis, ,Norfolk
+561,"Sugar Loaf, New York",US,Sugar Loaf Commons,Sugar Loaf,Orange
+562,"Closter, New Jersey",US,Closter, ,Bergen
+563,"Mount Kisco, New York",US,Mount Kisco, ,Westchester
+564,"Nassau, New York",US, , ,Nassau
+565,"Ada, Michigan",US, ,Ada Township,Kent
+566,"River Vale, New Jersey",US,River Vale, ,Bergen
+567,"Spring Mills, Pennsylvania",US,Gregg Township,Spring Mills,Centre
+568,"Round Lake, New York",US,Malta,Round Lake,Saratoga
+569,"Ridgewood, New York",US,Ridgewood,Queens, 
+570,"Laurel Springs, New Jersey",US,Laurel Springs, ,Camden
+571,"Dumont, New York",US,Dumont, ,Bergen
+572,"Verplank, New York",US,New Windsor, ,Orange
+573,"Riverview, Florida",US,Riverview, ,Hillsborough
+574,"Bridgeport, Connecticut",US,Bridgeport, ,Greater Bridgeport Planning Region
+575,"Waldwick, New Jersey",US,Waldwick, ,Bergen
+576,"Jersey City, New Jersey",US,Jersey City, ,Hudson
+577,"Hoboken, New Jersey",US,Hoboken, ,Hudson
+578,"Eastchester, New York",US,Eastchester, ,Westchester
+579,"Sparkill, New York",US,Sparkill, ,Rockland
+580,"Delmar, New York",US,Bethlehem,Delmar,Albany
+581,"Scotch Plains, New Jersey",US,Scotch Plains, ,Union
+582,"Chatham, New Jersey",US,Chatham, ,Morris
+583,"Madison, Connecticut",US,Madison, ,South Central Connecticut Planning Region
+584,"Miami, Florida",US,Miami, ,Miami-Dade
+585,"Northport, New York",US,Huntington,Northport,Suffolk
+586,"Takoma Park, Maryland",US,Takoma Park, ,Montgomery
+587,"North White Plains, New York",US,White Plains, ,Westchester
+588,"Parsippany, New Jersey",US,Parsippany-Troy Hills, ,Morris
+589,"Wynnewood, Pennsylvania",US,Lower Merion Township,Wynnewood,Montgomery
+590,"Wrightstown, New Jersey",US,Wrightstown, ,Burlington
+591,"Stuyvesant, New York",US,Bedford-Stuyvesant,Brooklyn, 
+592,"Forest Hills, New York",US,Forest Hills,Queens, 
+593,"Van Etten, New York",US,Van Etten, ,Chemung
+594,"Ashburn, Virginia",US,Ashburn, ,Loudoun
+595,"Sheffield, Massachussets",US,Sheffield, ,Berkshire
+596,"Westerville, Ohio",US,Westerville, ,Franklin County
+597,"Easton, Maryland",US,Easton, ,Talbot
+598,"Sau, New York",US,Saugerties,Saugerties,Ulster
+599,"Newton, Massachussets",US,Newton, ,Middlesex
+600,"West Harrison, New York",US,Harrison, ,Westchester
+601,"Nanuet, New York",US,Nanuet, ,Rockland
+602,"Lake Peekskill, New York",US,Putnam Valley,Lake Peekskill,Putnam
+603,"Glen Head, New York",US,Glen Head, ,Nassau
+604,"Central Valley, New York",US,New York,Manhattan, 
+605,"Lake Katrine, New York",US,Lake Katrine, ,Ulster
+606,"Queens Village, New York",US,Queens Village,Queens, 
+607,"Brewster, New York",US,Brewster, ,Putnam
+608,"Jupiter, Florida",US,Jupiter, ,Palm Beach
+609,"Bloomington, New York",US,Rosendale,Bloomington,Ulster
+610,"Spring Green, Wisconsin",US,Spring Green, ,Sauk
+611,"NEw York, New York",US,New York, , 
+612,"Jackson, New Jersey",US,Jackson Township, ,Ocean
+613,"Albuquerque, New Mexico",US,Albuquerque, ,Bernalillo
+614,"Rochester, New York",US,Rochester, ,Monroe County
+615,"Toronto, ",US,Toronto, ,Golden Horseshoe
+616,"Fort Montgonery, New York",US, , ,Montgomery
+617,"Rhinebeck, New York",US,Rhinebeck,Rhinebeck,Dutchess
+618,"Weldon Spring, Missouri",US,Weldon Spring, ,Saint Charles County
+619,"The Villages, Florida",US,The Villages, ,Sumter
+620,"Ghent, New York",US,Ghent, ,Columbia
+621,"Durham, New Hampshire",US,New Durham, ,Strafford
+622,"Middletown, New York",US,Middletown, ,Orange
+623,"Bonita Springs, Florida",US,Bonita Springs, ,Lee
+624,"Glendale, Massachussets",US,Stockbridge,Glendale,Berkshire
+625,"Scottsdale,  Arizona",US,Scottsdale, ,Maricopa
+626,"Summerville, South Carolina",US,Summerville, ,Dorchester
+627,"Old Westbury, New York",US,Old Westbury, ,Nassau
+628,"Middlebury, Vermont",US,Middlebury, ,Addison
+629,"West Hartford, Connecticut",US,West Hartford, ,Capitol Planning Region
+630,"Malden Bridge, New York",US,Chatham,Malden Bridge,Columbia
+631,"EAST NORTHPORT, New York",US,Huntington,East Northport,Suffolk
+632,"Teaneck, New Jersey",US,Teaneck, ,Bergen
+633,"Wilmington, New York",US, ,Wilmington,Essex
+634,"Bedminster, New Jersey",US,Bedminster, ,Somerset
+635,"Peru, New York",US,Peru, ,Clinton
+636,"Eddyville, New York",US,Ulster,Eddyville,Ulster
+637,"Winter Park, Florida",US,Winter Park, ,Orange County
+638,"Gardiner, New York",US,Gardiner, ,Ulster
+639,"Highlands, New Jersey",US,Highlands, ,Monmouth
+640,"Sacremento, California",US, , ,Sacramento
+641,"Rockaway Park, New York",US,New York,Queens, 
+642,"Eliot, Maine",US,Eliot, ,York
+643,"Staten Island, New York",US,Staten Island,Staten Island, 
+644,"Garden City, New York",US,Garden City, ,Nassau
+645,"Hauppauge, New York",US,Smithtown,Hauppauge,Suffolk
+646,"Downey, California",US,Downey, ,Los Angeles
+647,"bronx, New York",US,New York,The Bronx, 
+648,"Chester, New Jersey",US,Chester, ,Morris
+649,"Warwick, New York",US,Warwick,Warwick,Orange
+650,"Pleasant Valley, New York",US,Pleasant Valley, ,Dutchess
+651,"Dallas, Texas",US,Dallas, ,Dallas
+652,"Monticello, New York",US,Monticello, ,Sullivan
+653,"Cortland, New York",US, , ,Cortland
+654,"Herkimer, New York",US, , ,Herkimer
+655,"Mount Vernon, New York",US,Mount Vernon, ,Westchester
+656,"Wyndmoor, Pennsylvania",US,Wyndmoor, ,Montgomery
+657,"New Hampton, New York",US,East Hampton,East Hampton,Suffolk
+658,"Endicott, New York",US,Endicott, ,Broome
+659,"Rock Hill, New York",US,Rock Hill, ,Sullivan
+660,"Ashland, Virginia",US,Ashland, ,Hanover
+661,"Lincolndale, New York",US,Somers,Lincolndale,Westchester
+662,"Bronxville, New York",US,Eastchester,Bronxville,Westchester
+663,"Grandview, New York",US,East Greenbush, ,Rensselaer
+664,"Metuchen, New Jersey",US,Metuchen, ,Middlesex
+665,"Cambridge, New York",US,Cambridge, ,Washington
+666,"East Greenbush, New York",US,East Greenbush, ,Rensselaer
+667,"Great Barrington, Massachussets",US,Great Barrington, ,Berkshire
+668,"Wurtsboro, New York",US,Wurtsboro, ,Sullivan
+669,"Chelsea, New York",US,Chelsea,Manhattan, 
+670,"Addisleigh Park, New York",US,La Crescenta,Highway Highlands,Los Angeles
+671,"Clearwater, Florida",US,Clearwater, ,Pinellas
+672,"Franklin Lakes, New Jersey",US,Franklin Lakes, ,Bergen
+673,"Port Charlotte, Florida",US,Port Charlotte, ,Charlotte
+674,"Kent Cliffs, New York",US,Kent,Kent Cliffs,Putnam
+675,"Waterford, New York",US,Waterford,Waterford,Saratoga
+676,"Rockaway Point, New York",US,Far Rockaway,Queens, 
+677,"Aventura, Florida",US,Aventura, ,Miami-Dade
+678,"Larchmont, New York",US,Mamaroneck,Larchmont,Westchester
+679,"Midland Park, New Jersey",US,Midland Park, ,Bergen
+680,"Highland Mills, New York",US,Woodbury,Highland Mills,Orange
+681,"woodside, New York",US,New York,Queens, 
+682,"Bound Brook, New Jersey",US,Bound Brook, ,Somerset
+683,"Jackson Heights, New York",US,Jackson Heights,Queens, 
+684,"Rotterdam Junction, New York",US,Rotterdam,Rotterdam Junction,Schenectady County
+685,"Andes, New York",US,Andes, ,Delaware
+686,"Springfield, New Jersey",US,Springfield Township, ,Union
+687,"Westport, Connecticut",US,Westport, ,Western Connecticut Planning Region
+688,"Hastings On Hudson, New York",US,Hastings-on-Hudson, ,Westchester
+689,"Powell, Tennessee",US,Powell, ,Knox
+690,"Tampa, Florida",US,Tampa, ,Hillsborough
+691,"Kenmore, New York",US,Town of Tonawanda,Kenmore,Erie County
+692,"Beverly Hills, California",US,Beverly Hills, ,Los Angeles
+693,"Swampscott, Massachussets",US,Swampscott, ,Essex County
+694,"Rock Tavern, New York",US,New Windsor,Rock Tavern,Orange
+695,"Plainview, New York",US,Plainview, ,Nassau
+696,"Sea Cliff, New York",US,Sea Cliff, ,Nassau
+697,"Sharon Springs, New York",US,Sharon Springs, ,Schoharie
+698,"Mishawaka, Indiana",US,Mishawaka, ,Saint Joseph
+699,"Stockbridge, Massachussets",US,Stockbridge, ,Berkshire
+700,"New Haven, Connecticut",US,New Haven, ,South Central Connecticut Planning Region
+701,"Northridge, California",US,Northridge,Northridge East Neighborhood Council District,Los Angeles
+702,"Encino, California",US,Los Angeles,Encino,Los Angeles
+703,"Waitsfield, Vermont",US,Waitsfield, ,Washington
+704,"Point Pleasant, New Jersey",US,Point Pleasant, ,Ocean
+705,"Beaver Dams, New York",US,Catlin,Beaver Dams,Chemung
+706,"Alpha, New Jersey",US,Alpha, ,Warren
+707,"Bloomingburg, New York",US,Bloomingburg, ,Sullivan
+708,"Highland Falls, New York",US,Highland Falls, ,Orange
+709,"New Hamburg, New York",US,New Hamburg, ,Dutchess
+710,"Sparrowbush, New York",US,Livingston, ,Columbia
+711,"Jamaica Estates, New York",US,New York,Queens, 
+712,"Allentown, Pennsylvania",US,Allentown, ,Lehigh
+713,"Crompond, New York",US,Yorktown,Crompond,Westchester
+714,"Manorville, New York",US,Brookhaven,Manorville,Suffolk
+715,"Newcastle, Maine",US,Newcastle, ,Lincoln
+716,"Danbury, Connecticut",US,Danbury, ,Western Connecticut Planning Region
+717,"Spring Valley, New York",US,Spring Valley, ,Rockland
+718,"Huntingdon Valley, Pennsylvania",US,Lower Moreland Township,Huntingdon Valley,Montgomery
+719,"New Gretna, New Jersey",US,Bass River Township,New Gretna,Burlington
+720,"West Hempstead, New York",US,West Hempstead, ,Nassau
+721,"Alameda, California",US,Alameda, ,Alameda County
+722,"Dover Plains, New York",US,Dover Plains,Bains Corner,Dutchess
+723,"Blauvelt, New York",US,Blauvelt, ,Rockland
+724,"Claverack, New York",US,Claverack, ,Columbia
+725,"Rutherford, New Jersey",US,East Rutherford, ,Bergen
+726,"Lincoln, Massachussets",US,Lincoln, ,Middlesex County
+727,"Hazlet, New Jersey",US,Hazlet, ,Monmouth
+728,"Wantagh, New York",US,Wantagh, ,Nassau
+729,"Oakland Gardens, New York",US,Oakland Gardens,Queens, 
+730,"Greenwich, Connecticut",US,Greenwich, ,Western Connecticut Planning Region
+731,"High Falls, New York",US,Highland Falls, ,Orange
+732,"Croton On Hudson, New York",US,Cortlandt,Croton-on-Hudson,Westchester
+733,"Lloyd Harbor, New York",US,Huntington,Lloyd Harbor,Suffolk
+734,"Greenlawn, New York",US,Huntington,Greenlawn,Suffolk
+735,"Madison, Wisconsin",US,Madison,Bowens Addition,Dane
+736,"Narrowsburg, New York",US,Tusten,Narrowsburg,Sullivan
+737,"Cos Cob, Connecticut",US,Greenwich,Cos Cob,Western Connecticut Planning Region
+738,"Duanesburg, New York",US, ,Duanesburg,Schenectady County
+739,"Norwood, New Jersey",US,Norwood, ,Bergen
+740,"Waterbury, Connecticut",US,Waterbury, ,Naugatuck Valley Planning Region
+741,"New York Mills, New York",US,Whitestown,New York Mills,Oneida
+742,"Rockville, Maryland",US,Rockville, ,Montgomery
+743,"Guilderland, New York",US,Guilderland, ,Albany
+744,"Paramus, New Jersey",US,Paramus, ,Bergen
+745,"West Caldwell, New Jersey",US,West Caldwell, ,Essex
+746,"Catskill, New York",US,Catskill,Catskill,Greene County
+747,"Oyster Bay, New York",US,Oyster Bay, ,Nassau
+748,"Taghanic, New York",US,New York, , 
+749,"Hillburn, New York",US,Town of Ramapo,Hillburn,Rockland
+750,"Bayonne, New Jersey",US,Bayonne, ,Hudson
+751,"West Hampton, New York",US,Southampton,West Hampton Dunes,Suffolk
+752,"Oxford, Ohio",US,Oxford, ,Butler
+753,"Haverford, Pennsylvania",US,Lower Merion Township,Haverford,Montgomery
+754,"Goshen, New York",US,Goshen,Goshen,Orange
+755,"Oneonta, New York",US,Oneonta, ,Otsego
+756,"Palenville, New York",US,Catskill,Palenville,Greene County
+757,"Cottekill, New York",US,Rosendale,Cottekill,Ulster
+758,"Philadelphia, Pennsylvania",US,Philadelphia, ,Philadelphia
+759,"Latham, New York",US,Colonie,Latham,Albany
+760,"Ballston Lake, New York",US,Ballston,Ballston Lake,Saratoga
+761,"Salisbury, Massachussets",US,Salisbury, ,Essex County
+762,"Montvale, New Jersey",US,Montvale, ,Bergen
+763,"Moorestown, New Jersey",US,Moorestown, ,Burlington
+764,"New Fairfield, Connecticut",US,New Fairfield, ,Western Connecticut Planning Region
+765,"Saint James, New York",US,Smithtown,Saint James,Suffolk
+766,"Esopus, New York",US,Esopus, ,Ulster
+767,"Croton-on-Hudson, New York",US,Cortlandt,Croton-on-Hudson,Westchester
+768,"Cross River, New York",US,Bedford, ,Westchester
+769,"Westbury, New York",US,Westbury, ,Nassau
+770,"Elmhurst, New York",US,Elmhurst,Queens, 
+771,"Park Ridge, New Jersey",US,Park Ridge, ,Bergen
+772,"Auburn, New York",US,Auburn, ,Cayuga
+773,"Silver City, New Mexico",US,Silver City, ,Grant
+774,"Sloatsburg, New York",US,Sloatsburg, ,Rockland
+775,"East Longmeadow, Massachussets",US,Longmeadow, ,Hampden County
+776,"Ridge, New York",US,Brookhaven,Ridge,Suffolk
+777,"Millbrook, New York",US,Millbrook, ,Dutchess
+778,"Highmount, New York",US,Shandaken,Highmount,Ulster
+779,"Olmstedville, New York",US,Olmstedville,Minerva,Essex
+780,"Mout Bethel, Pennsylvania",US,Bethel Park, ,Allegheny
+781,"Washingtonville, New York",US,Washingtonville, ,Orange
+782,"Chesapeake, Virginia",US,Chesapeake, , 
+783,"Bridgewater, Connecticut",US,Bridgewater, ,Western Connecticut Planning Region
+784,"Overland Park, Kansas",US,Overland Park, ,Johnson
+785,"Amityville, New York",US,Babylon,Amityville,Suffolk
+786,"Bryn Mawr, Pennsylvania",US,Lower Merion Township,Bryn Mawr,Montgomery
+787,"Englewood Cliffs, New Jersey",US,Englewood Cliffs, ,Bergen
+788,"Rockaway Beach, New York",US,New York,Queens, 
+789,"West Newton, Massachussets",US,Newton, ,Middlesex
+790,"Far Rockaway, New York",US,New York,Queens, 
+791,"Corning, New York",US,Corning, ,Steuben
+792,"Gladstone, Oregon",US,Gladstone, ,Clackamas
+793,"Stillwater, New York",US,Stillwater,Stillwater,Saratoga
+794,"Bantam, Connecticut",US,Litchfield,Bantam,Northwest Hills Planning Region
+795,"Boulder, Colorado",US,Boulder, ,Boulder
+796,"Mesquite, Texas",US,Mesquite, ,Dallas
+797,"Sierra Mas, California",US,Tijuana, ,Municipio de Tijuana
+798,"Pittsburgh, Pennsylvania",US,Pittsburgh, ,Allegheny
+799,"Brookline, Massachussets",US,Brookline, ,Norfolk
+800,"Glendale, New York",US,La Crescenta,Highway Highlands,Los Angeles
+801,"Castleton, New York",US,Castleton-on-Hudson, ,Rensselaer
+802,"Hernando, Florida",US, , ,Hernando
+803,"Roosevelt Island, New York",US,New York,Manhattan, 
+804,"North Yarmouth, Maine",US,North Yarmouth, ,Cumberland
+805,"Poughquag, New York",US,Beekman,Poughquag,Dutchess
+806,"Germantown, New York",US,Germantown, ,Columbia
+807,"New City, New York",US,New York,Manhattan, 
+808,"Valhalla, New York",US,Mount Pleasant,Valhalla,Westchester
+809,"Lake Oswego, Oregon",US,Lake Oswego, ,Clackamas
+810,"Hyde Park, New York",US,New Hyde Park, ,Nassau
+811,"Monroe, New York",US, , ,Monroe County
+812,"Atlantic Beach, New York",US,Atlantic Beach, ,Nassau
+813,"Jericho, New York",US,Jericho, ,Nassau
+814,"Wappinger Falls, New York",US,Wappingers Falls, ,Dutchess
+815,"Little Neck, New York",US,New York,Queens, 
+816,"Wassaic, New York",US,Amenia,Wassaic,Dutchess
+817,"Poughkeepsie, New York",US,Poughkeepsie, ,Dutchess
+818,"Highland, Maryland",US,Highland, ,Howard
+819,"St. Augustine, Florida",US,Saint Augustine, ,Saint Johns
+820,"Cortland Manor, New York",US,Bari Manor,Croton-on-Hudson,Westchester
+821,"Glenmont, New York",US,Bethlehem,Glenmont,Albany
+822,"Amherst, Massachussets",US,Amherst, ,Hampshire
+823,"Reston, Virginia",US,Reston, ,Fairfax
+824,"Manhasset, New York",US,Manhasset, ,Nassau
+825,"Port Chester, New York",US,Port Chester, ,Westchester
+826,"Saco, Maine",US,Saco, ,York
+827,"Saratoga Springs, New York",US,Saratoga Springs, ,Saratoga
+828,"Carnegie, Pennsylvania",US,Pittsburgh, ,Allegheny
+829,"Rehoboth, Massachussets",US,Rehoboth, ,Bristol
+830,"Hawthorne, New York",US,Mount Pleasant,Hawthorne,Westchester
+831,"West Sand Lake, New York",US,Sand Lake,West Sand Lake,Rensselaer
+832,"Arlington Heights, Illinois",US,Arlington Heights, ,Cook County
+833,"Corona, New York",US,New York,Queens County, 
+834,"Wappinger, New York",US,Wappinger, ,Dutchess
+835,"Lakewood, Colorado",US,Lakewood, ,Jefferson
+836,"Montrose, New York",US,Cortlandt,Montrose,Westchester
+837,"Fort Edward, New York",US,Fort Edward,Fort Edward,Washington
+838,"Gurnee, Illinois",US,Gurnee, ,Lake County
+839,"Brewster, Massachussets",US,Brewster, ,Barnstable
+840,"Cresskill, New Jersey",US,Cresskill, ,Bergen
+841,"West Sacramento, California",US,West Sacramento, ,Yolo
+842,"Orleans, Massachussets",US,Orleans, ,Barnstable
+843,"Weybridge, Vermont",US,Weybridge, ,Addison
+844,"Haines Falls, New York",US,Hunter,Haines Falls,Greene County
+845,"Saint Louis, Missouri",US,Saint Louis, , 
+846,"Richmond, California",US,Richmond, ,Contra Costa
+847,"New Baltimore, New York",US,New Baltimore, ,Greene County
+848,"Sunny Island Beach, Florida",US,Sunny Isles Beach, ,Miami-Dade
+849,"Baldwinsville, New York",US,Lysander,Baldwinsville,Onondaga
+850,"Bellport, New York",US,Brookhaven,Bellport,Suffolk
+851,"Glastonbury, Connecticut",US,Glastonbury, ,Capitol Planning Region
+852,"Boonton, New Jersey",US,Boonton, ,Morris
+853,"Otisville, New York",US,Mount Hope,Otisville,Orange
+854,"Rinebeck, New York",US,New York, , 
+855,"Bergenfield, New Jersey",US,Bergenfield, ,Bergen
+856,"Leonia, New Jersey",US,Leonia, ,Bergen
+857,"Westerly, Rhode Island",US,Westerly, ,Washington
+858,"Teoti, New York",US,New York, , 
+859,"Lakeville, Massachussets",US,Lakeville, ,Plymouth
+860,"Port Ewen, New York",US,Esopus,Port Ewen,Ulster
+861,"Cornwall, New York",US,Cornwall, ,Orange
+862,"Plano, Texas",US,Plano, ,Collin
+863,"Cheverly, Maryland",US,Cheverly, ,Prince George's
+864,"Lancaster, Pennsylvania",US,Lancaster, ,Lancaster
+865,"Patterson, New York",US,Patterson, ,Putnam
+866,"Hensonville, New York",US,Windham,Hensonville,Greene County
+867,"Broadalbin, New York",US,Broadalbin, ,Fulton
+868,"Westfield, Massachussets",US,Westfield, ,Hampden
+869,"New Orleans, Louisiana",US,New Orleans, ,Orleans Parish
+870,"Santa Cruz, California",US,Santa Cruz, ,Santa Cruz
+871,"Ruby, New York",US,Ulster,Ruby,Ulster
+872,"East Jewett, New York",US,East Jewett,Jewett,Greene County
+873,"Rhinbeck, New York",US,Rhinebeck,Rhinecliff,Dutchess
+874,"East Brunswick, New Jersey",US,East Brunswick, ,Middlesex
+875,"Stockton, New Jersey",US,Stockton, ,Hunterdon
+876,"KINGSTON, New York",US,Kingston, ,Ulster
+877,"Lynbrook, New York",US,Lynbrook, ,Nassau
+878,"Callicoon, New York",US,Callicoon, ,Sullivan
+879,"Rahway, New Jersey",US,Rahway, ,Union
+880,"Breezy Point, New York",US,Breezy Point,Queens, 
+881,"California, Pennsylvania",US,California, ,Washington
+882,"Somerville, New Jersey",US,Somerville, ,Somerset
+883,"Oakland, California",US,Oakland, ,Alameda County
+884,"Franklin, New York",US, , ,Franklin
+885,"Fleetwood, New York",US,Mount Vernon, ,Westchester
+886,"Redding, Connecticut",US,Redding, ,Western Connecticut Planning Region
+887,"Guttenberg, New Jersey",US,Guttenberg, ,Hudson
+888,"Miami Beach, Florida",US,Miami Beach, ,Miami-Dade
+889,"Sunnyside, New York",US,Sunnyside,Queens, 
+890,"Medford, New York",US,Brookhaven,Medford,Suffolk
+891,"South Setauket, New York",US,Brookhaven,South Setauket,Suffolk
+892,"North Andover, Massachussets",US, ,North Andover,Essex County
+893,"Placerville, Colorado",US, ,Placerville,San Miguel
+894,"Fort Wayne, Indiana",US,Fort Wayne, ,Allen
+895,"Ballston Spa, New York",US,Milton,Ballston Spa,Saratoga
+896,"Mineola, New York",US,Mineola, ,Nassau
+897,"Ithaca, New York",US,Ithaca, ,Tompkins
+898,"Wallington, New Jersey",US,Wallington, ,Bergen
+899,"West Nyack, New York",US,West Nyack, ,Rockland
+900,"Merrick, New York",US,Merrick, ,Nassau
+901,"Arlington, Massachussets",US,Arlington, ,Middlesex
+902,"Saint Petersburg, Florida",US,Saint Petersburg, ,Pinellas
+903,"North Massapequa, New York",US,North Massapequa, ,Nassau
+904,"Sewell, New Jersey",US,Mantua Township,Sewell,Gloucester
+905,"Greensboro, North Carolina",US,Greensboro, ,Guilford
+906,"Mahwah, New Jersey",US,Mahwah, ,Bergen
+907,"Portland, Maine",US,Portland, ,Cumberland
+908,"Vestal, New York",US,Vestal, ,Broome
+909,"Cornwall-on-Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
+910,"Warminster, Pennsylvania",US,Warminster Township, ,Bucks
+911,"Troy, New York",US,Troy, ,Rensselaer
+912,"Palm City, Florida",US,Palm City, ,Martin
+913,"Pine Bush, New York",US,Pine Bush, ,Orange
+914,"Placida, Florida",US, ,Placida,Charlotte
+915,"Oklahoma City, Oklahoma",US,Oklahoma City, ,Oklahoma
+916,"Smithtown, New York",US,Smithtown, ,Suffolk
+917,"West Camp, New York",US,New York,Manhattan, 
+918,"Valley stream, New York",US,Valley Stream, ,Nassau
+919,"Chapel Hill, North Carolina",US,Chapel Hill, ,Orange
+920,"Portchester, New York",US,Wingdale, ,Dutchess
+921,"Slate Hill, New York",US,Wawayanda,Slate Hill,Orange
+922,"Hackensack, New Jersey",US,Hackensack, ,Bergen
+923,"Atlanta, Georgia",US,Atlanta, ,Fulton
+924,"Mendham, New Jersey",US,Mendham, ,Morris
+925,"Sherman Oaks, California",US,Los Angeles,Sherman Oaks,Los Angeles
+926,"Tomkins Cove, New York",US,Stony Point,Tomkins Cove,Rockland
+927,"Aptos, California",US,Seacliff, ,Santa Cruz
+928,"Sag Harbor, New York",US,East Hampton,Sag Harbor,Suffolk
+929,"Hastings-On-Hudson, New York",US,Hastings-on-Hudson, ,Westchester
+930,"Cliffside Park, New Jersey",US,Cliffside Park, ,Bergen
+931,"Blairstown, New Jersey",US,Blairstown, ,Warren
+932,"Sun Prairie, Wisconsin",US,Sun Prairie, ,Dane
+933,"Hoosick Falls, New York",US,Hoosick Falls,Hoosick,Rensselaer
+934,"Ocala, Florida",US,Ocala, ,Marion
+935,"Newfane, New York",US,Newfane, ,Niagara
+936,"Salt Point, New York",US,Salt Point, ,Dutchess
+937,"South Amboy, New Jersey",US,South Amboy, ,Middlesex
+938,"Sea Isle City, New Jersey",US,Sea Isle City, ,Cape May
+939,"Guilderland Center, New York",US,Guilderland,Guilderland Center,Albany
+940,"New Hyde Park, New York",US,New Hyde Park, ,Nassau
+941,"Huntington Station, New York",US,Huntington,Huntington Station,Suffolk
+942,"Cranford, New Jersey",US,Cranford, ,Union
+943,"Hicksville, New York",US,Hicksville, ,Nassau
+944,"Yellow Springs, Ohio",US,Yellow Springs, ,Greene
+945,"Valatie, New York",US,Kinderhook,Valatie,Columbia
+946,"Suwanee, Georgia",US,Suwanee, ,Gwinnett
+947,"Venice, Florida",US,Venice, ,Sarasota
+948,"Mt. Kisco, New York",US,Armonk, ,Westchester
+949,"Hood River, Oregon",US,Hood River, ,Hood River
+950,"Monterey, Massachussets",US,Monterey, ,Berkshire
+951,"Highland, New York",US,Highland Falls, ,Orange
+952,"Livingston, New Jersey",US,Livingston, ,Essex
+953,"Green Valley,  Arizona",US,Sahuarita, ,Pima
+954,"Prescott,  Arizona",US,Prescott, ,Yavapai
+955,"West Fulton, New York",US,Caroga,Caroga Lake,Fulton
+956,"Montgomery, New York",US, , ,Montgomery
+957,"Dalmar, New York",US,New York, , 
+958,"Falmouth, Maine",US,Falmouth, ,Cumberland
+959,"Astoria, New York",US,New York,Manhattan, 
+960,"Houston, Texas",US,Houston, ,Harris
+961,"Rockville Center, New York",US,Rockville Centre, ,Nassau
+962,"Lake Hopatcong, New Jersey",US,Hopatcong, ,Sussex
+963,"Malden on Hudson, New York",US,Saugerties,Malden-on-Hudson,Ulster
+964,"Salisbury, Connecticut",US,Salisbury, ,Northwest Hills Planning Region
+965,"Buffalo, New York",US,Buffalo, ,Erie County
+966,"Indianapolis, Indiana",US,Indianapolis, ,Marion County
+967,"Ramsey, New Jersey",US,Ramsey, ,Bergen
+968,"Wynantskill, New York",US,Wynantskill, ,Rensselaer
+969,"Rexford, New York",US,Clifton Park,Rexford,Saratoga
+970,"Dover, New Hampshire",US,Dover, ,Strafford
+971,"Sanibel, Florida",US,Sanibel, ,Lee
+972,"Corona Del Mar, California",US,Newport Beach, ,Orange
+973,"Mount Upton, New York",US,Guilford,Mount Upton,Chenango
+974,"Delhi, New York",US,Delhi,Delhi,Delaware
+975,"North Salem, New York",US,North Salem, ,Westchester
+976,"Honeoye Falls, New York",US,Mendon,Honeoye Falls,Monroe County
+977,"Binghampton, New York",US,Binghamton, ,Broome
+978,"Yorktown Heights, New York",US,Yorktown,Yorktown Heights,Westchester
+979,"Millburn, New Jersey",US,Millburn, ,Essex
+980,"East Orange, New Jersey",US,East Orange, ,Essex
+981,"Millwood, New York",US,Millwood,Tompkins Corners,Westchester
+982,"Akron, Ohio",US,Akron, ,Summit
+983,"Warrenton, Oregon",US,Warrenton, ,Clatsop
+984,"Fort Pierce, Florida",US,Fort Pierce, ,Saint Lucie
+985,"Branford, Connecticut",US,Branford, ,South Central Connecticut Planning Region
+986,"Newburgh, New York",US,Newburgh, ,Orange
+987,"Unionville, New York",US,Town of Minisink,Unionville,Orange
+988,"East Chatham, New York",US,Chatham,East Chatham,Columbia
+989,"Shenandoah Junction, West Virginia",US,Shenandoah Junction,Duffields,Jefferson
+990,"Floral Park, New York",US,Floral Park, ,Nassau
+991,"Nutley, New Jersey",US,Nutley, ,Essex
+992,"Philmont, New York",US,Claverack,Philmont,Columbia
+993,"Staatsburg, New York",US,Hyde Park,Staatsburg,Dutchess
+994,"Selkirk, New York",US,Richland, ,Oswego
+995,"Hempstead, New York",US,Hempstead, ,Nassau
+996,"Carmel Hamlet, New York",US,Copake,West Copake,Columbia
+997,"Freeville, New York",US,Dryden,Freeville,Tompkins
+998,"Cullman, Alabama",US, , ,Cullman
+999,"Raleigh, North Carolina",US,Raleigh, ,Wake
+1000,"Ketchum, Idaho",US,Ketchum, ,Blaine
+1001,"Phoenicia, New York",US,Shandaken,Phoenicia,Ulster
+1002,"Cochecton, New York",US,Cochecton, ,Sullivan
+1003,"Anderson, South Carolina",US,Anderson, ,Anderson
+1004,"Phoencicia, New York",US,Shandaken,Phoenicia,Ulster
+1005,"Roslyn Heights, New York",US,Roslyn Heights, ,Nassau
+1006,"Evanston, Illinois",US,Evanston, ,Cook County
+1007,"Tuckahoe, New York",US,Southampton,Tuckahoe,Suffolk
+1008,"Nyack, New York",US,Nyack, ,Rockland
+1009,"Falls Village, Connecticut",US,Canaan,Falls Village,Northwest Hills Planning Region
+1010,"Highlands, North Carolina",US,Highlands, ,Macon
+1011,"Ancram, New York",US,Ancram, ,Columbia
+1012,"Salt Lake City, Utah",US,Salt Lake City, ,Salt Lake
+1013,"Barrytown, New York",US,Red Hook,Barrytown,Dutchess
+1014,"cortlandt manor, New York",US,Bari Manor,Croton-on-Hudson,Westchester
+1015,"Scotia, New York",US,Scotia, ,Schenectady County
+1016,"Morris Plains, New Jersey",US,Morris Plains, ,Morris
+1017,"Hampton Bays, New York",US,Southampton,Hampton Bays,Suffolk
+1018,"Campbell Hall, New York",US,Hamptonburgh,Campbell Hall,Orange
+1019,"Fort Collins, Colorado",US,Fort Collins, ,Larimer
+1020,"Cragsmoor, New York",US,Wawarsing,Cragsmoor,Ulster
+1021,"Irvington, New Jersey",US,Irvington, ,Essex
+1022,"Gettysburg, Pennsylvania",US,Gettysburg, ,Adams
+1023,"Holmdel, New Jersey",US,Holmdel Township, ,Monmouth
+1024,"Inwood, New York",US,Inwood,Manhattan, 
+1025,"Parkville, Missouri",US,Parkville, ,Platte
+1026,"Brookfield, Connecticut",US,Brookfield, ,Western Connecticut Planning Region
+1027,"Fairfield, Connecticut",US,Fairfield, ,Greater Bridgeport Planning Region
+1028,"Montebello, New York",US,Montebello, ,Rockland
+1029,"Amherst, New York",US,Amherst, ,Erie County
+1030,"Setauket, New York",US,Brookhaven,Setauket,Suffolk
+1031,"St. Simons Island, Georgia",US,St. Simons, ,Glynn
+1032,"Bluffton, South Carolina",US,Bluffton, ,Beaufort
+1033,"Troy, Michigan",US,Troy, ,Oakland
+1034,"HOPEWELL, New Jersey",US,Hopewell, ,Mercer
+1035,"Pound Ridge, New York",US,Pound Ridge, ,Westchester
+1036,"Los Ranchos, New Mexico",US,Los Ranchos de Albuquerque, ,Bernalillo
+1037,"Boca Raton, Florida",US,Boca Raton, ,Palm Beach
+1038,"Corinth, New York",US,Corinth,Corinth,Saratoga
+1039,"Bearsville, New York",US,Woodstock,Bearsville,Ulster
+1040,"Craryville, New York",US,Copake,Craryville,Columbia
+1041,"Grahamsville, New York",US,Neversink,Grahamsville,Sullivan
+1042,"Hudson, New York",US, , , 
+1043,"Little Falls, New Jersey",US,Little Falls, ,Passaic
+1044,"Brightwaters, New York",US,Islip,Brightwaters,Suffolk
+1045,"Spencer, New York",US,Spencer,Spencer,Tioga
+1046,"Branchville, New Jersey",US,Branchville, ,Sussex
+1047,"Naugatuck, Connecticut",US,Naugatuck, ,Naugatuck Valley Planning Region
+1048,"Jamaica, New York",US,New York,Queens, 
+1049,"Niagara Falls, New York",US,Niagara Falls, ,Niagara
+1050,"SunNew Yorkside, New York",US,Yorkshire, ,Cattaraugus
+1051,"Plattsburgh, New York",US,Plattsburgh, ,Clinton
+1052,"Avon-by-the-Sea, New Jersey",US,Avon-by-the-Sea, ,Monmouth
+1053,"Ardsley-on-Hudson, New York",US,Irvington,Ardsley-on-Hudson,Westchester
+1054,"East Islip, New York",US,Islip,East Islip,Suffolk
+1055,"hudson, New York",US, , , 
+1056,"Lake Success, New York",US,Lake Success, ,Nassau
+1057,"Surfside, Florida",US,Surfside, ,Miami-Dade
+1058,"Jacksonville, Florida",US,Jacksonville, ,Duval
+1059,"North Haledon, New Jersey",US,North Haledon, ,Passaic
+1060,"Cuyler, New York",US, ,Cuyler,Cortland
+1061,"Sparta, New Jersey",US,Sparta Township, ,Sussex
+1062,"Upper Nyack, New York",US,Upper Nyack, ,Rockland
+1063,"Asbury Park, New Jersey",US,Asbury Park, ,Monmouth
+1064,"Rockville Centre, New York",US,Rockville Centre, ,Nassau
+1065,"Bradenton, Florida",US,Bradenton, ,Manatee
+1066,"Falls Church, Virginia",US,Falls Church, , 
+1067,"Ventura, California",US,Ventura, ,Ventura
+1068,"Bowling Green, Ohio",US,Bowling Green, ,Wood
+1069,"Darien, Connecticut",US,Darien, ,Western Connecticut Planning Region
+1070,"Ofallon, Illinois",US,Odin, ,Marion
+1071,"Morristown, New Jersey",US,Morristown, ,Morris
+1072,"Coeymans Hollow, New York",US,Coeymans,Coeymans Hollow,Albany
+1073,"Wardsboro, Vermont",US,Wardsboro, ,Windham County
+1074,"Pine Plains, New York",US,Pine Plains, ,Dutchess
+1075,"Norwich, Vermont",US,Norwich, ,Windsor County
+1076,"Falmouth, Massachussets",US,Falmouth, ,Barnstable
+1077,"Voorhees, New Jersey",US,Voorhees Township, ,Camden
+1078,"Norfolk, Virginia",US,Norfolk, , 
+1079,"Tappan, New York",US,Tappan, ,Rockland
+1080,"Malden, New York",US,Saugerties,Malden-on-Hudson,Ulster
+1081,"Unadilla, New York",US,Unadilla,Unadilla,Otsego
+1082,"New Hartford, New York",US,New Hartford, ,Oneida
+1083,"Valley Cottage, New York",US,Valley Cottage, ,Rockland
+1084,"Martinsville, New Jersey",US,Bridgewater Township,Martinsville,Somerset
+1085,"Woodridge, New York",US,Fallsburg,Woodridge,Sullivan
+1086,"Ossining, New York",US,Ossining,Ossining,Westchester
+1087,"Fort Myers, Florida",US,Fort Myers, ,Lee
+1088,"Hurley, New York",US,Hurley,Hurley,Ulster
+1089,"Menlo Park, California",US,Menlo Park, ,San Mateo
+1090,"Walden, New York",US,Montgomery,Walden,Orange
+1091,"Shenandoah, Pennsylvania",US,Shenandoah, ,Schuylkill
+1092,"Fort Washington, Pennsylvania",US,Upper Dublin Township,Fort Washington,Montgomery
+1093,"Berkeley Heights, New Jersey",US,Berkeley Heights, ,Union
+1094,"Sound Beach, New York",US,Miller Place,Sound Beach,Suffolk
+1095,"West Seneca, New York",US,West Seneca, ,Erie County
+1096,"Locust Valley, New York",US,Locust Valley, ,Nassau
+1097,"Red Hook, New York",US,Red Hook,Red Hook,Dutchess
+1098,"South Nyack, New York",US,Nyack, ,Rockland
+1099,"Lake Luzerne, New York",US,Lake Luzerne, ,Warren
+1100,"Huntersville, North Carolina",US,Huntersville, ,Mecklenburg
+1101,"Irwin, Pennsylvania",US,Irwin, ,Westmoreland
+1102,"Greenfield, Massachussets",US,Greenfield, ,Franklin County
+1103,"Sisters, Oregon",US,Sisters, ,Deschutes
+1104,"Napanoch, New York",US,Wawarsing,Napanoch,Ulster
+1105,"Fair Lawn, New Jersey",US,Fair Lawn, ,Bergen
+1106,"Flemington, New Jersey",US,Flemington, ,Hunterdon
+1107,"Williston Park, New York",US,Williston Park, ,Nassau
+1108,"Mechanicville, New York",US,Mechanicville, ,Saratoga
+1109,"Valley Stream, New York",US,Valley Stream, ,Nassau
+1110,"San Antonio, Texas",US,San Antonio, ,Bexar
+1111,"Huntington, New York",US,Huntington, ,Suffolk
+1112,"Haymarket, Virginia",US,Haymarket, ,Prince William
+1113,"Atlantic Highlands, New Jersey",US,Atlantic Highlands, ,Monmouth
+1114,"Shelter Island Heights, New York",US,Shelter Island,Shelter Island Heights,Suffolk
+1115,"Cortlandt, New York",US,Cortlandt, ,Westchester
+1116,"Chatham, New York",US,Chatham,Chatham,Columbia
+1117,"Hollis, New York",US,New York,Queens, 
+1118,"Windham, New York",US,Windham, ,Greene County
+1119,"Sharon, Connecticut",US,Sharon, ,Northwest Hills Planning Region
+1120,"Newark, New Jersey",US,Newark, ,Essex
+1121,"Liberty, New York",US,New York,Manhattan, 
+1122,"Armonk, New York",US,Armonk, ,Westchester
+1123,"Matamoras, Pennsylvania",US,Matamoras, ,Pike
+1124,"Providence, Rhode Island",US,Providence, ,Providence
+1125,"Cropseyville, New York",US,Brunswick,Cropseyville,Rensselaer
+1126,"Rivervale, New Jersey",US,River Vale,Rivervale,Bergen
+1127,"Elmsford, New York",US,Elmsford, ,Westchester
+1128,"Lebanon, New Jersey",US,Lebanon, ,Hunterdon
+1129,"Sonoma, California",US, , ,Sonoma
+1130,"Orlando, Florida",US,Orlando, ,Orange County
+1131,"Stamford, Connecticut",US,Stamford, ,Western Connecticut Planning Region
+1132,"North Bay Village, Florida",US,North Bay Village, ,Miami-Dade
+1133,"West Shokan, New York",US,Olive,West Shokan,Ulster
+1134,"Stone Ridge, New York",US,Stone Ridge, ,Ulster
+1135,"North Bellmore, New York",US,North Bellmore, ,Nassau
+1136,"Woodstock, New York",US,Woodstock, ,Ulster
+1137,"Woodside, New York",US,New York,Queens, 
+1138,"Easton, Connecticut",US,Easton, ,Greater Bridgeport Planning Region
+1139,"Hastings-on-Hudson, New York",US,Hastings-on-Hudson, ,Westchester
+1140,"Milford, Connecticut",US,Milford, ,South Central Connecticut Planning Region
+1141,"Bedford, New York",US,Bedford, ,Westchester
+1142,"Kew Gardens, New York",US,New York,Queens, 
+1143,"Fanwood, New Jersey",US,Fanwood, ,Union
+1144,"Franklin Square, New York",US,Franklin Square, ,Nassau
+1145,"Clifton, New Jersey",US,Clifton, ,Passaic
+1146,"sleepy hollow, New York",US,Mount Pleasant,Sleepy Hollow,Westchester
+1147,"Niskayuna, New York",US,Niskayuna, ,Schenectady County
+1148,"Mars, Pennsylvania",US,Mars, ,Butler County
+1149,"Margaretville, New York",US,Middletown,Margaretville,Delaware
+1150,"Franconia, New Hampshire",US,Franconia, ,Grafton
+1151,"Barrington, New Jersey",US,Barrington, ,Camden
+1152,"Somerset, New Jersey",US, , ,Somerset
+1153,"Annandale-on-Hudson, New York",US,Red Hook,Annandale-on-Hudson,Dutchess
+1154,"Suffern, New York",US,Suffern, ,Rockland
+1155,"North Chatham, New York",US,Chatham,North Chatham,Columbia
+1156,"Cherry Valley, New York",US,Cherry Valley,Cherry Valley,Otsego
+1157,"Watertown, Massachussets",US,Watertown, ,Middlesex County
+1158,"Cave Creek,  Arizona",US,Cave Creek, ,Maricopa
+1159,"Maryknoll, New York",US,Lackawanna, ,Erie County
+1160,"Castleton-on-Hudson, New York",US,Castleton-on-Hudson, ,Rensselaer
+1161,"Pullman, Washington",US,Pullman, ,Whitman
+1162,"Watermill, New York",US,Southampton, ,Suffolk
+1163,"Slingerlands, New York",US,Bethlehem,Slingerlands,Albany
+1164,"Asheville, North Carolina",US,Asheville, ,Buncombe
+1165,"Needham, Massachussets",US,Needham, ,Norfolk
+1166,"New York City, New York",US,New York,Manhattan, 
+1167,"Syracuse, New York",US,Syracuse, ,Onondaga
+1168,"Iowa City, Iowa",US,Iowa City, ,Johnson
+1169,"Dobbs Ferry, New York",US,Dobbs Ferry, ,Westchester
+1170,"Ravena, New York",US,Coeymans,Ravena,Albany
+1171,"Grandview-on-Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
+1172,"North Caldwell, New Jersey",US,North Caldwell, ,Essex
+1173,"DOBBS FERRY, New York",US,Dobbs Ferry, ,Westchester
+1174,"Lagrangeville, New York",US,Lagrangeville, ,Dutchess
+1175,"Laurel, New York",US,Southold,Laurel,Suffolk
+1176,"Whiting, New Jersey",US,Manchester Township,Whiting,Ocean
+1177,"Levittown, New York",US,Levittown, ,Nassau
+1178,"Canandaigua, New York",US,Canandaigua, ,Ontario
+1179,"Hopewell Junction, New York",US,East Fishkill,Hopewell Junction,Dutchess
+1180,"Greenville, New York",US,Greenville, ,Orange
+1181,"Wyckoff, New Jersey",US,Wyckoff, ,Bergen
+1182,"Whitingham, Vermont",US,Jacksonville,Whitingham,Windham County
+1183,"Cazenovia, New York",US,Cazenovia,Cazenovia,Madison
+1184,"Bethesda, Maryland",US,Bethesda, ,Montgomery
+1185,"Milan, New York",US,Milan, ,Dutchess
+1186,"Chico, California",US,Chico, ,Butte
+1187,"Earlville, New York",US,Hamilton,Earlville,Madison
+1188,"New Providence, New Jersey",US,New Providence, ,Union
+1189,"Watervliet, New York",US,Watervliet, ,Albany
+1190,"Palisades, New York",US,Town of Orangetown,Palisades,Rockland
+1191,"Upper Montclair, New Jersey",US,Montclair,Upper Montclair,Essex
+1192,"Pine Hill, New York",US,Shandaken,Pine Hill,Ulster
+1193,"Yonkers, Virginia",US,Yonkers, ,Westchester
+1194,"Brooklyn, New York",US,New York,Brooklyn, 
+1195,"Herndon, Virginia",US,Herndon, ,Fairfax
+1196,"Quogue, New York",US,Southampton,Quogue,Suffolk
+1197,"Pomona, New York",US,Haverstraw,Pomona,Rockland
+1198,"Paterson, New Jersey",US,Paterson, ,Passaic
+1199,"Santa Rosa, California",US,Santa Rosa, ,Sonoma
+1200,"Cortlandt Manor, New York",US,Bari Manor,Croton-on-Hudson,Westchester
+1201,"Decatur, Georgia",US, , ,Decatur
+1202,"Maspeth, New York",US,Maspeth,Queens, 
+1203,"Cornwall On Hudson, New York",US,Cornwall,Cornwall-on-Hudson,Orange
+1204,"Long Beach, New York",US,Long Beach, ,Nassau
+1205,"New Hempstead, New York",US,New Hempstead, ,Rockland
+1206,"Chamblee, Georgia",US,Chamblee, ,DeKalb
+1207,"Johnstown, New York",US,Johnstown, ,Fulton
+1208,"Columbia, Missouri",US,Columbia, ,Boone
+1209,"Montclair, New Jersey",US,Montclair, ,Essex
+1210,"Plymouth Meeting, Pennsylvania",US,Plymouth Meeting, ,Montgomery
+1211,"Mattawan, Michigan",US,Mattawan, ,Van Buren
+1212,"Ridgefield, Connecticut",US,Ridgefield, ,Western Connecticut Planning Region
+1213,"Purchase, New York",US,Harrison,Purchase,Westchester
+1214,"Stuyversant, New York",US,New York, , 
+1215,"Pelham, New York",US,Pelham,Pelham,Westchester
+1216,"Charlevoix, Michigan",US, , ,Charlevoix
+1217,"Schenectady, New York",US,Schenectady, ,Schenectady County
+1218,"Great Neck, New York",US,Great Neck, ,Nassau
+1219,"Amenia, New York",US,Amenia, ,Dutchess
+1220,"Binghamton, New York",US,Binghamton, ,Broome
+1221,"Vineyard Haven, Massachussets",US,West Tisbury, ,Dukes
+1222,"Willow, New York",US, ,Newton-le-Willows,North Yorkshire
+1223,"East Haven, Connecticut",US,East Haven, ,South Central Connecticut Planning Region
+1224,"Loudonville, New York",US,Colonie,Loudonville,Albany
+1225,"Leander, Texas",US,Leander, ,Williamson
+1226,"East Elmhurst, New York",US,East Elmhurst,Queens, 
+1227,"Concord, Massachussets",US,Concord, ,Middlesex County
+1228,"Newark, New York",US,Newark, ,Wayne
+1229,"New Rochelle, New York",US,New Rochelle, ,Westchester
+1230,"Chicago, Illinois",US,Chicago, ,Cook County
+1231,"Basking Ridge, New Jersey",US,Bernards Township,Basking Ridge,Somerset
+1232,"Lodi, New Jersey",US,Lodi, ,Bergen
+1233,"Northford, Connecticut",US,North Branford,Northford,South Central Connecticut Planning Region
+1234,"Bloomfield, New Jersey",US,Bloomfield, ,Essex
+1235,"Sebastopol, California",US,Sebastopol, ,Sonoma
+1236,"Lexington, New York",US,New York,Manhattan, 
+1237,"Stockton, California",US,Stockton, ,San Joaquin
+1238,"Charlottesville, Virginia",US,Charlottesville, , 
+1239,"Little Silver, New Jersey",US, ,Little Silver,Monmouth
+1240,"Willsboro, New York",US,Willsboro, ,Essex
+1241,"Lexington, South Carolina",US, , ,Lexington
+1242,"Saugerties, New York",US,Saugerties,Saugerties,Ulster
+1243,"East Durham, New York",US,Durham,East Durham,Greene County
+1244,"Virginia Beach, Virginia",US,Virginia Beach, , 
+1245,"brooklyn, New York",US,New York,Brooklyn, 
