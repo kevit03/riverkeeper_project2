@@ -167,7 +167,7 @@ legend_html = f"""
     </div>
 
     <div style="margin-bottom: 6px;">
-        <span style="color:#444;">Missing geocodes:</span>
+        <span style="color:#444;">Missing Geocodes:</span>
         <span style="float:right; color:#c0392b; font-weight:600;">{invalid_count}</span>
     </div>
 

@@ -18,5 +18,10 @@ This project is a data driven initiatve built by the Biokind Team at NYU to anal
 
 -> **Data Cleaning of Over 8,000 entries**
 
+## Installing Streamlit 
+
+```
+pip install streamlit==1.51.0 
+```
 
 
