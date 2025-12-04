@@ -1,1 +1,8 @@
-
+streamlit==1.51.0 
+pandas
+numpy
+matplotlib
+geopy
+folium
+streamlit_folium
+plotly
