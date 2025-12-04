@@ -24,7 +24,6 @@ st.set_page_config(
 )
 
 def run():
-    st.dataframe(st.session_state.df)
 
     # convert to biokind format, clean, and store in session state
     if "bkdf" not in st.session_state:
@@ -34,7 +33,6 @@ def run():
             
     data = st.session_state.bkdf
 
-    st.dataframe(data)
     # change "city of new york" to "new york"
     data["City"].replace("City of New York", "New York", inplace=True)
 
@@ -88,6 +86,7 @@ def run():
                          color_discrete_sequence=px.colors.qualitative.Safe)
             fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
             st.plotly_chart(fig)
+            st.caption("*An active donor is defined as a donor who has donated at least once within the past 18 months.")
 
             col1, empty, col2 = st.columns([3, 1, 3])
             
