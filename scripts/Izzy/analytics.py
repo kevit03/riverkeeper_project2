@@ -30,7 +30,11 @@ def run():
         with st.spinner("Analyzing Data..."):
             st.session_state.bkdf = transform(PATH)
             st.session_state.bkdf = clean(st.session_state.bkdf)
+            
     data = st.session_state.bkdf
+
+    # change "city of new york" to "new york"
+    data["City"].replace("City of New York", "New York", inplace=True)
 
     # radio buttons for persistent tabs
     tabs = ["Basic Statistics", "Top Donors", "Donors by Location", "Donors by Date"]
@@ -82,6 +86,7 @@ def run():
                          color_discrete_sequence=px.colors.qualitative.Safe)
             fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
             st.plotly_chart(fig)
+            st.caption("*An active donor is defined as a donor who has donated at least once within the past 18 months.")
 
             col1, empty, col2 = st.columns([3, 1, 3])
             
@@ -96,8 +101,6 @@ def run():
 
             with col2:
                 ny = top_amt[top_amt["State"] == "New York"]
-                nyc = ["Brooklyn", "Queens", "The Bronx", "Bronx", "Staten Island", "Manhattan", "New York City"]
-                ny["City"] = ny["City"].replace(nyc, "New York")
                 city_counts = ny["City"].value_counts()
                 fig = px.pie(names=city_counts.index, 
                             values=city_counts.values, 
@@ -128,8 +131,6 @@ def run():
 
             with col2:
                 ny = top_freq[top_freq["State"] == "New York"]
-                nyc = ["Brooklyn", "Queens", "The Bronx", "Bronx", "Staten Island", "Manhattan", "New York City"]
-                ny["City"] = ny["City"].replace(nyc, "New York")
                 city_counts = ny["City"].value_counts()
                 fig = px.pie(names=city_counts.index, 
                             values=city_counts.values, 
@@ -181,11 +182,6 @@ def run():
         st.selectbox("Select a state to view a breakdown of cities in that state:", options=states, key="state")
         state_data = data[data["State"] == st.session_state.state].copy()
 
-        # fixing nyc if ny
-        if st.session_state.state == "New York":
-            boroughs = ["Brooklyn", "Queens", "The Bronx", "Staten Island", "Manhattan"]
-            state_data.loc[state_data["Borough"].isin(boroughs), "City"] = "New York"
-
         # get breakdown of cities in that state
         city_counts = state_data["City"].value_counts().reset_index()
         city_counts.columns = ["City", "Donor Count"]
@@ -207,6 +203,7 @@ def run():
 
         ##### breakdown of nyc boroughs
         if st.session_state.state == "New York":
+            boroughs = ["Manhattan", "Queens", "Brooklyn", "The Bronx", "Staten Island"]
             nyc = state_data[state_data["Borough"].isin(boroughs)]
             borough_counts = nyc["Borough"].value_counts().reset_index()
             borough_counts.columns = ["Borough", "Donor Count"]

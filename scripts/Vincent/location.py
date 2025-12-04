@@ -51,10 +51,7 @@ def disambiguate_address(address: dict, location_name: str) -> list:
     else:
         district.append(" ")
 
-    if 'countrycode' in address:
-        country_code.append(address['countrycode'])
-    else:
-        country_code.append("US")
+    country_code.append("US")
 
     return [location_ref, country_code, city, district, county]
 
@@ -180,13 +177,13 @@ def merge(stored_file: str, new_file: pd.DataFrame) -> list:
 
     # reformat columns properly
     for column in new_file.columns:
-        if re.search("Unnamed", column) != None or column in ["Country_y", "City_y", "Location"]:
+        if re.search("Unnamed", column) != None or column in ["Country_x", "City_x", "Location"]:
             new_file = new_file.drop(columns=column)
-        elif column in ["City_x", "Country_x"]:
+        elif column in ["City_y", "Country_y"]:
             new_file = new_file.rename(columns={column: column[:-2]}) 
 
     # reorder columns
-    new_file = new_file.iloc[:, [0, 1, 10, 9, 2, 5, 3, 4, 6, 7, 8]]    
+    new_file = new_file.iloc[:, [0, 8, 10, 9, 1, 7, 2, 3, 4, 5, 6]]    
 
     # return the file
     return new_file
@@ -213,9 +210,9 @@ def run(input_file: str):
 
     # validation logic
     if (type(res) != type(pd.DataFrame())):
-        print("The provided input file is not valid, as it lacks the following columns:" + " ".join(missing_cols))
+        print("The provided input file is not valid, as it lacks the following columns:" + ", ".join(missing_cols))
         return
-    
+
     # generate a list of locations not found and update them
     addressList = generate_queries(stored_file, res)
     if addressList != None:
