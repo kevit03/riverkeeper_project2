@@ -84,3 +84,5 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 
 st.markdown("<div class='footer'>Map generated automatically using geospatial data</div>", unsafe_allow_html=True)
+
+#export PATH="$HOME/Library/Python/3.9/bin:$PATH"
