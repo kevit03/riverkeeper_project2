@@ -33,8 +33,10 @@ def run():
             
     data = st.session_state.bkdf
 
-    # change "city of new york" to "new york"
+    # change "city of new york" to "new york" and change city to new york for boroughs
     data["City"].replace("City of New York", "New York", inplace=True)
+    boroughs = ["Manhattan", "Queens", "Brooklyn", "The Bronx", "Staten Island"]
+    data["City"].loc[data["Borough"].isin(boroughs)] = "New York"
 
     # radio buttons for persistent tabs
     tabs = ["Basic Statistics", "Top Donors", "Donors by Location", "Donors by Date"]
