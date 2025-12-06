@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 from time import sleep
 from pathlib import Path
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = PROJECT_ROOT / "data"
 
 def disambiguate_address(address: dict, location_name: str) -> list:
     '''
@@ -189,21 +191,13 @@ def merge(stored_file: str, new_file: pd.DataFrame) -> list:
     return new_file
 
 def run(input_file: str):
-    '''
+    """
     Run the program
+    """
+    new_file = input_file  # input file
 
-    Args:
-        input_file (str): path to the input file
-
-    Returns:
-        pd.DataFrame: the merged dataframe
-    '''
-    # hard-coded paths:
-    # "../../data/Riverkeeper_Donors_for_NYU_Biokind_Project-10.22.25.csv" for input
-    # "RiverKeeper_Donors_Unique_Locations.csv" for output
-
-    new_file = input_file # input file
-    stored_file = "../../data/RiverKeeper_Donors_Unique_Locations.csv" # output file
+    # repo-relative path to the cached locations CSV
+    stored_file = DATA_DIR / "RiverKeeper_Donors_Unique_Locations.csv"
 
     # first validate files, if successful, will return the read in csv values
     res, missing_cols = validate(new_file)

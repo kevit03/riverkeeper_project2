@@ -5130,5 +5130,441 @@
   "Guilderland, NY, United States": [
     42.704522,
     -73.911513
+  ],
+  "nan, nan, United States": [
+    52.1003633,
+    4.285897
+  ],
+  "Aventura, FL, United States": [
+    25.9564812,
+    -80.1392121
+  ],
+  "Ardsley-On-Hudson, NY, United States": [
+    41.0270084,
+    -73.876681
+  ],
+  "Brooklyn, NY, nan": [
+    55.7225455,
+    -3.331475
+  ],
+  "Innsbruck, nan, Austria": [
+    null,
+    null
+  ],
+  "Annandale-On-Hudson, NY, United States": [
+    42.0128695,
+    -73.9081901
+  ],
+  "Pasadena, Part-Time Larchmont, CA, United States": [
+    null,
+    null
+  ],
+  "Wolverine Lake, MI, United States": [
+    42.5566926,
+    -83.4761395
+  ],
+  "Cornwall-On-Hudson, NY, United States": [
+    41.4448133,
+    -74.0155219
+  ],
+  "Township Of Washington, NJ, United States": [
+    40.9884843,
+    -74.0652437
+  ],
+  "Malden-On-Hudson, NY, United States": [
+    42.0919535,
+    -73.9365242
+  ],
+  "nan, NY, United States": [
+    52.4076653,
+    16.9299536
+  ],
+  "nan, OR, United States": [
+    null,
+    null
+  ],
+  "Glen Ridge, NJ, nan": [
+    null,
+    null
+  ],
+  "Goshen, NY, nan": [
+    55.3875419,
+    -2.4422159
+  ],
+  "nan, NJ, United States": [
+    null,
+    null
+  ],
+  "Malden On Hudson, NY, United States": [
+    42.0919535,
+    -73.9365242
+  ],
+  "Sunnew Yorkside, NY, United States": [
+    null,
+    null
+  ],
+  "Ny, NY, United States": [
+    40.7372329,
+    -73.862477
+  ],
+  "Castleton-On-Hudson, Ny, Usa, NY, United States": [
+    null,
+    null
+  ],
+  "Castleton-On-Hudson, NY, United States": [
+    42.5308134,
+    -73.7553018
+  ],
+  "Mt Vernon, NY, United States": [
+    40.9125085,
+    -73.8386504
+  ],
+  "Wesley Hills, NY, United States": [
+    41.1593749,
+    -74.0700471
+  ],
+  "Mamaroneck, NY, nan": [
+    40.9505815,
+    -73.7336409
+  ],
+  "Valley Cottage, NY, nan": [
+    null,
+    null
+  ],
+  "Glendale, MA, United States": [
+    42.4150559,
+    -71.0482168
+  ],
+  "Milton, NY, nan": [
+    57.5622675,
+    -4.0372181
+  ],
+  "New York, NY, nan": [
+    null,
+    null
+  ],
+  "London, nan, England": [
+    52.1117555,
+    0.1712205
+  ],
+  "Brookfield, WI, nan": [
+    null,
+    null
+  ],
+  "Dushanbe, nan, Tajikistan": [
+    null,
+    null
+  ],
+  "Avon-By-The-Sea, NJ, United States": [
+    40.1923357,
+    -74.0159703
+  ],
+  "Bordeaux, nan, France": [
+    47.2107207,
+    -1.6115835
+  ],
+  "Dobbs Ferry, NY, nan": [
+    null,
+    null
+  ],
+  "Surbiton, nan, England": [
+    null,
+    null
+  ],
+  "Northwood, nan, England": [
+    51.7508851,
+    -1.2390993
+  ],
+  "Milan, nan, Italy": [
+    null,
+    null
+  ],
+  "Hopewell, NJ, United States": [
+    40.3892726,
+    -74.7618285
+  ],
+  "Hillburn, NY, United States": [
+    41.1239845,
+    -74.1693119
+  ],
+  "nan, nan, nan": [
+    29.3644727,
+    112.3905651
+  ],
+  "nan, PA, United States": [
+    -35.3063834,
+    149.1167118
+  ],
+  "nan, TX, United States": [
+    29.8249495,
+    -95.4786754
+  ],
+  "Kingston, NY, nan": [
+    null,
+    null
+  ],
+  "Huntersville, NC, United States": [
+    35.4108278,
+    -80.8429304
+  ],
+  "Red Hook, NY, nan": [
+    null,
+    null
+  ],
+  "Leominster, nan, England": [
+    null,
+    null
+  ],
+  "Agartala, nan, India": [
+    null,
+    null
+  ],
+  "nan, RI, United States": [
+    34.9251124,
+    127.5106801
+  ],
+  "nan, CT, United States": [
+    41.3225837,
+    -72.1773072
+  ],
+  "Tarrytown, NY, nan": [
+    41.0539066,
+    -73.8608811
+  ],
+  "Berlin, nan, Germany": [
+    null,
+    null
+  ],
+  "Bangor, ME, United States": [
+    44.8016255,
+    -68.7713289
+  ],
+  "Peekskill, NY, nan": [
+    null,
+    null
+  ],
+  "nan, CA, United States": [
+    37.4261565,
+    -121.905666
+  ],
+  "Nanuet, NY, nan": [
+    null,
+    null
+  ],
+  "nan, ON, United States": [
+    null,
+    null
+  ],
+  "nan, MD, United States": [
+    null,
+    null
+  ],
+  "nan, VA, United States": [
+    29.8249495,
+    -95.4786754
+  ],
+  "nan, GA, United States": [
+    29.8249495,
+    -95.4786754
+  ],
+  "nan, LA, United States": [
+    47.6546655,
+    -122.3097943
+  ],
+  "nan, MA, United States": [
+    41.3225837,
+    -72.1773072
+  ],
+  "nan, IL, United States": [
+    null,
+    null
+  ],
+  "nan, FL, United States": [
+    null,
+    null
+  ],
+  "nan, CO, United States": [
+    29.8249495,
+    -95.4786754
+  ],
+  "Sleightsburg, NY, United States": [
+    41.9167591,
+    -73.9765266
+  ],
+  "Woodstock, NY, nan": [
+    55.6442701,
+    -3.1917903
+  ],
+  "New York City, NY, nan": [
+    null,
+    null
+  ],
+  "nan, NY, nan": [
+    null,
+    null
+  ],
+  "Salisbury, NC, United States": [
+    35.6709727,
+    -80.4742261
+  ],
+  "Cave Creek, AZ, United States": [
+    33.8333333,
+    -111.950833
+  ],
+  "West Nyack, NY, nan": [
+    null,
+    null
+  ],
+  "Ossining, NY, nan": [
+    null,
+    null
+  ],
+  "Upper Nyack, NY, nan": [
+    null,
+    null
+  ],
+  "Jersey City, NJ, nan": [
+    40.7168217,
+    -74.0388173
+  ],
+  "White Plains, NY, nan": [
+    null,
+    null
+  ],
+  "Bronx, NY, nan": [
+    null,
+    null
+  ],
+  "Poughkeepsie Town, NY, nan": [
+    null,
+    null
+  ],
+  "Sleepy Hollow, NY, nan": [
+    41.0606181,
+    -73.8633313
+  ],
+  "Hudson, NY, nan": [
+    41.0546378,
+    -73.8608984
+  ],
+  "Durham, NC, nan": [
+    35.16753,
+    -82.1979628
+  ],
+  "Athens, NY, nan": [
+    null,
+    null
+  ],
+  "Dolgeville, NY, nan": [
+    null,
+    null
+  ],
+  "Troy, NY, nan": [
+    null,
+    null
+  ],
+  "Cortlandt Manor, NY, nan": [
+    null,
+    null
+  ],
+  "Beacon, NY, nan": [
+    null,
+    null
+  ],
+  "Pelham, NY, nan": [
+    null,
+    null
+  ],
+  "Mount Vernon, NY, nan": [
+    null,
+    null
+  ],
+  "Cherry Hill Township, NJ, nan": [
+    null,
+    null
+  ],
+  "Verona, NJ, nan": [
+    null,
+    null
+  ],
+  "Seattle, WA, nan": [
+    47.6546655,
+    -122.3097943
+  ],
+  "Poughkeepsie, NY, nan": [
+    null,
+    null
+  ],
+  "Highland Falls, NY, nan": [
+    null,
+    null
+  ],
+  "Charlotteville, NY, nan": [
+    null,
+    null
+  ],
+  "Delmar, NY, nan": [
+    null,
+    null
+  ],
+  "Newburgh, NY, nan": [
+    55.4695412,
+    -3.07226
+  ],
+  "Long Island City, NY, nan": [
+    40.746475,
+    -73.9422389
+  ],
+  "Yorktown Heights, NY, nan": [
+    null,
+    null
+  ],
+  "Ellenville, NY, nan": [
+    null,
+    null
+  ],
+  "Elmont, NY, nan": [
+    null,
+    null
+  ],
+  "Old Tappan, NY, nan": [
+    null,
+    null
+  ],
+  "Glenmont, NY, nan": [
+    null,
+    null
+  ],
+  "Pine Plains, NY, nan": [
+    null,
+    null
+  ],
+  "Cocoa Beach, FL, nan": [
+    null,
+    null
+  ],
+  "Franklin Square, NY, nan": [
+    null,
+    null
+  ],
+  "Straatsburg, NY, nan": [
+    null,
+    null
+  ],
+  "North Kingstown, RI, nan": [
+    null,
+    null
+  ],
+  "Chappaqua, NY, nan": [
+    null,
+    null
+  ],
+  "Northport, NY, nan": [
+    null,
+    null
+  ],
+  "Sea Cliff, NJ, nan": [
+    null,
+    null
   ]
 }

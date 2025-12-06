@@ -1,8 +1,9 @@
-streamlit==1.51.0 
+streamlit==1.51.0
 pandas
 numpy
 matplotlib
+plotly
 geopy
 folium
-streamlit_folium
-plotly
+streamlit-folium
+requests
