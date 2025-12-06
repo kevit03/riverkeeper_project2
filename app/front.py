@@ -17,8 +17,6 @@ from functions.frontend_helpers import (
     render_stats,
 )
 
-# 👇 import the heatmap renderer from your Kevin file
-# adjust the module name/path as needed
 from scripts.Kevin.heatmap import render_heatmap
 
 
@@ -38,7 +36,6 @@ def main() -> None:
     if "raw_df" not in st.session_state:
         st.session_state.raw_df = load_persistent()
 
-    # ---- File upload + merge/enrich ----
     uploaded = st.file_uploader("Upload a Riverkeeper-formatted CSV", type=["csv"])
     if uploaded is not None:
         try:
@@ -50,7 +47,6 @@ def main() -> None:
         except Exception as exc:
             st.error(f"Could not process file: {exc}")
 
-    # ---- Ensure we have a working dataframe ----
     if st.session_state.data is None:
         if len(st.session_state.raw_df) == 0:
             st.info("No data loaded yet. Upload a CSV to get started.")
@@ -73,7 +69,6 @@ def main() -> None:
         render_stats(data)
 
     with tab_heatmap:
-        # 🔥 Call into your heatmap file here
         render_heatmap(data)
 
 
