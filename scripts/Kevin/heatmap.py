@@ -23,7 +23,6 @@ def is_kansas(lat, lon) -> bool:
     return (36.99 <= lat <= 40.01) and (-102.06 <= lon <= -94.58)
 
 
-import pandas as pd  # make sure this is at the top of the file
 
 def is_valid_coordinate(lat, lon) -> bool:
     """Basic sanity checks for coordinates, including NaNs."""
