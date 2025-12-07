@@ -150,7 +150,7 @@ NOTE: Our model does not use `BFPO No` or `Postcode`, due to them not being pres
 
 ## 4. Uploading file
 
-When the report is created, **Do not rename the columns** in Excel/Numbers/Google Sheets and after, save and upload the CSV file into the Riverkeeper donor dashboard when prompted.
+When the report is created, **do not rename the columns** in Excel/Numbers/Google Sheets and after, save and upload the CSV file into the Riverkeeper donor dashboard when prompted.
 
 Once the CSV follows this format, the dashboard should be able to read it and generate the maps, charts, and summaries automatically.
 
