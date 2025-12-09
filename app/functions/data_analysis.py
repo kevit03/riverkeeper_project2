@@ -107,6 +107,7 @@ def inactive_donors(df: pd.DataFrame) -> pd.DataFrame:
 def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
     returns top n donors with 
+        account id,
         city,
         state,
         total amount,
@@ -124,12 +125,12 @@ def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     top_donors["Last Gift Date"] = top_donors["Last Gift Date"].dt.date
     top_donors["Number of Gifts Past 18 Months"] = top_donors["Number of Gifts Past 18 Months"].astype(int)
     top_donors.reset_index(drop=True, inplace=True)
-    return top_donors[["City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
+    return top_donors[["Account ID", "City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
 
 def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
     returns n most frequent donors with 
-        account id, 
+        account id,
         city,
         state,
         total amount,
@@ -147,7 +148,7 @@ def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     frequent_donors["Last Gift Date"] = frequent_donors["Last Gift Date"].dt.date
     frequent_donors["Number of Gifts Past 18 Months"] = frequent_donors["Number of Gifts Past 18 Months"].astype(int)
     frequent_donors.reset_index(drop=True, inplace=True)
-    return frequent_donors[["City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
+    return frequent_donors[["Account ID", "City", "State", "Total Gifts (All Time)", "Last Gift Date", "Number of Gifts Past 18 Months"]]
 
 # stats by location
 
@@ -181,6 +182,9 @@ def stats_by_state(df: pd.DataFrame) -> pd.DataFrame:
     # copy data and drop rows where there is no state
     df["State"] = df["State"].replace("", np.nan)
     data = df.copy().dropna(subset=["State"])
+
+    # normalize New York naming
+    data["State"] = data["State"].replace({"NY": "New York", "ny": "New York"})
 
     # group by city and create dataframe
     g = data.groupby("State")

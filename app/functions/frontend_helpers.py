@@ -41,7 +41,6 @@ BASE_COLUMNS = [
 ENRICHED_COLUMNS = [
     "Account ID",
     "City",
-    "Borough",
     "County",
     "State",
     "Country",
@@ -80,6 +79,26 @@ def load_enriched() -> pd.DataFrame:
 def _save_csv(df: pd.DataFrame, path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(path, index=False)
+
+
+def _group_top(names, values, top_n=9, other_label="Other"):
+    pairs = list(zip(names, values))
+    pairs = sorted(pairs, key=lambda x: x[1], reverse=True)
+    total = sum(v for _, v in pairs)
+    keep = []
+    other = []
+    for n, v in pairs[:top_n]:
+        if total > 0 and v / total < 0.01:
+            other.append((n, v))
+        else:
+            keep.append((n, v))
+    other.extend(pairs[top_n:])
+    if other:
+        keep.append((other_label, sum(v for _, v in other)))
+    grouped_names = [str(n) for n, _ in keep]
+    grouped_values = [v for _, v in keep]
+    return grouped_names, grouped_values
+
 
 
 def merge_and_enrich(new_df: pd.DataFrame) -> pd.DataFrame:
@@ -133,19 +152,23 @@ def merge_and_enrich(new_df: pd.DataFrame) -> pd.DataFrame:
         except Exception as e:
             raise RuntimeError(f"merge_and_enrich -> geocode_if_needed failed: {e}") from e
 
-    # Normalize NYC entries: if we have a borough, use it as City; handle "City of New York"
+    # Normalize NYC entries: if we have a borough, set City to "New York City"; handle "City of New York"
+    def normalize_nyc(row):
+        borough = str(row.get("Borough") or "").strip() if "Borough" in row else ""
+        city = str(row.get("City") or "").strip()
+        if borough:
+            row["City"] = "New York City"
+            row["State"] = "New York"
+            row["County"] = borough
+        elif city.lower() == "city of new york":
+            row["City"] = "New York City"
+            row["State"] = "New York"
+        return row
+    enriched_clean = enriched_clean.apply(normalize_nyc, axis=1)
+
+    # drop Borough column entirely
     if "Borough" in enriched_clean.columns:
-        def normalize_nyc(row):
-            borough = str(row.get("Borough") or "").strip()
-            city = str(row.get("City") or "").strip()
-            if borough:
-                row["City"] = borough
-                row["State"] = "NY"
-            elif city.lower() == "city of new york":
-                row["City"] = "New York"
-                row["State"] = "NY"
-            return row
-        enriched_clean = enriched_clean.apply(normalize_nyc, axis=1)
+        enriched_clean = enriched_clean.drop(columns=["Borough"])
 
     # Add a more specific local area field for NYC rows (use original location string)
     nyc_cities = {"NEW YORK", "NEW YORK CITY", "NYC", "CITY OF NEW YORK"}
@@ -155,7 +178,7 @@ def merge_and_enrich(new_df: pd.DataFrame) -> pd.DataFrame:
             if (
                 str(r.get("State") or "").upper() == "NY"
                 and (
-                    str(r.get("Borough") or "").strip() in nyc_boroughs
+                    str(r.get("County") or "").strip() in nyc_boroughs
                     or str(r.get("City") or "").strip().upper() in nyc_cities
                 )
                 and str(r.get("OriginalLocation") or "").strip()
@@ -217,24 +240,37 @@ def render_stats(df: pd.DataFrame) -> None:
             title="Status of All Donors",
             color_discrete_sequence=px.colors.qualitative.Safe,
         )
-        fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
+        fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})', textinfo="label+percent")
         st.plotly_chart(fig, width="stretch")
 
     st.subheader("Geography Breakdown")
     states_df = stats_by_state(df)
     st.dataframe(states_df)
 
-    # state pie chart
+    # state pies: donors and total gifts
     if not states_df.empty and "Donors" in states_df.columns:
-        # states_df index is state codes
+        col_a, col_b = st.columns(2)
+        g_names, g_vals = _group_top(states_df.index, states_df["Donors"], top_n=9)
         fig = px.pie(
-            names=states_df.index,
-            values=states_df["Donors"],
-            title="Percentage of Donors from Each State",
+            names=g_names,
+            values=g_vals,
+            title="Donors by State",
             color_discrete_sequence=px.colors.qualitative.Safe,
         )
-        fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
-        st.plotly_chart(fig, width="stretch")
+        fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})', textinfo="label+percent")
+        col_a.plotly_chart(fig, width="stretch")
+
+        # convert totals back to numeric for amount pie
+        amt_series = states_df["Total Gifts (All Time)"].apply(lambda x: float(str(x).replace("$", "").replace(",", "")))
+        g_names_amt, g_vals_amt = _group_top(states_df.index, amt_series, top_n=9)
+        fig_amt = px.pie(
+            names=g_names_amt,
+            values=g_vals_amt,
+            title="Donation Amount by State",
+            color_discrete_sequence=px.colors.qualitative.Safe,
+        )
+        fig_amt.update_traces(hovertemplate='%{label}: $%{value:,.0f} (%{percent})', textinfo="label+percent")
+        col_b.plotly_chart(fig_amt, width="stretch")
 
     st.caption("Donors without usable location")
     st.dataframe(stats_no_location(df))
@@ -248,33 +284,60 @@ def render_stats(df: pd.DataFrame) -> None:
         state_data = df[df["State"] == selected_state].copy()
         city_counts = state_data["City"].value_counts().reset_index()
         city_counts.columns = ["City", "Donor Count"]
-        threshold = city_counts["Donor Count"].sum() * 0.01
-        city_counts["City_filtered"] = city_counts.apply(lambda row: row["City"] if row["Donor Count"] >= threshold else "Other", axis=1)
+        g_names, g_vals = _group_top(city_counts["City"], city_counts["Donor Count"], top_n=9)
+        col_a, col_b = st.columns(2)
         fig = px.pie(
-            city_counts,
-            names="City_filtered",
-            values="Donor Count",
-            title=f"Percentage of Donors from Each City in {selected_state}",
+            names=g_names,
+            values=g_vals,
+            title=f"Donors by City in {selected_state}",
             color_discrete_sequence=px.colors.qualitative.Safe,
         )
-        fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
-        st.plotly_chart(fig, width="stretch")
+        fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})', textinfo="label+percent")
+        col_a.plotly_chart(fig, width="stretch")
+
+        # amount pie for cities
+        city_amt = state_data.groupby("City")["Total Gifts (All Time)"].apply(
+            lambda s: pd.to_numeric(s.replace({"\$": "", ",": ""}, regex=True), errors="coerce").sum()
+        )
+        g_names_amt, g_vals_amt = _group_top(city_amt.index, city_amt.values, top_n=9)
+        fig_amt = px.pie(
+            names=g_names_amt,
+            values=g_vals_amt,
+            title=f"Donation Amount by City in {selected_state}",
+            color_discrete_sequence=px.colors.qualitative.Safe,
+        )
+        fig_amt.update_traces(hovertemplate='%{label}: $%{value:,.0f} (%{percent})', textinfo="label+percent")
+        col_b.plotly_chart(fig_amt, width="stretch")
 
         if selected_state == "New York":
             boroughs = ["Manhattan", "Queens", "Brooklyn", "The Bronx", "Staten Island"]
-            nyc = state_data[state_data["Borough"].isin(boroughs)]
+            nyc = state_data[state_data["County"].isin(boroughs)]
             if not nyc.empty:
-                borough_counts = nyc["Borough"].value_counts().reset_index()
+                borough_counts = nyc["County"].value_counts().reset_index()
                 borough_counts.columns = ["Borough", "Donor Count"]
+                col_a, col_b = st.columns(2)
+                g_names, g_vals = _group_top(borough_counts["Borough"], borough_counts["Donor Count"], top_n=9)
                 fig = px.pie(
-                    borough_counts,
-                    names="Borough",
-                    values="Donor Count",
-                    title="Percentage of Donors from Each Borough in New York City",
+                    names=g_names,
+                    values=g_vals,
+                    title="Donors by Borough in New York City",
                     color_discrete_sequence=px.colors.qualitative.Safe,
                 )
-                fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
-                st.plotly_chart(fig, width="stretch")
+                fig.update_traces(hovertemplate='%{label}: %{value} (%{percent})', textinfo="label+percent")
+                col_a.plotly_chart(fig, width="stretch")
+
+                borough_amt = nyc.groupby("County")["Total Gifts (All Time)"].apply(
+                    lambda s: pd.to_numeric(s.replace({"\$": "", ",": ""}, regex=True), errors="coerce").sum()
+                )
+                g_names_amt, g_vals_amt = _group_top(borough_amt.index, borough_amt.values, top_n=9)
+                fig_amt = px.pie(
+                    names=g_names_amt,
+                    values=g_vals_amt,
+                    title="Donation Amount by Borough in New York City",
+                    color_discrete_sequence=px.colors.qualitative.Safe,
+                )
+                fig_amt.update_traces(hovertemplate='%{label}: $%{value:,.0f} (%{percent})', textinfo="label+percent")
+                col_b.plotly_chart(fig_amt, width="stretch")
 
     st.subheader("Gifts Over Time")
     col1, col2 = st.columns(2)

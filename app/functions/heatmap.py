@@ -120,7 +120,7 @@ def build_map_from_df(df: pd.DataFrame) -> Tuple[folium.Map, int, int]:
     Given a DataFrame with Latitude / Longitude, build the Folium map and
     return (map, invalid_count, kansas_count).
     """
-    counts = defaultdict(lambda: {"count": 0, "labels": set()})
+    counts = defaultdict(lambda: {"count": 0, "labels": set(), "total": 0.0})
     invalid_count = 0
     kansas_count = 0
 
@@ -141,6 +141,12 @@ def build_map_from_df(df: pd.DataFrame) -> Tuple[folium.Map, int, int]:
         rounded_lon = round(float(lon), 3)
         key = (rounded_lat, rounded_lon)
         counts[key]["count"] += 1
+        # sum donation amount if available
+        try:
+            amt = float(row.get("Total Gifts (All Time)", 0) or 0)
+        except Exception:
+            amt = 0.0
+        counts[key]["total"] += amt
         # capture a human-friendly label (prefer original location if present)
         orig = str(row.get("OriginalLocation") or "").strip()
         city = str(row.get("City") or "").strip()
@@ -175,11 +181,18 @@ def build_map_from_df(df: pd.DataFrame) -> Tuple[folium.Map, int, int]:
     # Add real markers
     for (lat, lon), info in counts.items():
         num = info["count"]
+        total_amt = info["total"]
         label_list = sorted(info["labels"])
         label_text = label_list[0] if label_list else "Unknown location"
         if len(label_list) > 1:
             label_text += f" (+{len(label_list)-1} nearby)"
-        popup_html = f"<div style='font-size:14px; padding:6px 8px;'><b>{num} donor(s)</b><br>{label_text}</div>"
+        popup_html = (
+            f"<div style='font-size:14px; padding:6px 8px;'>"
+            f"<b>{num} donor(s)</b><br>"
+            f"Total donated: ${total_amt:,.2f}<br>"
+            f"{label_text}"
+            f"</div>"
+        )
         folium.Marker(
             location=[lat, lon],
             popup=folium.Popup(popup_html, max_width=300),

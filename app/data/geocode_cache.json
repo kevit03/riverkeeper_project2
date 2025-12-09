@@ -8403,5 +8403,30 @@
     40.9009595,
     -73.343167,
     "Village of Northport"
+  ],
+  "The Bronx, New York, United States": [
+    40.8466508,
+    -73.8785937,
+    "City of New York"
+  ],
+  "Manhattan, New York, United States": [
+    40.7579554,
+    -73.9855319,
+    "City of New York"
+  ],
+  "Manhattan, New York, ": [
+    40.7579554,
+    -73.9855319,
+    "City of New York"
+  ],
+  "The Bronx, New York, ": [
+    40.8466508,
+    -73.8785937,
+    "City of New York"
+  ],
+  "Queens, New York, ": [
+    40.7135078,
+    -73.8283132,
+    "City of New York"
   ]
 }
