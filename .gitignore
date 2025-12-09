@@ -18,8 +18,6 @@ Thumbs.db
 *.onnx
 
 # Data files
-*.csv
-*.json
 !geocode_cache.json
 *.xls
 *.xlsx
