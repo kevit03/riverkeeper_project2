@@ -43,7 +43,7 @@ streamlit run app/front.py
 
 To use the Riverkeeper donor dashboard, please upload a CSV file with a specific set of columns and formats.
 
-The app expects exactly the following base columns (names must match, including spaces and capitalization):
+The app expects exactly the following structure / base columns (names must match, including spaces and capitalization):
 
 - `Account ID`
 - `City`
