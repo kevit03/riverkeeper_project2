@@ -17,12 +17,7 @@ from functions.frontend_helpers import (  # noqa: E402
     merge_and_enrich,
     render_stats,
 )
-<<<<<<< HEAD
 from functions.heatmap import geocode_if_needed, render_map  # noqa: E402
-=======
-
-from scripts.Kevin.heatmap import render_heatmap
->>>>>>> b636ec3802e0b3580010baa6781bd0c3e4232a67
 
 
 
@@ -77,12 +72,8 @@ def main() -> None:
         render_stats(data)
 
     with tab_heatmap:
-<<<<<<< HEAD
         work_df = geocode_if_needed(data, cache_path=None, geocode_limit=10_000)
         render_map(work_df)
-=======
-        render_heatmap(data)
->>>>>>> b636ec3802e0b3580010baa6781bd0c3e4232a67
 
 
 if __name__ == "__main__":

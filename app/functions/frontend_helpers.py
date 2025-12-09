@@ -26,6 +26,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 PERSISTENT_RAW = BASE_DIR / "data" / "donor_data.csv"
 PERSISTENT_ENRICHED = BASE_DIR / "data" / "donor_data_enriched.csv"
 LOCATION_CACHE = BASE_DIR / "data" / "RiverKeeper_Donors_Unique_Locations.csv"
+GEO_CACHE_JSON = BASE_DIR / "data" / "geocode_cache.json"
 BASE_COLUMNS = [
     "Account ID",
     "City",
@@ -126,7 +127,7 @@ def merge_and_enrich(new_df: pd.DataFrame) -> pd.DataFrame:
         try:
             enriched_clean = geocode_if_needed(
                 enriched_clean,
-                cache_path=str(LOCATION_CACHE),
+                cache_path=str(GEO_CACHE_JSON),
                 geocode_limit=5000,
             )
         except Exception as e:
