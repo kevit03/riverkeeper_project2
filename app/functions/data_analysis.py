@@ -25,6 +25,30 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     converts numeric data to numeric types and dates to datetime type and adds the category column
     '''
     df = df.copy()
+    # ensure required columns exist
+    required = [
+        "Account ID",
+        "Total Gifts (All Time)",
+        "Number of Gifts Past 18 Months",
+        "Last Gift Date",
+        "City",
+        "State",
+        "Country",
+    ]
+    for col in required:
+        if col not in df.columns:
+            df[col] = None
+    # strip and clean location fields; drop numeric-only placeholders
+    df["City"] = df["City"].apply(lambda x: str(x).strip() if pd.notna(x) else np.nan)
+    df["State"] = df["State"].apply(lambda x: str(x).strip() if pd.notna(x) else np.nan)
+    df.loc[df["City"].isin(["", "nan", "NaN", "None", "none"]), "City"] = np.nan
+    df.loc[df["State"].isin(["", "nan", "NaN", "None", "none"]), "State"] = np.nan
+    df.loc[df["City"].str.fullmatch(r"\d+", na=False), "City"] = np.nan
+    df.loc[df["State"].str.fullmatch(r"\d+", na=False), "State"] = np.nan
+    # drop any city values that contain digits (e.g., stray numeric labels)
+    df.loc[df["City"].str.contains(r"\d", na=False), "City"] = np.nan
+    df.loc[df["State"].str.contains(r"\d", na=False), "State"] = np.nan
+
     # ensure strings before string ops
     df["Total Gifts (All Time)"] = (
         df["Total Gifts (All Time)"]
@@ -61,8 +85,10 @@ def median_total_donation(df: pd.DataFrame) -> float:
 
 def modal_total_donation(df: pd.DataFrame) -> float:
     donation_mode = donations_precise(df).mode()
-    if isinstance(donation_mode, pd.Series):
+    if isinstance(donation_mode, pd.Series) and not donation_mode.empty:
         donation_mode = donation_mode.iloc[0]
+    elif isinstance(donation_mode, pd.Series) and donation_mode.empty:
+        return 0.0
     return round(donation_mode, 2)
 
 def basic_stats(df: pd.DataFrame) -> pd.DataFrame:
@@ -99,7 +125,7 @@ def inactive_donors(df: pd.DataFrame) -> pd.DataFrame:
     '''
     basic stats for inactive donors
     '''
-    inactive = df[df["Number of Gifts Past 18 Months"] == 0 | np.isnan(df["Number of Gifts Past 18 Months"])]
+    inactive = df[(df["Number of Gifts Past 18 Months"] == 0) | (np.isnan(df["Number of Gifts Past 18 Months"]))]
     res = basic_stats(inactive)
     res.rename(columns={"Donors": "Inactive Donors"}, inplace=True)
     return res
@@ -115,6 +141,9 @@ def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
         donations in past 18 months
     '''
     df = df.replace({"": np.nan, "None": np.nan, "none": np.nan})
+    for col in ["Total Gifts (All Time)", "City", "State"]:
+        if col not in df.columns:
+            df[col] = np.nan
     # drop rows with missing key fields
     df = df.dropna(subset=["Total Gifts (All Time)", "City", "State"])
     sorted_donations = df.copy().sort_values(by="Total Gifts (All Time)", ascending=False)
@@ -138,6 +167,9 @@ def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
         donations in past 18 months
     '''
     df = df.replace({"": np.nan, "None": np.nan, "none": np.nan})
+    for col in ["Number of Gifts Past 18 Months", "City", "State"]:
+        if col not in df.columns:
+            df[col] = np.nan
     # drop rows with missing key fields
     df = df.dropna(subset=["Number of Gifts Past 18 Months", "City", "State"])
     sorted_donations = df.copy().sort_values(by=["Number of Gifts Past 18 Months", "Total Gifts (All Time)"], ascending=False)
@@ -179,6 +211,10 @@ def stats_by_state(df: pd.DataFrame) -> pd.DataFrame:
         donations in the past 18 months,
         most recent donation date
     '''
+    # ensure required cols exist
+    for col in ["State", "City", "Account ID", "Total Gifts (All Time)", "Number of Gifts Past 18 Months"]:
+        if col not in df.columns:
+            df[col] = np.nan
     # copy data and drop rows where there is no state
     df["State"] = df["State"].replace("", np.nan)
     data = df.copy().dropna(subset=["State"])
@@ -200,7 +236,7 @@ def stats_by_state(df: pd.DataFrame) -> pd.DataFrame:
     res.drop(canadian_states, inplace=True, errors="ignore")
 
     # sort and format
-    res = res.sort_values(by=["Donors", "Total Gifts (All Time)", "State"], ascending=[False, False, True])
+    res = res.sort_values(by=["Donors", "Total Gifts (All Time)"], ascending=[False, False])
     res["Total Gifts (All Time)"] = res["Total Gifts (All Time)"].apply(lambda x: "${:,.2f}".format(x))
     return res
 
@@ -213,6 +249,10 @@ def stats_by_city(df: pd.DataFrame) -> pd.DataFrame:
         donations in the past 18 months,
         most recent donation date
     '''
+    # ensure required cols exist
+    for col in ["City", "State", "Account ID", "Total Gifts (All Time)", "Number of Gifts Past 18 Months"]:
+        if col not in df.columns:
+            df[col] = np.nan
     # copy data and drop rows where city or state are null
     df = df.replace("", np.nan)
     data =  df.copy().dropna(subset=["City", "State"])
@@ -269,7 +309,14 @@ def stats_by_month(df: pd.DataFrame) -> pd.DataFrame:
     '''
     returns a dataframe with month and number of donors who made their last donation in that month
     '''
-    g = df.groupby(df["Last Gift Date"].dt.month.rename("Month"))
-    res = pd.DataFrame({"Donors" : g["Account ID"].nunique()})
-    res.index = pd.Index(calendar.month_abbr[1:], name="Month")
+    # group by numeric month
+    g = df.groupby(df["Last Gift Date"].dt.month)["Account ID"].nunique()
+    # ensure months are ordered Jan..Dec and fill missing with 0
+    month_order = list(range(1, 13))
+    g = g.reindex(month_order, fill_value=0)
+    res = pd.DataFrame({
+        "Month": [calendar.month_abbr[m] for m in month_order],
+        "MonthNum": month_order,
+        "Donors": g.values,
+    })
     return res

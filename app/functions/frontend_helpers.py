@@ -282,6 +282,11 @@ def render_stats(df: pd.DataFrame) -> None:
         default_state = "New York" if "New York" in states_list else states_list[0]
         selected_state = st.selectbox("Select a state to view city breakdown:", options=states_list, index=states_list.index(default_state) if default_state in states_list else 0)
         state_data = df[df["State"] == selected_state].copy()
+        # drop numeric or blank city labels that can sneak in from malformed rows
+        state_data["City"] = state_data["City"].astype(str).str.strip()
+        state_data.loc[state_data["City"].isin(["", "nan", "NaN", "None", "none"]), "City"] = None
+        state_data.loc[state_data["City"].str.contains(r"\d", na=False), "City"] = None
+        state_data = state_data.dropna(subset=["City"])
         city_counts = state_data["City"].value_counts().reset_index()
         city_counts.columns = ["City", "Donor Count"]
         g_names, g_vals = _group_top(city_counts["City"], city_counts["Donor Count"], top_n=9)
@@ -344,4 +349,14 @@ def render_stats(df: pd.DataFrame) -> None:
     with col1:
         st.bar_chart(stats_by_year(df), x_label="Year", y_label="Donors", color="#007633")
     with col2:
-        st.bar_chart(stats_by_month(df), x_label="Month", y_label="Donors", color="#007633", width="stretch")
+        months = stats_by_month(df)
+        # ensure correct order Jan..Dec
+        ordered_months = list(months["Month"])
+        # enforce categorical ordering to prevent alphabetical sort in Streamlit
+        months["Month"] = pd.Categorical(
+            months["Month"],
+            categories=["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            ordered=True,
+        )
+        months = months.sort_values("Month")
+        st.bar_chart(months, x="Month", y="Donors", x_label="Month", y_label="Donors", color="#007633", width="stretch")
