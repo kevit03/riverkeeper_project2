@@ -1,5 +1,5 @@
 # Riverkeepers Project 2
-This project is a data driven initiatve built by the Biokind Team at NYU to analyze and strengthen community around the Hudson River water conservation at Riverkeepers. We take donor data and transform the raw data into actionable data insight. 
+This project is a data driven initiative built by the Biokind Team at NYU to analyze and strengthen community around the Hudson River water conservation at Riverkeepers. We take donor data and transform the raw data into actionable data insight. 
 
 
 ![Biokind Analytics](https://github.com/Pk0704/riverkeeper_project2/blob/main/scripts/Kevin/biokind.png)
@@ -7,19 +7,18 @@ This project is a data driven initiatve built by the Biokind Team at NYU to anal
 ## Built With 
 [Streamlit](https://streamlit.io/) - open source framework that our application is deployed onto 
 
-[Geopy](https://geopy.readthedocs.io/en/stable/) - used to geocode and geocache 
+[Geopy](https://geopy.readthedocs.io/en/stable/) - used to geocode and cache results
 
 ## Key Features 
 -> **Global Interactive Heatmap**
 
 -> **Automated Geocaching**
 
--> **Partitioned Diagrams from Given Data**
+-> **Partitioned Charts and Visualizations**
 
 -> **Data Cleaning of Over 8,000 entries**
 
-## Getting Started - Running Instructions 
-# Getting Started
+## Getting Started
 
 Before uploading any data, please make sure you have the Python dependencies installed.
 
@@ -35,10 +34,8 @@ pip install -r requirements.txt
 
 Once dependencies are installed, you can run the app:
 ```bash
-streamlit run app.py
+streamlit run app/front.py
 ```
-
-(If your entry file has a different name, replace `app.py` accordingly.)
 
 ---
 
@@ -108,7 +105,7 @@ BASE_COLUMNS = [
 
 should be present. Donors without any usable location information may not appear on the map, but will still be counted in aggregate metrics.
 
-NOTE: Our model does not use `BFPO No` or `Postcode`, due to them not being present in the data we worked with.
+NOTE: The current pipelines do not use `BFPO No` or `Postcode`, because they were not present in the data we worked with.
 
 ---
 
@@ -154,3 +151,8 @@ When the report is created, **do not rename the columns** in Excel/Numbers/Googl
 
 Once the CSV follows this format, the dashboard should be able to read it and generate the maps, charts, and summaries automatically.
 
+## Caching and geocoding
+
+- Geocode cache: `app/data/geocode_cache.json` (auto-created if missing).
+- Location cache: `app/data/RiverKeeper_Donors_Unique_Locations.csv` (auto-created if missing).
+- Donors without City/State/Country are excluded from the map but still appear in aggregate statistics.
