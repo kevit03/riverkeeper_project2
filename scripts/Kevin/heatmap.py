@@ -1,7 +1,7 @@
 import json
 import time
 from collections import defaultdict
-from typing import Tuple
+from typing import Callable, Optional, Tuple
 
 import pandas as pd
 import folium
@@ -54,6 +54,8 @@ def geocode_records(
     limit: int = 100,
     delay: float = 0.2,
     cache_path: str = "scripts/Kevin/geocode_cache.json",
+    progress: Optional[Callable[[int], None]] = None,
+    status: Optional[Callable[[str], None]] = None,
 ) -> None:
     """
     Mutates `records` (list of dicts) in place by filling Latitude / Longitude.
@@ -67,7 +69,8 @@ def geocode_records(
 
     geolocator = Nominatim(user_agent="heatmap_script", timeout=10)
 
-    for entry in records[:limit]:
+    total = min(limit, len(records))
+    for idx, entry in enumerate(records[:limit], start=1):
         query = f"{entry['City']}, {entry['State']}, {entry['Country']}"
 
         if query in cache:
@@ -86,6 +89,11 @@ def geocode_records(
         cache[query] = (lat, lon)
         entry["Latitude"], entry["Longitude"] = lat, lon
         time.sleep(delay)
+
+        if progress:
+            progress(int(idx / total * 100))
+        if status and idx % 10 == 0:
+            status(f"Geocoded {idx}/{total} locations...")
 
     with open(cache_path, "w") as f:
         json.dump(cache, f, indent=2)
@@ -269,13 +277,26 @@ def render_heatmap(
             }
             records.append(entry)
 
-        with st.spinner("Geocoding donor locations (with cache)..."):
-            geocode_records(
-                records,
-                limit=min(geocode_limit, len(records)),
-                delay=0.2,
-                cache_path=cache_path,
-            )
+        progress_bar = st.progress(0, text="Geocoding donor locations (with cache)...")
+        status = st.empty()
+
+        def update_progress(pct: int) -> None:
+            progress_bar.progress(pct, text=f"Geocoding donor locations (with cache)... {pct}%")
+
+        def update_status(msg: str) -> None:
+            status.write(msg)
+
+        geocode_records(
+            records,
+            limit=min(geocode_limit, len(records)),
+            delay=0.2,
+            cache_path=cache_path,
+            progress=update_progress,
+            status=update_status,
+        )
+
+        progress_bar.progress(100, text="Geocoding complete.")
+        status.empty()
 
         work_df["Latitude"] = [r["Latitude"] for r in records]
         work_df["Longitude"] = [r["Longitude"] for r in records]

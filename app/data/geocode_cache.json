@@ -1,0 +1,7542 @@
+{
+  "North Salem, New York, United States": [
+    41.3348169,
+    -73.5712374
+  ],
+  "Newburgh, New York, United States": [
+    41.5000767,
+    -74.0098299
+  ],
+  "Valley Cottage, New York, United States": [
+    41.117785,
+    -73.9442812
+  ],
+  "New York, New York, United States": [
+    40.7127281,
+    -74.0060152
+  ],
+  "Carrollton, Texas, United States": [
+    32.9515472,
+    -96.9034244
+  ],
+  "Hudson, Ohio, United States": [
+    41.240056,
+    -81.440667
+  ],
+  "nan, nan, United States": [
+    52.1003633,
+    4.285897
+  ],
+  "Yonkers, New York, United States": [
+    40.9312099,
+    -73.8987469
+  ],
+  "Brooklyn, New York, United States": [
+    40.6526006,
+    -73.9497211
+  ],
+  "Ossining, New York, United States": [
+    41.1613168,
+    -73.8620367
+  ],
+  "Bronx, New York, United States": [
+    40.8466508,
+    -73.8785937
+  ],
+  "Poughkeepsie, New York, United States": [
+    41.7065539,
+    -73.9283672
+  ],
+  "Beacon, New York, United States": [
+    41.5048402,
+    -73.9695409
+  ],
+  "Fishkill, New York, United States": [
+    41.5355745,
+    -73.898702
+  ],
+  "Pound Ridge, New York, United States": [
+    41.2087066,
+    -73.5748483
+  ],
+  "Aventura, Florida, United States": [
+    25.9564812,
+    -80.1392121
+  ],
+  "Gardiner, New York, United States": [
+    41.6798157,
+    -74.1504231
+  ],
+  "Ardsley-On-Hudson, New York, United States": [
+    41.0270084,
+    -73.876681
+  ],
+  "Catskill, New York, United States": [
+    42.2173102,
+    -73.8645734
+  ],
+  "Tarrytown, New York, United States": [
+    41.0762077,
+    -73.8587461
+  ],
+  "Queens, New York, United States": [
+    40.7135078,
+    -73.8283132
+  ],
+  "Port Washington, New York, United States": [
+    40.8263965,
+    -73.684993
+  ],
+  "Ardsley, New York, United States": [
+    41.0106531,
+    -73.8437452
+  ],
+  "Richmond, California, United States": [
+    37.9357576,
+    -122.347748
+  ],
+  "St. Augustine, Florida, United States": [
+    29.8946952,
+    -81.3145395
+  ],
+  "Encino, California, United States": [
+    34.1591324,
+    -118.5016166
+  ],
+  "Boiceville, New York, United States": [
+    42.0053215,
+    -74.2663747
+  ],
+  "Fort Lee, New Jersey, United States": [
+    40.8509333,
+    -73.9701382
+  ],
+  "Sayville, New York, United States": [
+    40.745349,
+    -73.0885161
+  ],
+  "Bedford Corners, New York, United States": [
+    42.05451,
+    -78.3114042
+  ],
+  "Amherst, New York, United States": [
+    42.9783924,
+    -78.7997616
+  ],
+  "Brooklyn, New York, nan": [
+    40.6443763,
+    -74.0186165
+  ],
+  "Rhinebeck, New York, United States": [
+    41.9267604,
+    -73.912763
+  ],
+  "Boston, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Hudson, New York, United States": [
+    42.2528649,
+    -73.790959
+  ],
+  "North Yarmouth, Maine, United States": [
+    43.8289389,
+    -70.2487493
+  ],
+  "Wilmington, Delaware, United States": [
+    39.7459468,
+    -75.546589
+  ],
+  "Princeton, New Jersey, United States": [
+    40.3496953,
+    -74.6597376
+  ],
+  "Plano, Texas, United States": [
+    33.0136764,
+    -96.6925096
+  ],
+  "West Nyack, New York, United States": [
+    41.090129,
+    -73.9704898
+  ],
+  "Lincoln, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Cranford, New Jersey, United States": [
+    40.656539,
+    -74.3035794
+  ],
+  "Ithaca, New York, United States": [
+    42.4374175,
+    -76.5483724
+  ],
+  "Peekskill, New York, United States": [
+    41.289811,
+    -73.9204922
+  ],
+  "Easton, Maryland, United States": [
+    38.7744625,
+    -76.0763244
+  ],
+  "Philadelphia, Pennsylvania, United States": [
+    39.9527237,
+    -75.1635262
+  ],
+  "Yorktown Heights, New York, United States": [
+    41.270178,
+    -73.7753539
+  ],
+  "Bedford, New York, United States": [
+    41.2041304,
+    -73.642509
+  ],
+  "Williamstown, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Andover, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Richmond, Virginia, United States": [
+    37.5385087,
+    -77.43428
+  ],
+  "Safety Harbor, Florida, United States": [
+    27.9908529,
+    -82.6931553
+  ],
+  "New Paltz, New York, United States": [
+    41.7464972,
+    -74.0844894
+  ],
+  "Armonk, New York, United States": [
+    41.132973,
+    -73.7126064
+  ],
+  "Parsiappany, New York, United States": [
+    null,
+    null
+  ],
+  "Sea Cliff, New York, United States": [
+    40.849566,
+    -73.6471225
+  ],
+  "Sacramento, California, United States": [
+    38.5810606,
+    -121.493895
+  ],
+  "Kingston, New York, United States": [
+    41.9287812,
+    -74.0023825
+  ],
+  "Greensboro, North Carolina, United States": [
+    36.0726355,
+    -79.7919754
+  ],
+  "White Plains, New York, United States": [
+    41.0339862,
+    -73.7629097
+  ],
+  "Shelburne, Vermont, United States": [
+    44.3783486,
+    -73.2276183
+  ],
+  "Clifton Park, New York, United States": [
+    42.8631868,
+    -73.7812103
+  ],
+  "Montvale, New Jersey, United States": [
+    41.0467635,
+    -74.0229173
+  ],
+  "Cold Spring, New York, United States": [
+    41.4200938,
+    -73.9545831
+  ],
+  "Indianapolis, Indiana, United States": [
+    39.7683331,
+    -86.1583502
+  ],
+  "Staten Island, New York, United States": [
+    40.5834557,
+    -74.1496048
+  ],
+  "Seattle, Washington, United States": [
+    47.6038321,
+    -122.330062
+  ],
+  "Harrison, New York, United States": [
+    40.9689871,
+    -73.71263
+  ],
+  "Nutley, New Jersey, United States": [
+    40.8223223,
+    -74.1598663
+  ],
+  "Binghampton, New York, United States": [
+    null,
+    null
+  ],
+  "Innsbruck, nan, Austria": [
+    null,
+    null
+  ],
+  "La Jolla, California, United States": [
+    32.8458529,
+    -117.2575702
+  ],
+  "Morristown, New Jersey, United States": [
+    40.7970382,
+    -74.4809868
+  ],
+  "Woodstock, New York, United States": [
+    42.0410578,
+    -74.1182492
+  ],
+  "Millerton, New York, United States": [
+    41.9538304,
+    -73.5105225
+  ],
+  "Kalamazoo, Michigan, United States": [
+    42.291707,
+    -85.5872286
+  ],
+  "Hartsdale, New York, United States": [
+    41.0130865,
+    -73.8089743
+  ],
+  "Bryn Mawr, Pennsylvania, United States": [
+    40.0238245,
+    -75.3173407
+  ],
+  "Chappaqua, New York, United States": [
+    41.157284,
+    -73.7676998
+  ],
+  "Katonah, New York, United States": [
+    41.2558715,
+    -73.6847453
+  ],
+  "Washington, nan, United States": [
+    33.269334,
+    -79.6689598
+  ],
+  "Valhalla, New York, United States": [
+    41.075213,
+    -73.7750061
+  ],
+  "Millburn, New Jersey, United States": [
+    40.7244443,
+    -74.3069069
+  ],
+  "Charlottesville, Virginia, United States": [
+    38.029306,
+    -78.4766781
+  ],
+  "Hastings-On-Hudson, New York, United States": [
+    40.9946622,
+    -73.8785922
+  ],
+  "Englewood Cliffs, New Jersey, United States": [
+    40.8853773,
+    -73.9523597
+  ],
+  "Sausalito, California, United States": [
+    37.8590272,
+    -122.485469
+  ],
+  "San Antonio, Texas, United States": [
+    29.4246002,
+    -98.4951405
+  ],
+  "Plymouth Meeting, Pennsylvania, United States": [
+    40.102332,
+    -75.2743467
+  ],
+  "Sleepy Hollow, New York, United States": [
+    41.085652,
+    -73.8584684
+  ],
+  "East Longmeadow, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Baltimore, Maryland, United States": [
+    39.2908816,
+    -76.610759
+  ],
+  "Burlington, Vermont, United States": [
+    44.4761601,
+    -73.212906
+  ],
+  "Norwalk, Connecticut, United States": [
+    41.1175966,
+    -73.4078968
+  ],
+  "Albany, New York, United States": [
+    42.6511674,
+    -73.754968
+  ],
+  "Milford, Connecticut, United States": [
+    41.2222218,
+    -73.0570603
+  ],
+  "Pleasantville, New York, United States": [
+    41.1328736,
+    -73.7926335
+  ],
+  "Chicago, Illinois, United States": [
+    41.8755616,
+    -87.6244212
+  ],
+  "New Gretna, New Jersey, United States": [
+    39.5923404,
+    -74.450983
+  ],
+  "Atlantic Highlands, New Jersey, United States": [
+    40.4078865,
+    -74.034306
+  ],
+  "Saco, Maine, United States": [
+    43.5007555,
+    -70.4429451
+  ],
+  "Irvington, New York, United States": [
+    41.0398662,
+    -73.872717
+  ],
+  "East Hampton, New York, United States": [
+    40.9633868,
+    -72.1847598
+  ],
+  "Boca Raton, Florida, United States": [
+    26.3586885,
+    -80.0830984
+  ],
+  "New City, New York, United States": [
+    41.1509835,
+    -73.9897782
+  ],
+  "River Vale, New Jersey, United States": [
+    40.9953754,
+    -74.0120832
+  ],
+  "Eastham, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Norfolk, Virginia, United States": [
+    36.8493695,
+    -76.2899539
+  ],
+  "Rolling Meadows, Illinois, United States": [
+    42.0841936,
+    -88.0131275
+  ],
+  "Maryknoll, New York, United States": [
+    42.8194015,
+    -78.8133171
+  ],
+  "Old Greenwich, Connecticut, United States": [
+    41.0318549,
+    -73.5678722
+  ],
+  "West Park, New York, United States": [
+    41.7945375,
+    -73.9595823
+  ],
+  "Goshen, New York, United States": [
+    41.4021497,
+    -74.3242129
+  ],
+  "Falls Church, Virginia, United States": [
+    38.882334,
+    -77.1710914
+  ],
+  "Scarsdale, New York, United States": [
+    40.9880495,
+    -73.7974133
+  ],
+  "Long Beach, California, United States": [
+    33.7690164,
+    -118.191604
+  ],
+  "Briarcliff Manor, New York, United States": [
+    41.1456512,
+    -73.8237456
+  ],
+  "Corinth, Vermont, United States": [
+    44.0378875,
+    -72.28792
+  ],
+  "Ventura, California, United States": [
+    34.4458248,
+    -119.0779359
+  ],
+  "Sonoma, California, United States": [
+    38.5110803,
+    -122.8473388
+  ],
+  "Greenwich, Connecticut, United States": [
+    41.0264862,
+    -73.6284598
+  ],
+  "Westhampton Beach, New York, United States": [
+    40.808411,
+    -72.6448263
+  ],
+  "Rockville, Maryland, United States": [
+    39.0817985,
+    -77.1516844
+  ],
+  "Highland Falls, New York, United States": [
+    41.3692605,
+    -73.9662504
+  ],
+  "Endicott, New York, United States": [
+    42.098408,
+    -76.0493684
+  ],
+  "Portland, Maine, United States": [
+    43.6573605,
+    -70.2586618
+  ],
+  "San Francisco, California, United States": [
+    37.7932754,
+    -122.3963589
+  ],
+  "Garrison, New York, United States": [
+    41.3839827,
+    -73.945694
+  ],
+  "Chelsea, New York, United States": [
+    40.7464906,
+    -74.0015283
+  ],
+  "Millbrook, New York, United States": [
+    41.7865038,
+    -73.6921867
+  ],
+  "New Rochelle, New York, United States": [
+    40.9115386,
+    -73.7826363
+  ],
+  "Fairfield, Connecticut, United States": [
+    41.1412078,
+    -73.2637258
+  ],
+  "Long Island City, New York, United States": [
+    40.7455316,
+    -73.9484995
+  ],
+  "Nyack, New York, United States": [
+    41.091121,
+    -73.9196794
+  ],
+  "Fort Collins, Colorado, United States": [
+    40.5871782,
+    -105.0770113
+  ],
+  "Arlington, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Sheffield, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Houston, Texas, United States": [
+    29.7589382,
+    -95.3676974
+  ],
+  "Delmar, New York, United States": [
+    42.6251239,
+    -73.8381351
+  ],
+  "Germantown, New York, United States": [
+    42.1345339,
+    -73.8917982
+  ],
+  "Sloatsburg, New York, United States": [
+    41.1545395,
+    -74.192924
+  ],
+  "Annandale-On-Hudson, New York, United States": [
+    42.0128695,
+    -73.9081901
+  ],
+  "Sparkill, New York, United States": [
+    41.0289115,
+    -73.9324905
+  ],
+  "Cresskill, New Jersey, United States": [
+    40.9414874,
+    -73.9593041
+  ],
+  "Bethesda, Maryland, United States": [
+    38.9812726,
+    -77.1233587
+  ],
+  "Port Chester, New York, United States": [
+    41.0017643,
+    -73.6656834
+  ],
+  "Silver Spring, Maryland, United States": [
+    38.9997621,
+    -77.0240371
+  ],
+  "Blauvelt, New York, United States": [
+    41.069612,
+    -73.9518441
+  ],
+  "Congers, New York, United States": [
+    41.146634,
+    -73.9432236
+  ],
+  "Oakland, California, United States": [
+    37.8044557,
+    -122.271356
+  ],
+  "Long Beach, New York, United States": [
+    40.5885508,
+    -73.6582631
+  ],
+  "Pasadena, Part-Time Larchmont, California, United States": [
+    null,
+    null
+  ],
+  "Verplanck, New York, United States": [
+    41.2561895,
+    -73.9611121
+  ],
+  "Ulster Park, New York, United States": [
+    41.855926,
+    -73.9770826
+  ],
+  "Hopewell Junction, New York, United States": [
+    41.5810881,
+    -73.8106688
+  ],
+  "Pawling, New York, United States": [
+    41.5618381,
+    -73.6026148
+  ],
+  "Delhi, New York, United States": [
+    42.2781401,
+    -74.9159946
+  ],
+  "Bearsville, New York, United States": [
+    42.040647,
+    -74.1551429
+  ],
+  "Pine Plains, New York, United States": [
+    41.9797287,
+    -73.6563091
+  ],
+  "Mount Vernon, New York, United States": [
+    40.9125085,
+    -73.8386504
+  ],
+  "Lagrangeville, New York, United States": [
+    41.6504465,
+    -73.7642453
+  ],
+  "Rosendale, New York, United States": [
+    41.8439818,
+    -74.0820865
+  ],
+  "Tivoli, New York, United States": [
+    42.058528,
+    -73.908913
+  ],
+  "Gahanna, Ohio, United States": [
+    40.0195625,
+    -82.8791363
+  ],
+  "Connelly, New York, United States": [
+    41.9100924,
+    -73.9912495
+  ],
+  "Cortlandt Manor, New York, United States": [
+    41.2815783,
+    -73.7131153
+  ],
+  "Voorheesville, New York, United States": [
+    42.653967,
+    -73.9287366
+  ],
+  "Rye, New York, United States": [
+    40.9821371,
+    -73.6840902
+  ],
+  "Lawrenceville, New Jersey, United States": [
+    40.3009876,
+    -74.7373728
+  ],
+  "College Point, New York, United States": [
+    40.7876014,
+    -73.8459682
+  ],
+  "Wappingers Falls, New York, United States": [
+    41.5965635,
+    -73.9112103
+  ],
+  "Castleton On Hudson, New York, United States": [
+    42.5308134,
+    -73.7553018
+  ],
+  "Lake Katrine, New York, United States": [
+    41.988841,
+    -73.9904623
+  ],
+  "Wolverine Lake, Michigan, United States": [
+    42.5566926,
+    -83.4761395
+  ],
+  "Bloomfield, New Jersey, United States": [
+    40.7934789,
+    -74.1979277
+  ],
+  "Flushing, New York, United States": [
+    40.7654301,
+    -73.8174291
+  ],
+  "Douglaston, New York, United States": [
+    40.768358,
+    -73.7492477
+  ],
+  "Cornwall, New York, United States": [
+    41.434444,
+    -74.035833
+  ],
+  "Wyckoff, New Jersey, United States": [
+    41.0095417,
+    -74.1729222
+  ],
+  "Croton-On-Hudson, New York, United States": [
+    41.2088215,
+    -73.8905175
+  ],
+  "Brewster, New York, United States": [
+    41.3972985,
+    -73.6165288
+  ],
+  "Monroe, New York, United States": [
+    41.3304767,
+    -74.1866348
+  ],
+  "Croton On Hudson, New York, United States": [
+    41.2088215,
+    -73.8905175
+  ],
+  "Goldens Bridge, New York, United States": [
+    41.2871685,
+    -73.6633145
+  ],
+  "Forest Hills, New York, United States": [
+    40.7231009,
+    -73.8466125
+  ],
+  "Princeton Junction, New Jersey, United States": [
+    40.3159898,
+    -74.6241189
+  ],
+  "Hyde Park, New York, United States": [
+    41.7841956,
+    -73.9373912
+  ],
+  "Highland Mills, New York, United States": [
+    41.3470382,
+    -74.126256
+  ],
+  "Dobbs Ferry, New York, United States": [
+    41.0145418,
+    -73.872635
+  ],
+  "Palisades, New York, United States": [
+    41.0182822,
+    -73.9163697
+  ],
+  "Clinton Corners, New York, United States": [
+    41.8300337,
+    -73.7621835
+  ],
+  "Haverstraw, New York, United States": [
+    41.1976502,
+    -73.9640541
+  ],
+  "Oyster Bay, New York, United States": [
+    40.7696568,
+    -73.4998608
+  ],
+  "Westport, Connecticut, United States": [
+    41.1414855,
+    -73.3578955
+  ],
+  "Stony Point, New York, United States": [
+    41.2295386,
+    -73.9870847
+  ],
+  "South Nyack, New York, United States": [
+    41.0893295,
+    -73.9237842
+  ],
+  "Mahopac, New York, United States": [
+    41.3712985,
+    -73.7390641
+  ],
+  "Salt Point, New York, United States": [
+    41.8046512,
+    -73.7903622
+  ],
+  "Fleetwood, New York, United States": [
+    40.9269945,
+    -73.8398879
+  ],
+  "Coeymans Hollow, New York, United States": [
+    42.4717475,
+    -73.8945716
+  ],
+  "Earlville, New York, United States": [
+    42.7397917,
+    -75.5451804
+  ],
+  "West Harrison, New York, United States": [
+    41.0389861,
+    -73.7476316
+  ],
+  "Amenia, New York, United States": [
+    41.8495129,
+    -73.5573194
+  ],
+  "Central Islip, New York, United States": [
+    40.7807275,
+    -73.192822
+  ],
+  "Walden, New York, United States": [
+    41.5612048,
+    -74.1884806
+  ],
+  "Glen Rock, New Jersey, United States": [
+    40.9628758,
+    -74.1329208
+  ],
+  "Accord, New York, United States": [
+    41.7981195,
+    -74.2292982
+  ],
+  "Highland, New York, United States": [
+    41.721256,
+    -73.9608072
+  ],
+  "Cornwall-On-Hudson, New York, United States": [
+    41.4448133,
+    -74.0155219
+  ],
+  "Suffern, New York, United States": [
+    41.1151372,
+    -74.1493948
+  ],
+  "Stroudsburg, Pennsylvania, United States": [
+    40.9864261,
+    -75.1946649
+  ],
+  "Cliffside Park, New Jersey, United States": [
+    40.8214894,
+    -73.9876388
+  ],
+  "Larchmont, New York, United States": [
+    40.9278769,
+    -73.7517983
+  ],
+  "Township Of Washington, New Jersey, United States": [
+    40.9884843,
+    -74.0652437
+  ],
+  "Cos Cob, Connecticut, United States": [
+    41.039036,
+    -73.5978158
+  ],
+  "Hillsdale, New Jersey, United States": [
+    41.0025975,
+    -74.0404175
+  ],
+  "Franklin Square, New York, United States": [
+    40.700236,
+    -73.676448
+  ],
+  "Closter, New Jersey, United States": [
+    40.9731536,
+    -73.9615262
+  ],
+  "Jamaica, New York, United States": [
+    40.6987631,
+    -73.8088251
+  ],
+  "Englewood, New Jersey, United States": [
+    40.8929329,
+    -73.9726508
+  ],
+  "Malden-On-Hudson, New York, United States": [
+    42.0919535,
+    -73.9365242
+  ],
+  "Tappan, New York, United States": [
+    41.0248325,
+    -73.9504523
+  ],
+  "Mount Kisco, New York, United States": [
+    41.2042616,
+    -73.7270761
+  ],
+  "Sewell, New Jersey, United States": [
+    39.770683,
+    -75.1438863
+  ],
+  "Rochester, New York, United States": [
+    43.157285,
+    -77.615214
+  ],
+  "Tomkins Cove, New York, United States": [
+    41.2570383,
+    -73.9834736
+  ],
+  "West Redding, Connecticut, United States": [
+    41.3264842,
+    -73.4342882
+  ],
+  "Pittsford, New York, United States": [
+    43.090959,
+    -77.515298
+  ],
+  "Glenford, New York, United States": [
+    42.0027117,
+    -74.1279514
+  ],
+  "Bridgehampton, New York, United States": [
+    40.9312839,
+    -72.3103724
+  ],
+  "Mamaroneck, New York, United States": [
+    40.9487314,
+    -73.7331416
+  ],
+  "Beverly, New Jersey, United States": [
+    40.0653889,
+    -74.9190558
+  ],
+  "East Meadow, New York, United States": [
+    40.721775,
+    -73.5582912
+  ],
+  "Cincinnati, Ohio, United States": [
+    39.1014537,
+    -84.5124602
+  ],
+  "Geneseo, New York, United States": [
+    42.795896,
+    -77.816947
+  ],
+  "Atlanta, Georgia, United States": [
+    33.7544657,
+    -84.3898151
+  ],
+  "Summit, New Jersey, United States": [
+    40.7182356,
+    -74.3592296
+  ],
+  "Hoboken, New Jersey, United States": [
+    40.7433066,
+    -74.0323752
+  ],
+  "Bronxville, New York, United States": [
+    40.9381544,
+    -73.8320784
+  ],
+  "Union, New Jersey, United States": [
+    40.6652251,
+    -74.3045277
+  ],
+  "Falmouth, Maine, United States": [
+    43.7219859,
+    -70.2327055
+  ],
+  "Brielle, New Jersey, United States": [
+    40.1078931,
+    -74.0565263
+  ],
+  "Shelter Island Heights, New York, United States": [
+    41.073442,
+    -72.3727908
+  ],
+  "Amityville, New York, United States": [
+    40.6789893,
+    -73.4170673
+  ],
+  "Blairstown, New Jersey, United States": [
+    40.9831598,
+    -74.9602972
+  ],
+  "Amsterdam, New York, United States": [
+    42.9362232,
+    -74.1905821
+  ],
+  "Highlands, North Carolina, United States": [
+    35.0525909,
+    -83.1968173
+  ],
+  "Elkins Park, Pennsylvania, United States": [
+    40.0770553,
+    -75.1268413
+  ],
+  "Jericho, New York, United States": [
+    40.78743,
+    -73.5434608
+  ],
+  "Port Ewen, New York, United States": [
+    41.9017655,
+    -73.9761827
+  ],
+  "Hastings On Hudson, New York, United States": [
+    40.9946622,
+    -73.8785922
+  ],
+  "New Haven, Connecticut, United States": [
+    41.3082138,
+    -72.9250518
+  ],
+  "Somers, New York, United States": [
+    41.3280884,
+    -73.685745
+  ],
+  "Stony Brook, New York, United States": [
+    40.908482,
+    -73.1325471
+  ],
+  "Southampton, New York, United States": [
+    40.8842482,
+    -72.3897131
+  ],
+  "Saugerties, New York, United States": [
+    42.0775906,
+    -73.9529126
+  ],
+  "Bridgeport, Connecticut, United States": [
+    41.1792695,
+    -73.1887863
+  ],
+  "Astoria, New York, United States": [
+    40.7720145,
+    -73.9302673
+  ],
+  "South Orange, New Jersey, United States": [
+    40.7474966,
+    -74.2635376
+  ],
+  "North Bellmore, New York, United States": [
+    40.6892935,
+    -73.5369169
+  ],
+  "Elmont, New York, United States": [
+    40.7053335,
+    -73.7078294
+  ],
+  "Selkirk, New York, United States": [
+    42.5323027,
+    -73.7984563
+  ],
+  "Chevy Chase, Maryland, United States": [
+    38.9813699,
+    -77.0849245
+  ],
+  "Spring Valley, New York, United States": [
+    41.1130231,
+    -74.0437839
+  ],
+  "East Chatham, New York, United States": [
+    42.4106396,
+    -73.5245579
+  ],
+  "Fort Montgomery, New York, United States": [
+    41.3402403,
+    -73.9942385
+  ],
+  "Ridgewood, New York, United States": [
+    40.7080556,
+    -73.9141667
+  ],
+  "Corinth, New York, United States": [
+    43.244703,
+    -73.832588
+  ],
+  "Ketchum, Idaho, United States": [
+    43.680741,
+    -114.363662
+  ],
+  "Yellow Springs, Ohio, United States": [
+    39.8045432,
+    -83.8925234
+  ],
+  "Bedminster, New Jersey, United States": [
+    40.6741476,
+    -74.6809503
+  ],
+  "Tillson, New York, United States": [
+    41.8358045,
+    -74.0640123
+  ],
+  "Guilderland, New York, United States": [
+    42.704522,
+    -73.911513
+  ],
+  "Fort Pierce, Florida, United States": [
+    27.4467056,
+    -80.3256056
+  ],
+  "Stanfordville, New York, United States": [
+    41.8676109,
+    -73.7133885
+  ],
+  "Putnam Valley, New York, United States": [
+    41.3359272,
+    -73.8740252
+  ],
+  "Glens Falls, New York, United States": [
+    43.309941,
+    -73.644447
+  ],
+  "Rhinecliff, New York, United States": [
+    41.9245067,
+    -73.9429684
+  ],
+  "Troy, New York, United States": [
+    42.7284117,
+    -73.6917878
+  ],
+  "Lincoln University, Pennsylvania, United States": [
+    39.8065518,
+    -75.9287055
+  ],
+  "Los Angeles, California, United States": [
+    34.0536909,
+    -118.242766
+  ],
+  "Green Island, New York, United States": [
+    42.7442449,
+    -73.6915073
+  ],
+  "Brightwaters, New York, United States": [
+    40.7209321,
+    -73.2673399
+  ],
+  "St. Simons Island, Georgia, United States": [
+    31.2182863,
+    -81.3612077
+  ],
+  "Cohoes, New York, United States": [
+    42.7742446,
+    -73.7001187
+  ],
+  "nan, New York, United States": [
+    null,
+    null
+  ],
+  "Nanuet, New York, United States": [
+    41.1004345,
+    -74.0155138
+  ],
+  "Ancramdale, New York, United States": [
+    42.0181473,
+    -73.5912358
+  ],
+  "Scotia, New York, United States": [
+    42.8264652,
+    -73.9642915
+  ],
+  "Chatham, New York, United States": [
+    42.3642517,
+    -73.5948391
+  ],
+  "Syracuse, New York, United States": [
+    43.0481221,
+    -76.1474244
+  ],
+  "Teaneck, New Jersey, United States": [
+    40.8860164,
+    -74.0072568
+  ],
+  "Roosevelt Island, New York, United States": [
+    40.7613368,
+    -73.9502853
+  ],
+  "Stone Ridge, New York, United States": [
+    41.8448455,
+    -74.154352
+  ],
+  "Paterson, New Jersey, United States": [
+    40.9167654,
+    -74.171811
+  ],
+  "Bayside, New York, United States": [
+    40.7684351,
+    -73.7770774
+  ],
+  "Secaucus, New Jersey, United States": [
+    40.7899291,
+    -74.0566735
+  ],
+  "Croton, New York, United States": [
+    41.2088215,
+    -73.8905175
+  ],
+  "Norht Creek, New York, United States": [
+    null,
+    null
+  ],
+  "Arlington, Virginia, United States": [
+    38.8769326,
+    -77.0893094
+  ],
+  "Stamford, Connecticut, United States": [
+    41.0534302,
+    -73.5387341
+  ],
+  "Maplewood, New Jersey, United States": [
+    40.7312123,
+    -74.2734808
+  ],
+  "Rego Park, New York, United States": [
+    40.722865,
+    -73.8621025
+  ],
+  "Fair Lawn, New Jersey, United States": [
+    40.9358397,
+    -74.1175058
+  ],
+  "Niskayuna, New York, United States": [
+    42.8154056,
+    -73.8928774
+  ],
+  "Roscoe, New York, United States": [
+    41.942279,
+    -74.9152318
+  ],
+  "Jackson Heights, New York, United States": [
+    40.7556561,
+    -73.8857755
+  ],
+  "Mount Tremper, New York, United States": [
+    42.0448136,
+    -74.2754247
+  ],
+  "Schodack Landing, New York, United States": [
+    42.479526,
+    -73.7695669
+  ],
+  "Auburn, nan, United States": [
+    34.3754323,
+    -79.9758987
+  ],
+  "Ravena, New York, United States": [
+    42.4684148,
+    -73.8162354
+  ],
+  "Little Silver, New Jersey, United States": [
+    40.3367769,
+    -74.0470837
+  ],
+  "Pomona, New York, United States": [
+    41.189153,
+    -74.054249
+  ],
+  "Stillwater, New York, United States": [
+    42.9384101,
+    -73.6531731
+  ],
+  "Watervliet, New York, United States": [
+    42.7300784,
+    -73.7012299
+  ],
+  "Jersey City, New Jersey, United States": [
+    40.7215682,
+    -74.047455
+  ],
+  "South Pasadena, California, United States": [
+    34.1133062,
+    -118.1478291
+  ],
+  "Worthington, Massachussets, United States": [
+    null,
+    null
+  ],
+  "West Tisbury, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Piermont, New York, United States": [
+    41.0415342,
+    -73.918426
+  ],
+  "Montebello, New York, United States": [
+    41.1359287,
+    -74.118477
+  ],
+  "Gansevoort, New York, United States": [
+    43.1962051,
+    -73.6513967
+  ],
+  "Stuyvesant, New York, United States": [
+    42.3903615,
+    -73.7815127
+  ],
+  "Miami Beach, Florida, United States": [
+    25.7929198,
+    -80.1353006
+  ],
+  "Bellport, New York, United States": [
+    40.7531775,
+    -72.9415555
+  ],
+  "Tuckahoe, New York, United States": [
+    40.9051175,
+    -72.4393477
+  ],
+  "Thornwood, New York, United States": [
+    41.1187775,
+    -73.7770788
+  ],
+  "Santa Fe, New Mexico, United States": [
+    35.6876096,
+    -105.938456
+  ],
+  "Hempstead, New York, United States": [
+    40.6736812,
+    -73.6190736
+  ],
+  "Wrightstown, New Jersey, United States": [
+    40.0362241,
+    -74.6179344
+  ],
+  "Garden City, New York, United States": [
+    40.7266477,
+    -73.6343052
+  ],
+  "Shenandoah, Pennsylvania, United States": [
+    40.8204404,
+    -76.2011079
+  ],
+  "Bridgton, Maine, United States": [
+    44.0543839,
+    -70.7088701
+  ],
+  "West Hempstead, New York, United States": [
+    40.697763,
+    -73.6499019
+  ],
+  "Flagler Beach, Florida, United States": [
+    29.4749927,
+    -81.1269982
+  ],
+  "Glen Oaks, New York, United States": [
+    40.7470463,
+    -73.7115199
+  ],
+  "Prescott,  Arizona, United States": [
+    34.539984,
+    -112.468812
+  ],
+  "New Milford, Connecticut, United States": [
+    41.5770993,
+    -73.4105803
+  ],
+  "Rockville Center, New York, United States": [
+    40.6582775,
+    -73.6293861
+  ],
+  "Holmdel, New Jersey, United States": [
+    40.3451095,
+    -74.1840322
+  ],
+  "Mastic Beach, New York, United States": [
+    40.7642315,
+    -72.8355343
+  ],
+  "Lindenhurst, New York, United States": [
+    40.6867667,
+    -73.3734547
+  ],
+  "Altamont, New York, United States": [
+    42.7006324,
+    -74.0337382
+  ],
+  "Minneapolis, Minnesota, United States": [
+    44.9772995,
+    -93.2654692
+  ],
+  "Rockville Centre, New York, United States": [
+    40.6574186,
+    -73.6450664
+  ],
+  "nan, Oregon, United States": [
+    null,
+    null
+  ],
+  "Garnerville, New York, United States": [
+    41.2017613,
+    -73.9943068
+  ],
+  "Callicoon Center, New York, United States": [
+    41.8367551,
+    -74.946553
+  ],
+  "Wilton, Connecticut, United States": [
+    41.1953739,
+    -73.4378988
+  ],
+  "West Orange, New Jersey, United States": [
+    40.7987113,
+    -74.2390353
+  ],
+  "Edgewater, New Jersey, United States": [
+    40.8270448,
+    -73.975694
+  ],
+  "Warwick, Rhode Island, United States": [
+    41.6992717,
+    -71.4586114
+  ],
+  "Sharon, Connecticut, United States": [
+    41.8792599,
+    -73.4767897
+  ],
+  "Stuyvesant Falls, New York, United States": [
+    42.3553625,
+    -73.7309556
+  ],
+  "Bethlehem, Pennsylvania, United States": [
+    40.6178915,
+    -75.3786521
+  ],
+  "Purchase, New York, United States": [
+    41.0409305,
+    -73.7145746
+  ],
+  "Bound Brook, New Jersey, United States": [
+    40.5684363,
+    -74.5384889
+  ],
+  "Demarest, New Jersey, United States": [
+    40.9573205,
+    -73.9634708
+  ],
+  "North Caldwell, New Jersey, United States": [
+    40.8648215,
+    -74.2582027
+  ],
+  "Clinton, New York, United States": [
+    44.7278943,
+    -73.6686982
+  ],
+  "Rockaway Park, New York, United States": [
+    40.5805104,
+    -73.8361535
+  ],
+  "Madison, Wisconsin, United States": [
+    43.07469,
+    -89.3841663
+  ],
+  "Staatsburg, New York, United States": [
+    41.8528601,
+    -73.9196072
+  ],
+  "Evanston, Illinois, United States": [
+    42.0470043,
+    -87.6846053
+  ],
+  "Bowling Green, Ohio, United States": [
+    41.3747744,
+    -83.6513229
+  ],
+  "Wheaton, Illinois, United States": [
+    41.8646959,
+    -88.1101709
+  ],
+  "Wainscott, New York, United States": [
+    40.9537095,
+    -72.2471693
+  ],
+  "Merion Station, Pennsylvania, United States": [
+    39.9975379,
+    -75.2516078
+  ],
+  "Rock Tavern, New York, United States": [
+    41.4662049,
+    -74.1912587
+  ],
+  "Greenfield, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Jacksonville, Florida, United States": [
+    30.3321838,
+    -81.655651
+  ],
+  "Schroon Lake, New York, United States": [
+    43.8347873,
+    -73.7670678
+  ],
+  "Great Neck, New York, United States": [
+    40.8006567,
+    -73.7284647
+  ],
+  "Wappinger Falls, New York, United States": [
+    41.5899332,
+    -73.9341783
+  ],
+  "Portland, Oregon, United States": [
+    45.5202471,
+    -122.674194
+  ],
+  "New York City, New York, United States": [
+    40.7127281,
+    -74.0060152
+  ],
+  "Locust Valley, New York, United States": [
+    40.8775225,
+    -73.5723052
+  ],
+  "Verona, New Jersey, United States": [
+    40.829822,
+    -74.2401466
+  ],
+  "New Windsor, New York, United States": [
+    41.4767605,
+    -74.0237519
+  ],
+  "High Falls, New York, United States": [
+    41.82529,
+    -74.1221049
+  ],
+  "Queensbury, New York, United States": [
+    43.3618532,
+    -73.6652451
+  ],
+  "Bishops Corner, Connecticut, United States": [
+    41.5812091,
+    -72.8689899
+  ],
+  "Orangeburg, New York, United States": [
+    41.0514735,
+    -73.9343136
+  ],
+  "Poughquag, New York, United States": [
+    41.6089826,
+    -73.6817957
+  ],
+  "Woodmere, New York, United States": [
+    40.636793,
+    -73.7240106
+  ],
+  "Bedford Hills, New York, United States": [
+    41.2351255,
+    -73.6863002
+  ],
+  "East Rockaway, New York, United States": [
+    40.6415296,
+    -73.6656011
+  ],
+  "Breezy Point, New York, United States": [
+    40.5561811,
+    -73.9268569
+  ],
+  "Castleton, New York, United States": [
+    42.5308134,
+    -73.7553018
+  ],
+  "Sparrowbush, New York, United States": [
+    40.8673935,
+    -73.5600517
+  ],
+  "Oxford, Ohio, United States": [
+    39.5103048,
+    -84.7420519
+  ],
+  "West Columbia, South Carolina, United States": [
+    33.991869,
+    -81.0640341
+  ],
+  "Allendale, New Jersey, United States": [
+    41.0413199,
+    -74.1291407
+  ],
+  "Marco Island, Florida, United States": [
+    25.9372513,
+    -81.71573
+  ],
+  "Sisters, Oregon, United States": [
+    44.290948,
+    -121.549251
+  ],
+  "East Northport, New York, United States": [
+    40.880938,
+    -73.319453
+  ],
+  "Clarksburg, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Falls Village, Connecticut, United States": [
+    41.5770993,
+    -73.4105803
+  ],
+  "Webster, New York, United States": [
+    43.212285,
+    -77.429994
+  ],
+  "Marlboro, New York, United States": [
+    41.6054703,
+    -73.971729
+  ],
+  "Cuyler, New York, United States": [
+    42.7372897,
+    -75.9485315
+  ],
+  "Menands, New York, United States": [
+    42.6920233,
+    -73.7245639
+  ],
+  "Cooperstown, New York, United States": [
+    42.7006303,
+    -74.924321
+  ],
+  "Chestnut Ridge, New York, United States": [
+    41.0840797,
+    -74.0556682
+  ],
+  "Madison, Connecticut, United States": [
+    41.2794282,
+    -72.5983151
+  ],
+  "Balston Lake, New York, United States": [
+    null,
+    null
+  ],
+  "Red Hook, New York, United States": [
+    41.9950884,
+    -73.8755317
+  ],
+  "Hamilton, New Jersey, United States": [
+    40.2552939,
+    -74.7038183
+  ],
+  "Baldwin, New York, United States": [
+    40.6534835,
+    -73.6113502
+  ],
+  "Howard Beach, New York, United States": [
+    40.6610254,
+    -73.8295605
+  ],
+  "Pelham, New York, United States": [
+    40.9098215,
+    -73.8079111
+  ],
+  "Hannacroix, New York, United States": [
+    42.4265723,
+    -73.813793
+  ],
+  "Unadilla, New York, United States": [
+    42.3253586,
+    -75.3123969
+  ],
+  "Schenectady, New York, United States": [
+    42.8142432,
+    -73.9395687
+  ],
+  "Milan, New York, United States": [
+    41.9534255,
+    -73.7920752
+  ],
+  "Manalapan, New Jersey, United States": [
+    40.2852895,
+    -74.333495
+  ],
+  "Elmsford, New York, United States": [
+    41.0550969,
+    -73.8201338
+  ],
+  "Athens, New York, United States": [
+    42.2603648,
+    -73.8095707
+  ],
+  "Glen Ridge, New Jersey, nan": [
+    null,
+    null
+  ],
+  "Bloomingburg, New York, United States": [
+    41.5542603,
+    -74.4396014
+  ],
+  "Ballston Lake, New York, United States": [
+    42.9343617,
+    -73.8596218
+  ],
+  "Wappinger, New York, United States": [
+    41.586111,
+    -73.916944
+  ],
+  "Fort Edward, New York, United States": [
+    43.267206,
+    -73.584709
+  ],
+  "Ridgefield, Connecticut, United States": [
+    41.2814842,
+    -73.4981792
+  ],
+  "Hernando, Florida, United States": [
+    28.5710156,
+    -82.4605068
+  ],
+  "Pleasant Valley, New York, United States": [
+    41.7583875,
+    -73.802016
+  ],
+  "Claverack, New York, United States": [
+    42.2225082,
+    -73.7349207
+  ],
+  "Greenlawn, New York, United States": [
+    40.8608685,
+    -73.3633136
+  ],
+  "Broadalbin, New York, United States": [
+    43.0586846,
+    -74.1965206
+  ],
+  "Montrose, New York, United States": [
+    41.242108,
+    -73.9458713
+  ],
+  "Providence, Rhode Island, United States": [
+    41.8239891,
+    -71.4128343
+  ],
+  "Ozone Park, New York, United States": [
+    40.67677,
+    -73.8437461
+  ],
+  "Warwick, New York, United States": [
+    41.256483,
+    -74.3598755
+  ],
+  "Roslyn, New York, United States": [
+    40.7998227,
+    -73.6509621
+  ],
+  "Holmes, New York, United States": [
+    41.5234269,
+    -73.646795
+  ],
+  "Greene, New York, United States": [
+    42.3292408,
+    -75.7699147
+  ],
+  "Woodside, New York, United States": [
+    40.7453798,
+    -73.9054145
+  ],
+  "Rockaway Beach, New York, United States": [
+    40.5809824,
+    -73.8229247
+  ],
+  "Sarasota, Florida, United States": [
+    27.3365805,
+    -82.5308545
+  ],
+  "Huntington Station, New York, United States": [
+    40.8472369,
+    -73.4036319
+  ],
+  "White Sulphur Springs, New York, United States": [
+    41.7975888,
+    -74.8268291
+  ],
+  "Midland Park, New Jersey, United States": [
+    40.9893112,
+    -74.1401008
+  ],
+  "Goshen, New York, nan": [
+    null,
+    null
+  ],
+  "nan, New Jersey, United States": [
+    null,
+    null
+  ],
+  "Florissant, Missouri, United States": [
+    38.7919683,
+    -90.3227803
+  ],
+  "East Jewett, New York, United States": [
+    42.2350874,
+    -74.1454173
+  ],
+  "Malden On Hudson, New York, United States": [
+    42.0919535,
+    -73.9365242
+  ],
+  "Asheville, North Carolina, United States": [
+    35.595363,
+    -82.5508407
+  ],
+  "Cortland Manor, New York, United States": [
+    null,
+    null
+  ],
+  "Anderson, South Carolina, United States": [
+    34.5258335,
+    -82.652962
+  ],
+  "Carmel, New York, United States": [
+    41.4266361,
+    -73.6788272
+  ],
+  "Cornwall On Hudson, New York, United States": [
+    41.4448133,
+    -74.0155219
+  ],
+  "Shrub Oak, New York, United States": [
+    41.321508,
+    -73.8298696
+  ],
+  "Richmondville, New York, United States": [
+    42.6342422,
+    -74.5640324
+  ],
+  "Sag Harbor, New York, United States": [
+    40.9978727,
+    -72.2922292
+  ],
+  "Stratford, Connecticut, United States": [
+    41.1923646,
+    -73.1304917
+  ],
+  "Malden Bridge, New York, United States": [
+    42.4706378,
+    -73.5828928
+  ],
+  "Wynnewood, Pennsylvania, United States": [
+    40.0028514,
+    -75.2707469
+  ],
+  "Williamsville, New York, United States": [
+    42.9637836,
+    -78.7377258
+  ],
+  "Water Mill, New York, United States": [
+    40.9211767,
+    -72.3488461
+  ],
+  "Highland, Maryland, United States": [
+    39.5209339,
+    -77.518043
+  ],
+  "Old Westbury, New York, United States": [
+    40.7887113,
+    -73.5995717
+  ],
+  "Inwood, New York, United States": [
+    40.6229432,
+    -73.7508944
+  ],
+  "Woodridge, New York, United States": [
+    41.709973,
+    -74.5734285
+  ],
+  "Milton, New York, United States": [
+    43.0336861,
+    -73.8526225
+  ],
+  "Hurley, New York, United States": [
+    41.910209,
+    -74.062247
+  ],
+  "Olivebridge, New York, United States": [
+    41.9278705,
+    -74.2154239
+  ],
+  "Coxsackie, New York, United States": [
+    42.3503724,
+    -73.7973581
+  ],
+  "Stormville, New York, United States": [
+    41.5703919,
+    -73.7454796
+  ],
+  "Warminster, Pennsylvania, United States": [
+    40.2067751,
+    -75.0996159
+  ],
+  "Darien, Georgia, United States": [
+    31.3702255,
+    -81.4339903
+  ],
+  "Mountainville, New York, United States": [
+    41.4033452,
+    -74.0780432
+  ],
+  "Grand Gorge, New York, United States": [
+    42.3620264,
+    -74.4940381
+  ],
+  "Lake George, New York, United States": [
+    43.425996,
+    -73.712425
+  ],
+  "Barrytown, New York, United States": [
+    42.0012008,
+    -73.9278158
+  ],
+  "Glenmont, New York, United States": [
+    42.604802,
+    -73.7695658
+  ],
+  "Elmhurst, New York, United States": [
+    40.7365804,
+    -73.8783932
+  ],
+  "Sunnew Yorkside, New York, United States": [
+    null,
+    null
+  ],
+  "New Orleans, Louisiana, United States": [
+    29.9559145,
+    -90.0730259
+  ],
+  "Edison, New Jersey, United States": [
+    40.518157,
+    -74.4113926
+  ],
+  "Montgomery, New York, United States": [
+    42.8941269,
+    -74.4099745
+  ],
+  "Sunnyside, New York, United States": [
+    40.7398242,
+    -73.9354153
+  ],
+  "Silver City, New Mexico, United States": [
+    32.7711825,
+    -108.2764164
+  ],
+  "Jackson, New Jersey, United States": [
+    39.7765048,
+    -74.8623849
+  ],
+  "Haines Falls, New York, United States": [
+    42.1955284,
+    -74.1001178
+  ],
+  "Santa Ana, California, United States": [
+    33.7494951,
+    -117.873221
+  ],
+  "Wassaic, New York, United States": [
+    41.8056992,
+    -73.5604278
+  ],
+  "Rexford, New York, United States": [
+    42.8531321,
+    -73.8879008
+  ],
+  "Pasadena, California, United States": [
+    34.1476507,
+    -118.144155
+  ],
+  "Gurnee, Illinois, United States": [
+    42.3702996,
+    -87.9020186
+  ],
+  "Hensonville, New York, United States": [
+    42.2898074,
+    -74.2165307
+  ],
+  "Wynantskill, New York, United States": [
+    42.6870702,
+    -73.6457225
+  ],
+  "Cross River, New York, United States": [
+    41.2644176,
+    -73.6701448
+  ],
+  "West Lebanon, New Hampshire, United States": [
+    43.6482811,
+    -72.3102794
+  ],
+  "Gettysburg, Pennsylvania, United States": [
+    39.8308973,
+    -77.231012
+  ],
+  "Saratoga Springs, New York, United States": [
+    43.0821793,
+    -73.7853915
+  ],
+  "New Hamburg, New York, United States": [
+    41.5869095,
+    -73.9475957
+  ],
+  "Plattsburgh, New York, United States": [
+    44.6960855,
+    -73.4542915
+  ],
+  "Beulah Valley, Colorado, United States": [
+    38.0722286,
+    -104.9663765
+  ],
+  "Patterson, New York, United States": [
+    41.513726,
+    -73.6062323
+  ],
+  "Cragsmoor, New York, United States": [
+    41.6684061,
+    -74.3851148
+  ],
+  "Waldwick, New Jersey, United States": [
+    41.0109281,
+    -74.1182019
+  ],
+  "Ny, New York, United States": [
+    40.7372329,
+    -73.862477
+  ],
+  "Kensington, California, United States": [
+    37.908433,
+    -122.2765838
+  ],
+  "Nassau, New York, United States": [
+    40.7352994,
+    -73.5615778
+  ],
+  "Lake Luzerne, New York, United States": [
+    43.326025,
+    -73.8419293
+  ],
+  "Philmont, New York, United States": [
+    42.248421,
+    -73.653176
+  ],
+  "Brattleboro, Vermont, United States": [
+    42.8507588,
+    -72.5572913
+  ],
+  "Craryville, New York, United States": [
+    42.1748115,
+    -73.5828976
+  ],
+  "Climax, New York, United States": [
+    42.3659174,
+    -73.85096
+  ],
+  "Port Charlotte, Florida, United States": [
+    26.9761707,
+    -82.0906448
+  ],
+  "Hillsdale, New York, United States": [
+    42.1789784,
+    -73.5259511
+  ],
+  "South Salem, New York, United States": [
+    41.2738221,
+    -73.5561711
+  ],
+  "Scarborough, New York, United States": [
+    41.138536,
+    -73.8666171
+  ],
+  "Eastchester, New York, United States": [
+    40.9610563,
+    -73.8064739
+  ],
+  "Middlebury, Vermont, United States": [
+    44.014299,
+    -73.167229
+  ],
+  "Sanibel, Florida, United States": [
+    26.4489695,
+    -82.0223137
+  ],
+  "West Hurley, New York, United States": [
+    42.009416,
+    -74.1152619
+  ],
+  "Rensselaer, New York, United States": [
+    42.7091389,
+    -73.5107732
+  ],
+  "Loudonville, New York, United States": [
+    42.7032355,
+    -73.7636489
+  ],
+  "Wallkill, New York, United States": [
+    41.4636977,
+    -74.3724212
+  ],
+  "Lake Hill, New York, United States": [
+    42.0673131,
+    -74.1870881
+  ],
+  "Ghent, New York, United States": [
+    42.3292525,
+    -73.6156736
+  ],
+  "Downey, California, United States": [
+    33.9404441,
+    -118.1292846
+  ],
+  "Middletown, New York, United States": [
+    40.8397222,
+    -73.8316667
+  ],
+  "Lynbrook, New York, United States": [
+    40.6548253,
+    -73.6717969
+  ],
+  "Whiting, New Jersey, United States": [
+    39.9545613,
+    -74.3784815
+  ],
+  "Goshen, Connecticut, United States": [
+    41.8317624,
+    -73.2251145
+  ],
+  "North Woodmere, New York, United States": [
+    40.6501036,
+    -73.7240205
+  ],
+  "Buffalo, New York, United States": [
+    42.8867166,
+    -78.8783922
+  ],
+  "Waccabuc, New York, United States": [
+    41.300315,
+    -73.5761584
+  ],
+  "Rye Brook, New York, United States": [
+    41.0192641,
+    -73.6834621
+  ],
+  "Weston, Connecticut, United States": [
+    41.2021302,
+    -73.3812743
+  ],
+  "North Massapequa, New York, United States": [
+    40.699327,
+    -73.4666465
+  ],
+  "Rockaway Point, New York, United States": [
+    40.5435479,
+    -73.9403058
+  ],
+  "Kent Lakes, New York, United States": [
+    null,
+    null
+  ],
+  "Richmond Hill, New York, United States": [
+    40.6994253,
+    -73.8309672
+  ],
+  "Montclair, New Jersey, United States": [
+    40.8164458,
+    -74.2210643
+  ],
+  "Bonita Springs, Florida, United States": [
+    26.339806,
+    -81.7786972
+  ],
+  "Calverton, New York, United States": [
+    40.9117907,
+    -72.7709709
+  ],
+  "Guttenberg, New Jersey, United States": [
+    40.7920454,
+    -74.0037505
+  ],
+  "Northford, Connecticut, United States": [
+    41.3936172,
+    -72.7914941
+  ],
+  "Cairo, New York, United States": [
+    42.2998716,
+    -73.9994637
+  ],
+  "Gulfport, Florida, United States": [
+    27.7483613,
+    -82.7034334
+  ],
+  "Elizaville, New York, United States": [
+    42.0509732,
+    -73.7934577
+  ],
+  "Chester, New York, United States": [
+    41.3624533,
+    -74.2714981
+  ],
+  "Bergenfield, New Jersey, United States": [
+    40.9275987,
+    -73.9973608
+  ],
+  "Quogue, New York, United States": [
+    40.823177,
+    -72.6096451
+  ],
+  "Carle Place, New York, United States": [
+    40.750055,
+    -73.6118258
+  ],
+  "Washingtonville, New York, United States": [
+    41.4278716,
+    -74.1659798
+  ],
+  "Vestal, New York, United States": [
+    42.0850703,
+    -76.053813
+  ],
+  "East Greenbush, New York, United States": [
+    42.5909135,
+    -73.7017858
+  ],
+  "New Canaan, Connecticut, United States": [
+    41.146763,
+    -73.4948446
+  ],
+  "Saint Petersburg, Florida, United States": [
+    27.7712264,
+    -82.6340259
+  ],
+  "Honeoye Falls, New York, United States": [
+    42.9522855,
+    -77.5902759
+  ],
+  "Oakland Gardens, New York, United States": [
+    40.753991,
+    -73.765966
+  ],
+  "Neversink, New York, United States": [
+    41.8473134,
+    -74.6190472
+  ],
+  "Green Cove Springs, Florida, United States": [
+    29.9919779,
+    -81.6781097
+  ],
+  "Stockbridge, Massachussets, United States": [
+    null,
+    null
+  ],
+  "East Elmhurst, New York, United States": [
+    40.7612123,
+    -73.8651358
+  ],
+  "Spuyten Duyvil, New York, United States": [
+    40.8745624,
+    -73.9217153
+  ],
+  "Oakland, New Jersey, United States": [
+    41.0220483,
+    -74.2430988
+  ],
+  "Cottekill, New York, United States": [
+    41.853392,
+    -74.106082
+  ],
+  "Clintondale, New York, United States": [
+    41.692102,
+    -74.043616
+  ],
+  "Melrose, New York, United States": [
+    40.8256703,
+    -73.9152416
+  ],
+  "Southport, Connecticut, United States": [
+    41.1367025,
+    -73.2835638
+  ],
+  "Bridgewater, Connecticut, United States": [
+    41.5350949,
+    -73.3662305
+  ],
+  "Granite Springs, New York, United States": [
+    41.3103717,
+    -73.757355
+  ],
+  "Castleton-On-Hudson, Ny, Usa, New York, United States": [
+    null,
+    null
+  ],
+  "Branford, Connecticut, United States": [
+    41.2795414,
+    -72.8150989
+  ],
+  "Spencertown, New York, United States": [
+    42.3234196,
+    -73.5459487
+  ],
+  "Pearl River, New York, United States": [
+    41.0556645,
+    -74.0076276
+  ],
+  "Glendale, New York, United States": [
+    40.7014917,
+    -73.8868028
+  ],
+  "Hawthorne, New York, United States": [
+    41.1043985,
+    -73.7975912
+  ],
+  "Branchville, New Jersey, United States": [
+    41.1464852,
+    -74.7523874
+  ],
+  "Newfane, New York, United States": [
+    43.286723,
+    -78.710312
+  ],
+  "Walton, New York, United States": [
+    42.1695296,
+    -75.1293351
+  ],
+  "Clifton, New Jersey, United States": [
+    40.8584328,
+    -74.1637553
+  ],
+  "Kinderhook, New York, United States": [
+    42.3953617,
+    -73.6978983
+  ],
+  "Highmount, New York, United States": [
+    42.1442557,
+    -74.4898745
+  ],
+  "Lincolndale, New York, United States": [
+    41.333489,
+    -73.7268371
+  ],
+  "Copake, New York, United States": [
+    42.1035643,
+    -73.5497383
+  ],
+  "New Hampton, New York, United States": [
+    41.4109272,
+    -74.4071001
+  ],
+  "Norwood, New Jersey, United States": [
+    40.9981532,
+    -73.9618039
+  ],
+  "Tuxedo Park, New York, United States": [
+    41.197024,
+    -74.210391
+  ],
+  "New Hempstead, New York, United States": [
+    41.1500919,
+    -74.0362566
+  ],
+  "Central Valley, New York, United States": [
+    41.3317605,
+    -74.120978
+  ],
+  "Laurel Springs, New Jersey, United States": [
+    39.8201141,
+    -75.0062788
+  ],
+  "Charlotte, North Carolina, United States": [
+    35.2272086,
+    -80.8430827
+  ],
+  "New Hyde Park, New York, United States": [
+    40.7352157,
+    -73.6883239
+  ],
+  "Spencer, New York, United States": [
+    42.2097963,
+    -76.4932748
+  ],
+  "Mineola, New York, United States": [
+    40.7492678,
+    -73.6406845
+  ],
+  "Woodhaven, New York, United States": [
+    40.6892698,
+    -73.8579131
+  ],
+  "Leonia, New Jersey, United States": [
+    40.8617353,
+    -73.9880495
+  ],
+  "Delanson, New York, United States": [
+    42.7453532,
+    -74.1881834
+  ],
+  "Hughsonville, New York, United States": [
+    41.5809269,
+    -73.9270817
+  ],
+  "Setauket, New York, United States": [
+    40.9467545,
+    -73.115916
+  ],
+  "South Setauket, New York, United States": [
+    40.9137095,
+    -73.1056641
+  ],
+  "Slingerlands, New York, United States": [
+    42.6292455,
+    -73.8645685
+  ],
+  "Liberty, New York, United States": [
+    41.8012088,
+    -74.7466262
+  ],
+  "Thiells, New York, United States": [
+    41.2067635,
+    -74.01262
+  ],
+  "Grandview-On-Hudson, New York, United States": [
+    41.4444519,
+    -74.0052642
+  ],
+  "Muttontown, New York, United States": [
+    40.8239883,
+    -73.5476252
+  ],
+  "Livingston, New Jersey, United States": [
+    40.7959335,
+    -74.3148713
+  ],
+  "Corfu, New York, United States": [
+    42.9600595,
+    -78.4055767
+  ],
+  "Somerville, New Jersey, United States": [
+    40.5742696,
+    -74.60988
+  ],
+  "Greenville, New York, United States": [
+    41.3606496,
+    -74.6165503
+  ],
+  "Moorestown, New Jersey, United States": [
+    39.9670569,
+    -74.9426677
+  ],
+  "Patchogue, New York, United States": [
+    40.7656539,
+    -73.0151084
+  ],
+  "Pinellas Park, Florida, United States": [
+    27.8428025,
+    -82.6995444
+  ],
+  "Tonawanda, New York, United States": [
+    43.020679,
+    -78.878383
+  ],
+  "Unionville, New York, United States": [
+    41.3018536,
+    -74.5618147
+  ],
+  "Salisbury, Connecticut, United States": [
+    41.983426,
+    -73.4212318
+  ],
+  "Jewett City, Connecticut, United States": [
+    41.6067651,
+    -71.9809081
+  ],
+  "Redding, Connecticut, United States": [
+    41.3025956,
+    -73.3834532
+  ],
+  "Chatham, New Jersey, United States": [
+    40.7409242,
+    -74.3836711
+  ],
+  "Placida, Florida, United States": [
+    26.8322884,
+    -82.2648163
+  ],
+  "Pine Bush, New York, United States": [
+    41.61329,
+    -74.2939101
+  ],
+  "Hartford, Connecticut, United States": [
+    41.764582,
+    -72.6908547
+  ],
+  "Matawan, New Jersey, United States": [
+    40.41483,
+    -74.2295891
+  ],
+  "Freeport, New York, United States": [
+    40.6576071,
+    -73.5835826
+  ],
+  "Bethel, Connecticut, United States": [
+    41.3712063,
+    -73.4140097
+  ],
+  "Kennett Square, Pennsylvania, United States": [
+    39.8467414,
+    -75.7116997
+  ],
+  "Middle Village, New York, United States": [
+    40.7179844,
+    -73.8788075
+  ],
+  "West Coxsackie, New York, United States": [
+    42.3606399,
+    -73.8167921
+  ],
+  "Aberdeen, New Jersey, United States": [
+    40.4071138,
+    -74.2216287
+  ],
+  "Olmstedville, New York, United States": [
+    43.7714532,
+    -73.9312445
+  ],
+  "Ferndale, Washington, United States": [
+    48.8466698,
+    -122.589723
+  ],
+  "West Caldwell, New Jersey, United States": [
+    40.8409329,
+    -74.3018154
+  ],
+  "Franconia, New Hampshire, United States": [
+    44.2273919,
+    -71.7478468
+  ],
+  "Park Ridge, New Jersey, United States": [
+    41.0375969,
+    -74.0406956
+  ],
+  "Falmouth, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Hackensack, New Jersey, United States": [
+    40.8870781,
+    -74.0410667
+  ],
+  "Barrington, New Jersey, United States": [
+    39.8648357,
+    -75.0551714
+  ],
+  "Absecon, New Jersey, United States": [
+    39.4284503,
+    -74.4957076
+  ],
+  "Salisbury Mills, New York, United States": [
+    41.4306175,
+    -74.1099705
+  ],
+  "New Milford, New Jersey, United States": [
+    40.9350986,
+    -74.0190281
+  ],
+  "New Hartford, New York, United States": [
+    43.073653,
+    -75.287933
+  ],
+  "Ancram, New York, United States": [
+    42.0504876,
+    -73.6362581
+  ],
+  "Bantam, Connecticut, United States": [
+    41.724946,
+    -73.2422592
+  ],
+  "Avon, Connecticut, United States": [
+    41.8098209,
+    -72.8306541
+  ],
+  "Port Townsend, Washington, United States": [
+    48.1179702,
+    -122.769544
+  ],
+  "Rahway, New Jersey, United States": [
+    40.6081591,
+    -74.2776468
+  ],
+  "Peru, New York, United States": [
+    44.578486,
+    -73.527031
+  ],
+  "Metuchen, New Jersey, United States": [
+    40.5431598,
+    -74.3632049
+  ],
+  "Huntington, New York, United States": [
+    40.868154,
+    -73.425676
+  ],
+  "Kingston, nan, United States": [
+    32.1752591,
+    -80.7206034
+  ],
+  "Voorhees, New Jersey, United States": [
+    39.8512162,
+    -74.9619779
+  ],
+  "Margaretville, New York, United States": [
+    42.1487726,
+    -74.6487018
+  ],
+  "Fayetteville, New York, United States": [
+    43.0297887,
+    -76.0043643
+  ],
+  "Hauppauge, New York, United States": [
+    40.8237354,
+    -73.2062289
+  ],
+  "Campbell Hall, New York, United States": [
+    41.4506548,
+    -74.2659071
+  ],
+  "New Baltimore, New York, United States": [
+    42.4461934,
+    -73.7884568
+  ],
+  "Montville, New Jersey, United States": [
+    40.9148209,
+    -74.383763
+  ],
+  "Wurtsboro, New York, United States": [
+    41.5767603,
+    -74.4871031
+  ],
+  "Hampton Bays, New York, United States": [
+    40.8695775,
+    -72.524362
+  ],
+  "Kent Cliffs, New York, United States": [
+    41.4550934,
+    -73.7540208
+  ],
+  "Cortland, New York, United States": [
+    42.5842136,
+    -76.0704906
+  ],
+  "Napa, California, United States": [
+    38.4898675,
+    -122.3218414
+  ],
+  "South Bound Brook, New Jersey, United States": [
+    40.5534365,
+    -74.531544
+  ],
+  "Floral Park, New York, United States": [
+    40.7246999,
+    -73.7048024
+  ],
+  "Utica, New York, United States": [
+    43.1009031,
+    -75.2326641
+  ],
+  "Maspeth, New York, United States": [
+    40.723158,
+    -73.912637
+  ],
+  "Blooming Grove, New York, United States": [
+    41.4092605,
+    -74.1951475
+  ],
+  "Ballston Spa, New York, United States": [
+    43.0100155,
+    -73.8502957
+  ],
+  "Smithtown, New York, United States": [
+    40.8559314,
+    -73.2006687
+  ],
+  "North Tonawanda, New York, United States": [
+    43.0407742,
+    -78.8660527
+  ],
+  "West Seneca, New York, United States": [
+    42.8395833,
+    -78.7541466
+  ],
+  "Shokan, New York, United States": [
+    41.981283,
+    -74.2064318
+  ],
+  "Milltown, New Jersey, United States": [
+    40.4562165,
+    -74.4432073
+  ],
+  "Keene, New York, United States": [
+    44.256265,
+    -73.792419
+  ],
+  "Old Tappan, New Jersey, United States": [
+    41.0106971,
+    -73.9911073
+  ],
+  "Kenmore, New York, United States": [
+    42.961748,
+    -78.870914
+  ],
+  "Sharon Springs, New York, United States": [
+    42.7959074,
+    -74.617086
+  ],
+  "Castleton-On-Hudson, New York, United States": [
+    42.5308134,
+    -73.7553018
+  ],
+  "Redding Center, Connecticut, United States": [
+    41.3096773,
+    -73.3870572
+  ],
+  "Troy, Michigan, United States": [
+    42.6055893,
+    -83.1499304
+  ],
+  "Little Neck, New York, United States": [
+    40.7745338,
+    -73.7412564
+  ],
+  "Corttlandt Manor, New York, United States": [
+    null,
+    null
+  ],
+  "Darien, Connecticut, United States": [
+    41.0787079,
+    -73.4692873
+  ],
+  "Stockton, New Jersey, United States": [
+    40.407883,
+    -74.9782238
+  ],
+  "North Egremont, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Ridgewood, New Jersey, United States": [
+    40.9796683,
+    -74.1194403
+  ],
+  "Mt. Kisco, New York, United States": [
+    41.2042616,
+    -73.7270761
+  ],
+  "Lloyd Harbor, New York, United States": [
+    40.9034315,
+    -73.4598432
+  ],
+  "Glen Cove, New York, United States": [
+    40.8642028,
+    -73.6317807
+  ],
+  "West Camp, New York, United States": [
+    42.1231454,
+    -73.9348556
+  ],
+  "Haverford, Pennsylvania, United States": [
+    40.0131672,
+    -75.2943516
+  ],
+  "Hood River, Oregon, United States": [
+    45.5311636,
+    -121.6475587
+  ],
+  "Cedar Grove, New Jersey, United States": [
+    40.8517662,
+    -74.229035
+  ],
+  "Galesville, Wisconsin, United States": [
+    44.0828396,
+    -91.3487354
+  ],
+  "Laurel, New York, United States": [
+    40.9688035,
+    -72.5539752
+  ],
+  "East Islip, New York, United States": [
+    40.722918,
+    -73.1834256
+  ],
+  "Eldred, New York, United States": [
+    41.5293932,
+    -74.8802363
+  ],
+  "Easton, Connecticut, United States": [
+    41.2528738,
+    -73.2973394
+  ],
+  "Cordtlandt Manor, New York, United States": [
+    null,
+    null
+  ],
+  "Ellenville, New York, United States": [
+    41.6975082,
+    -74.345361
+  ],
+  "Grahamsville, New York, United States": [
+    41.8534125,
+    -74.5504213
+  ],
+  "West Islip, New York, United States": [
+    40.7064515,
+    -73.2987663
+  ],
+  "Merrick, New York, United States": [
+    40.6523325,
+    -73.5512469
+  ],
+  "Hopkins, South Carolina, United States": [
+    33.9043212,
+    -80.8770342
+  ],
+  "Eureka Springs, Arkansas, United States": [
+    36.4000796,
+    -93.7392419
+  ],
+  "Saint Louis, Missouri, United States": [
+    38.6280278,
+    -90.1910154
+  ],
+  "Brentwood, New York, United States": [
+    40.782634,
+    -73.2566332
+  ],
+  "Bovina Center, New York, United States": [
+    42.2620297,
+    -74.7846024
+  ],
+  "Mt Vernon, New York, United States": [
+    40.9125085,
+    -73.8386504
+  ],
+  "Kings Park, New York, United States": [
+    40.8890985,
+    -73.246843
+  ],
+  "Ballston Lakes, New York, United States": [
+    null,
+    null
+  ],
+  "Westerlo, New York, United States": [
+    42.5150785,
+    -74.0454099
+  ],
+  "Renick, West Virginia, United States": [
+    37.829415,
+    -80.6270548
+  ],
+  "Swampscott, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Arlington, Texas, United States": [
+    32.7355816,
+    -97.1071186
+  ],
+  "Latham, New York, United States": [
+    42.7436134,
+    -73.7458456
+  ],
+  "Wantagh, New York, United States": [
+    40.663289,
+    -73.513589
+  ],
+  "Alexandria, Virginia, United States": [
+    38.8051095,
+    -77.0470229
+  ],
+  "Mattawan, Michigan, United States": [
+    42.2094839,
+    -85.784453
+  ],
+  "North River, New York, United States": [
+    43.741409,
+    -74.0530358
+  ],
+  "Naples, Florida, United States": [
+    26.1421976,
+    -81.7942944
+  ],
+  "Rehoboth, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Kensington, Maryland, United States": [
+    39.0258405,
+    -77.0750246
+  ],
+  "Medford, New York, United States": [
+    40.8228192,
+    -72.9887443
+  ],
+  "Canandaigua, New York, United States": [
+    42.850682,
+    -77.3191454
+  ],
+  "Valley Stream, New York, United States": [
+    40.6631362,
+    -73.7056955
+  ],
+  "Arroyo Grande, California, United States": [
+    35.1235374,
+    -120.5785796
+  ],
+  "Wesley Hills, New York, United States": [
+    41.1593749,
+    -74.0700471
+  ],
+  "Mamaroneck, New York, nan": [
+    40.9505815,
+    -73.7336409
+  ],
+  "Lexington, New York, United States": [
+    42.2403646,
+    -74.3654253
+  ],
+  "Circleville, New York, United States": [
+    41.5142604,
+    -74.3834883
+  ],
+  "Columbus, North Carolina, United States": [
+    34.2814497,
+    -78.666593
+  ],
+  "Preston, Maryland, United States": [
+    38.7126151,
+    -75.9099361
+  ],
+  "Waterford, New York, United States": [
+    42.7925778,
+    -73.6812293
+  ],
+  "Niverville, New York, United States": [
+    42.4472715,
+    -73.6485031
+  ],
+  "Bluffton, South Carolina, United States": [
+    32.2371465,
+    -80.8603868
+  ],
+  "Iowa City, Iowa, United States": [
+    41.6612561,
+    -91.5299106
+  ],
+  "Northport, New York, United States": [
+    40.9009595,
+    -73.343167
+  ],
+  "Beaver Dams, New York, United States": [
+    42.2911853,
+    -76.9596855
+  ],
+  "Riverside, Illinois, United States": [
+    41.8323474,
+    -87.8153195
+  ],
+  "Alameda, California, United States": [
+    37.6090291,
+    -121.899142
+  ],
+  "East Amherst, New York, United States": [
+    43.0183913,
+    -78.696697
+  ],
+  "New Fairfield, Connecticut, United States": [
+    41.4664832,
+    -73.4856789
+  ],
+  "Upper Saddle River, New Jersey, United States": [
+    41.0585352,
+    -74.0984769
+  ],
+  "Basking Ridge, New Jersey, United States": [
+    40.7064088,
+    -74.5492725
+  ],
+  "Burnt Hills, New York, United States": [
+    42.9097982,
+    -73.8951234
+  ],
+  "Franklin Lakes, New Jersey, United States": [
+    41.0167639,
+    -74.2057012
+  ],
+  "West Sand Lake, New York, United States": [
+    42.6404633,
+    -73.6034908
+  ],
+  "Kill Buck, New York, United States": [
+    42.1582201,
+    -78.6806365
+  ],
+  "Oak Creek, Colorado, United States": [
+    40.2749806,
+    -106.9583829
+  ],
+  "Venice, Florida, United States": [
+    27.0998315,
+    -82.4442832
+  ],
+  "Queens Village, New York, United States": [
+    40.7267692,
+    -73.7415208
+  ],
+  "Valley Cottage, New York, nan": [
+    null,
+    null
+  ],
+  "Williamsport, Pennsylvania, United States": [
+    41.2411556,
+    -77.0011096
+  ],
+  "Ocala, Florida, United States": [
+    29.1871986,
+    -82.1400923
+  ],
+  "North Haledon, New Jersey, United States": [
+    40.9550981,
+    -74.1859782
+  ],
+  "Ridgefield Park, New Jersey, United States": [
+    40.8570442,
+    -74.0215285
+  ],
+  "Tenafly, New Jersey, United States": [
+    40.9253766,
+    -73.9629154
+  ],
+  "Guilderland Center, New York, United States": [
+    42.7020217,
+    -73.9662368
+  ],
+  "Wingdale, New York, United States": [
+    41.6373657,
+    -73.566565
+  ],
+  "Glasco, New York, United States": [
+    42.0450925,
+    -73.9511267
+  ],
+  "Port Jervis, New York, United States": [
+    41.3750937,
+    -74.692663
+  ],
+  "Glendale, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Norcross, Georgia, United States": [
+    33.9412127,
+    -84.2135309
+  ],
+  "Ridge, New York, United States": [
+    40.904732,
+    -72.8783919
+  ],
+  "Jamestown, New York, United States": [
+    42.0965167,
+    -79.2380322
+  ],
+  "Napanoch, New York, United States": [
+    41.752817,
+    -74.3703475
+  ],
+  "Fort Lauderdale, Florida, United States": [
+    26.1223084,
+    -80.1433786
+  ],
+  "Riverdale, New York, United States": [
+    40.90056,
+    -73.90639
+  ],
+  "East Greenville, Pennsylvania, United States": [
+    40.4064882,
+    -75.5018479
+  ],
+  "Somerset, New Jersey, United States": [
+    40.5675084,
+    -74.6189556
+  ],
+  "Cape Coral, Florida, United States": [
+    26.5625742,
+    -81.9438802
+  ],
+  "Concord, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Valatie, New York, United States": [
+    42.4134168,
+    -73.6731749
+  ],
+  "Williamsport, Indiana, United States": [
+    40.2883704,
+    -87.2938999
+  ],
+  "North Bay Village, Florida, United States": [
+    25.8462075,
+    -80.1539351
+  ],
+  "Hunter, New York, United States": [
+    42.2136987,
+    -74.2187541
+  ],
+  "Cobleskill, New York, United States": [
+    42.677853,
+    -74.4854172
+  ],
+  "Upper Nyack, New York, United States": [
+    41.1070404,
+    -73.9201371
+  ],
+  "Fort Myers, Florida, United States": [
+    26.640628,
+    -81.8723084
+  ],
+  "Lewes, Delaware, United States": [
+    38.7733961,
+    -75.1379574
+  ],
+  "Niagara Falls, New York, United States": [
+    43.084841,
+    -79.0701786
+  ],
+  "Rensselaerville, New York, United States": [
+    42.5161888,
+    -74.1379131
+  ],
+  "Brookline, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Warren, New Jersey, United States": [
+    40.8602222,
+    -74.9720493
+  ],
+  "Laramie, Wyoming, United States": [
+    41.3116442,
+    -105.5917876
+  ],
+  "Little Falls, New Jersey, United States": [
+    40.8813513,
+    -74.228185
+  ],
+  "Ada, Michigan, United States": [
+    42.9547136,
+    -85.4879523
+  ],
+  "Boonton, New Jersey, United States": [
+    40.9025989,
+    -74.4070971
+  ],
+  "Lebanon, New Jersey, United States": [
+    40.6417683,
+    -74.8359987
+  ],
+  "Durham, North Carolina, United States": [
+    35.996653,
+    -78.9018053
+  ],
+  "Dumont, New Jersey, United States": [
+    40.9406541,
+    -73.9968051
+  ],
+  "Haworth, New Jersey, United States": [
+    40.9609315,
+    -73.9901383
+  ],
+  "Grandview, New York, United States": [
+    44.328699,
+    -74.1354325
+  ],
+  "Newark, New York, United States": [
+    43.0467301,
+    -77.0952516
+  ],
+  "Stuyversant, New York, United States": [
+    null,
+    null
+  ],
+  "Bridport, Vermont, United States": [
+    43.985058,
+    -73.3126201
+  ],
+  "Malden, New York, United States": [
+    42.0950903,
+    -73.9351339
+  ],
+  "South Richmond Hill, New York, United States": [
+    40.689365,
+    -73.8273796
+  ],
+  "Asbury Park, New Jersey, United States": [
+    40.2203907,
+    -74.0120817
+  ],
+  "Highlands, New Jersey, United States": [
+    40.40372,
+    -73.991527
+  ],
+  "Averill Park, New York, United States": [
+    42.6391711,
+    -73.5581729
+  ],
+  "Milton, New York, nan": [
+    null,
+    null
+  ],
+  "Reston, Virginia, United States": [
+    38.953282,
+    -77.3464516
+  ],
+  "Santa Monica, California, United States": [
+    34.0194704,
+    -118.491227
+  ],
+  "Surfside, Florida, United States": [
+    25.8784285,
+    -80.1256007
+  ],
+  "Eliot, Maine, United States": [
+    43.1081291,
+    -70.7776375
+  ],
+  "Milton, Georgia, United States": [
+    34.1134001,
+    -84.2693745
+  ],
+  "New York, New York, nan": [
+    -22.9069766,
+    -42.8026278
+  ],
+  "Rocky Point, New York, United States": [
+    40.939812,
+    -72.935953
+  ],
+  "Jefferson Valley, New York, United States": [
+    41.3381494,
+    -73.7906892
+  ],
+  "West Hartford, Connecticut, United States": [
+    41.7620447,
+    -72.7420399
+  ],
+  "Ramsey, New Jersey, United States": [
+    41.0573188,
+    -74.1409771
+  ],
+  "Buchanan, New York, United States": [
+    41.2620383,
+    -73.9381943
+  ],
+  "Norfolk, Massachussets, United States": [
+    null,
+    null
+  ],
+  "London, nan, England": [
+    52.1117555,
+    0.1712205
+  ],
+  "Elka Park, New York, United States": [
+    42.1592556,
+    -74.1573634
+  ],
+  "Upper Montclair, New Jersey, United States": [
+    40.8447225,
+    -74.1999165
+  ],
+  "Jupiter, Florida, United States": [
+    26.9342246,
+    -80.0942087
+  ],
+  "Sparta, New Jersey, United States": [
+    41.0401567,
+    -74.6310081
+  ],
+  "Scottsdale,  Arizona, United States": [
+    33.4942189,
+    -111.926018
+  ],
+  "Clarendon, Vermont, United States": [
+    43.5182261,
+    -72.9711607
+  ],
+  "Schenecady, New York, United States": [
+    null,
+    null
+  ],
+  "Verplank, New York, United States": [
+    41.4864437,
+    -74.0092836
+  ],
+  "Flemington, New Jersey, United States": [
+    40.5130953,
+    -74.8591333
+  ],
+  "Danbury, Connecticut, United States": [
+    41.394817,
+    -73.4540111
+  ],
+  "Glen Head, New York, United States": [
+    40.8433525,
+    -73.6257512
+  ],
+  "West Haverstraw, New York, United States": [
+    41.2098301,
+    -73.9857513
+  ],
+  "Matamoras, Pennsylvania, United States": [
+    41.3687049,
+    -74.7001632
+  ],
+  "Barnegat, New Jersey, United States": [
+    39.7557459,
+    -74.2207395
+  ],
+  "Alpha, New Jersey, United States": [
+    40.6670439,
+    -75.1573972
+  ],
+  "Rotterdam Junction, New York, United States": [
+    42.8743319,
+    -74.0465958
+  ],
+  "Fanwood, New Jersey, United States": [
+    40.6409555,
+    -74.383846
+  ],
+  "Willsboro, New York, United States": [
+    44.3620961,
+    -73.3913457
+  ],
+  "Westerly, Rhode Island, United States": [
+    41.3775996,
+    -71.8272911
+  ],
+  "Coral Gables, Florida, United States": [
+    25.7331105,
+    -80.2585107
+  ],
+  "Leeds, New York, United States": [
+    42.255095,
+    -73.8922975
+  ],
+  "Malvern, Pennsylvania, United States": [
+    40.036202,
+    -75.5138959
+  ],
+  "Corona, New York, United States": [
+    40.7469593,
+    -73.8601456
+  ],
+  "Roslyn Heights, New York, United States": [
+    40.7766105,
+    -73.6339769
+  ],
+  "Port Saint Lucie, Florida, United States": [
+    27.2939333,
+    -80.3503283
+  ],
+  "Mohegan Lake, New York, United States": [
+    41.314821,
+    -73.8461971
+  ],
+  "Briarcliff, New York, United States": [
+    41.1456512,
+    -73.8237456
+  ],
+  "Cambridge, New York, United States": [
+    43.007994,
+    -73.4392637
+  ],
+  "Ashland, Virginia, United States": [
+    37.7594012,
+    -77.4806603
+  ],
+  "Rinebeck, New York, United States": [
+    null,
+    null
+  ],
+  "Mamaronek, New York, United States": [
+    null,
+    null
+  ],
+  "Riverdale, New Jersey, United States": [
+    40.9939865,
+    -74.3034824
+  ],
+  "Clinton, Oklahoma, United States": [
+    35.5156056,
+    -98.9673069
+  ],
+  "Brookfield, Wisconsin, nan": [
+    null,
+    null
+  ],
+  "Cullman, Alabama, United States": [
+    34.1335332,
+    -86.8779268
+  ],
+  "Morris Plains, New Jersey, United States": [
+    40.8364845,
+    -74.4781885
+  ],
+  "Herndon, Virginia, United States": [
+    38.9695316,
+    -77.3859479
+  ],
+  "Fort Wayne, Indiana, United States": [
+    41.0799898,
+    -85.1386015
+  ],
+  "Succasunna, New Jersey, United States": [
+    40.8515285,
+    -74.6616155
+  ],
+  "Windham, New York, United States": [
+    42.3073066,
+    -74.2520875
+  ],
+  "Riverview, Florida, United States": [
+    27.831977,
+    -82.2974043
+  ],
+  "Maitland, Florida, United States": [
+    28.6275253,
+    -81.3656419
+  ],
+  "Wardsboro, Vermont, United States": [
+    43.0408075,
+    -72.7895931
+  ],
+  "Tuxedo Road, New York, United States": [
+    41.2032742,
+    -74.2016875
+  ],
+  "Lake Success, New York, United States": [
+    40.7706572,
+    -73.7176312
+  ],
+  "Green Valley,  Arizona, United States": [
+    31.8484548,
+    -111.0265945
+  ],
+  "Callicoon, New York, United States": [
+    41.765079,
+    -75.0541813
+  ],
+  "Glastonbury, Connecticut, United States": [
+    41.7123218,
+    -72.608146
+  ],
+  "Villanova, Pennsylvania, United States": [
+    40.0373323,
+    -75.3490769
+  ],
+  "Huntingdon Valley, Pennsylvania, United States": [
+    40.1226101,
+    -75.0635049
+  ],
+  "Watermill, New York, United States": [
+    40.8867669,
+    -72.3417505
+  ],
+  "Takoma Park, Maryland, United States": [
+    38.9778882,
+    -77.0074765
+  ],
+  "Seaford, New York, United States": [
+    40.668086,
+    -73.4915091
+  ],
+  "Indiana, Pennsylvania, United States": [
+    40.6424116,
+    -79.1262839
+  ],
+  "Richmond, New York, United States": [
+    42.7905911,
+    -77.5319396
+  ],
+  "Parkville, Missouri, United States": [
+    39.1896268,
+    -94.6826891
+  ],
+  "Parsippany, New Jersey, United States": [
+    40.8578772,
+    -74.4259866
+  ],
+  "Springfield, New Jersey, United States": [
+    40.7109107,
+    -74.3099398
+  ],
+  "Salisbury, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Waterbury, Connecticut, United States": [
+    41.5538091,
+    -73.0438362
+  ],
+  "Nashville, Tennessee, United States": [
+    36.1622767,
+    -86.7742984
+  ],
+  "Spring Green, Wisconsin, United States": [
+    43.1769367,
+    -90.0680478
+  ],
+  "Queens Vlg, New York, United States": [
+    null,
+    null
+  ],
+  "Somerville, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Johnstown, New York, United States": [
+    43.0061613,
+    -74.3705221
+  ],
+  "Kinnelon, New Jersey, United States": [
+    41.0017644,
+    -74.367096
+  ],
+  "Dushanbe, nan, Tajikistan": [
+    null,
+    null
+  ],
+  "Pittsburgh, Pennsylvania, United States": [
+    40.4406968,
+    -80.0025666
+  ],
+  "Dedham, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Monmouth Junction, New Jersey, United States": [
+    40.3840222,
+    -74.533084
+  ],
+  "Howell, New Jersey, United States": [
+    40.1413032,
+    -74.2236618
+  ],
+  "Newton, New Jersey, United States": [
+    41.0583121,
+    -74.7531445
+  ],
+  "West Babylon, New York, United States": [
+    40.704371,
+    -73.3501301
+  ],
+  "Lexington, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Homosassa, Florida, United States": [
+    28.782535,
+    -82.6065272
+  ],
+  "Avon-By-The-Sea, New Jersey, United States": [
+    40.1923357,
+    -74.0159703
+  ],
+  "Vero Beach, Florida, United States": [
+    27.6387163,
+    -80.3975399
+  ],
+  "Sierra Mas, California, United States": [
+    null,
+    null
+  ],
+  "Newtonville, Massachussets, United States": [
+    null,
+    null
+  ],
+  "West Newton, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Tarzana, California, United States": [
+    34.1689262,
+    -118.5365791
+  ],
+  "Crownsville, Maryland, United States": [
+    39.0197327,
+    -76.5902677
+  ],
+  "Columbia, Missouri, United States": [
+    38.951883,
+    -92.3337366
+  ],
+  "Cupertino, California, United States": [
+    37.3228934,
+    -122.0322895
+  ],
+  "Putney, Vermont, United States": [
+    42.9751766,
+    -72.5215973
+  ],
+  "East Brunswick, New Jersey, United States": [
+    40.4278841,
+    -74.415984
+  ],
+  "Mill Valley, California, United States": [
+    37.9060368,
+    -122.5449763
+  ],
+  "Stewart Manor, New York, United States": [
+    40.719235,
+    -73.6888163
+  ],
+  "West New York, New Jersey, United States": [
+    40.7856117,
+    -74.0093129
+  ],
+  "Albuquerque, New Mexico, United States": [
+    35.0841034,
+    -106.650985
+  ],
+  "Durham, New Hampshire, United States": [
+    43.134564,
+    -70.927048
+  ],
+  "Port St Lucie, Florida, United States": [
+    27.2939333,
+    -80.3503283
+  ],
+  "Stockton, California, United States": [
+    37.9577016,
+    -121.290779
+  ],
+  "Fort Washington, Pennsylvania, United States": [
+    40.1478532,
+    -75.1897243
+  ],
+  "Hollis, New York, United States": [
+    40.7134361,
+    -73.7670772
+  ],
+  "Rhinbeck, New York, United States": [
+    null,
+    null
+  ],
+  "Portchester, New York, United States": [
+    40.9924338,
+    -73.6755052
+  ],
+  "Bordeaux, nan, France": [
+    47.2107207,
+    -1.6115835
+  ],
+  "Summerville, South Carolina, United States": [
+    33.0186699,
+    -80.1762704
+  ],
+  "Kew Gardens, New York, United States": [
+    40.7139415,
+    -73.830742
+  ],
+  "Dobbs Ferry, New York, nan": [
+    null,
+    null
+  ],
+  "Pullman, Washington, United States": [
+    46.7304268,
+    -117.173895
+  ],
+  "North Bergen, New Jersey, United States": [
+    40.8042674,
+    -74.012084
+  ],
+  "Evansville, Indiana, United States": [
+    37.970495,
+    -87.5715641
+  ],
+  "Los Ranchos, New Mexico, United States": [
+    35.1619885,
+    -106.6428038
+  ],
+  "Surbiton, nan, England": [
+    null,
+    null
+  ],
+  "Northwood, nan, England": [
+    51.7508851,
+    -1.2390993
+  ],
+  "Palm City, Florida, United States": [
+    27.1713925,
+    -80.2842217
+  ],
+  "Nokomis, Florida, United States": [
+    27.1192213,
+    -82.4442629
+  ],
+  "Charlevoix, Michigan, United States": [
+    45.202075,
+    -84.9676387
+  ],
+  "Milan, nan, Italy": [
+    null,
+    null
+  ],
+  "Allston, Massachussets, United States": [
+    null,
+    null
+  ],
+  "River Edge, New Jersey, United States": [
+    40.9287098,
+    -74.0398622
+  ],
+  "Spring Mills, Pennsylvania, United States": [
+    40.8533325,
+    -77.5615072
+  ],
+  "Claremont, California, United States": [
+    34.0966764,
+    -117.7197785
+  ],
+  "Johnsburg, New York, United States": [
+    43.618431,
+    -73.961334
+  ],
+  "Dover Plains, New York, United States": [
+    41.7384257,
+    -73.5708862
+  ],
+  "East Nassau, New York, United States": [
+    42.5078592,
+    -73.5065006
+  ],
+  "Romulus, New York, United States": [
+    42.7520803,
+    -76.833708
+  ],
+  "New Providence, New Jersey, United States": [
+    40.6984348,
+    -74.4015405
+  ],
+  "Sugar Loaf, New York, United States": [
+    43.4120148,
+    -73.6115046
+  ],
+  "Northridge, California, United States": [
+    34.2345615,
+    -118.5369316
+  ],
+  "Woodland Hills, California, United States": [
+    34.1684364,
+    -118.6058382
+  ],
+  "West Sacramento, California, United States": [
+    38.5804609,
+    -121.530234
+  ],
+  "Sherman Oaks, California, United States": [
+    34.1508718,
+    -118.448986
+  ],
+  "Buxton, Maine, United States": [
+    43.612404,
+    -70.540878
+  ],
+  "San Diego, California, United States": [
+    32.7174202,
+    -117.162772
+  ],
+  "Salt Lake City, Utah, United States": [
+    40.7596198,
+    -111.886797
+  ],
+  "Chico, California, United States": [
+    39.7284945,
+    -121.8374777
+  ],
+  "Haymarket, Virginia, United States": [
+    38.8121398,
+    -77.6368038
+  ],
+  "Austin, Texas, United States": [
+    30.2711286,
+    -97.7436995
+  ],
+  "Plainview, New York, United States": [
+    40.7834607,
+    -73.4738844
+  ],
+  "Placerville, Colorado, United States": [
+    38.0166587,
+    -108.0534031
+  ],
+  "Tucson,  Arizona, United States": [
+    32.2228765,
+    -110.974847
+  ],
+  "Lexington, South Carolina, United States": [
+    33.8986841,
+    -81.275054
+  ],
+  "Stirling, New Jersey, United States": [
+    40.6747257,
+    -74.4933902
+  ],
+  "Paramus, New Jersey, United States": [
+    40.9452911,
+    -74.0735899
+  ],
+  "Acworth, Georgia, United States": [
+    34.0659329,
+    -84.6768796
+  ],
+  "Midlothian, Virginia, United States": [
+    37.486806,
+    -77.6473195
+  ],
+  "Hopewell, New Jersey, United States": [
+    40.3892726,
+    -74.7618285
+  ],
+  "Rock Hill, New York, United States": [
+    41.611556,
+    -74.5908483
+  ],
+  "Palm Beach, Florida, United States": [
+    26.6279798,
+    -80.4494174
+  ],
+  "Dayton, Texas, United States": [
+    30.0473202,
+    -94.8873913
+  ],
+  "Nelsonville, New York, United States": [
+    41.4246396,
+    -73.9467374
+  ],
+  "East Orange, New Jersey, United States": [
+    40.7642404,
+    -74.215011
+  ],
+  "Millis, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Halesite, New York, United States": [
+    40.8870864,
+    -73.412185
+  ],
+  "Cheverly, Maryland, United States": [
+    38.928167,
+    -76.915807
+  ],
+  "Riverside, Connecticut, United States": [
+    41.033554,
+    -73.5811712
+  ],
+  "Esopus, New York, United States": [
+    41.8278036,
+    -73.965047
+  ],
+  "South Amboy, New Jersey, United States": [
+    40.4821114,
+    -74.2828828
+  ],
+  "Marmora, New Jersey, United States": [
+    39.259491,
+    -74.6571049
+  ],
+  "West Shokan, New York, United States": [
+    41.9673148,
+    -74.2870925
+  ],
+  "Monticello, New York, United States": [
+    41.6556465,
+    -74.6893282
+  ],
+  "Hillsborough, New Jersey, United States": [
+    40.5052296,
+    -74.6732941
+  ],
+  "Caldwell, New Jersey, United States": [
+    40.8398218,
+    -74.2765366
+  ],
+  "Storrs, Connecticut, United States": [
+    41.8056456,
+    -72.2541329
+  ],
+  "Dallas, Texas, United States": [
+    32.7762719,
+    -96.7968559
+  ],
+  "Hoosick Falls, New York, United States": [
+    42.9006863,
+    -73.3516087
+  ],
+  "Berkeley Heights, New Jersey, United States": [
+    40.6834349,
+    -74.442653
+  ],
+  "Jamaica Plain, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Addisleigh Park, New York, United States": [
+    null,
+    null
+  ],
+  "Sau, New York, United States": [
+    40.7177791,
+    -74.0009112
+  ],
+  "Ruby, New York, United States": [
+    42.0181472,
+    -74.0148606
+  ],
+  "Hillburn, New York, United States": [
+    41.1239845,
+    -74.1693119
+  ],
+  "Amherst, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Mishawaka, Indiana, United States": [
+    41.6611642,
+    -86.1807031
+  ],
+  "Allentown, Pennsylvania, United States": [
+    40.6022552,
+    -75.4716115
+  ],
+  "Keene, New Hampshire, United States": [
+    42.933597,
+    -72.2784264
+  ],
+  "Sandy Hook, Connecticut, United States": [
+    41.4200956,
+    -73.2820608
+  ],
+  "Ho Ho Kus, New Jersey, United States": [
+    40.9976524,
+    -74.110284
+  ],
+  "Dumont, New York, United States": [
+    40.67218,
+    -73.8520634
+  ],
+  "Eagle, Idaho, United States": [
+    43.6954424,
+    -116.3540138
+  ],
+  "Winchester, Virginia, United States": [
+    39.1852184,
+    -78.1652404
+  ],
+  "Cortlandt, New York, United States": [
+    41.2446453,
+    -73.9259559
+  ],
+  "Roxbury, New York, United States": [
+    42.2839739,
+    -74.5648747
+  ],
+  "Beverly Hills, California, United States": [
+    34.0696501,
+    -118.3963062
+  ],
+  "Scituate, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Mechanicville, New York, United States": [
+    42.9028547,
+    -73.6873405
+  ],
+  "Grandview On Hudson, New York, United States": [
+    41.4444519,
+    -74.0052642
+  ],
+  "Williston Park, New York, United States": [
+    40.75649,
+    -73.6448513
+  ],
+  "Jamaica Estates, New York, United States": [
+    40.7133456,
+    -73.782511
+  ],
+  "North Andover, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Eddyville, New York, United States": [
+    41.8942592,
+    -74.0259731
+  ],
+  "Millwood, New York, United States": [
+    41.194297,
+    -73.794718
+  ],
+  "Port Henry, New York, United States": [
+    44.043522,
+    -73.4641078
+  ],
+  "Martinsville, New Jersey, United States": [
+    40.6012136,
+    -74.5590452
+  ],
+  "Tannersville, New York, United States": [
+    42.1956438,
+    -74.1337508
+  ],
+  "Florida, New York, United States": [
+    42.8904161,
+    -74.196582
+  ],
+  "Far Rockaway, New York, United States": [
+    40.6053825,
+    -73.7551326
+  ],
+  "Sunny Island Beach, Florida, United States": [
+    null,
+    null
+  ],
+  "nan, nan, nan": [
+    29.3644727,
+    112.3905651
+  ],
+  "Oceanside, New York, United States": [
+    40.6335905,
+    -73.6376527
+  ],
+  "Wallington, New Jersey, United States": [
+    40.8531553,
+    -74.1137537
+  ],
+  "Lakewood Township, New Jersey, United States": [
+    40.0978929,
+    -74.2176435
+  ],
+  "Bayonne, New Jersey, United States": [
+    40.6687141,
+    -74.1143091
+  ],
+  "Mout Bethel, Pennsylvania, United States": [
+    null,
+    null
+  ],
+  "nan, Pennsylvania, United States": [
+    null,
+    null
+  ],
+  "Mars, Pennsylvania, United States": [
+    40.6958342,
+    -80.011878
+  ],
+  "Annapolis, Maryland, United States": [
+    38.9786401,
+    -76.492786
+  ],
+  "El Sobrante, California, United States": [
+    37.9744635,
+    -122.3057294
+  ],
+  "Cropseyville, New York, United States": [
+    42.7489669,
+    -73.5573377
+  ],
+  "Rensseler, New York, United States": [
+    null,
+    null
+  ],
+  "East Haven, Connecticut, United States": [
+    41.2762081,
+    -72.8684337
+  ],
+  "Wayne, New Jersey, United States": [
+    40.9491723,
+    -74.2376802
+  ],
+  "Decatur, Georgia, United States": [
+    30.8736613,
+    -84.5740953
+  ],
+  "Tucker, Georgia, United States": [
+    33.8532701,
+    -84.2200729
+  ],
+  "Aptos, California, United States": [
+    36.9941295,
+    -121.8903368
+  ],
+  "Des Moines, Iowa, United States": [
+    41.5868654,
+    -93.6249494
+  ],
+  "Arlington Heights, Illinois, United States": [
+    42.0811563,
+    -87.9802164
+  ],
+  "Chamblee, Georgia, United States": [
+    33.892176,
+    -84.2988296
+  ],
+  "Tallahassee, Florida, United States": [
+    30.4380832,
+    -84.2809332
+  ],
+  "Chester, New Jersey, United States": [
+    40.7842667,
+    -74.6968284
+  ],
+  "Leander, Texas, United States": [
+    30.5736134,
+    -97.8567339
+  ],
+  "Atlantic Beach, New York, United States": [
+    40.5886547,
+    -73.7288791
+  ],
+  "Yonkers, Virginia, United States": [
+    null,
+    null
+  ],
+  "Bardonia, New York, United States": [
+    41.1147525,
+    -73.9842792
+  ],
+  "Newton, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Auburn, New York, United States": [
+    42.9320202,
+    -76.5672029
+  ],
+  "Bal Harbour, Florida, United States": [
+    25.8917613,
+    -80.1269896
+  ],
+  "Mendham, New Jersey, United States": [
+    40.7759334,
+    -74.6007142
+  ],
+  "Binghamton, New York, United States": [
+    42.098698,
+    -75.9125187
+  ],
+  "The Villages, Florida, United States": [
+    28.8759024,
+    -81.984579
+  ],
+  "Gladstone, Oregon, United States": [
+    45.3803261,
+    -122.5945507
+  ],
+  "Sea Isle City, New Jersey, United States": [
+    39.1548404,
+    -74.6897791
+  ],
+  "nan, Texas, United States": [
+    29.8249495,
+    -95.4786754
+  ],
+  "Argyle, New York, United States": [
+    43.2378488,
+    -73.4912162
+  ],
+  "Irwin, Pennsylvania, United States": [
+    40.3301738,
+    -79.7093339
+  ],
+  "Kerhonkson, New York, United States": [
+    41.769222,
+    -74.3007553
+  ],
+  "Crompond, New York, United States": [
+    41.2927825,
+    -73.83828
+  ],
+  "Coram, New York, United States": [
+    40.8797135,
+    -73.0039964
+  ],
+  "Kingston, New York, nan": [
+    null,
+    null
+  ],
+  "West New Yo, New Jersey, United States": [
+    40.0884107,
+    -82.7612428
+  ],
+  "Tampa, Florida, United States": [
+    27.9449854,
+    -82.4583107
+  ],
+  "Glenwood Springs, Colorado, United States": [
+    39.5466381,
+    -107.3246941
+  ],
+  "Winter Park, Florida, United States": [
+    28.5977707,
+    -81.3510264
+  ],
+  "Chesapeake, Virginia, United States": [
+    36.7168315,
+    -76.2494453
+  ],
+  "Las Vegas, Nevada, United States": [
+    36.1674263,
+    -115.1484131
+  ],
+  "Huntersville, North Carolina, United States": [
+    35.4108278,
+    -80.8429304
+  ],
+  "Chapel Hill, North Carolina, United States": [
+    35.9131542,
+    -79.05578
+  ],
+  "Palenville, New York, United States": [
+    42.179588,
+    -74.0231753
+  ],
+  "Clearwater, Florida, United States": [
+    27.9658533,
+    -82.8001026
+  ],
+  "Pine Hill, New York, United States": [
+    42.1257445,
+    -74.469592
+  ],
+  "Fort Montgonery, New York, United States": [
+    null,
+    null
+  ],
+  "Lake Grove, New York, United States": [
+    40.8528761,
+    -73.1151102
+  ],
+  "South Fallsburg, New York, United States": [
+    41.7045427,
+    -74.6334276
+  ],
+  "Cazenovia, New York, United States": [
+    42.9300668,
+    -75.8526969
+  ],
+  "Duanesburg, New York, United States": [
+    42.76202,
+    -74.1337383
+  ],
+  "Red Hook, New York, nan": [
+    null,
+    null
+  ],
+  "Melbourne, Florida, United States": [
+    28.0785034,
+    -80.6077908
+  ],
+  "Greenwich, New York, United States": [
+    43.0903515,
+    -73.4993904
+  ],
+  "Freeville, New York, United States": [
+    42.512807,
+    -76.3464675
+  ],
+  "Wyndmoor, Pennsylvania, United States": [
+    40.0853435,
+    -75.1940207
+  ],
+  "Powell, Tennessee, United States": [
+    36.0317472,
+    -84.0279677
+  ],
+  "Leominster, nan, England": [
+    null,
+    null
+  ],
+  "Mattituck, New York, United States": [
+    41.0119055,
+    -72.5505388
+  ],
+  "Gornment, New York, United States": [
+    null,
+    null
+  ],
+  "Phoenicia, New York, United States": [
+    42.0774565,
+    -74.3052306
+  ],
+  "Whitestone, New York, United States": [
+    40.7945457,
+    -73.8184674
+  ],
+  "West Hampton, New York, United States": [
+    40.7763165,
+    -72.7155239
+  ],
+  "Attleboro, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Briarwood, New York, United States": [
+    40.7092563,
+    -73.8201394
+  ],
+  "Westwood, New Jersey, United States": [
+    40.9912087,
+    -74.0326395
+  ],
+  "Teoti, New York, United States": [
+    null,
+    null
+  ],
+  "Great Barrington, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Taghanic, New York, United States": [
+    null,
+    null
+  ],
+  "Mesquite, Texas, United States": [
+    32.7666103,
+    -96.599472
+  ],
+  "Salem, New York, United States": [
+    43.1714488,
+    -73.3301547
+  ],
+  "Tarryown, New York, United States": [
+    null,
+    null
+  ],
+  "Hutchinson, Minnesota, United States": [
+    44.8877401,
+    -94.3697057
+  ],
+  "Monsey, New York, United States": [
+    41.117991,
+    -74.0594324
+  ],
+  "Santa Rosa, California, United States": [
+    38.4404925,
+    -122.7141049
+  ],
+  "Westfield, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Bloomington, New York, United States": [
+    41.8789815,
+    -74.0440293
+  ],
+  "Round Lake, New York, United States": [
+    42.9378555,
+    -73.7956314
+  ],
+  "Corona Del Mar, California, United States": [
+    33.5995916,
+    -117.873739
+  ],
+  "Sacremento, California, United States": [
+    38.06537,
+    -121.8364479
+  ],
+  "Glenham, New York, United States": [
+    41.5193618,
+    -73.9333899
+  ],
+  "Needham, Massachussets, United States": [
+    null,
+    null
+  ],
+  "North Chatham, New York, United States": [
+    42.4720265,
+    -73.6317837
+  ],
+  "Westbury, New York, United States": [
+    40.7556561,
+    -73.5876273
+  ],
+  "Williamsburg, Virginia, United States": [
+    37.2708788,
+    -76.7074042
+  ],
+  "Newcomb, New York, United States": [
+    43.969592,
+    -74.164925
+  ],
+  "Bradenton, Florida, United States": [
+    27.4989278,
+    -82.5748194
+  ],
+  "Ofallon, Illinois, United States": [
+    38.6287798,
+    -89.9003383
+  ],
+  "Woodbury, New York, United States": [
+    40.8183265,
+    -73.4706151
+  ],
+  "Florham Park, New Jersey, United States": [
+    40.7881643,
+    -74.3891647
+  ],
+  "Orlando, Florida, United States": [
+    28.5421218,
+    -81.379045
+  ],
+  "Overland Park, Kansas, United States": [
+    38.9742502,
+    -94.6851702
+  ],
+  "Orleans, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Dalmar, New York, United States": [
+    null,
+    null
+  ],
+  "Belle Mead, New Jersey, United States": [
+    40.4667713,
+    -74.6607144
+  ],
+  "Agartala, nan, India": [
+    null,
+    null
+  ],
+  "Hampton Park, New Jersey, United States": [
+    40.5380653,
+    -74.3770086
+  ],
+  "Whitingham, Vermont, United States": [
+    42.7893178,
+    -72.8844288
+  ],
+  "Ridgeway, South Carolina, United States": [
+    34.3076471,
+    -80.9603643
+  ],
+  "Carnegie, Pennsylvania, United States": [
+    40.4086802,
+    -80.0833885
+  ],
+  "Harrington Park, New Jersey, United States": [
+    40.9837089,
+    -73.9798601
+  ],
+  "nan, Rhode Island, United States": [
+    41.7090385,
+    -71.2356971
+  ],
+  "Dover, New Hampshire, United States": [
+    43.1981117,
+    -70.8739761
+  ],
+  "Potsdam, New York, United States": [
+    44.6697996,
+    -74.9813349
+  ],
+  "Roanoke, Virginia, United States": [
+    37.270973,
+    -79.9414313
+  ],
+  "Tulsa, Oklahoma, United States": [
+    36.1563122,
+    -95.9927516
+  ],
+  "Sound Beach, New York, United States": [
+    40.9606885,
+    -72.9729007
+  ],
+  "Weldon Spring, Missouri, United States": [
+    38.7169869,
+    -90.650724
+  ],
+  "Union Beach, New Jersey, United States": [
+    40.4464962,
+    -74.1781988
+  ],
+  "West Fulton, New York, United States": [
+    42.5645204,
+    -74.4637542
+  ],
+  "Livingston, Montana, United States": [
+    45.6623873,
+    -110.5615899
+  ],
+  "Tolland, Connecticut, United States": [
+    41.8700166,
+    -72.3677153
+  ],
+  "Santa Maria, California, United States": [
+    34.9531295,
+    -120.435857
+  ],
+  "Akron, Ohio, United States": [
+    41.083064,
+    -81.518485
+  ],
+  "Union City, New Jersey, United States": [
+    40.7795455,
+    -74.0237512
+  ],
+  "Raleigh, North Carolina, United States": [
+    35.7803977,
+    -78.6390989
+  ],
+  "Baldwinsville, New York, United States": [
+    43.158679,
+    -76.33271
+  ],
+  "Mesa,  Arizona, United States": [
+    33.4151005,
+    -111.831455
+  ],
+  "Brookfield, Connecticut, United States": [
+    41.4825947,
+    -73.4095652
+  ],
+  "Woodside, California, United States": [
+    37.4280637,
+    -122.2507435
+  ],
+  "Lake Oswego, Oregon, United States": [
+    45.4206749,
+    -122.670649
+  ],
+  "Vernon, New Jersey, United States": [
+    39.8973938,
+    -75.0317979
+  ],
+  "Menlo Park, California, United States": [
+    37.4519671,
+    -122.177992
+  ],
+  "nan, Connecticut, United States": [
+    41.3225837,
+    -72.1773072
+  ],
+  "East Durham, New York, United States": [
+    42.3617036,
+    -74.0860957
+  ],
+  "Tarrytown, New York, nan": [
+    41.0539066,
+    -73.8608811
+  ],
+  "Mahwah, New Jersey, United States": [
+    41.0887072,
+    -74.1437552
+  ],
+  "Waitsfield, Vermont, United States": [
+    44.1924801,
+    -72.8223267
+  ],
+  "Cudahy, Wisconsin, United States": [
+    42.959738,
+    -87.861471
+  ],
+  "Carmel Hamlet, New York, United States": [
+    41.4093705,
+    -73.6902407
+  ],
+  "Harwinton, Connecticut, United States": [
+    41.7712085,
+    -73.05983
+  ],
+  "Philo, California, United States": [
+    39.0657324,
+    -123.4450093
+  ],
+  "Berlin, nan, Germany": [
+    null,
+    null
+  ],
+  "Highland Lakes, New Jersey, United States": [
+    41.1733396,
+    -74.4591278
+  ],
+  "Lake Hopatcong, New Jersey, United States": [
+    40.904011,
+    -74.665452
+  ],
+  "Point Pleasant, New Jersey, United States": [
+    40.0831714,
+    -74.0681931
+  ],
+  "Bangor, Maine, United States": [
+    44.8016255,
+    -68.7713289
+  ],
+  "Northborough, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Suwanee, Georgia, United States": [
+    34.0514898,
+    -84.0712997
+  ],
+  "Acton, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Sun Prairie, Wisconsin, United States": [
+    43.183278,
+    -89.2128297
+  ],
+  "Westerville, Ohio, United States": [
+    40.126139,
+    -82.9295287
+  ],
+  "Sebastopol, California, United States": [
+    38.4021038,
+    -122.824222
+  ],
+  "Warrenton, Oregon, United States": [
+    46.165105,
+    -123.923756
+  ],
+  "Hume, Virginia, United States": [
+    38.8320582,
+    -77.9994407
+  ],
+  "Oklahoma City, Oklahoma, United States": [
+    35.4729886,
+    -97.5170536
+  ],
+  "Gainesville, Florida, United States": [
+    29.6519684,
+    -82.3249846
+  ],
+  "Collinsville, Connecticut, United States": [
+    41.819926,
+    -72.9168947
+  ],
+  "Otisville, New York, United States": [
+    41.4734268,
+    -74.5384933
+  ],
+  "Hamden, Connecticut, United States": [
+    41.3836233,
+    -72.9020069
+  ],
+  "Weybridge, Vermont, United States": [
+    44.0661986,
+    -73.2157386
+  ],
+  "Lake Peekskill, New York, United States": [
+    41.3348161,
+    -73.88097
+  ],
+  "Fort Ann, New York, United States": [
+    43.4143073,
+    -73.4879808
+  ],
+  "Andes, New York, United States": [
+    42.1886976,
+    -74.7857138
+  ],
+  "Slate Hill, New York, United States": [
+    41.3909274,
+    -74.4765471
+  ],
+  "Columbiaville, New York, United States": [
+    42.3184188,
+    -73.7531791
+  ],
+  "Croton Falls, New York, United States": [
+    41.3480995,
+    -73.6621875
+  ],
+  "Manhasset, New York, United States": [
+    40.786702,
+    -73.6967338
+  ],
+  "Bloomfield, New York, United States": [
+    42.8950641,
+    -77.4347128
+  ],
+  "Narrowsburg, New York, United States": [
+    41.6026904,
+    -75.0593426
+  ],
+  "Lackawanna, New York, United States": [
+    42.8257735,
+    -78.823648
+  ],
+  "Franklin, New York, United States": [
+    44.5599139,
+    -74.3273735
+  ],
+  "Cherry Valley, New York, United States": [
+    42.7956295,
+    -74.7532018
+  ],
+  "Rome, New York, United States": [
+    43.2102196,
+    -75.4583956
+  ],
+  "Moriches, New York, United States": [
+    40.8033,
+    -72.8210345
+  ],
+  "Mount Upton, New York, United States": [
+    42.4264662,
+    -75.3832319
+  ],
+  "Peekskill, New York, nan": [
+    null,
+    null
+  ],
+  "Hicksville, New York, United States": [
+    40.7695303,
+    -73.5293246
+  ],
+  "Levittown, New York, United States": [
+    40.7259621,
+    -73.5144766
+  ],
+  "Petersburg, New York, United States": [
+    42.6331311,
+    -74.4490288
+  ],
+  "Willow, New York, United States": [
+    42.0764796,
+    -74.2279228
+  ],
+  "Hazlet, New Jersey, United States": [
+    40.4292165,
+    -74.1648999
+  ],
+  "Virginia Beach, Virginia, United States": [
+    36.8496579,
+    -75.9760751
+  ],
+  "Woodbury, Connecticut, United States": [
+    41.5445404,
+    -73.2090025
+  ],
+  "Gerrardstown, West Virginia, United States": [
+    39.3703778,
+    -78.0955563
+  ],
+  "nan, California, United States": [
+    37.4261565,
+    -121.905666
+  ],
+  "Van Etten, New York, United States": [
+    42.197232,
+    -76.5516772
+  ],
+  "Alfred, New York, United States": [
+    42.2542334,
+    -77.7906062
+  ],
+  "Norwich, Vermont, United States": [
+    43.7136654,
+    -72.3081535
+  ],
+  "Newbury, New Hampshire, United States": [
+    43.3213132,
+    -72.0362956
+  ],
+  "Nanuet, New York, nan": [
+    null,
+    null
+  ],
+  "Phoencicia, New York, United States": [
+    null,
+    null
+  ],
+  "New York Mills, New York, United States": [
+    43.1005985,
+    -75.293211
+  ],
+  "Great Falls, Virginia, United States": [
+    39.0116538,
+    -77.3083988
+  ],
+  "Oneonta, New York, United States": [
+    42.453492,
+    -75.0629531
+  ],
+  "Spencerport, New York, United States": [
+    43.18645,
+    -77.803897
+  ],
+  "Naples, New York, United States": [
+    42.6160647,
+    -77.4030253
+  ],
+  "Centereach, New York, United States": [
+    40.867749,
+    -73.0839793
+  ],
+  "Corning, New York, United States": [
+    42.1435257,
+    -77.0543408
+  ],
+  "Cassadaga, New York, United States": [
+    42.344225,
+    -79.309489
+  ],
+  "West End, North Carolina, United States": [
+    35.9099875,
+    -79.0752876
+  ],
+  "California, Pennsylvania, United States": [
+    40.0657724,
+    -79.8918436
+  ],
+  "Cambridge, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Santa Cruz, California, United States": [
+    37.050096,
+    -121.99059
+  ],
+  "Westland, Michigan, United States": [
+    42.3238056,
+    -83.4005321
+  ],
+  "Boulder, Colorado, United States": [
+    40.0149856,
+    -105.270545
+  ],
+  "Monterey, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Olean, New York, United States": [
+    42.0775022,
+    -78.4298248
+  ],
+  "Randolph, Vermont, United States": [
+    43.9253287,
+    -72.6659422
+  ],
+  "Cochecton, New York, United States": [
+    41.7059217,
+    -75.0604458
+  ],
+  "Saint James, New York, United States": [
+    40.8827035,
+    -73.1480789
+  ],
+  "Islip, New York, United States": [
+    40.7300685,
+    -73.2107266
+  ],
+  "Shenandoah Junction, West Virginia, United States": [
+    39.351413,
+    -77.8386751
+  ],
+  "Toronto, nan, United States": [
+    44.57302,
+    -96.642554
+  ],
+  "Montreal, nan, United States": [
+    null,
+    null
+  ],
+  "Roseland, New Jersey, United States": [
+    40.8206555,
+    -74.2937595
+  ],
+  "Tuscon,  Arizona, United States": [
+    32.1975767,
+    -111.0808306
+  ],
+  "Newark, New Jersey, United States": [
+    40.735657,
+    -74.1723667
+  ],
+  "Babylon, New York, United States": [
+    40.6956552,
+    -73.3256753
+  ],
+  "nan, Maryland, United States": [
+    null,
+    null
+  ],
+  "nan, Virginia, United States": [
+    null,
+    null
+  ],
+  "nan, Georgia, United States": [
+    null,
+    null
+  ],
+  "nan, Louisiana, United States": [
+    null,
+    null
+  ],
+  "nan, Massachussets, United States": [
+    null,
+    null
+  ],
+  "nan, Illinois, United States": [
+    null,
+    null
+  ],
+  "nan, Florida, United States": [
+    null,
+    null
+  ],
+  "nan, Colorado, United States": [
+    null,
+    null
+  ],
+  "Brewster, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Lancaster, Pennsylvania, United States": [
+    40.0379958,
+    -76.3056707
+  ],
+  "Schuylerville, New York, United States": [
+    43.100231,
+    -73.581963
+  ],
+  "Rutherford, New Jersey, United States": [
+    40.826489,
+    -74.1068091
+  ],
+  "Dingmans Ferry, Pennsylvania, United States": [
+    41.2200946,
+    -74.8712799
+  ],
+  "Ashburn, Virginia, United States": [
+    39.0437192,
+    -77.4874899
+  ],
+  "Medford, Oregon, United States": [
+    42.3264181,
+    -122.8718605
+  ],
+  "Naugatuck, Connecticut, United States": [
+    41.4860186,
+    -73.0509432
+  ],
+  "Miami, Florida, United States": [
+    25.7741566,
+    -80.1935973
+  ],
+  "Scotch Plains, New Jersey, United States": [
+    40.65538,
+    -74.3898732
+  ],
+  "Irvington, New Jersey, United States": [
+    40.7264091,
+    -74.2289491
+  ],
+  "Herkimer, New York, United States": [
+    43.4911326,
+    -74.9481252
+  ],
+  "Manorville, New York, United States": [
+    40.862559,
+    -72.7860928
+  ],
+  "Sleightsburg, New York, United States": [
+    41.9167591,
+    -73.9765266
+  ],
+  "Lakewood, Colorado, United States": [
+    39.7085736,
+    -105.0846694
+  ],
+  "Lodi, New Jersey, United States": [
+    40.8823215,
+    -74.0831971
+  ],
+  "Halethorpe, Maryland, United States": [
+    39.2398292,
+    -76.6802471
+  ],
+  "Woodstock, New York, nan": [
+    null,
+    null
+  ],
+  "Massapequa, New York, United States": [
+    40.669501,
+    -73.4698253
+  ],
+  "New York City, New York, nan": [
+    null,
+    null
+  ],
+  "Newcastle, Maine, United States": [
+    44.034962,
+    -69.536928
+  ],
+  "nan, New York, nan": [
+    null,
+    null
+  ],
+  "Wilmington, New York, United States": [
+    44.388409,
+    -73.815422
+  ],
+  "North White Plains, New York, United States": [
+    41.0512716,
+    -73.7724782
+  ],
+  "Marietta, Georgia, United States": [
+    33.9528472,
+    -84.5496148
+  ],
+  "Clinton, New Jersey, United States": [
+    40.6362878,
+    -74.9116603
+  ],
+  "Watertown, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Lakeville, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Salisbury, North Carolina, United States": [
+    35.6709727,
+    -80.4742261
+  ],
+  "Vineyard Haven, Massachussets, United States": [
+    null,
+    null
+  ],
+  "Cave Creek,  Arizona, United States": [
+    33.8333333,
+    -111.950833
+  ],
+  "Rivervale, New Jersey, United States": [
+    41.0095418,
+    -74.01125
+  ],
+  "West Nyack, New York, nan": [
+    null,
+    null
+  ],
+  "Ossining, New York, nan": [
+    null,
+    null
+  ],
+  "Upper Nyack, New York, nan": [
+    null,
+    null
+  ],
+  "Jersey City, New Jersey, nan": [
+    40.7168217,
+    -74.0388173
+  ],
+  "White Plains, New York, nan": [
+    null,
+    null
+  ],
+  "Bronx, New York, nan": [
+    null,
+    null
+  ],
+  "Poughkeepsie Town, New York, nan": [
+    null,
+    null
+  ],
+  "Sleepy Hollow, New York, nan": [
+    41.0606181,
+    -73.8633313
+  ],
+  "Hudson, New York, nan": [
+    41.0546378,
+    -73.8608984
+  ],
+  "Durham, North Carolina, nan": [
+    null,
+    null
+  ],
+  "Athens, New York, nan": [
+    null,
+    null
+  ],
+  "Dolgeville, New York, nan": [
+    null,
+    null
+  ],
+  "Troy, New York, nan": [
+    null,
+    null
+  ],
+  "Cortlandt Manor, New York, nan": [
+    null,
+    null
+  ],
+  "Beacon, New York, nan": [
+    null,
+    null
+  ],
+  "Pelham, New York, nan": [
+    null,
+    null
+  ],
+  "Mount Vernon, New York, nan": [
+    null,
+    null
+  ],
+  "Cherry Hill Township, New Jersey, nan": [
+    null,
+    null
+  ],
+  "Verona, New Jersey, nan": [
+    null,
+    null
+  ],
+  "Seattle, Washington, nan": [
+    47.6546655,
+    -122.3097943
+  ],
+  "Poughkeepsie, New York, nan": [
+    null,
+    null
+  ],
+  "Highland Falls, New York, nan": [
+    null,
+    null
+  ],
+  "Charlotteville, New York, nan": [
+    null,
+    null
+  ],
+  "Delmar, New York, nan": [
+    null,
+    null
+  ],
+  "Newburgh, New York, nan": [
+    null,
+    null
+  ],
+  "Long Island City, New York, nan": [
+    40.746475,
+    -73.9422389
+  ],
+  "Yorktown Heights, New York, nan": [
+    null,
+    null
+  ],
+  "Ellenville, New York, nan": [
+    null,
+    null
+  ],
+  "Elmont, New York, nan": [
+    null,
+    null
+  ],
+  "Old Tappan, New York, nan": [
+    null,
+    null
+  ],
+  "Glenmont, New York, nan": [
+    null,
+    null
+  ],
+  "Pine Plains, New York, nan": [
+    null,
+    null
+  ],
+  "Cocoa Beach, Florida, nan": [
+    null,
+    null
+  ],
+  "Franklin Square, New York, nan": [
+    null,
+    null
+  ],
+  "Straatsburg, New York, nan": [
+    null,
+    null
+  ],
+  "North Kingstown, Rhode Island, nan": [
+    null,
+    null
+  ],
+  "Chappaqua, New York, nan": [
+    null,
+    null
+  ],
+  "Northport, New York, nan": [
+    null,
+    null
+  ],
+  "Sea Cliff, New Jersey, nan": [
+    null,
+    null
+  ],
+  "Brooklyn, New York, ": [
+    40.6526006,
+    -73.9497211
+  ],
+  "Innsbruck, , Austria": [
+    47.2654296,
+    11.3927685
+  ],
+  "Washington, , United States": [
+    38.8950368,
+    -77.0365427
+  ],
+  "Auburn, , United States": [
+    32.6098566,
+    -85.4807825
+  ],
+  "Prescott, Arizona, United States": [
+    34.539984,
+    -112.468812
+  ],
+  "Glen Ridge, New Jersey, ": [
+    40.805378,
+    -74.2037566
+  ],
+  "Goshen, New York, ": [
+    41.4021497,
+    -74.3242129
+  ],
+  "Kingston, , United States": [
+    41.9287812,
+    -74.0023825
+  ],
+  "Mamaroneck, New York, ": [
+    40.9487314,
+    -73.7331416
+  ],
+  "Valley Cottage, New York, ": [
+    41.117785,
+    -73.9442812
+  ],
+  "Milton, New York, ": [
+    43.0336861,
+    -73.8526225
+  ],
+  "New York, New York, ": [
+    40.7127281,
+    -74.0060152
+  ],
+  "London, , England": [
+    51.5074456,
+    -0.1277653
+  ],
+  "Scottsdale, Arizona, United States": [
+    33.4942189,
+    -111.926018
+  ],
+  "Brookfield, Wisconsin, ": [
+    43.0615578,
+    -88.1260678
+  ],
+  "Green Valley, Arizona, United States": [
+    31.8484548,
+    -111.0265945
+  ],
+  "Dushanbe, , Tajikistan": [
+    38.5856814,
+    68.760331
+  ],
+  "Bordeaux, , France": [
+    44.841225,
+    -0.5800364
+  ],
+  "Dobbs Ferry, New York, ": [
+    41.0145418,
+    -73.872635
+  ],
+  "Surbiton, , England": [
+    51.3937557,
+    -0.3033105
+  ],
+  "Northwood, , England": [
+    51.6051713,
+    -0.4205812
+  ],
+  "Milan, , Italy": [
+    45.4641943,
+    9.1896346
+  ],
+  "Tucson, Arizona, United States": [
+    32.2228765,
+    -110.974847
+  ],
+  "Kingston, New York, ": [
+    41.9287812,
+    -74.0023825
+  ],
+  "Red Hook, New York, ": [
+    41.9950884,
+    -73.8755317
+  ],
+  "Leominster, , England": [
+    52.2273558,
+    -2.7375333
+  ],
+  "Agartala, , India": [
+    23.8312377,
+    91.2823821
+  ],
+  "Mesa, Arizona, United States": [
+    33.4151005,
+    -111.831455
+  ],
+  "Tarrytown, New York, ": [
+    41.0762077,
+    -73.8587461
+  ],
+  "Berlin, , Germany": [
+    52.5173885,
+    13.3951309
+  ],
+  "Peekskill, New York, ": [
+    41.289811,
+    -73.9204922
+  ],
+  "Nanuet, New York, ": [
+    41.1004345,
+    -74.0155138
+  ],
+  "Toronto, , United States": [
+    41.9048584,
+    -90.8640346
+  ],
+  "Montreal, , United States": [
+    37.9684745,
+    -92.5913386
+  ],
+  "Tuscon, Arizona, United States": [
+    32.1975767,
+    -111.0808306
+  ],
+  "Woodstock, New York, ": [
+    42.0410578,
+    -74.1182492
+  ],
+  "New York City, New York, ": [
+    40.7127281,
+    -74.0060152
+  ],
+  "Cave Creek, Arizona, United States": [
+    33.8333333,
+    -111.950833
+  ],
+  "West Nyack, New York, ": [
+    41.090129,
+    -73.9704898
+  ],
+  "Ossining, New York, ": [
+    41.1613168,
+    -73.8620367
+  ],
+  "Upper Nyack, New York, ": [
+    41.1070404,
+    -73.9201371
+  ],
+  "Jersey City, New Jersey, ": [
+    40.7215682,
+    -74.047455
+  ],
+  "White Plains, New York, ": [
+    41.0339862,
+    -73.7629097
+  ],
+  "Bronx, New York, ": [
+    40.8466508,
+    -73.8785937
+  ],
+  "Poughkeepsie Town, New York, ": [
+    41.6930861,
+    -73.8894828
+  ],
+  "Sleepy Hollow, New York, ": [
+    41.085652,
+    -73.8584684
+  ],
+  "Hudson, New York, ": [
+    42.2528649,
+    -73.790959
+  ],
+  "Durham, North Carolina, ": [
+    35.996653,
+    -78.9018053
+  ],
+  "Athens, New York, ": [
+    42.2603648,
+    -73.8095707
+  ],
+  "Dolgeville, New York, ": [
+    43.1030455,
+    -74.7747591
+  ],
+  "Troy, New York, ": [
+    42.7284117,
+    -73.6917878
+  ],
+  "Cortlandt Manor, New York, ": [
+    41.2815783,
+    -73.7131153
+  ],
+  "Beacon, New York, ": [
+    41.5048402,
+    -73.9695409
+  ],
+  "Pelham, New York, ": [
+    40.9098215,
+    -73.8079111
+  ],
+  "Mount Vernon, New York, ": [
+    40.9125085,
+    -73.8386504
+  ],
+  "Cherry Hill Township, New Jersey, ": [
+    39.9348351,
+    -75.0307264
+  ],
+  "Verona, New Jersey, ": [
+    40.829822,
+    -74.2401466
+  ],
+  "Seattle, Washington, ": [
+    47.6038321,
+    -122.330062
+  ],
+  "Poughkeepsie, New York, ": [
+    41.7065539,
+    -73.9283672
+  ],
+  "Highland Falls, New York, ": [
+    41.3692605,
+    -73.9662504
+  ],
+  "Charlotteville, New York, ": [
+    42.5453541,
+    -74.664594
+  ],
+  "Delmar, New York, ": [
+    42.6251239,
+    -73.8381351
+  ],
+  "Newburgh, New York, ": [
+    41.5000767,
+    -74.0098299
+  ],
+  "Long Island City, New York, ": [
+    40.7455316,
+    -73.9484995
+  ],
+  "Yorktown Heights, New York, ": [
+    41.270178,
+    -73.7753539
+  ],
+  "Ellenville, New York, ": [
+    41.6975082,
+    -74.345361
+  ],
+  "Elmont, New York, ": [
+    40.7053335,
+    -73.7078294
+  ],
+  "Old Tappan, New York, ": [
+    40.8843745,
+    -73.6186981
+  ],
+  "Glenmont, New York, ": [
+    42.604802,
+    -73.7695658
+  ],
+  "Pine Plains, New York, ": [
+    41.9797287,
+    -73.6563091
+  ],
+  "Cocoa Beach, Florida, ": [
+    28.3184107,
+    -80.6094959
+  ],
+  "Franklin Square, New York, ": [
+    40.700236,
+    -73.676448
+  ],
+  "Straatsburg, New York, ": [
+    null,
+    null
+  ],
+  "North Kingstown, Rhode Island, ": [
+    41.5514283,
+    -71.4693875
+  ],
+  "Chappaqua, New York, ": [
+    41.157284,
+    -73.7676998
+  ],
+  "Northport, New York, ": [
+    40.9009595,
+    -73.343167
+  ],
+  "Sea Cliff, New Jersey, ": [
+    null,
+    null
+  ],
+  "Town of North Salem, New York, United States": [
+    41.3348169,
+    -73.5712374,
+    "Town of North Salem"
+  ],
+  "City of Newburgh, New York, United States": [
+    41.5000767,
+    -74.0098299,
+    "City of Newburgh"
+  ],
+  "City of New York, New York, United States": [
+    40.7127281,
+    -74.0060152,
+    "City of New York"
+  ],
+  "City of Yonkers, New York, United States": [
+    40.9312099,
+    -73.8987469,
+    "City of Yonkers"
+  ],
+  "Village of Ossining, New York, United States": [
+    41.1613168,
+    -73.8620367,
+    "Village of Ossining"
+  ],
+  "City of Poughkeepsie, New York, United States": [
+    41.7065539,
+    -73.9283672,
+    "City of Poughkeepsie"
+  ],
+  "City of Beacon, New York, United States": [
+    41.5048402,
+    -73.9695409,
+    "City of Beacon"
+  ],
+  "Town of Fishkill, New York, United States": [
+    41.5355745,
+    -73.898702,
+    "Town of Fishkill"
+  ],
+  "Town of Pound Ridge, New York, United States": [
+    41.2087066,
+    -73.5748483,
+    "Town of Pound Ridge"
+  ],
+  "Town of Gardiner, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Irvington, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Catskill, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Tarrytown, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Ardsley, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Saint Augustine, Florida, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Amherst, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of New York, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Rhinebeck, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Hudson, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Ithaca, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Peekskill, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Yorktown, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Bedford, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of New Paltz, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Sea Cliff, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Kingston, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of White Plains, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Clifton Park, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Cold Spring, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town/Village of Harrison, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Woodstock, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Millerton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Lower Merion Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Mount Pleasant, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Hastings-on-Hudson, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Whitemarsh Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Sleepy Hollow, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Albany, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Pleasantville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Bass River Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of East Hampton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Lackawanna, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Esopus, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Goshen, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Scarsdale, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Briarcliff Manor, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Southampton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Highland Falls, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Endicott, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Millbrook, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of New Rochelle, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Nyack, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Bethlehem, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Germantown, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Sloatsburg, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Red Hook, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Port Chester, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Long Beach, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Cortlandt, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of East Fishkill, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Pawling, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Delhi, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Pine Plains, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Mount Vernon, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Rosendale, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Tivoli, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Somers, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of New Scotland, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Rye, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Lawrence Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Wappingers Falls, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Castleton-on-Hudson, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Commerce Charter Township, Michigan, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Cornwall, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Croton-on-Hudson, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Brewster, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Monroe, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Lewisboro, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "West Windsor, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Hyde Park, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Woodbury, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Dobbs Ferry, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Haverstraw, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Oyster Bay, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Stony Point, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Coeymans, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Earlville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Amenia, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Islip, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Walden, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Rochester, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Suffern, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Larchmont, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Township of Washington, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Saugerties, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village/Town of Mount Kisco, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Mantua Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Rochester, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Pittsford, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Hurley, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Mamaroneck, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Geneseo, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Bronxville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Amityville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Amsterdam, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Cheltenham Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Spring Valley, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Chatham, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Corinth, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Bedminster Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Guilderland, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Putnam Valley, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Glens Falls, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Troy, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Lower Oxford Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Colonie, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Cohoes, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Ancram, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Scotia, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Syracuse, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Teaneck Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Niskayuna, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Shandaken, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Ravena, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Stillwater, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Watervliet, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Piermont, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Montebello, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Stuyvesant, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Brookhaven, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Hempstead, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Garden City, New York, United States": [
+    40.7266477,
+    -73.6343052,
+    "Village of Garden City"
+  ],
+  "Village of Rockville Centre, New York, United States": [
+    40.6574186,
+    -73.6450664,
+    "Village of Rockville Centre"
+  ],
+  "Holmdel Township, New Jersey, United States": [
+    40.3451095,
+    -74.1840322,
+    "Holmdel Township"
+  ],
+  "Village of Lindenhurst, New York, United States": [
+    40.6867667,
+    -73.3734547,
+    "Village of Lindenhurst"
+  ],
+  "Village of Altamont, New York, United States": [
+    42.7006324,
+    -74.0337382,
+    "Village of Altamont"
+  ],
+  "Village of West Haverstraw, New York, United States": [
+    41.2098301,
+    -73.9857513,
+    "Village of West Haverstraw"
+  ],
+  "Town of New Windsor, New York, United States": [
+    41.4767605,
+    -74.0237519,
+    "Town of New Windsor"
+  ],
+  "Village of Great Neck, New York, United States": [
+    40.8006567,
+    -73.7284647,
+    "Village of Great Neck"
+  ],
+  "Town of Queensbury, New York, United States": [
+    43.3618532,
+    -73.6652451,
+    "Town of Queensbury"
+  ],
+  "Southington, Connecticut, United States": [
+    41.6005435,
+    -72.8782941,
+    "Southington"
+  ],
+  "Town of Beekman, New York, United States": [
+    41.6109269,
+    -73.7129076,
+    "Town of Beekman"
+  ],
+  "Village of East Rockaway, New York, United States": [
+    40.6415296,
+    -73.6656011,
+    "Village of East Rockaway"
+  ],
+  "Village of Mill Neck, New York, United States": [
+    40.8871175,
+    -73.5551392,
+    "Village of Mill Neck"
+  ],
+  "Village of Webster, New York, United States": [
+    43.212285,
+    -77.429994,
+    "Village of Webster"
+  ],
+  "Town of Cuyler, New York, United States": [
+    42.7372897,
+    -75.9485315,
+    "Town of Cuyler"
+  ],
+  "Village of Cooperstown, New York, United States": [
+    42.7006303,
+    -74.924321,
+    "Village of Cooperstown"
+  ],
+  "Village of Chestnut Ridge, New York, United States": [
+    41.0840797,
+    -74.0556682,
+    "Village of Chestnut Ridge"
+  ],
+  "Village of Red Hook, New York, United States": [
+    41.9950884,
+    -73.8755317,
+    "Village of Red Hook"
+  ],
+  "Hamilton Township, New Jersey, United States": [
+    40.2113211,
+    -74.6858335,
+    "Hamilton Township"
+  ],
+  "Town of Pelham, New York, United States": [
+    40.9098215,
+    -73.8079111,
+    "Town of Pelham"
+  ],
+  "Town of New Baltimore, New York, United States": [
+    42.4461934,
+    -73.7884568,
+    "Town of New Baltimore"
+  ],
+  "Village of Unadilla, New York, United States": [
+    42.3253586,
+    -75.3123969,
+    "Village of Unadilla"
+  ],
+  "City of Schenectady, New York, United States": [
+    42.8142432,
+    -73.9395687,
+    "City of Schenectady"
+  ],
+  "Town of Milan, New York, United States": [
+    41.9534255,
+    -73.7920752,
+    "Town of Milan"
+  ],
+  "Manalapan Township, New Jersey, United States": [
+    40.2852895,
+    -74.333495,
+    "Manalapan Township"
+  ],
+  "Village of Elmsford, New York, United States": [
+    41.0550969,
+    -73.8201338,
+    "Village of Elmsford"
+  ],
+  "Village of Athens, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Bloomingburg, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Wappinger, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Fort Edward, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Pleasant Valley, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Claverack, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Broadalbin, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Warwick, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Roslyn, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Pawling, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Greene, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Liberty, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Goshen, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Carmel, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Richmondville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Sag Harbor, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Williamsville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Old Westbury, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Woodridge, New York, United States": [
+    41.709973,
+    -74.5734285,
+    "Village of Woodridge"
+  ],
+  "Town of Milton, New York, United States": [
+    43.0336861,
+    -73.8526225,
+    "Town of Milton"
+  ],
+  "Town of Coxsackie, New York, United States": [
+    42.3503724,
+    -73.7973581,
+    "Town of Coxsackie"
+  ],
+  "Warminster Township, Pennsylvania, United States": [
+    40.2067751,
+    -75.0996159,
+    "Warminster Township"
+  ],
+  "Town of Lake George, New York, United States": [
+    43.425996,
+    -73.712425,
+    "Town of Lake George"
+  ],
+  "Waterford Township, New Jersey, United States": [
+    39.7321715,
+    -74.8010955,
+    "Waterford Township"
+  ],
+  "Town of Hunter, New York, United States": [
+    42.2136987,
+    -74.2187541,
+    "Town of Hunter"
+  ],
+  "Town of Windham, New York, United States": [
+    42.3073066,
+    -74.2520875,
+    "Town of Windham"
+  ],
+  "Lebanon, New Hampshire, United States": [
+    43.643032,
+    -72.251587,
+    "Lebanon"
+  ],
+  "City of Saratoga Springs, New York, United States": [
+    43.0821793,
+    -73.7853915,
+    "City of Saratoga Springs"
+  ],
+  "City of Plattsburgh, New York, United States": [
+    44.6960855,
+    -73.4542915,
+    "City of Plattsburgh"
+  ],
+  "Town of Patterson, New York, United States": [
+    41.513726,
+    -73.6062323,
+    "Town of Patterson"
+  ],
+  "Town of Lake Luzerne, New York, United States": [
+    43.3396293,
+    -73.8386652,
+    "Town of Lake Luzerne"
+  ],
+  "Village of Philmont, New York, United States": [
+    42.248421,
+    -73.653176,
+    "Village of Philmont"
+  ],
+  "Town of Copake, New York, United States": [
+    42.1035643,
+    -73.5497383,
+    "Town of Copake"
+  ],
+  "Town of Hillsdale, New York, United States": [
+    42.1789784,
+    -73.5259511,
+    "Town of Hillsdale"
+  ],
+  "Town of Ossining, New York, United States": [
+    41.1613168,
+    -73.8620367,
+    "Town of Ossining"
+  ],
+  "Town of Eastchester, New York, United States": [
+    40.9610563,
+    -73.8064739,
+    "Town of Eastchester"
+  ],
+  "Town of Wallkill, New York, United States": [
+    41.4636977,
+    -74.3724212,
+    "Town of Wallkill"
+  ],
+  "Town of Ghent, New York, United States": [
+    42.3292525,
+    -73.6156736,
+    "Town of Ghent"
+  ],
+  "Village of Lynbrook, New York, United States": [
+    40.6548253,
+    -73.6717969,
+    "Village of Lynbrook"
+  ],
+  "Manchester Township, New Jersey, United States": [
+    39.9734957,
+    -74.3816966,
+    "Manchester Township"
+  ],
+  "South Valley Stream, New York, United States": [
+    40.6541825,
+    -73.7172474,
+    "South Valley Stream"
+  ],
+  "Village of Rye Brook, New York, United States": [
+    41.0192641,
+    -73.6834621,
+    "Village of Rye Brook"
+  ],
+  "Town of Riverhead, New York, United States": [
+    40.9168692,
+    -72.6624189,
+    "Town of Riverhead"
+  ],
+  "North Branford, Connecticut, United States": [
+    41.3275971,
+    -72.7673198,
+    "North Branford"
+  ],
+  "Town of Cairo, New York, United States": [
+    42.2998716,
+    -73.9994637,
+    "Town of Cairo"
+  ],
+  "Town of Chester, New York, United States": [
+    41.3624533,
+    -74.2714981,
+    "Town of Chester"
+  ],
+  "Village of Washingtonville, New York, United States": [
+    41.4278716,
+    -74.1659798,
+    "Village of Washingtonville"
+  ],
+  "Town of Vestal, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of East Greenbush, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Honeoye Falls, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Neversink, New York, United States": [
+    41.8473134,
+    -74.6190472,
+    "Town of Neversink"
+  ],
+  "Town of Plattekill, New York, United States": [
+    41.6173567,
+    -74.0761622,
+    "Town of Plattekill"
+  ],
+  "Town of Austerlitz, New York, United States": [
+    42.3126595,
+    -73.4733837,
+    "Town of Austerlitz"
+  ],
+  "Town of Newfane, New York, United States": [
+    43.286723,
+    -78.710312,
+    "Town of Newfane"
+  ],
+  "Village of Walton, New York, United States": [
+    42.1695296,
+    -75.1293351,
+    "Village of Walton"
+  ],
+  "Village of Kinderhook, New York, United States": [
+    42.3953617,
+    -73.6978983,
+    "Village of Kinderhook"
+  ],
+  "Town of Tuxedo, New York, United States": [
+    41.1934278,
+    -74.1843129,
+    "Town of Tuxedo"
+  ],
+  "Village of New Hempstead, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of New Hyde Park, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Spencer, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Mineola, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Delanson, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Muttontown, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Pembroke, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Greenville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Moorestown Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Patchogue, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Tonawanda, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Unionville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Griswold, Connecticut, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Freeport, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Coxsackie, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Aberdeen Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of New Hartford, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Litchfield, Connecticut, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Peru, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Huntington, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Kingston, , United States": [
+    null,
+    null,
+    null
+  ],
+  "Voorhees Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Margaretville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Fayetteville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Hamptonburgh, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Montville Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Wurtsboro, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Floral Park, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Utica, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Blooming Grove, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Smithtown, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of North Tonawanda, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of West Seneca, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Keene, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Kenmore, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Sharon Springs, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Glen Cove, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Southold, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Highland, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Wawarsing, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Westerlo, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Johnsburg, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Canandaigua, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Valley Stream, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Wesley Hills, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Mamaroneck, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Lexington, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Waterford, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Northport, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Clarence, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Bernards Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Port Jervis, New York, United States": [
+    41.3750937,
+    -74.692663,
+    "City of Port Jervis"
+  ],
+  "Village of Valatie, New York, United States": [
+    42.4134168,
+    -73.6731749,
+    "Village of Valatie"
+  ],
+  "Village of Cobleskill, New York, United States": [
+    42.677853,
+    -74.4854172,
+    "Village of Cobleskill"
+  ],
+  "Village of Upper Nyack, New York, United States": [
+    41.1070404,
+    -73.9201371,
+    "Village of Upper Nyack"
+  ],
+  "City of Niagara Falls, New York, United States": [
+    43.08436,
+    -79.0614686,
+    "City of Niagara Falls"
+  ],
+  "Town of Rensselaerville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Saranac Lake, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Newark, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Milton, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Greater London, , England": [
+    null,
+    null,
+    null
+  ],
+  "Sparta Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Barnegat Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Rotterdam, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Willsboro, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Jefferson Heights, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Lake Mohegan, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Cambridge, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Roxbury Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Boyette, Florida, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Lake Success, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Sahuarita, Arizona, United States": [
+    null,
+    null,
+    null
+  ],
+  "Radnor Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Lower Moreland Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Richmond, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Parsippany-Troy Hills, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Johnstown, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "\u0414\u0443\u0448\u0430\u043d\u0431\u0435, , Tajikistan": [
+    null,
+    null,
+    null
+  ],
+  "South Brunswick, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Howell Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Avon-by-the-Sea, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "East Brunswick Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Stewart Manor, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Upper Dublin Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Dobbs Ferry, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Los Ranchos de Albuquerque, New Mexico, United States": [
+    null,
+    null,
+    null
+  ],
+  "Milano, , Italy": [
+    null,
+    null,
+    null
+  ],
+  "Gregg Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Nassau, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Romulus, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Nelsonville, New York, United States": [
+    41.4246396,
+    -73.9467374,
+    "Village of Nelsonville"
+  ],
+  "Upper Township, New Jersey, United States": [
+    39.217999,
+    -74.7068931,
+    "Upper Township"
+  ],
+  "Village of Monticello, New York, United States": [
+    41.6556465,
+    -74.6893282,
+    "Village of Monticello"
+  ],
+  "Hillsborough Township, New Jersey, United States": [
+    40.5052296,
+    -74.6732941,
+    "Hillsborough Township"
+  ],
+  "Mansfield, Connecticut, United States": [
+    41.7782147,
+    -72.2131565,
+    "Mansfield"
+  ],
+  "Village of Hoosick Falls, New York, United States": [
+    42.9006863,
+    -73.3516087,
+    "Village of Hoosick Falls"
+  ],
+  "Village of Hillburn, New York, United States": [
+    41.1239845,
+    -74.1693119,
+    "Village of Hillburn"
+  ],
+  "Newtown, Connecticut, United States": [
+    41.4134764,
+    -73.3086445,
+    "Newtown"
+  ],
+  "Ho-Ho-Kus, New Jersey, United States": [
+    40.9976524,
+    -74.110284,
+    "Ho-Ho-Kus"
+  ],
+  "Town of Roxbury, New York, United States": [
+    42.2839739,
+    -74.5648747,
+    "Town of Roxbury"
+  ],
+  "City of Mechanicville, New York, United States": [
+    42.9028547,
+    -73.6873405,
+    "City of Mechanicville"
+  ],
+  "Village of Williston Park, New York, United States": [
+    40.75649,
+    -73.6448513,
+    "Village of Williston Park"
+  ],
+  "Bridgewater Township, New Jersey, United States": [
+    40.5931225,
+    -74.604954,
+    "Bridgewater Township"
+  ],
+  "Village of Tannersville, New York, United States": [
+    42.1956438,
+    -74.1337508,
+    "Village of Tannersville"
+  ],
+  "Town of Florida, New York, United States": [
+    42.8904161,
+    -74.196582,
+    "Town of Florida"
+  ],
+  "Town of Brunswick, New York, United States": [
+    42.7359115,
+    -73.5615043,
+    "Town of Brunswick"
+  ],
+  "Seacliff, California, United States": [
+    37.7885406,
+    -122.4869164,
+    "San Francisco"
+  ],
+  "Village of Atlantic Beach, New York, United States": [
+    40.5886547,
+    -73.7288791,
+    "Village of Atlantic Beach"
+  ],
+  "City of Auburn, New York, United States": [
+    42.9320202,
+    -76.5672029,
+    "City of Auburn"
+  ],
+  "Bal Harbour Village, Florida, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Binghamton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Argyle, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Kingston, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "New Albany, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Cazenovia, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Duanesburg, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Red Hook, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Greenwich, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Freeville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Springfield Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Salem, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Malta, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Newport Beach, California, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Westbury, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Newcomb, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "O'Fallon, Illinois, United States": [
+    null,
+    null,
+    null
+  ],
+  "Montgomery Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Potsdam, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Baldwinsville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Haddonfield, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Durham, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Tarrytown, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Vernon Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Canton, Connecticut, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Mount Hope, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Fort Ann, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Andes, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Stockport, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Bloomfield, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Cherry Valley, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Rome, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Guilford, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Peekskill, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Fulton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Hazlet Township, New Jersey, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Alfred, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Oneonta, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Spencerport, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Naples, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Corning, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Stockton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Carrboro, North Carolina, United States": [
+    null,
+    null,
+    null
+  ],
+  "City of Olean, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Cochecton, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Babylon, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Schuylerville, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Delaware Township, Pennsylvania, United States": [
+    null,
+    null,
+    null
+  ],
+  "Arbutus, Maryland, United States": [
+    null,
+    null,
+    null
+  ],
+  "Town of Woodstock, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Wilmington, New York, United States": [
+    null,
+    null,
+    null
+  ],
+  "Village of Ossining, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Village of Upper Nyack, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of White Plains, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Poughkeepsie, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Village of Sleepy Hollow, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Hudson, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Village of Athens, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Manheim, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Troy, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Somers, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Beacon, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Pelham, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Mount Vernon, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Poughkeepsie, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Village of Highland Falls, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Summit, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Bethlehem, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Newburgh, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Yorktown, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Wawarsing, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "City of Glen Cove, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Town of Pine Plains, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "Village of Northport, New York, ": [
+    null,
+    null,
+    null
+  ],
+  "New York, NY, United States": [
+    40.7127281,
+    -74.0060152,
+    "City of New York"
+  ],
+  "Brooklyn, NY, United States": [
+    40.6526006,
+    -73.9497211,
+    "City of New York"
+  ],
+  "The Bronx, NY, United States": [
+    40.8466508,
+    -73.8785937,
+    "City of New York"
+  ],
+  "Queens, NY, United States": [
+    40.7135078,
+    -73.8283132,
+    "City of New York"
+  ],
+  "Brooklyn, NY, ": [
+    40.6526006,
+    -73.9497211,
+    "City of New York"
+  ],
+  "Staten Island, NY, United States": [
+    40.5834557,
+    -74.1496048,
+    "City of New York"
+  ],
+  "Manhattan, NY, United States": [
+    40.7579554,
+    -73.9855319,
+    "City of New York"
+  ],
+  "New York, NY, ": [
+    40.7127281,
+    -74.0060152,
+    "City of New York"
+  ],
+  "Manhattan, NY, ": [
+    40.7579554,
+    -73.9855319,
+    "City of New York"
+  ],
+  "The Bronx, NY, ": [
+    40.8466508,
+    -73.8785937,
+    "City of New York"
+  ],
+  "Queens, NY, ": [
+    40.7135078,
+    -73.8283132,
+    "City of New York"
+  ]
+}

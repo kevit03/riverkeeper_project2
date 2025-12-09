@@ -24,10 +24,17 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     '''
     converts numeric data to numeric types and dates to datetime type and adds the category column
     '''
-    df["Total Gifts (All Time)"] = df["Total Gifts (All Time)"].str.removeprefix("$").str.replace(",", "")
-    df["Total Gifts (All Time)"] = pd.to_numeric(df["Total Gifts (All Time)"])
-    df["Number of Gifts Past 18 Months"] = pd.to_numeric(df["Number of Gifts Past 18 Months"])
-    df["Last Gift Date"] = pd.to_datetime(df["Last Gift Date"])
+    df = df.copy()
+    # ensure strings before string ops
+    df["Total Gifts (All Time)"] = (
+        df["Total Gifts (All Time)"]
+        .astype(str)
+        .str.removeprefix("$")
+        .str.replace(",", "")
+    )
+    df["Total Gifts (All Time)"] = pd.to_numeric(df["Total Gifts (All Time)"], errors="coerce")
+    df["Number of Gifts Past 18 Months"] = pd.to_numeric(df["Number of Gifts Past 18 Months"], errors="coerce")
+    df["Last Gift Date"] = pd.to_datetime(df["Last Gift Date"], errors="coerce")
     return df
 
 
@@ -106,8 +113,12 @@ def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
         last gift date,
         donations in past 18 months
     '''
-    df = df.replace("", np.nan)
+    df = df.replace({"": np.nan, "None": np.nan, "none": np.nan})
+    # drop rows with missing key fields
+    df = df.dropna(subset=["Total Gifts (All Time)", "City", "State"])
     sorted_donations = df.copy().sort_values(by="Total Gifts (All Time)", ascending=False)
+    sorted_donations["Last Gift Date"] = pd.to_datetime(sorted_donations["Last Gift Date"], errors="coerce")
+    sorted_donations["Number of Gifts Past 18 Months"] = pd.to_numeric(sorted_donations["Number of Gifts Past 18 Months"], errors="coerce").fillna(0)
     top_donors = sorted_donations[:n].copy()
     top_donors["Total Gifts (All Time)"] = top_donors["Total Gifts (All Time)"].apply(lambda x: '${:,.2f}'.format(x))
     top_donors["Last Gift Date"] = top_donors["Last Gift Date"].dt.date
@@ -125,8 +136,12 @@ def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
         last gift date,
         donations in past 18 months
     '''
-    df = df.replace("", np.nan)
+    df = df.replace({"": np.nan, "None": np.nan, "none": np.nan})
+    # drop rows with missing key fields
+    df = df.dropna(subset=["Number of Gifts Past 18 Months", "City", "State"])
     sorted_donations = df.copy().sort_values(by=["Number of Gifts Past 18 Months", "Total Gifts (All Time)"], ascending=False)
+    sorted_donations["Last Gift Date"] = pd.to_datetime(sorted_donations["Last Gift Date"], errors="coerce")
+    sorted_donations["Number of Gifts Past 18 Months"] = pd.to_numeric(sorted_donations["Number of Gifts Past 18 Months"], errors="coerce").fillna(0)
     frequent_donors = sorted_donations[:n].copy()
     frequent_donors["Total Gifts (All Time)"] = frequent_donors["Total Gifts (All Time)"].apply(lambda x: '${:,.2f}'.format(x))
     frequent_donors["Last Gift Date"] = frequent_donors["Last Gift Date"].dt.date

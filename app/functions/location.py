@@ -5,6 +5,9 @@ import numpy as np
 import pandas as pd
 from time import sleep
 from pathlib import Path
+from typing import Callable, Optional
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
 
 def disambiguate_address(address: dict, location_name: str) -> list:
     '''
@@ -73,7 +76,10 @@ def export(df: pd.DataFrame, filename: str) -> None:
 
     # check if file exists, if it does read file and combine
     if my_file.is_file():
-        df_exists = pd.read_csv(my_file)
+        try:
+            df_exists = pd.read_csv(my_file, on_bad_lines="skip", engine="python")
+        except Exception:
+            df_exists = pd.read_csv(my_file, on_bad_lines="skip")
 
     # concatenate the two dataframes
     df = pd.concat([df, df_exists], ignore_index=True)
@@ -100,8 +106,12 @@ def generate_queries(stored_file: str, new_file: pd.DataFrame) -> list:
         list: a list containing unique entries existing in the new_file and not the stored_file. If none exist, [] will be returned.
     '''
     # read files
-    df_input = new_file
-    df_new = pd.read_csv(stored_file)
+    df_input = new_file.copy()
+    df_new = pd.read_csv(stored_file, on_bad_lines="skip", engine="python")
+
+    # ensure Location column exists in cache
+    if "Location" not in df_new.columns:
+        df_new["Location"] = ""
 
     # check 
     if (len(df_input) == 0):
@@ -121,11 +131,11 @@ def generate_queries(stored_file: str, new_file: pd.DataFrame) -> list:
             "WI": "Wisconsin", "KS": "Kansas", "WY": "Wyoming"}
 
     # filter by the US only
-    df_input = df_input[df_input['Country'] == "United States"]
+    df_input = df_input[df_input['Country'] == "United States"].copy()
 
     # append states to the location name
-    df_input['State'] = df_input['State'].apply(lambda x : states.get(x, ""))
-    df_input['Location'] = df_input['City'] + ", " + df_input['State']
+    df_input.loc[:, 'State'] = df_input['State'].apply(lambda x : states.get(x, ""))
+    df_input.loc[:, 'Location'] = df_input['City'] + ", " + df_input['State']
 
     # now create the set of new locations
     stored_set = set(df_input['Location'].value_counts().index.to_numpy())
@@ -154,7 +164,10 @@ def merge(stored_file: str, new_file: pd.DataFrame) -> list:
         None, directly creates the csv file immediately
     '''
     # generate file and create temporary column
-    cached_locations = pd.read_csv(stored_file)
+    cached_locations = pd.read_csv(stored_file, on_bad_lines="skip", engine="python")
+
+    if "Location" not in cached_locations.columns:
+        cached_locations["Location"] = ""
 
     # dictionary to hold states
     states = {"NY": "New York", "AL": "Alabama", "AK": "Alaska", "AZ": " Arizona", "AR": "Arkansas", "ID": "Idaho",
@@ -169,8 +182,9 @@ def merge(stored_file: str, new_file: pd.DataFrame) -> list:
             "WI": "Wisconsin", "KS": "Kansas", "WY": "Wyoming"}
 
     # append states to the location name
-    new_file['State'] = new_file['State'].apply(lambda x : states.get(x, ""))
-    new_file['Location'] = new_file['City'] + ", " + new_file['State']
+    new_file = new_file.copy()
+    new_file.loc[:, 'State'] = new_file['State'].apply(lambda x : states.get(x, ""))
+    new_file.loc[:, 'Location'] = new_file['City'] + ", " + new_file['State']
 
     # perform merge operation
     new_file = new_file.merge(cached_locations, how='left', on='Location')
@@ -188,7 +202,12 @@ def merge(stored_file: str, new_file: pd.DataFrame) -> list:
     # return the file
     return new_file
 
-def run(input_file: str):
+def run(
+    input_file: str,
+    progress: Optional[Callable[[int, int], None]] = None,
+    status: Optional[Callable[[str], None]] = None,
+    stored_file: Optional[str] = None,
+):
     '''
     Run the program
 
@@ -203,7 +222,9 @@ def run(input_file: str):
     # "RiverKeeper_Donors_Unique_Locations.csv" for output
 
     new_file = input_file # input file
-    stored_file = "../../data/RiverKeeper_Donors_Unique_Locations.csv" # output file
+    if stored_file is None:
+        # default to app/data cache
+        stored_file = str(Path(__file__).resolve().parents[1] / "data" / "RiverKeeper_Donors_Unique_Locations.csv")
 
     # first validate files, if successful, will return the read in csv values
     res, missing_cols = validate(new_file)
@@ -216,7 +237,7 @@ def run(input_file: str):
     # generate a list of locations not found and update them
     addressList = generate_queries(stored_file, res)
     if addressList != None:
-        run_queries(addressList, stored_file)
+        run_queries(addressList, stored_file, progress=progress, status=status)
 
     # now add the updated locations to the input file
     final_df = merge(stored_file, res)
@@ -224,7 +245,7 @@ def run(input_file: str):
     # return the final dataframe
     return final_df
 
-def run_queries(addressList: list, filename: str) -> None:
+def run_queries(addressList: list, filename: str, progress: Optional[Callable[[int, int], None]] = None, status: Optional[Callable[[str], None]] = None) -> None:
     ''' 
     A function that runs queries on the list of addresses, compiles them into a pandas DataFrame and exports them to a new csv. 
     In order to abide by Photon's policies and API usage, these requests are severely rate limited at one request every 3 seconds.
@@ -237,77 +258,56 @@ def run_queries(addressList: list, filename: str) -> None:
     Returns:
         None: does not return anything
     '''
-    # counter variable
-    queried = 1
+    if not addressList:
+        return
 
-    # initialize the pandas DataFrame
-    df_forcsv = pd.DataFrame()
+    total = len(addressList)
+    lock = Lock()
+    progress_count = 0
+    results = []
 
-    # iterate over each query
-    for address in addressList:
-        # rate limit on the 100th query
-        if (queried % 5 == 0):
-            sleep(10)
-        
-        # format query for ease
-        query = address
-        query = query.replace(",", "").replace(" ", "+")
+    def process(address: str):
+        nonlocal results
+        query = address.replace(",", "").replace(" ", "+")
+        url = f"https://photon.komoot.io/api/?q={query}"
 
-        # print query
-        print(query)
-
-        # hard-coded URL template to access Photon's API
-        URL = f"https://photon.komoot.io/api/?q={query}"
-
-        # decoding
-        print(URL)
-
-        # this is to ensure the program doesn't crash in case of a Time Out errors
         try:
-            # try fetching!
-            response = requests.get(URL)
-        except:
-            # if we get a TimeOut request, break out of the loop
-            print("To abide by Photon's request, currently unable to generate ALL the current queries. Please rerun this program after a couple of minutes. Current progress has been saved!")
-            break
+            response = requests.get(url, timeout=10)
+        except Exception:
+            print("Request failed for", query)
+            return None
 
-        # sleep to rate limit
-        sleep(np.random.randint(1, 5))
+        sleep(np.random.randint(1, 3))
 
-        # successful response indicates 200
-        if response.status_code == 200:
-            # our address will be located under the property of 'features'
-            # since this returns a list, we want to grab the most relevant list of attributes which would be the first one
-            # relevant attributes will then be stored under the proprties field
-            # to confirm this you can try following the link yourself
-            result = response.json().get("features", [])
+        if response.status_code != 200:
+            print(f"{query} did not yield any results (status {response.status_code}).")
+            return None
 
-            # check if somehow the given address did not yield anything
-            if result == []:
-                print(query + " did not yield any results.")
-                continue;
-            
-            # otherwise continue processing
-            final_address = disambiguate_address(result[0]['properties'], address);
-            print(result[0]["properties"])
-    
-            # format a temporary dataframe with new data
-            df_tmp = pd.DataFrame(data=np.array(final_address).T, columns=['Location', 'Country', 'City', 'Borough', 'County'])
-            df_tmp['Country'] = df_tmp['Country'].map(lambda x : x.upper())
-            
-            # verbose commenting
-            print(query + " has been processed.")
+        result = response.json().get("features", [])
+        if result == []:
+            print(query + " did not yield any results.")
+            return None
 
-            # concatenation logic
-            if (len(df_forcsv) == 0):
-                df_forcsv = df_tmp.copy(deep=True)
-            else:
-                df_forcsv = pd.concat([df_forcsv, df_tmp], ignore_index=True)
+        final_address = disambiguate_address(result[0]['properties'], address)
+        df_tmp = pd.DataFrame(data=np.array(final_address).T, columns=['Location', 'Country', 'City', 'Borough', 'County'])
+        df_tmp['Country'] = df_tmp['Country'].map(lambda x : x.upper())
+        print(query + " has been processed.")
+        return df_tmp
 
-        # increment the number of queries by 1
-        queried = queried + 1;
-    
-    # export all the queries into the cached locations to store them
+    with ThreadPoolExecutor(max_workers=min(8, total)) as executor:
+        future_map = {executor.submit(process, addr): addr for addr in addressList}
+        for fut in as_completed(future_map):
+            df_tmp = fut.result()
+            if df_tmp is not None:
+                results.append(df_tmp)
+            with lock:
+                progress_count += 1
+                if progress:
+                    progress(progress_count, total)
+                if status and progress_count % 5 == 0:
+                    status(f"Geocoded {progress_count} of {total} locations...")
+
+    df_forcsv = pd.concat(results, ignore_index=True) if results else pd.DataFrame()
     export(df_forcsv, filename)
 
 def validate(filename: str) -> pd.DataFrame:
@@ -331,7 +331,10 @@ def validate(filename: str) -> pd.DataFrame:
         sys.exit(1)
 
     # read file
-    data = pd.read_csv(filename)
+    data = pd.read_csv(filename, on_bad_lines="skip", engine="python")
+
+    if "Location" not in data.columns:
+        data["Location"] = ""
 
     # check each column
     for i in range(len(column_names)):
