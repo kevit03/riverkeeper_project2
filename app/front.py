@@ -17,7 +17,12 @@ from functions.frontend_helpers import (  # noqa: E402
     merge_and_enrich,
     render_stats,
 )
+<<<<<<< HEAD
 from functions.heatmap import geocode_if_needed, render_map  # noqa: E402
+=======
+
+from scripts.Kevin.heatmap import render_heatmap
+>>>>>>> b636ec3802e0b3580010baa6781bd0c3e4232a67
 
 
 
@@ -36,7 +41,6 @@ def main() -> None:
     if "raw_df" not in st.session_state:
         st.session_state.raw_df = load_raw()
 
-    # ---- File upload + merge/enrich ----
     uploaded = st.file_uploader("Upload a Riverkeeper-formatted CSV", type=["csv"])
     if uploaded is not None:
         try:
@@ -50,7 +54,6 @@ def main() -> None:
             st.error(f"Could not process file: {exc.__class__.__name__}: {exc}")
             st.code(traceback.format_exc())
 
-    # ---- Ensure we have a working dataframe ----
     if st.session_state.data is None:
         enriched = load_enriched()
         if len(enriched) == 0:
@@ -74,8 +77,12 @@ def main() -> None:
         render_stats(data)
 
     with tab_heatmap:
+<<<<<<< HEAD
         work_df = geocode_if_needed(data, cache_path=None, geocode_limit=10_000)
         render_map(work_df)
+=======
+        render_heatmap(data)
+>>>>>>> b636ec3802e0b3580010baa6781bd0c3e4232a67
 
 
 if __name__ == "__main__":
