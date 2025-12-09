@@ -25,6 +25,10 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     converts numeric data to numeric types and dates to datetime type and adds the category column
     '''
     df = df.copy()
+    # ensure required columns exist
+    for col in ["Account ID", "Total Gifts (All Time)", "Number of Gifts Past 18 Months", "Last Gift Date", "City", "State"]:
+        if col not in df.columns:
+            df[col] = None
     # ensure strings before string ops
     df["Total Gifts (All Time)"] = (
         df["Total Gifts (All Time)"]
@@ -44,7 +48,7 @@ def donations_precise(df: pd.DataFrame) -> pd.Series:
     '''
     converts dollar amounts to Decimal objects to maintain precision
     '''
-    precise = df["Total Gifts (All Time)"].map(lambda x: Decimal(str(x)))
+    precise = df["Total Gifts (All Time)"].dropna().map(lambda x: Decimal(str(x)))
     return precise
 
 def total_donations(df: pd.DataFrame) -> float:
@@ -60,9 +64,13 @@ def median_total_donation(df: pd.DataFrame) -> float:
     return round(donation_median, 2)
 
 def modal_total_donation(df: pd.DataFrame) -> float:
-    donation_mode = donations_precise(df).mode()
-    if isinstance(donation_mode, pd.Series):
-        donation_mode = donation_mode.iloc[0]
+    mode_series = donations_precise(df).mode()
+    if mode_series.empty:
+        return 0.0
+    if isinstance(mode_series, pd.Series):
+        donation_mode = mode_series.iloc[0]
+    else:
+        donation_mode = mode_series
     return round(donation_mode, 2)
 
 def basic_stats(df: pd.DataFrame) -> pd.DataFrame:
@@ -116,6 +124,9 @@ def top_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
     df = df.replace({"": np.nan, "None": np.nan, "none": np.nan})
     # drop rows with missing key fields
+    for col in ["City", "State"]:
+        if col not in df.columns:
+            df[col] = np.nan
     df = df.dropna(subset=["Total Gifts (All Time)", "City", "State"])
     sorted_donations = df.copy().sort_values(by="Total Gifts (All Time)", ascending=False)
     sorted_donations["Last Gift Date"] = pd.to_datetime(sorted_donations["Last Gift Date"], errors="coerce")
@@ -139,6 +150,9 @@ def frequent_donors(df: pd.DataFrame, n: int) -> pd.DataFrame:
     '''
     df = df.replace({"": np.nan, "None": np.nan, "none": np.nan})
     # drop rows with missing key fields
+    for col in ["City", "State"]:
+        if col not in df.columns:
+            df[col] = np.nan
     df = df.dropna(subset=["Number of Gifts Past 18 Months", "City", "State"])
     sorted_donations = df.copy().sort_values(by=["Number of Gifts Past 18 Months", "Total Gifts (All Time)"], ascending=False)
     sorted_donations["Last Gift Date"] = pd.to_datetime(sorted_donations["Last Gift Date"], errors="coerce")
@@ -179,6 +193,12 @@ def stats_by_state(df: pd.DataFrame) -> pd.DataFrame:
         donations in the past 18 months,
         most recent donation date
     '''
+    if "State" not in df.columns:
+        df = df.copy()
+        df["State"] = ""
+    if "City" not in df.columns:
+        df = df.copy()
+        df["City"] = ""
     # copy data and drop rows where there is no state
     df["State"] = df["State"].replace("", np.nan)
     data = df.copy().dropna(subset=["State"])
@@ -213,6 +233,12 @@ def stats_by_city(df: pd.DataFrame) -> pd.DataFrame:
         donations in the past 18 months,
         most recent donation date
     '''
+    if "City" not in df.columns:
+        df = df.copy()
+        df["City"] = ""
+    if "State" not in df.columns:
+        df = df.copy()
+        df["State"] = ""
     # copy data and drop rows where city or state are null
     df = df.replace("", np.nan)
     data =  df.copy().dropna(subset=["City", "State"])
