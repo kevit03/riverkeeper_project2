@@ -92,6 +92,16 @@ def export(df: pd.DataFrame, filename: str) -> None:
     # export
     df.to_csv(filename)
 
+
+def ensure_cache_file(path: str) -> None:
+    """Ensure the location cache CSV exists with required columns."""
+    p = Path(path)
+    if p.exists():
+        return
+    p.parent.mkdir(parents=True, exist_ok=True)
+    cols = ["Location", "Country", "City", "Borough", "County"]
+    pd.DataFrame(columns=cols).to_csv(p, index=False)
+
 def generate_queries(stored_file: str, new_file: pd.DataFrame) -> list:
     '''
     A function that reads in an existing '.csv' file, compares its entries to the new file given to it,
@@ -106,6 +116,7 @@ def generate_queries(stored_file: str, new_file: pd.DataFrame) -> list:
         list: a list containing unique entries existing in the new_file and not the stored_file. If none exist, [] will be returned.
     '''
     # read files
+    ensure_cache_file(stored_file)
     df_input = new_file.copy()
     df_new = pd.read_csv(stored_file, on_bad_lines="skip", engine="python")
 
@@ -164,6 +175,7 @@ def merge(stored_file: str, new_file: pd.DataFrame) -> list:
         None, directly creates the csv file immediately
     '''
     # generate file and create temporary column
+    ensure_cache_file(stored_file)
     cached_locations = pd.read_csv(stored_file, on_bad_lines="skip", engine="python")
 
     if "Location" not in cached_locations.columns:
@@ -225,6 +237,7 @@ def run(
     if stored_file is None:
         # default to app/data cache
         stored_file = str(Path(__file__).resolve().parents[1] / "data" / "RiverKeeper_Donors_Unique_Locations.csv")
+    ensure_cache_file(stored_file)
 
     # first validate files, if successful, will return the read in csv values
     res, missing_cols = validate(new_file)
