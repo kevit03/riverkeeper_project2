@@ -47,3 +47,4 @@ Thumbs.db
 # VSCode and IDEs
 .vscode/
 .idea/
+.venv/
