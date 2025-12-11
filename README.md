@@ -46,7 +46,7 @@ On subsequent runs, it will **reuse the existing image** and skip the build step
 #### macOS (Docker)
 
 1. Install **Docker Desktop for Mac** and make sure it is running.
-2. Download / clone the repo and open the project folder in Finder.
+2. Download this file / clone the official repo and open the project folder in Finder.
 3. In the project root, locate:
 
    `Run Riverkeeper (Docker).command`
@@ -59,7 +59,7 @@ On subsequent runs, it will **reuse the existing image** and skip the build step
    - Checking Docker
    - Building the `riverkeeper-dashboard` image (first run only)
    - Starting the container
-6. When the app starts, open your browser and go to:
+6. The app will start automatically. When the app starts, your browser will be opened and will go to (also copy and pasteable):
 
    `http://localhost:8501`
 
@@ -69,7 +69,7 @@ On subsequent runs, it will **reuse the existing image** and skip the build step
 #### Windows (Docker)
 
 1. Install **Docker Desktop for Windows** and make sure it is running.
-2. Download / clone the repo and open the project folder in File Explorer.
+2. Download this file / clone the official repo and open the project folder in File Explorer.
 3. In the project root, locate:
 
    `run_dashboard_docker.bat`
@@ -81,7 +81,7 @@ On subsequent runs, it will **reuse the existing image** and skip the build step
    - Checking Docker
    - Building the `riverkeeper-dashboard` image (first run only)
    - Starting the container
-6. When the app starts, open your browser and go to:
+6. The app will start automatically. When the app starts, your browser will be opened and will go to (also copy and pasteable):
 
    `http://localhost:8501`
 
