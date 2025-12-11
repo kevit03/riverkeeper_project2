@@ -5,7 +5,7 @@ import plotly.express as px
 import streamlit as st
 import traceback
 import altair as alt
-from data_analysis import stats_by_year, stats_by_month
+from .data_analysis import stats_by_year, stats_by_month
 from functions.merge_csv import merge_csv
 from functions.data_analysis import (
     active_donors,
