@@ -1,7 +1,6 @@
 # Riverkeepers Project 2
 This project is a data driven initiative built by the Biokind Team at NYU to analyze and strengthen community around the Hudson River water conservation at Riverkeepers. We take donor data and transform the raw data into actionable data insight. 
 
-
 ![Biokind Analytics](https://github.com/Pk0704/riverkeeper_project2/blob/main/scripts/Kevin/biokind.png)
 
 ## Built With 
@@ -20,7 +19,71 @@ This project is a data driven initiative built by the Biokind Team at NYU to ana
 
 ## Getting Started
 
-Before uploading any data, please make sure you have the Python dependencies installed.
+There are **two ways** to run the dashboard:
+
+1. **One-click launchers (recommended for non-technical users)**
+2. **Manual setup via terminal (for developers)**
+
+You will still need **Python 3.10+** installed on your machine.
+
+---
+
+### Option 1 – One-Click Launchers (Recommended)
+
+After downloading or cloning this repository, you can start the dashboard by double-clicking a launcher file. On first run, the project will:
+
+- Create a local virtual environment (`.venv`) if it does not exist  
+- Install all Python dependencies from `requirements.txt` **once**  
+- Start the Streamlit app
+
+On subsequent runs, it will reuse the existing `.venv` and **skip** dependency installation.
+
+#### macOS
+
+1. Make sure you have **Python 3.10+** installed (e.g. via Homebrew or the official installer).
+2. Download / clone the repo and open the project folder in Finder.
+3. In the project root, locate:
+
+   `Run Riverkeeper.command`
+
+4. **First run only:** macOS may block the file as coming from an unidentified developer.  
+   - Right-click (or Ctrl-click) `Run Riverkeeper.command`  
+   - Select **“Open”**  
+   - Confirm that you want to open it
+5. A Terminal window will open and you will see logs such as:
+   - Creating `.venv` (first run only)
+   - Installing dependencies (first run only)
+   - Running Streamlit via `launch.py`
+6. When the app starts, your browser should open automatically at the Riverkeeper dashboard.
+
+To stop the app, close the browser tab and press `Ctrl+C` in the Terminal window, then close the window.
+
+#### Windows
+
+1. Make sure you have **Python 3.10+** installed and the `py` launcher available.
+2. Download / clone the repo and open the project folder in File Explorer.
+3. In the project root, locate:
+
+   `run_dashboard.bat`
+
+4. Double-click `run_dashboard.bat` to start the dashboard.
+   - On first run, Windows SmartScreen may show a warning.  
+   - Click **“More info”** → **“Run anyway”** if prompted.
+5. A Command Prompt window will open and you will see logs such as:
+   - Creating `.venv` (first run only)
+   - Installing dependencies (first run only)
+   - Running Streamlit via `launch.py`
+6. When the app starts, your default browser should open automatically at the Riverkeeper dashboard.
+
+To stop the app, close the browser tab and press `Ctrl+C` in the Command Prompt window, then close the window.
+
+> Note: The `.venv` folder is created locally and should **not** be committed to version control.
+
+---
+
+### Option 2 – Manual Setup (For Developers)
+
+If you prefer to manage the environment yourself (or run without the launchers):
 
 1. Make sure you have **Python 3.10+** installed.
 2. In a terminal, inside the project folder, run:
@@ -30,6 +93,7 @@ source .venv/bin/activate   # Mac / Linux
 # .venv\Scripts\activate    # Windows
 
 pip install -r requirements.txt
+
 ```
 
 Once dependencies are installed, you can run the app:
