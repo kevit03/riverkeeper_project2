@@ -19,26 +19,94 @@ This project is a data driven initiative built by the Biokind Team at NYU to ana
 
 ## Getting Started
 
-There are **two ways** to run the dashboard:
+There are **three ways** to run the dashboard:
 
-1. **One-click launchers (recommended for non-technical users)**
-2. **Manual setup via terminal (for developers)**
-
-You will still need **Python 3.10+** installed on your machine.
+1. **Docker one-click launchers (recommended for non-technical users)**
+2. **Local Python one-click launchers (advanced)**
+3. **Manual setup via terminal (for developers)**
 
 ---
 
-### Option 1 – One-Click Launchers (Recommended)
+### Option 1 – Docker One-Click Launchers (Recommended)
 
-After downloading or cloning this repository, you can start the dashboard by double-clicking a launcher file. On first run, the project will:
+This is the simplest and most robust way to run the dashboard. All Python dependencies are packaged inside a Docker image.
+
+You will need:
+
+- **Docker Desktop** installed and running (macOS or Windows).
+
+After downloading or cloning this repository, you can start the dashboard by double-clicking a Docker launcher file. On first run, the project will:
+
+- Build a Docker image named `riverkeeper-dashboard`
+- Start the Streamlit app inside a container
+- Expose it at `http://localhost:8501`
+
+On subsequent runs, it will **reuse the existing image** and skip the build step.
+
+#### macOS (Docker)
+
+1. Install **Docker Desktop for Mac** and make sure it is running.
+2. Download / clone the repo and open the project folder in Finder.
+3. In the project root, locate:
+
+   `Run Riverkeeper (Docker).command`
+
+4. **First run only:** macOS may block the file as coming from an unidentified developer.  
+   - Right-click (or Ctrl-click) `Run Riverkeeper (Docker).command`  
+   - Select **“Open”**  
+   - Confirm that you want to open it
+5. A Terminal window will open and you will see logs such as:
+   - Checking Docker
+   - Building the `riverkeeper-dashboard` image (first run only)
+   - Starting the container
+6. When the app starts, open your browser and go to:
+
+   `http://localhost:8501`
+
+7. To stop the app, click the **“Shutdown”** button in the top-right of the dashboard.  
+   This stops Streamlit and the Docker container. You can then close the browser tab and the Terminal window.
+
+#### Windows (Docker)
+
+1. Install **Docker Desktop for Windows** and make sure it is running.
+2. Download / clone the repo and open the project folder in File Explorer.
+3. In the project root, locate:
+
+   `run_dashboard_docker.bat`
+
+4. Double-click `run_dashboard_docker.bat` to start the dashboard.
+   - On first run, Windows SmartScreen may show a warning.  
+   - Click **“More info”** → **“Run anyway”** if prompted.
+5. A Command Prompt window will open and you will see logs such as:
+   - Checking Docker
+   - Building the `riverkeeper-dashboard` image (first run only)
+   - Starting the container
+6. When the app starts, open your browser and go to:
+
+   `http://localhost:8501`
+
+7. To stop the app, click the **“Shutdown”** button in the top-right of the dashboard.  
+   This stops Streamlit and the Docker container. You can then close the browser tab and the Command Prompt window.
+
+> If you accidentally close the browser tab without clicking **Shutdown**, the container may continue running in the background.  
+> Just re-open `http://localhost:8501` and click **Shutdown**, or stop the container from Docker Desktop.
+
+---
+
+### Option 2 – Local Python One-Click Launchers (Advanced)
+
+Use this only if you prefer to run Python natively (no Docker) and have a working Python environment.  
+You will need **Python 3.10+** installed on your machine.
+
+These launchers will:
 
 - Create a local virtual environment (`.venv`) if it does not exist  
 - Install all Python dependencies from `requirements.txt` **once**  
-- Start the Streamlit app
+- Start the Streamlit app via `launch.py`
 
-On subsequent runs, it will reuse the existing `.venv` and **skip** dependency installation.
+On subsequent runs, they reuse `.venv` and **skip** dependency installation.
 
-#### macOS
+#### macOS (local Python)
 
 1. Make sure you have **Python 3.10+** installed (e.g. via Homebrew or the official installer).
 2. Download / clone the repo and open the project folder in Finder.
@@ -56,9 +124,9 @@ On subsequent runs, it will reuse the existing `.venv` and **skip** dependency i
    - Running Streamlit via `launch.py`
 6. When the app starts, your browser should open automatically at the Riverkeeper dashboard.
 
-To stop the app, close the browser tab and press `Ctrl+C` in the Terminal window, then close the window.
+To stop the app, click the **“Shutdown”** button in the top-right of the dashboard, then close the browser tab and the Terminal window.
 
-#### Windows
+#### Windows (local Python)
 
 1. Make sure you have **Python 3.10+** installed and the `py` launcher available.
 2. Download / clone the repo and open the project folder in File Explorer.
@@ -75,31 +143,25 @@ To stop the app, close the browser tab and press `Ctrl+C` in the Terminal window
    - Running Streamlit via `launch.py`
 6. When the app starts, your default browser should open automatically at the Riverkeeper dashboard.
 
-To stop the app, close the browser tab and press `Ctrl+C` in the Command Prompt window, then close the window.
+To stop the app, click the **“Shutdown”** button in the top-right of the dashboard, then close the browser tab and the Command Prompt window.
 
 > Note: The `.venv` folder is created locally and should **not** be committed to version control.
 
 ---
 
-### Option 2 – Manual Setup (For Developers)
+### Option 3 – Manual Setup (For Developers)
 
-If you prefer to manage the environment yourself (or run without the launchers):
+If you prefer to manage the environment yourself (or run without any launchers):
 
 1. Make sure you have **Python 3.10+** installed.
 2. In a terminal, inside the project folder, run:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Mac / Linux
 # .venv\Scripts\activate    # Windows
 
 pip install -r requirements.txt
-
-```
-
-Once dependencies are installed, you can run the app:
-```bash
-streamlit run app/front.py
-```
 
 ---
 
