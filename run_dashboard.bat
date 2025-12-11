@@ -15,9 +15,21 @@ if not exist ".venv" (
 REM 3) Activate the virtual environment
 call ".venv\Scripts\activate.bat"
 
-REM 4) Install required packages
-echo [INFO] Installing dependencies from requirements.txt ...
-pip install -r requirements.txt
+REM 4) Install dependencies only on first run
+if not exist ".venv\.deps_installed" (
+    echo [INFO] Installing dependencies from requirements.txt (first run) ...
+    pip install -r requirements.txt
+    if errorlevel 1 (
+        echo.
+        echo [ERROR] Failed to install dependencies. Press any key to exit.
+        pause >nul
+        exit /b 1
+    )
+    REM Mark that dependencies are installed
+    echo. > ".venv\.deps_installed"
+) else (
+    echo [INFO] Dependencies already installed – skipping pip install.
+)
 
 REM 5) Call the common Python launcher
 echo [INFO] Running Streamlit via launch.py ...
