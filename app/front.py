@@ -3,7 +3,7 @@ import streamlit as st
 import sys
 import traceback
 from pathlib import Path
-
+import os
 # Add repo root to sys.path so 'scripts' is importable
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -27,8 +27,22 @@ def main() -> None:
         page_icon="🌊",
         layout="wide",
     )
-    st.title("Riverkeeper Donor Dashboard")
-    st.markdown("Upload donor CSVs, merge and enrich them, then explore updated statistics.")
+
+    # --- Header row: title on the left, shutdown button on the right ---
+    # Make the title column wide and the button column narrow
+    col_title, col_button = st.columns([11, 1])
+
+    with col_title:
+        st.title("Riverkeeper Donor Dashboard")
+        st.write("Upload donor CSVs, merge and enrich them, then explore updated statistics.")
+
+    with col_button:
+        st.write("")   # vertical spacer to align with title line
+        st.write("")
+        if st.button("Shutdown", key="shutdown_top"):
+            st.warning("Shutting down the Riverkeeper dashboard… You can close this tab.")
+            os._exit(0)
+
 
     # ---- Session state ----
     if "data" not in st.session_state:
