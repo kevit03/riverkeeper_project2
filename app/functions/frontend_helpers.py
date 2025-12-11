@@ -4,7 +4,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import traceback
-
+import altair as alt
+from data_analysis import stats_by_year, stats_by_month
 from functions.merge_csv import merge_csv
 from functions.data_analysis import (
     active_donors,
@@ -344,4 +345,18 @@ def render_stats(df: pd.DataFrame) -> None:
     with col1:
         st.bar_chart(stats_by_year(df), x_label="Year", y_label="Donors", color="#007633")
     with col2:
-        st.bar_chart(stats_by_month(df), x_label="Month", y_label="Donors", color="#007633", width="stretch")
+        monthly = stats_by_month(df)
+        chart_month = (
+            alt.Chart(monthly)
+            .mark_bar()
+            .encode(
+                x=alt.X(
+                    "Month:N",
+                    sort=["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    title="Month",
+                ),
+                y=alt.Y("Donors:Q", title="Donors"),
+            )
+        )
+        st.altair_chart(chart_month, use_container_width=True)

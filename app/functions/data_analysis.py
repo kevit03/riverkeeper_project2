@@ -292,10 +292,14 @@ def stats_by_year(df: pd.DataFrame) -> pd.DataFrame:
     return res
 
 def stats_by_month(df: pd.DataFrame) -> pd.DataFrame:
-    '''
-    returns a dataframe with month and number of donors who made their last donation in that month
-    '''
-    g = df.groupby(df["Last Gift Date"].dt.month.rename("Month"))
-    res = pd.DataFrame({"Donors" : g["Account ID"].nunique()})
-    res.index = pd.Index(calendar.month_abbr[1:], name="Month")
-    return res
+    """
+    returns a dataframe with month name and number of donors
+    """
+    df = df.copy()
+    df["MonthNum"] = df["Last Gift Date"].dt.month
+    df["Month"] = df["Last Gift Date"].dt.month_name().str[:3]
+
+    g = df.groupby(["MonthNum", "Month"])["Account ID"].nunique().reset_index(name="Donors")
+    # keep numerical month for ordering
+    return g
+
