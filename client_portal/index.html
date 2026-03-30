@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riverkeeper Analytics Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__mark"></span>
+          <div class="brand__copy">
+            <p class="brand__eyebrow">Riverkeeper</p>
+            <p class="brand__title">Analytics Platform</p>
+          </div>
+        </div>
+
+        <nav class="top-tabs" id="top-tabs" aria-label="Portal sections">
+          <span class="tab-indicator" id="tab-indicator"></span>
+          <button class="top-tab is-active" data-panel="overview" aria-selected="true">
+            Overview
+          </button>
+          <button class="top-tab" data-panel="geography" aria-selected="false">
+            Geography
+          </button>
+          <button class="top-tab" data-panel="analytics" aria-selected="false">
+            Analytics
+          </button>
+          <button class="top-tab" data-panel="delivery" aria-selected="false">
+            Delivery
+          </button>
+        </nav>
+      </header>
+
+      <section class="control-shell">
+        <div class="control">
+          <label for="state-filter">State focus</label>
+          <select id="state-filter">
+            <option value="all">All states</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <label for="metric-filter">Heatmap metric</label>
+          <select id="metric-filter">
+            <option value="donors">Total donors</option>
+            <option value="activeDonors">Active donors</option>
+            <option value="totalDonations">Total donations</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <label for="minimum-filter">Minimum cluster size</label>
+          <select id="minimum-filter">
+            <option value="1">1+ donors</option>
+            <option value="3">3+ donors</option>
+            <option value="10">10+ donors</option>
+            <option value="25">25+ donors</option>
+          </select>
+        </div>
+
+        <div class="control control--status">
+          <span class="control__label">Data status</span>
+          <p id="data-freshness">Waiting for exported payload...</p>
+          <p id="coverage-note" class="muted"></p>
+        </div>
+      </section>
+
+      <main class="panel-stack">
+        <section class="tab-panel is-active" data-panel="overview">
+          <section class="skeleton-shell">
+            <article class="skeleton-card skeleton-card--hero">
+              <p class="eyebrow">Overview</p>
+              <h1>Riverkeeper Analytics Platform</h1>
+            </article>
+
+            <article class="skeleton-card">
+              <p class="eyebrow">Platform shell</p>
+              <div class="placeholder-line placeholder-line--long"></div>
+              <div class="placeholder-line placeholder-line--medium"></div>
+              <div class="placeholder-line placeholder-line--short"></div>
+            </article>
+
+            <article class="skeleton-card">
+              <p class="eyebrow">Future layer</p>
+              <div class="placeholder-line placeholder-line--medium"></div>
+              <div class="placeholder-line placeholder-line--long"></div>
+              <div class="placeholder-line placeholder-line--short"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="geography">
+          <section class="content-grid">
+            <article class="map-panel">
+              <div class="section-heading">
+                <div>
+                  <p class="section-heading__eyebrow">Geography view</p>
+                  <h2>Interactive heatmap</h2>
+                </div>
+                <p class="section-heading__note">
+                  Switch the active metric without regenerating the dataset.
+                </p>
+              </div>
+              <div id="map" class="map-canvas" aria-label="Riverkeeper donor heatmap"></div>
+              <div id="empty-state" class="empty-state" hidden>
+                No clusters match the current filters.
+              </div>
+            </article>
+
+            <aside class="insight-panel">
+              <section class="insight-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Coverage</p>
+                    <h2>Top states</h2>
+                  </div>
+                </div>
+                <div id="top-states" class="ranking-list"></div>
+              </section>
+
+              <section class="insight-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Priority</p>
+                    <h2>Top clusters</h2>
+                  </div>
+                </div>
+                <div id="top-locations" class="ranking-list"></div>
+              </section>
+            </aside>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="analytics">
+          <section class="skeleton-shell">
+            <article class="skeleton-card skeleton-card--hero">
+              <p class="eyebrow">Analytics</p>
+              <h2>Analytics Layer</h2>
+            </article>
+
+            <article class="skeleton-card">
+              <div class="placeholder-line placeholder-line--long"></div>
+              <div class="placeholder-line placeholder-line--medium"></div>
+              <div class="placeholder-line placeholder-line--short"></div>
+            </article>
+
+            <article class="skeleton-card">
+              <div class="placeholder-line placeholder-line--medium"></div>
+              <div class="placeholder-line placeholder-line--long"></div>
+              <div class="placeholder-line placeholder-line--short"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="delivery">
+          <section class="skeleton-shell">
+            <article class="skeleton-card skeleton-card--hero">
+              <p class="eyebrow">Delivery</p>
+              <h2>Implementation handoff</h2>
+            </article>
+
+            <article class="skeleton-card">
+              <p class="eyebrow">Aarit</p>
+              <div class="placeholder-line placeholder-line--long"></div>
+              <div class="placeholder-line placeholder-line--medium"></div>
+            </article>
+
+            <article class="skeleton-card">
+              <p class="eyebrow">Daniel</p>
+              <div class="placeholder-line placeholder-line--medium"></div>
+              <div class="placeholder-line placeholder-line--long"></div>
+            </article>
+
+            <article class="skeleton-card">
+              <p class="eyebrow">Aishwarya</p>
+              <div class="placeholder-line placeholder-line--medium"></div>
+              <div class="placeholder-line placeholder-line--short"></div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

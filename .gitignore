@@ -1,0 +1,51 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Virtual environments
+venv/
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pkl
+*.joblib
+*.onnx
+
+# Data files
+!geocode_cache.json
+*.xls
+*.xlsx
+*.parquet
+*.feather
+*.h5
+*.tsv
+*.sav
+*.dta
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# Cache and temp
+*.cache
+*.tmp
+*.bak
+
+# Docker
+*.pid
+*.sock
+
+# VSCode and IDEs
+.vscode/
+.idea/
+.venv/
+.venv/
