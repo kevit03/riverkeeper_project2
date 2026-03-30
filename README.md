@@ -17,33 +17,6 @@ This project is a data driven initiative built by the Biokind Team at NYU to ana
 
 -> **Data Cleaning of Over 8,000 entries**
 
-## Recommended Client-Facing Direction
-
-The Streamlit app in `app/` is now best treated as a legacy prototype.
-
-For a less technical client experience, the recommended path is the new
-JSON-driven web portal in `client_portal/`, which implements Kevin's heatmap
-slice without exposing users to Streamlit. The supporting exporter lives at
-`app/functions/heatmap_portal_export.py` and converts the cleaned donor file
-`app/data/donor_data_enriched.csv` into a deployable frontend payload at
-`client_portal/data/kevin_heatmap_data.json`.
-
-This creates a cleaner handoff for another company because they can:
-
-- host `client_portal/` as a branded web frontend
-- refresh the payload from the cleaned CSV without touching the UI
-- continue the remaining three workstreams on the same platform
-
-The current four-way ownership split is:
-
-- Kevin: heatmap and geo intelligence
-- Aarit: ingestion and validation
-- Daniel: analytics and segmentation
-- Aishwarya: reporting and exports
-
-See `docs/platform_blueprint.md` and `docs/feature_brainstorm.md` for the
-single-platform plan and follow-up ideas.
-
 ## Getting Started
 
 There are **three ways** to run the dashboard:
