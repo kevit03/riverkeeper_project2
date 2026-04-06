@@ -29,7 +29,6 @@ Thumbs.db
 *.dta
 
 # Notebooks
-*.ipynb
 .ipynb_checkpoints/
 
 # Streamlit
