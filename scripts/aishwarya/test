@@ -4,9 +4,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-#load data 
-file_path = "donor_data.csv"   # update path if needed
+file_path = Path(__file__).resolve().parents[2] / "app" / "data" / "donor_data.csv"
 df = pd.read_csv(file_path)
+
 
 # Make a copy so the original is preserved
 donors = df.copy()

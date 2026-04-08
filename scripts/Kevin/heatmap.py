@@ -11,8 +11,6 @@ import streamlit as st
 from streamlit_folium import st_folium
 
 
-# ------------------ Helpers ------------------ #
-
 def is_kansas(lat, lon) -> bool:
     try:
         lat = float(lat)
