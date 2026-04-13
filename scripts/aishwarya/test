@@ -1,245 +1,221 @@
-# donor_analysis.py
-
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-#load data 
-file_path = "donor_data.csv"   # update path if needed
+# ----------------------------
+# 1. LOAD DATA
+# ----------------------------
+file_path = Path.home() / "Downloads" / "donor_data.csv"
 df = pd.read_csv(file_path)
 
-# Make a copy so the original is preserved
-donors = df.copy()
-
-#clean data
-
-# Standardize column names
-donors.columns = (
-    donors.columns.str.strip()
-                  .str.lower()
-                  .str.replace(" ", "_")
-                  .str.replace("(", "", regex=False)
-                  .str.replace(")", "", regex=False)
+# ----------------------------
+# 2. CLEAN COLUMN NAMES
+# ----------------------------
+df.columns = (
+    df.columns.str.strip()
+    .str.lower()
+    .str.replace(" ", "_")
+    .str.replace("(", "", regex=False)
+    .str.replace(")", "", regex=False)
 )
 
-# Preview new column names
-print("Columns:", donors.columns.tolist())
+print("Cleaned columns:", df.columns.tolist())
 
-# Clean total_gifts_all_time
-donors["total_gifts_all_time"] = (
-    donors["total_gifts_all_time"]
+donors = df.copy()
+
+# ----------------------------
+# 3. AUTO-DETECT IMPORTANT COLUMNS
+# ----------------------------
+gift_matches = [col for col in donors.columns if "total" in col and "gift" in col]
+num_matches = [col for col in donors.columns if "number" in col and "gift" in col]
+date_matches = [col for col in donors.columns if "date" in col and "gift" in col]
+
+if not gift_matches:
+    raise ValueError("Could not find a total gifts column.")
+if not num_matches:
+    raise ValueError("Could not find a number of gifts column.")
+if not date_matches:
+    date_matches = [col for col in donors.columns if "date" in col]
+
+if not date_matches:
+    raise ValueError("Could not find a date column.")
+
+gift_col = gift_matches[0]
+num_col = num_matches[0]
+date_col = date_matches[0]
+
+print("Using columns:")
+print("Total gifts column:", gift_col)
+print("Number of gifts column:", num_col)
+print("Date column:", date_col)
+
+# ----------------------------
+# 4. CLEAN DATA
+# ----------------------------
+donors[gift_col] = (
+    donors[gift_col]
     .astype(str)
     .str.replace("$", "", regex=False)
     .str.replace(",", "", regex=False)
     .str.strip()
 )
 
-donors["total_gifts_all_time"] = pd.to_numeric(
-    donors["total_gifts_all_time"], errors="coerce"
-)
+donors[gift_col] = pd.to_numeric(donors[gift_col], errors="coerce")
+donors[num_col] = pd.to_numeric(donors[num_col], errors="coerce").fillna(0)
+donors[date_col] = pd.to_datetime(donors[date_col], errors="coerce")
 
-# Clean number_of_gifts_past_18_months
-donors["number_of_gifts_past_18_months"] = pd.to_numeric(
-    donors["number_of_gifts_past_18_months"], errors="coerce"
-).fillna(0)
+# Optional: replace pandas NA values in object columns with actual missing values
+donors = donors.replace({"<NA>": pd.NA, "Unknown": "Unknown"})
 
-# Clean last_gift_date
-donors["last_gift_date"] = pd.to_datetime(
-    donors["last_gift_date"], errors="coerce"
-)
-
-# Standardize text columns
-text_cols = ["city", "state", "postcode", "country"]
-for col in text_cols:
-    if col in donors.columns:
-        donors[col] = donors[col].astype(str).str.strip()
-
-# Replace obvious placeholders / invalid text with NaN
-donors = donors.replace({"nan": pd.NA, "None": pd.NA, "": pd.NA})
-
-#donor categorization
-
-# A. Categorize by total giving
-def donor_size_category(amount):
-    if pd.isna(amount):
+# ----------------------------
+# 5. DONOR CATEGORIZATION
+# ----------------------------
+def categorize_size(x):
+    if pd.isna(x):
         return "Unknown"
-    elif amount >= 100000:
-        return "Major Donor"
-    elif amount >= 10000:
-        return "Mid-Level Donor"
-    elif amount >= 1000:
-        return "General Donor"
-    elif amount > 0:
-        return "Small Donor"
+    elif x >= 100000:
+        return "Major"
+    elif x >= 10000:
+        return "Mid-Level"
+    elif x >= 1000:
+        return "General"
+    elif x > 0:
+        return "Small"
     else:
-        return "No Giving History"
+        return "None"
 
-donors["donor_size_category"] = donors["total_gifts_all_time"].apply(donor_size_category)
-
-# B. Categorize by recent activity
-def donor_activity_category(row):
-    gifts_18m = row["number_of_gifts_past_18_months"]
-    last_date = row["last_gift_date"]
-
-    if gifts_18m >= 3:
+def categorize_activity(row):
+    if row[num_col] >= 3:
         return "Highly Active"
-    elif gifts_18m >= 1:
+    elif row[num_col] >= 1:
         return "Active"
-    elif pd.notna(last_date):
+    elif pd.notna(row[date_col]):
         return "Lapsed"
     else:
-        return "No Recorded Activity"
+        return "Unknown"
 
-donors["donor_activity_category"] = donors.apply(donor_activity_category, axis=1)
+donors["donor_size"] = donors[gift_col].apply(categorize_size)
+donors["donor_activity"] = donors.apply(categorize_activity, axis=1)
 
-# Optional combined category
-donors["combined_category"] = (
-    donors["donor_size_category"] + " - " + donors["donor_activity_category"]
-)
+# ----------------------------
+# 6. SUMMARY TABLES
+# ----------------------------
+size_table = donors["donor_size"].value_counts(dropna=False).reset_index()
+size_table.columns = ["donor_size", "count"]
 
-#summary tables
+activity_table = donors["donor_activity"].value_counts(dropna=False).reset_index()
+activity_table.columns = ["donor_activity", "count"]
 
-# Table 1: Donor size counts
-size_table = (
-    donors["donor_size_category"]
-    .value_counts(dropna=False)
-    .rename_axis("donor_size_category")
-    .reset_index(name="count")
-)
-
-# Table 2: Donor activity counts
-activity_table = (
-    donors["donor_activity_category"]
-    .value_counts(dropna=False)
-    .rename_axis("donor_activity_category")
-    .reset_index(name="count")
-)
-
-# Table 3: Total dollars by donor size
-giving_by_size = (
-    donors.groupby("donor_size_category", dropna=False)["total_gifts_all_time"]
+giving_table = (
+    donors[~donors["donor_size"].isin(["Unknown"])]
+    .groupby("donor_size", dropna=False)[gift_col]
     .sum()
     .reset_index()
-    .sort_values(by="total_gifts_all_time", ascending=False)
+    .sort_values(by=gift_col, ascending=False)
 )
 
-# Table 4: Cross-tab of donor size x activity
-cross_tab = pd.crosstab(
-    donors["donor_size_category"],
-    donors["donor_activity_category"]
-)
+cross_tab = pd.crosstab(donors["donor_size"], donors["donor_activity"])
 
-print("\nDonor Size Table")
+print("\nDonor Size Table:")
 print(size_table)
 
-print("\nDonor Activity Table")
+print("\nDonor Activity Table:")
 print(activity_table)
 
-print("\nTotal Giving by Donor Size")
-print(giving_by_size)
+print("\nTotal Giving by Donor Size:")
+print(giving_table)
 
-print("\nCross Tab: Size x Activity")
+print("\nCross Tab:")
 print(cross_tab)
 
-#saved clean data & tables
+# ----------------------------
+# 7. PREP CHART DATA
+# remove Unknown, None, and missing values from charts
+# ----------------------------
+exclude_categories = ["Unknown", "None", "<NA>"]
 
-output_folder = Path("donor_outputs")
-output_folder.mkdir(exist_ok=True)
+size_chart_data = donors["donor_size"].dropna()
+size_chart_data = size_chart_data[~size_chart_data.isin(exclude_categories)]
+size_counts = size_chart_data.value_counts()
 
-donors.to_csv(output_folder / "cleaned_donor_data.csv", index=False)
-size_table.to_csv(output_folder / "donor_size_table.csv", index=False)
-activity_table.to_csv(output_folder / "donor_activity_table.csv", index=False)
-giving_by_size.to_csv(output_folder / "giving_by_size.csv", index=False)
-cross_tab.to_csv(output_folder / "donor_size_activity_crosstab.csv")
+activity_chart_data = donors["donor_activity"].dropna()
+activity_chart_data = activity_chart_data[~activity_chart_data.isin(exclude_categories)]
+activity_counts = activity_chart_data.value_counts()
 
-# pie charts
+giving_chart_table = giving_table[~giving_table["donor_size"].isin(exclude_categories)]
 
-# Pie chart: donor size distribution
-plt.figure(figsize=(8, 8))
-donors["donor_size_category"].value_counts().plot(
-    kind="pie",
-    autopct="%1.1f%%",
-    ylabel=""
-)
-plt.title("Donor Size Distribution")
-plt.tight_layout()
-plt.savefig(output_folder / "pie_donor_size_distribution.png")
-plt.show()
-
-# Pie chart: donor activity distribution
-plt.figure(figsize=(8, 8))
-donors["donor_activity_category"].value_counts().plot(
-    kind="pie",
-    autopct="%1.1f%%",
-    ylabel=""
-)
-plt.title("Donor Activity Distribution")
-plt.tight_layout()
-plt.savefig(output_folder / "pie_donor_activity_distribution.png")
-plt.show()
-
-# bar charts
-
-# Bar chart: count of donors by size
-plt.figure(figsize=(10, 6))
-donors["donor_size_category"].value_counts().plot(kind="bar")
-plt.title("Number of Donors by Size Category")
-plt.xlabel("Donor Size Category")
-plt.ylabel("Number of Donors")
-plt.xticks(rotation=45, ha="right")
-plt.tight_layout()
-plt.savefig(output_folder / "bar_donor_size_counts.png")
-plt.show()
-
-# Bar chart: total giving by donor size
-plt.figure(figsize=(10, 6))
-giving_by_size.plot(
-    x="donor_size_category",
-    y="total_gifts_all_time",
-    kind="bar",
-    legend=False
-)
-plt.title("Total Gifts by Donor Size Category")
-plt.xlabel("Donor Size Category")
-plt.ylabel("Total Gifts ($)")
-plt.xticks(rotation=45, ha="right")
-plt.tight_layout()
-plt.savefig(output_folder / "bar_total_giving_by_size.png")
-plt.show()
-
-# Bar chart: donor activity
-plt.figure(figsize=(10, 6))
-donors["donor_activity_category"].value_counts().plot(kind="bar")
-plt.title("Donor Activity Categories")
-plt.xlabel("Activity Category")
-plt.ylabel("Number of Donors")
-plt.xticks(rotation=45, ha="right")
-plt.tight_layout()
-plt.savefig(output_folder / "bar_donor_activity_counts.png")
-plt.show()
-
-#top states table
-
-if "state" in donors.columns:
-    top_states = (
-        donors["state"]
-        .value_counts(dropna=False)
-        .head(10)
-        .rename_axis("state")
-        .reset_index(name="count")
-    )
-    print("\nTop 10 States")
-    print(top_states)
-    top_states.to_csv(output_folder / "top_10_states.csv", index=False)
-
-    plt.figure(figsize=(10, 6))
-    top_states.plot(x="state", y="count", kind="bar", legend=False)
-    plt.title("Top 10 States by Number of Donors")
-    plt.xlabel("State")
-    plt.ylabel("Number of Donors")
-    plt.xticks(rotation=45, ha="right")
+# ----------------------------
+# 8. PIE CHARTS
+# ----------------------------
+if not size_counts.empty:
+    plt.figure(figsize=(7, 7))
+    size_counts.plot(kind="pie", autopct="%1.1f%%")
+    plt.title("Donor Size Distribution")
+    plt.ylabel("")
     plt.tight_layout()
-    plt.savefig(output_folder / "bar_top_10_states.png")
     plt.show()
 
-print(f"\nDone. Cleaned files, tables, and charts were saved in: {output_folder.resolve()}")
+if not activity_counts.empty:
+    plt.figure(figsize=(7, 7))
+    activity_counts.plot(kind="pie", autopct="%1.1f%%")
+    plt.title("Donor Activity Distribution")
+    plt.ylabel("")
+    plt.tight_layout()
+    plt.show()
+
+# ----------------------------
+# 9. BAR CHARTS
+# ----------------------------
+if not size_counts.empty:
+    plt.figure(figsize=(8, 5))
+    size_counts.plot(kind="bar")
+    plt.title("Donors by Size")
+    plt.xlabel("Donor Size")
+    plt.ylabel("Count")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+if not activity_counts.empty:
+    plt.figure(figsize=(8, 5))
+    activity_counts.plot(kind="bar")
+    plt.title("Donors by Activity")
+    plt.xlabel("Donor Activity")
+    plt.ylabel("Count")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+if not giving_chart_table.empty:
+    plt.figure(figsize=(8, 5))
+    plt.bar(giving_chart_table["donor_size"], giving_chart_table[gift_col])
+    plt.title("Total Giving by Donor Size")
+    plt.xlabel("Donor Size")
+    plt.ylabel("Total Giving ($)")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+# ----------------------------
+# 10. SAVE OUTPUTS
+# ----------------------------
+downloads_folder = Path.home() / "Downloads"
+
+cleaned_file = downloads_folder / "cleaned_donor_data.csv"
+size_table_file = downloads_folder / "donor_size_table.csv"
+activity_table_file = downloads_folder / "donor_activity_table.csv"
+giving_table_file = downloads_folder / "giving_by_size_table.csv"
+cross_tab_file = downloads_folder / "donor_crosstab.csv"
+
+donors.to_csv(cleaned_file, index=False)
+size_table.to_csv(size_table_file, index=False)
+activity_table.to_csv(activity_table_file, index=False)
+giving_table.to_csv(giving_table_file, index=False)
+cross_tab.to_csv(cross_tab_file)
+
+print("\nFiles saved to Downloads:")
+print(cleaned_file)
+print(size_table_file)
+print(activity_table_file)
+print(giving_table_file)
+print(cross_tab_file)
