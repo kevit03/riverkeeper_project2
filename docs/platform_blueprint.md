@@ -4,7 +4,7 @@
 
 The legacy Streamlit app is still in the repo for reference, but the recommended
 client-facing direction is now the static web portal in
-`client_portal/`. Kevin's heatmap is the only implemented slice in this pass.
+`client_portal/`. The geography heatmap is the strongest implemented slice in this pass.
 Everything else is intentionally divided into clearly scoped workstreams so a
 future team or outside company can keep building on one platform instead of
 rewriting the project.
@@ -27,37 +27,37 @@ Use one platform that supports these four capabilities under the same vendor:
 3. Object storage for CSV uploads and generated exports
 4. Managed database or scheduled job support for long-term reporting
 
-Kevin's current deliverable already fits that pattern because the frontend only
-needs `client_portal/` plus the exported `data/kevin_heatmap_data.json` file.
+The current deliverable already fits that pattern because the frontend only
+needs `client_portal/` plus the exported `data/portal_analytics_data.json` file.
 
 ## Four workstreams
 
-| Owner | Scope | Deliverable | Shared contract |
+| Workstream | Scope | Deliverable | Shared contract |
 | --- | --- | --- | --- |
-| Kevin | Geo intelligence and client heatmap | `client_portal/` heatmap, metric toggles, exported map payload | `client_portal/data/kevin_heatmap_data.json` |
-| Aarit | Ingestion and validation | Upload wizard, schema checks, job progress, clean error states | Cleaned donor CSV and job status endpoint |
-| Daniel | Analytics and segmentation | KPI dashboard, donor tiers, geography tables, retention metrics | Read-only analytics payloads from cleaned data |
-| Aishwarya | Reporting and stakeholder handoff | Scheduled exports, executive summaries, CRM-ready downloads | Reporting endpoints and export templates |
+| Geography | Geo intelligence and client heatmap | `client_portal/` geography tab, metric toggles, exported map payload | Shared portal analytics payload |
+| Concentration | Donor concentration and trend analysis | Concentration view, top donor logic, state coverage, time trends | Shared portal analytics payload |
+| Engagement | KPI and engagement layer | Active vs inactive KPIs, state engagement, cadence metrics | Shared portal analytics payload |
+| Reporting | Reporting and stakeholder handoff | Segment tables, giving-by-size summaries, board-ready reporting tables | Shared portal analytics payload |
 
 ## Implementation instructions for the remaining team members
 
-### Aarit
+### Concentration
 
 - Build `/ingest` as the upload flow for non-technical clients.
 - Validate required CSV columns before any processing starts.
 - Return plain-English errors when uploads fail.
-- Trigger the cleaning pipeline and regenerate Kevin's exported JSON payload after a successful upload.
+- Trigger the cleaning pipeline and regenerate the shared exported JSON payload after a successful upload.
 - Done when a client can upload a valid file and refresh the portal data without developer help.
 
-### Daniel
+### Engagement
 
 - Build `/analytics` as the deeper analysis workspace.
 - Use the cleaned donor dataset to show donor tiers, active vs inactive segments, lapsed-donor views, and state-level performance.
-- Reuse the existing filtering language from Kevin's portal so the product feels consistent.
+- Reuse the existing filtering language from the portal so the product feels consistent.
 - Keep charts presentation-ready and avoid raw developer-style tables unless they add clear value.
 - Done when leadership can answer which regions are strongest, which are slipping, and where follow-up should happen next.
 
-### Aishwarya
+### Reporting
 
 - Build `/reports` for export and stakeholder handoff.
 - Add board-ready summaries, filtered exports, and CRM-friendly downloads.
@@ -68,31 +68,24 @@ needs `client_portal/` plus the exported `data/kevin_heatmap_data.json` file.
 ## Suggested route map
 
 - `/heatmap`
-  Kevin's live route. This is already represented by `client_portal/index.html`.
+  The current live route. This is already represented by `client_portal/index.html`.
 - `/ingest`
-  Aarit's upload and validation experience for non-technical client users.
+  Upload and validation experience for non-technical client users.
 - `/analytics`
-  Daniel's summary dashboards and donor segmentation views.
+  Summary dashboards, concentration analysis, and donor segmentation views.
 - `/reports`
-  Aishwarya's exports, stakeholder reports, and CRM handoff tools.
+  Exports, stakeholder reports, and CRM handoff tools.
 
 ## File handoff for another company
 
 - `app/data/donor_data_enriched.csv`
-  Current cleaned source of truth used for Kevin's implementation.
-- `app/functions/heatmap_portal_export.py`
-  Converts the cleaned CSV into a frontend-ready JSON payload.
+  Current cleaned source of truth used for the geography implementation.
+- `app/functions/portal_analytics_export.py`
+  Converts the cleaned CSV into a frontend-ready JSON payload for all portal tabs.
 - `client_portal/`
   Deployable frontend assets for the heatmap slice.
 
-## Naming update
+## Naming note
 
-The forward-looking ownership model is now:
-
-- Kevin
-- Aarit
-- Daniel
-- Aishwarya
-
-The older student folder names remain in `scripts/` only so the original source
-material is still traceable.
+The client-facing platform is now described by workstream instead of individual contributor.
+The older folder names remain in `scripts/` only so the original source material is still traceable.

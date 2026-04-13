@@ -26,6 +26,24 @@ const topStatesEl = document.getElementById("top-states")
 const topLocationsEl = document.getElementById("top-locations")
 const emptyStateEl = document.getElementById("empty-state")
 
+const overviewMetricsEl = document.getElementById("overview-metrics")
+const overviewSegmentsEl = document.getElementById("overview-segments")
+const overviewConcentrationEl = document.getElementById("overview-concentration")
+const overviewSizeMixEl = document.getElementById("overview-size-mix")
+const overviewPriorityStatesEl = document.getElementById("overview-priority-states")
+
+const analyticsKpiTableEl = document.getElementById("analytics-kpi-table")
+const analyticsTopDonorsEl = document.getElementById("analytics-top-donors")
+const analyticsMonthlyPulseEl = document.getElementById("analytics-monthly-pulse")
+const analyticsStatePerformanceEl = document.getElementById("analytics-state-performance")
+const analyticsGiftFrequencyEl = document.getElementById("analytics-gift-frequency")
+const analyticsSegmentMatrixEl = document.getElementById("analytics-segment-matrix")
+
+const deliveryGivingBySizeEl = document.getElementById("delivery-giving-by-size")
+const deliveryActivityMixEl = document.getElementById("delivery-activity-mix")
+const deliveryCombinedPrioritiesEl = document.getElementById("delivery-combined-priorities")
+const deliveryTopStatesEl = document.getElementById("delivery-top-states")
+
 let payload = null
 let map = null
 let markerLayer = null
@@ -35,11 +53,20 @@ let currentLocations = []
 let currentMetric = "donors"
 let activePanel = "overview"
 
+const chartPalette = [
+  "#f5f5f5",
+  "#36cbb3",
+  "#d29b43",
+  "#6f7782",
+  "#5b606a",
+  "#2a9d8f",
+]
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response = await fetch("./data/kevin_heatmap_data.json")
+    const response = await fetch("./data/portal_analytics_data.json")
     if (!response.ok) {
-      throw new Error(`Could not load heatmap payload (${response.status})`)
+      throw new Error(`Could not load portal payload (${response.status})`)
     }
 
     payload = await response.json()
@@ -47,16 +74,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (error) {
     dataFreshnessEl.textContent = error.message
     coverageNoteEl.textContent =
-      "Run the exporter to regenerate client_portal/data/kevin_heatmap_data.json."
+      "Run app/functions/portal_analytics_export.py to regenerate the client portal payload."
   }
 })
 
 function hydratePortal(data) {
-  populateStateFilter(data.stateSummary)
+  populateStateFilter(data.geography.stateSummary)
   bindControls()
   bindTabs()
 
-  const generatedAt = new Date(data.generatedAt)
+  const generatedAt = new Date(data.overview.generatedAt)
   dataFreshnessEl.textContent = `Exported ${generatedAt.toLocaleString()}`
 
   render()
@@ -132,6 +159,329 @@ function updateTabIndicator() {
   tabIndicator.style.transform = `translateX(${activeButton.offsetLeft}px)`
 }
 
+function render() {
+  if (!payload) {
+    return
+  }
+
+  currentMetric = metricFilter.value
+  currentLocations = getFilteredLocations()
+  const renderData = buildRenderData(currentLocations)
+
+  renderOverview()
+  renderAnalytics()
+  renderDelivery()
+  updateRankings(renderData, currentMetric)
+  updateCoverageNote(renderData)
+
+  if (activePanel === "geography") {
+    ensureMap()
+    updateMap(currentLocations, currentMetric)
+  }
+}
+
+function renderOverview() {
+  const overview = payload.overview
+  const concentration = payload.concentration.concentration
+  const segmentSummary = payload.engagement.segmentSummary
+  const sizeMix = payload.reporting.donorSizeTable
+  const priorityStates = joinStatePerformance().slice(0, 6)
+
+  overviewMetricsEl.innerHTML = [
+    metricCard("Total donors", numberFormatter.format(overview.totalDonors), "Engagement summary across the donor base"),
+    metricCard("Active rate", formatPercent(overview.activeRate), `${numberFormatter.format(overview.activeDonors)} currently active donors`),
+    metricCard("Top 5% donation share", formatPercent(concentration.topSliceShare), `${numberFormatter.format(concentration.topSliceCount)} donors drive this share`),
+    metricCard("Mapped locations", numberFormatter.format(overview.mappedLocations), `${numberFormatter.format(overview.statesCovered)} states covered in the geography layer`),
+  ].join("")
+
+  overviewSegmentsEl.innerHTML = `
+    <div class="chart-layout">
+      ${renderDonutChart({
+        ariaLabel: "Active versus inactive donor distribution",
+        centerValue: formatPercent(overview.activeRate),
+        centerLabel: "active",
+        segments: segmentSummary.map((segment, index) => ({
+          label: segment.Segment,
+          value: segment.donorCount,
+          detail: `${formatCompactCurrency(segment.totalRaised)} raised`,
+          color: chartPalette[index + 1],
+        })),
+      })}
+      <div class="chart-side-list">
+        ${segmentSummary
+          .map(
+            (segment) => `
+              <article class="split-metric">
+                <p class="split-metric__label">${segment.Segment}</p>
+                <div class="split-metric__value">${numberFormatter.format(segment.donorCount)}</div>
+                <p class="split-metric__meta">${formatCompactCurrency(segment.totalRaised)} raised</p>
+                <p class="split-metric__meta">Avg gift ${formatCompactCurrency(segment.avgGift)}</p>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `
+
+  overviewConcentrationEl.innerHTML = `
+    <div class="chart-layout">
+      ${renderDonutChart({
+        ariaLabel: "Top five percent donor concentration share",
+        centerValue: formatPercent(concentration.topSliceShare),
+        centerLabel: "top 5%",
+        segments: [
+          {
+            label: "Top 5% donors",
+            value: concentration.topSliceTotal,
+            detail: formatCurrency(concentration.topSliceTotal),
+            color: chartPalette[1],
+          },
+          {
+            label: "Remaining donors",
+            value: concentration.overallTotal - concentration.topSliceTotal,
+            detail: formatCurrency(concentration.overallTotal - concentration.topSliceTotal),
+            color: chartPalette[3],
+          },
+        ],
+      })}
+      <div class="chart-side-list">
+        <article class="list-stack__hero">
+          <div>
+            <p class="eyebrow">Contribution share</p>
+            <div class="list-stack__value">${formatPercent(concentration.topSliceShare)}</div>
+          </div>
+          <p class="muted">Top ${numberFormatter.format(concentration.topSliceCount)} donors account for ${formatCurrency(concentration.topSliceTotal)} of ${formatCurrency(concentration.overallTotal)}.</p>
+        </article>
+        ${payload.concentration.topDonors
+          .slice(0, 4)
+          .map(
+            (donor, index) => `
+              <article class="list-row">
+                <span class="list-row__index">${index + 1}</span>
+                <div class="list-row__copy">
+                  <h3>${donor["Account ID"]}</h3>
+                  <p>Top donor concentration slice</p>
+                </div>
+                <div class="list-row__value">${formatCurrency(donor.donationAmount)}</div>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `
+
+  overviewSizeMixEl.innerHTML = `
+    <div class="chart-stack">
+      ${renderColumnChart({
+        ariaLabel: "Donor count by giving tier",
+        rows: sizeMix.map((row, index) => ({
+          label: compactCategoryLabel(row.category),
+          value: row.count,
+          valueLabel: numberFormatter.format(row.count),
+          color: chartPalette[index + 1] || chartPalette[1],
+        })),
+      })}
+      <div class="chart-legend chart-legend--stacked">
+        ${sizeMix
+          .map(
+            (row, index) => `
+              <div class="chart-legend__row">
+                <span class="chart-dot" style="background:${chartPalette[index + 1] || chartPalette[1]}"></span>
+                <span>${row.category}</span>
+                <strong>${numberFormatter.format(row.count)}</strong>
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `
+
+  overviewPriorityStatesEl.innerHTML = renderTable(
+    ["State", "Active donors", "Total donations"],
+    priorityStates.map((state) => [
+      state.state,
+      numberFormatter.format(state.activeDonors),
+      formatCurrency(state.totalDonations),
+    ])
+  )
+}
+
+function renderAnalytics() {
+  const engagement = payload.engagement
+  const concentration = payload.concentration
+  const reporting = payload.reporting
+
+  analyticsKpiTableEl.innerHTML = renderTable(
+    ["Segment", "Donors", "Total raised", "Avg gift", "Median gift", "Latest gift"],
+    engagement.segmentSummary.map((segment) => [
+      segment.Segment,
+      numberFormatter.format(segment.donorCount),
+      formatCurrency(segment.totalRaised),
+      formatCurrency(segment.avgGift),
+      formatCurrency(segment.medianGift),
+      formatDisplayDate(segment.latestGift),
+    ])
+  )
+
+  analyticsTopDonorsEl.innerHTML = concentration.topDonors
+    .slice(0, 8)
+    .map(
+      (donor, index) => `
+        <article class="list-row">
+          <span class="list-row__index">${index + 1}</span>
+          <div class="list-row__copy">
+            <h3>${donor["Account ID"]}</h3>
+            <p>Top donor by lifetime giving</p>
+          </div>
+          <div class="list-row__value">${formatCurrency(donor.donationAmount)}</div>
+        </article>
+      `
+    )
+    .join("")
+
+  analyticsMonthlyPulseEl.innerHTML = `
+    <div class="chart-stack">
+      ${renderColumnChart({
+        ariaLabel: "Monthly donation totals for the last twelve months",
+        rows: concentration.monthlyTotal.map((month, index) => ({
+          label: formatMonth(month.month),
+          value: month.donationAmount,
+          valueLabel: formatCompactCurrency(month.donationAmount),
+          color: chartPalette[index % 2 === 0 ? 1 : 3],
+        })),
+      })}
+      ${
+        concentration.monthlySpikes.length
+          ? `<p class="chart-note">Spike months: ${concentration.monthlySpikes
+              .map((month) => formatMonth(month.month))
+              .join(", ")}</p>`
+          : `<p class="chart-note">No major monthly spikes crossed the current threshold in the export window.</p>`
+      }
+    </div>
+  `
+
+  const statePerformance = joinStatePerformance()
+  analyticsStatePerformanceEl.innerHTML = `
+    <div class="chart-table-stack">
+      ${renderColumnChart({
+        ariaLabel: "Top active states by donor count",
+        rows: statePerformance.slice(0, 6).map((state, index) => ({
+          label: state.state,
+          value: state.activeDonors,
+          valueLabel: numberFormatter.format(state.activeDonors),
+          color: chartPalette[index + 1] || chartPalette[1],
+        })),
+      })}
+      ${renderTable(
+        ["State", "Donors", "Active donors", "Total donations"],
+        statePerformance.map((state) => [
+          state.state,
+          numberFormatter.format(state.donorCount),
+          numberFormatter.format(state.activeDonors),
+          formatCurrency(state.totalDonations),
+        ])
+      )}
+    </div>
+  `
+
+  analyticsGiftFrequencyEl.innerHTML = `
+    <div class="chart-stack">
+      ${renderColumnChart({
+        ariaLabel: "Active donor gift frequency distribution",
+        rows: engagement.giftFrequency
+          .filter((row) => row.giftCount > 0)
+          .slice(0, 8)
+          .map((row, index) => ({
+            label: `${row.giftCount}`,
+            value: row.donorCount,
+            valueLabel: numberFormatter.format(row.donorCount),
+            color: chartPalette[index % chartPalette.length],
+        })),
+      })}
+      <p class="chart-note">This cadence view shows how many active donors are giving repeatedly within the last 18 months.</p>
+    </div>
+  `
+
+  const matrixColumns = Object.keys(reporting.crossTab[0] || {}).filter(
+    (key) => key !== "sizeCategory"
+  )
+  analyticsSegmentMatrixEl.innerHTML = renderTable(
+    ["Size", ...matrixColumns],
+    reporting.crossTab.map((row) => [
+      row.sizeCategory,
+      ...matrixColumns.map((column) => numberFormatter.format(row[column] || 0)),
+    ])
+  )
+}
+
+function renderDelivery() {
+  const reporting = payload.reporting
+  const sizeCounts = new Map(reporting.donorSizeTable.map((row) => [row.category, row.count]))
+
+  deliveryGivingBySizeEl.innerHTML = `
+    <div class="chart-table-stack">
+      ${renderColumnChart({
+        ariaLabel: "Total donations by donor size",
+        rows: reporting.givingBySize.map((row, index) => ({
+          label: compactCategoryLabel(row.category),
+          value: row.totalDonations,
+          valueLabel: formatCompactCurrency(row.totalDonations),
+          color: chartPalette[index + 1] || chartPalette[1],
+        })),
+      })}
+      ${renderTable(
+        ["Donor size", "Donors", "Total donations"],
+        reporting.givingBySize.map((row) => [
+          row.category,
+          numberFormatter.format(sizeCounts.get(row.category) || 0),
+          formatCurrency(row.totalDonations),
+        ])
+      )}
+    </div>
+  `
+
+  deliveryActivityMixEl.innerHTML = renderDonutChart({
+    ariaLabel: "Donor activity distribution",
+    centerValue: numberFormatter.format(
+      reporting.donorActivityTable.reduce((sum, row) => sum + row.count, 0)
+    ),
+    centerLabel: "donors",
+    segments: reporting.donorActivityTable.map((row, index) => ({
+      label: row.category,
+      value: row.count,
+      detail: `${numberFormatter.format(row.count)} donors`,
+      color: chartPalette[index + 1] || chartPalette[1],
+    })),
+  })
+
+  deliveryCombinedPrioritiesEl.innerHTML = reporting.combinedCategory
+    .slice(0, 8)
+    .map(
+      (row, index) => `
+        <article class="list-row">
+          <span class="list-row__index">${index + 1}</span>
+          <div class="list-row__copy">
+            <h3>${row.category}</h3>
+            <p>Most common combined segment</p>
+          </div>
+          <div class="list-row__value">${numberFormatter.format(row.count)}</div>
+        </article>
+      `
+    )
+    .join("")
+
+  deliveryTopStatesEl.innerHTML = renderTable(
+    ["State", "Donor count"],
+    reporting.topStates.map((row) => [
+      row.State,
+      numberFormatter.format(row.donorCount),
+    ])
+  )
+}
+
 function ensureMap() {
   if (map) {
     return
@@ -189,7 +539,7 @@ function getFilteredLocations() {
   const selectedState = stateFilter.value
   const minimumCluster = Number(minimumFilter.value)
 
-  return payload.locations.filter((location) => {
+  return payload.geography.locations.filter((location) => {
     const stateMatches =
       selectedState === "all" || location.State === selectedState
     return stateMatches && location.donors >= minimumCluster
@@ -251,24 +601,6 @@ function buildRenderData(locations) {
     groupedLocations,
     rankedLocations,
     largestCluster: rankedLocations[0] || null,
-  }
-}
-
-function render() {
-  if (!payload) {
-    return
-  }
-
-  currentMetric = metricFilter.value
-  currentLocations = getFilteredLocations()
-  const renderData = buildRenderData(currentLocations)
-
-  updateRankings(renderData, currentMetric)
-  updateCoverageNote(renderData)
-
-  if (activePanel === "geography") {
-    ensureMap()
-    updateMap(currentLocations, currentMetric)
   }
 }
 
@@ -429,6 +761,192 @@ function buildPopup(location) {
   `
 }
 
+function renderDonutChart({ ariaLabel, centerValue, centerLabel, segments }) {
+  const validSegments = segments.filter((segment) => segment.value > 0)
+  if (!validSegments.length) {
+    return '<p class="muted">No chart segments available.</p>'
+  }
+
+  const total = validSegments.reduce((sum, segment) => sum + segment.value, 0)
+  const radius = 48
+  const circumference = 2 * Math.PI * radius
+  let accumulated = 0
+
+  const segmentMarkup = validSegments
+    .map((segment) => {
+      const length = (segment.value / total) * circumference
+      const circle = `
+        <circle
+          cx="70"
+          cy="70"
+          r="${radius}"
+          stroke="${segment.color}"
+          stroke-width="18"
+          stroke-dasharray="${length} ${circumference - length}"
+          stroke-dashoffset="${-accumulated}"
+        ></circle>
+      `
+      accumulated += length
+      return circle
+    })
+    .join("")
+
+  return `
+    <div class="donut-chart" role="img" aria-label="${ariaLabel}">
+      <svg viewBox="0 0 140 140">
+        <g transform="rotate(-90 70 70)">
+          <circle cx="70" cy="70" r="${radius}" stroke="rgba(255,255,255,0.08)" stroke-width="18"></circle>
+          ${segmentMarkup}
+        </g>
+        <text x="70" y="66" text-anchor="middle" class="donut-chart__value">${centerValue}</text>
+        <text x="70" y="85" text-anchor="middle" class="donut-chart__label">${centerLabel}</text>
+      </svg>
+      <div class="chart-legend">
+        ${validSegments
+          .map(
+            (segment) => `
+              <div class="chart-legend__row">
+                <span class="chart-dot" style="background:${segment.color}"></span>
+                <span>${segment.label}</span>
+                <strong>${segment.detail || numberFormatter.format(segment.value)}</strong>
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `
+}
+
+function renderColumnChart({ ariaLabel, rows }) {
+  const validRows = rows.filter((row) => row.value > 0)
+  if (!validRows.length) {
+    return '<p class="muted">No chart rows available.</p>'
+  }
+
+  const chartRows = validRows.slice(0, 8)
+  const width = 420
+  const height = 220
+  const paddingTop = 18
+  const paddingBottom = 46
+  const paddingLeft = 10
+  const usableHeight = height - paddingTop - paddingBottom
+  const maxValue = Math.max(...chartRows.map((row) => row.value), 1)
+  const barSlot = (width - paddingLeft * 2) / chartRows.length
+  const barWidth = Math.min(34, barSlot * 0.58)
+
+  const gridLines = [0.25, 0.5, 0.75].map((step) => {
+    const y = paddingTop + usableHeight * step
+    return `<line x1="${paddingLeft}" y1="${y}" x2="${width - paddingLeft}" y2="${y}" class="chart-grid-line"></line>`
+  })
+
+  const bars = chartRows
+    .map((row, index) => {
+      const x = paddingLeft + index * barSlot + (barSlot - barWidth) / 2
+      const barHeight = Math.max(8, (row.value / maxValue) * usableHeight)
+      const y = paddingTop + usableHeight - barHeight
+      const textX = x + barWidth / 2
+      return `
+        <g>
+          <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="${row.color}" class="chart-bar"></rect>
+          <text x="${textX}" y="${y - 8}" text-anchor="middle" class="chart-bar__value">${row.valueLabel}</text>
+          <text x="${textX}" y="${height - 14}" text-anchor="middle" class="chart-axis-label">${row.label}</text>
+        </g>
+      `
+    })
+    .join("")
+
+  return `
+    <div class="chart-block" role="img" aria-label="${ariaLabel}">
+      <svg viewBox="0 0 ${width} ${height}" class="chart-svg">
+        ${gridLines.join("")}
+        ${bars}
+      </svg>
+    </div>
+  `
+}
+
+function renderBarRows(rows) {
+  if (!rows.length) {
+    return '<p class="muted">No summary rows available.</p>'
+  }
+
+  const maxValue = Math.max(...rows.map((row) => row.value), 1)
+
+  return rows
+    .map(
+      (row) => `
+        <article class="bar-row">
+          <div class="bar-row__header">
+            <span>${row.label}</span>
+            <span>${row.valueLabel}</span>
+          </div>
+          <div class="bar-row__track">
+            <span class="bar-row__fill" style="width: ${(row.value / maxValue) * 100}%"></span>
+          </div>
+        </article>
+      `
+    )
+    .join("")
+}
+
+function renderTable(headers, rows) {
+  if (!rows.length) {
+    return '<p class="muted">No table rows available.</p>'
+  }
+
+  return `
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr>${headers.map((header) => `<th>${header}</th>`).join("")}</tr>
+        </thead>
+        <tbody>
+          ${rows
+            .map(
+              (row) => `
+                <tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>
+              `
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `
+}
+
+function metricCard(label, value, detail) {
+  return `
+    <article class="metric-card">
+      <p class="metric-card__label">${label}</p>
+      <div class="metric-card__value">${value}</div>
+      <p class="metric-card__detail">${detail}</p>
+    </article>
+  `
+}
+
+function joinStatePerformance() {
+  const totalDonationsByState = new Map(
+    payload.concentration.topStates.map((row) => [
+      row.State,
+      { donorCount: row.donorCount, totalDonations: row.totalDonations },
+    ])
+  )
+
+  return payload.engagement.topActiveStates.map((row) => {
+    const totalRow = totalDonationsByState.get(row.State) || {
+      donorCount: 0,
+      totalDonations: 0,
+    }
+    return {
+      state: row.State,
+      donorCount: totalRow.donorCount,
+      activeDonors: row.activeDonors,
+      totalDonations: totalRow.totalDonations,
+    }
+  })
+}
+
 function formatMetricValue(location, metric) {
   const metricValue = getMetricValue(location, metric)
   if (metric === "totalDonations") {
@@ -443,4 +961,52 @@ function formatCurrency(value) {
     currency: "USD",
     maximumFractionDigits: 0,
   }).format(value)
+}
+
+function formatCompactCurrency(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(value)
+}
+
+function formatPercent(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "percent",
+    maximumFractionDigits: 1,
+  }).format(value)
+}
+
+function formatDisplayDate(value) {
+  if (!value) {
+    return "Unknown"
+  }
+
+  const date = new Date(value)
+  if (Number.isNaN(date.getTime())) {
+    return value
+  }
+
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  })
+}
+
+function formatMonth(value) {
+  const [year, month] = value.split("-")
+  const date = new Date(Number(year), Number(month) - 1, 1)
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    year: "2-digit",
+  })
+}
+
+function compactCategoryLabel(value) {
+  return value
+    .replace(" Donor", "")
+    .replace("No Giving History", "No history")
 }

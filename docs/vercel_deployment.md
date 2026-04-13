@@ -6,7 +6,7 @@ Deploy the static presentation shell in `client_portal/`.
 
 That gives you:
 
-- Kevin's implemented geography heatmap
+- the implemented geography heatmap
 - The simplified overview shell
 - Placeholder analytics and delivery tabs that can be filled in later
 
@@ -18,45 +18,38 @@ The cleanest single-platform setup is:
 
 1. `client_portal/`
    This is the client-facing frontend.
-2. `app/functions/heatmap_portal_export.py`
-   This generates Kevin's heatmap payload.
-3. `scripts/aarit/donor_analysis.py`
-   Keep this as analysis logic that should later feed the `Analytics` tab.
-4. `scripts/daniel/daniel.py`
-   Keep this as KPI logic that should later feed summary cards and state-level tables.
-5. `scripts/aishwarya/test`
-   Keep this as reporting and donor segmentation logic that should later feed export-ready views.
+2. `app/functions/portal_analytics_export.py`
+   This generates the combined client portal payload, including the geography layer.
+3. Legacy analysis scripts under `scripts/`
+   Keep these as the upstream source material for concentration, KPI, and reporting logic now surfaced through the portal.
 
-Right now, only Kevin's geography flow is presentation-ready. The other three scripts should be treated as backend analysis sources, not as standalone client experiences.
+Right now, the geography flow is the strongest presentation-ready slice. The other three scripts should be treated as backend analysis sources, not as standalone client experiences.
 
 ## Best way to combine the new changes
 
-Use the portal as the single frontend and convert everyone else's work into data outputs:
+Use the portal as the single frontend and convert each workstream into data outputs:
 
-- Kevin
-  Owns the geography experience already live in the portal.
-- Aarit
-  Should output cleaned segmentation tables or JSON for donor category views.
-- Daniel
-  Should output KPI summaries and active-versus-inactive metrics as JSON.
-- Aishwarya
-  Should output report tables, charts, and export-ready files into a predictable folder.
+- Geography
+  Owns the map experience already live in the portal.
+- Concentration and trends
+  Outputs donor concentration, state coverage, and time-series views.
+- Engagement KPIs
+  Outputs KPI summaries and active-versus-inactive metrics.
+- Reporting
+  Outputs report tables, charts, and export-ready files into a predictable folder.
 
 Recommended shared contract:
 
-- `client_portal/data/kevin_heatmap_data.json`
-- `client_portal/data/daniel_kpis.json`
-- `client_portal/data/aarit_segments.json`
-- `client_portal/data/aishwarya_reports.json`
+- `client_portal/data/portal_analytics_data.json`
 
-That keeps one presentation surface while allowing each workstream to stay separate.
+That keeps one presentation surface while allowing each workstream to stay separate behind a single frontend payload.
 
 ## Pre-deploy step
 
-From the repo root, regenerate Kevin's payload before deploying:
+From the repo root, regenerate the combined payload before deploying:
 
 ```bash
-python3 app/functions/heatmap_portal_export.py
+python3 app/functions/portal_analytics_export.py
 ```
 
 ## Vercel project settings
@@ -107,7 +100,9 @@ Costs would start to matter later if you add:
 For the presentation:
 
 - deploy only `client_portal/`
-- treat Kevin's geography tab as the live implementation
-- describe Daniel, Aarit, and Aishwarya's work as the next data layers to be wired into the same portal
+- keep geography as the live map implementation
+- surface engagement KPIs in Overview and Analytics
+- surface concentration and trend analysis in Analytics
+- surface segmentation and report tables in Reports
 
 That gives the nonprofit one clean URL and avoids exposing half-finished standalone scripts.

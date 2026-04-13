@@ -39,7 +39,7 @@
             Analytics
           </button>
           <button class="top-tab" data-panel="delivery" aria-selected="false">
-            Delivery
+            Reports
           </button>
         </nav>
       </header>
@@ -80,25 +80,59 @@
 
       <main class="panel-stack">
         <section class="tab-panel is-active" data-panel="overview">
-          <section class="skeleton-shell">
-            <article class="skeleton-card skeleton-card--hero">
+          <section class="overview-shell">
+            <article class="data-card data-card--hero">
               <p class="eyebrow">Overview</p>
               <h1>Riverkeeper Analytics Platform</h1>
+              <p class="hero__lede">
+                One client-facing surface for geography, fundraising concentration,
+                engagement health, and export-ready donor segments.
+              </p>
             </article>
 
-            <article class="skeleton-card">
-              <p class="eyebrow">Platform shell</p>
-              <div class="placeholder-line placeholder-line--long"></div>
-              <div class="placeholder-line placeholder-line--medium"></div>
-              <div class="placeholder-line placeholder-line--short"></div>
-            </article>
+            <section id="overview-metrics" class="metric-grid" aria-label="Overview metrics"></section>
 
-            <article class="skeleton-card">
-              <p class="eyebrow">Future layer</p>
-              <div class="placeholder-line placeholder-line--medium"></div>
-              <div class="placeholder-line placeholder-line--long"></div>
-              <div class="placeholder-line placeholder-line--short"></div>
-            </article>
+            <section class="overview-grid">
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Engagement</p>
+                    <h3>Segment snapshot</h3>
+                  </div>
+                </div>
+                <div id="overview-segments" class="split-metrics"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Concentration</p>
+                    <h3>Top donor slice</h3>
+                  </div>
+                </div>
+                <div id="overview-concentration" class="list-stack"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Donor tiers</p>
+                    <h3>Giving size mix</h3>
+                  </div>
+                </div>
+                <div id="overview-size-mix" class="bar-list"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Priority states</p>
+                    <h3>Active coverage</h3>
+                  </div>
+                </div>
+                <div id="overview-priority-states" class="table-card"></div>
+              </article>
+            </section>
           </section>
         </section>
 
@@ -145,50 +179,123 @@
         </section>
 
         <section class="tab-panel" data-panel="analytics">
-          <section class="skeleton-shell">
-            <article class="skeleton-card skeleton-card--hero">
-              <p class="eyebrow">Analytics</p>
-              <h2>Analytics Layer</h2>
-            </article>
+          <section class="analytics-shell">
+            <div class="analytics-grid">
+              <article class="data-card data-card--wide">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Engagement</p>
+                    <h2>KPI breakdown</h2>
+                  </div>
+                </div>
+                <div id="analytics-kpi-table" class="table-card"></div>
+              </article>
 
-            <article class="skeleton-card">
-              <div class="placeholder-line placeholder-line--long"></div>
-              <div class="placeholder-line placeholder-line--medium"></div>
-              <div class="placeholder-line placeholder-line--short"></div>
-            </article>
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Concentration</p>
+                    <h3>Top donor concentration</h3>
+                  </div>
+                </div>
+                <div id="analytics-top-donors" class="list-stack"></div>
+              </article>
 
-            <article class="skeleton-card">
-              <div class="placeholder-line placeholder-line--medium"></div>
-              <div class="placeholder-line placeholder-line--long"></div>
-              <div class="placeholder-line placeholder-line--short"></div>
-            </article>
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Trend analysis</p>
+                    <h3>Monthly giving pulse</h3>
+                  </div>
+                </div>
+                <div id="analytics-monthly-pulse" class="bar-list bar-list--compact"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">State performance</p>
+                    <h3>Coverage and value</h3>
+                  </div>
+                </div>
+                <div id="analytics-state-performance" class="table-card"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Engagement</p>
+                    <h3>Gift cadence</h3>
+                  </div>
+                </div>
+                <div id="analytics-gift-frequency" class="bar-list"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Reporting</p>
+                    <h3>Segment matrix</h3>
+                  </div>
+                </div>
+                <div id="analytics-segment-matrix" class="table-card"></div>
+              </article>
+            </div>
           </section>
         </section>
 
         <section class="tab-panel" data-panel="delivery">
-          <section class="skeleton-shell">
-            <article class="skeleton-card skeleton-card--hero">
-              <p class="eyebrow">Delivery</p>
-              <h2>Implementation handoff</h2>
+          <section class="delivery-shell">
+            <article class="data-card data-card--hero">
+              <p class="eyebrow">Reports</p>
+              <h2>Reporting layer</h2>
+              <p class="hero__lede">
+                Segment summaries and board-ready tables pulled into the same platform instead
+                of living as separate script outputs.
+              </p>
             </article>
 
-            <article class="skeleton-card">
-              <p class="eyebrow">Aarit</p>
-              <div class="placeholder-line placeholder-line--long"></div>
-              <div class="placeholder-line placeholder-line--medium"></div>
-            </article>
+            <div class="delivery-grid">
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Reporting</p>
+                    <h3>Giving by donor size</h3>
+                  </div>
+                </div>
+                <div id="delivery-giving-by-size" class="table-card"></div>
+              </article>
 
-            <article class="skeleton-card">
-              <p class="eyebrow">Daniel</p>
-              <div class="placeholder-line placeholder-line--medium"></div>
-              <div class="placeholder-line placeholder-line--long"></div>
-            </article>
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Reporting</p>
+                    <h3>Activity mix</h3>
+                  </div>
+                </div>
+                <div id="delivery-activity-mix" class="bar-list"></div>
+              </article>
 
-            <article class="skeleton-card">
-              <p class="eyebrow">Aishwarya</p>
-              <div class="placeholder-line placeholder-line--medium"></div>
-              <div class="placeholder-line placeholder-line--short"></div>
-            </article>
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">Reporting</p>
+                    <h3>Combined priorities</h3>
+                  </div>
+                </div>
+                <div id="delivery-combined-priorities" class="list-stack"></div>
+              </article>
+
+              <article class="data-card">
+                <div class="section-heading section-heading--compact">
+                  <div>
+                    <p class="section-heading__eyebrow">State export lens</p>
+                    <h3>Top state tables</h3>
+                  </div>
+                </div>
+                <div id="delivery-top-states" class="table-card"></div>
+              </article>
+            </div>
           </section>
         </section>
       </main>

@@ -1,0 +1,49 @@
+# Riverkeepers Dashboard UI Standards
+
+This repo currently ships a static client portal, not a Next.js 14 App Router application. The rule set below is still the design contract for any future React or Next.js implementation, and it should also guide visual changes to the existing portal.
+
+## Role
+
+You are a senior product engineer building a mission-driven environmental dashboard for Riverkeepers — a nonprofit that monitors river health. The UI must feel trustworthy, data-dense, and field-tested. Not a startup landing page. Not a Shadcn demo.
+
+## Tech stack
+
+- Next.js 14 (App Router), TypeScript, Tailwind CSS
+- Recharts for data visualization
+- Shadcn/ui as component base — customize, do not use defaults as-is
+- Deployed on Vercel
+
+## Visual identity
+
+- Color palette anchors: deep river teal (`#0F6E56`), stone slate (`#444441`), clean white (`#FAFAFA`), warning amber (`#BA7517`), danger red (`#A32D2D`)
+- Typography: Inter for data, use tabular numbers for all numeric values
+- No gradients. No hero illustrations. No stock icon packs.
+- Metric cards: label on top (`12px`, muted), value below (`28px`, `500` weight), no colored backgrounds, just hierarchy
+- Charts: use muted grid lines, no chart borders, always show units in axis labels
+- Empty states: use real placeholder data, never "No data yet"
+
+## Component rules
+
+- Never use default Shadcn card styling without modification
+- Status badges: exactly 3 states: healthy (teal), warning (amber), critical (red)
+- All tables must have sticky headers and be sortable by default
+- Sidebar navigation: icon plus label, active state uses a teal left border, no filled pills
+- All dates: display as `Apr 13, 2026`, never ISO format to users
+- All water quality values: show the unit inline next to the number
+
+## Code rules
+
+- Named exports only, no default exports
+- Co-locate types with the component that owns them
+- Server components for data fetching, client components for interactivity, never mix them
+- No inline styles except for dynamic values such as chart colors from data
+- Every component must have an accessible `aria-label` or visible label
+
+## What to never do
+
+- No purple, no indigo, no "SaaS purple" color schemes
+- No placeholder lorem ipsum text
+- No "Coming soon" placeholder sections
+- No modal-heavy UX, prefer inline editing and drawers
+- No toast-only error handling, show inline errors
+- No skeleton loaders without real shimmer animation

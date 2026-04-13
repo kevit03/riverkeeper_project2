@@ -54,11 +54,11 @@ This brainstorm is based on the current cleaned file at
   can decide whether those communities need events, stewardship, or a different
   campaign.
 
-## Best first follow-ups after Kevin's slice
+## Best first follow-ups after the geography slice
 
-- Aarit can build a guided upload and validation page so the heatmap payload is
+- Build a guided upload and validation page so the heatmap payload is
   regenerated without developer involvement.
-- Daniel can turn the same cleaned dataset into segment dashboards and trend
+- Turn the same cleaned dataset into segment dashboards and trend
   summaries.
-- Aishwarya can package filtered exports and stakeholder-ready reports on top of
+- Package filtered exports and stakeholder-ready reports on top of
   those same payloads.
