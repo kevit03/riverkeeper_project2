@@ -1,11 +1,8 @@
 import pandas as pd
+from pathlib import Path
 
-
-
-df = pd.read_csv('/Users/danielliang/Downloads/donor_data.csv')
-
-
-
+file_path = Path(__file__).resolve().parents[2] / "app" / "data" / "donor_data.csv"
+df = pd.read_csv(file_path)
 
 
 df["Total Gifts (All Time)"] = (
@@ -20,7 +17,6 @@ df = df.dropna(subset=["Number of Gifts Past 18 Months"])
 df["Segment"] = df["Number of Gifts Past 18 Months"].apply(
     lambda x: "Active" if x > 0 else "Inactive"
 )
-
 
 kpis = df.groupby("Segment").agg(
     Donor_Count=("Account ID", "count"),

@@ -2,21 +2,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-# ----------------------------
-# 1. LOAD DATA
-# ----------------------------
-file_path = Path.home() / "Downloads" / "donor_data.csv"
+file_path = Path(__file__).resolve().parents[2] / "app" / "data" / "donor_data.csv"
 df = pd.read_csv(file_path)
 
-# ----------------------------
-# 2. CLEAN COLUMN NAMES
-# ----------------------------
-df.columns = (
-    df.columns.str.strip()
-    .str.lower()
-    .str.replace(" ", "_")
-    .str.replace("(", "", regex=False)
-    .str.replace(")", "", regex=False)
+
+# Make a copy so the original is preserved
+donors = df.copy()
+
+#clean data
+
+# Standardize column names
+donors.columns = (
+    donors.columns.str.strip()
+                  .str.lower()
+                  .str.replace(" ", "_")
+                  .str.replace("(", "", regex=False)
+                  .str.replace(")", "", regex=False)
 )
 
 print("Cleaned columns:", df.columns.tolist())
