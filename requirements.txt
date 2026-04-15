@@ -7,4 +7,6 @@ geopy
 folium
 streamlit-folium
 requests
-pyarrow==16.1.0
+pyarrow
+dash
+dash-bootstrap-components
