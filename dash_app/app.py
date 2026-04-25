@@ -10,12 +10,13 @@ from __future__ import annotations
 
 import base64
 import io
+import os
 import sys
 import traceback
 from pathlib import Path
 
 import pandas as pd
-from dash import ALL, ClientsideFunction, Dash, Input, MATCH, Output, State, html, no_update
+from dash import ClientsideFunction, Dash, Input, MATCH, Output, State, html, no_update
 
 # Local package-relative imports; support running as module or script.
 if __package__ in (None, ""):
@@ -24,15 +25,13 @@ if __package__ in (None, ""):
         sys.path.insert(0, str(ROOT))
 
 from dash_app import figures
-from dash_app.data_io import clean, load_and_clean, load_enriched, stats_by_state
+from dash_app.data_io import clean, load_and_clean
 from dash_app.layout import build_layout, build_state_breakdown, statistics_tab, overview_tab, heatmap_tab, table_tab
+from dash_app.storage import upload_csv
 
 import dash_bootstrap_components as dbc
 
 
-# -----------------------------------------------------------------------------
-# Global app state (simple — one dataset per process; fine for single-user use)
-# -----------------------------------------------------------------------------
 _DATA: pd.DataFrame = load_and_clean()
 
 
@@ -41,9 +40,6 @@ def _current_data() -> pd.DataFrame:
     return _DATA
 
 
-# -----------------------------------------------------------------------------
-# App factory
-# -----------------------------------------------------------------------------
 app = Dash(
     __name__,
     external_stylesheets=[dbc.themes.BOOTSTRAP],
@@ -53,11 +49,8 @@ app = Dash(
 )
 
 app.layout = build_layout(_current_data())
+server = app.server
 
-
-# -----------------------------------------------------------------------------
-# Callbacks
-# -----------------------------------------------------------------------------
 
 @app.callback(
     Output("upload-status", "children"),
@@ -82,13 +75,15 @@ def handle_upload(contents, filename):
         decoded = base64.b64decode(b64)
         new_df = pd.read_csv(io.BytesIO(decoded), on_bad_lines="skip", engine="python")
         _DATA = clean(new_df.copy())
+        storage_result = upload_csv(decoded, filename)
     except Exception as exc:
         detail = html.Pre(traceback.format_exc(), style={"fontSize": "11px", "marginTop": "8px", "whiteSpace": "pre-wrap"})
         return dbc.Alert([html.Strong("Could not parse file. "), str(exc), detail], color="danger", className="fade-up"), no_update
 
     data = _current_data()
+    storage_badge = html.Div(storage_result.message, className="upload-status-note")
     status = dbc.Alert(
-        [html.Strong("✓ Loaded "), f"{filename} — {len(data):,} rows"],
+        [html.Strong("✓ Loaded "), f"{filename} — {len(data):,} rows", storage_badge],
         color="success",
         className="fade-up",
         dismissable=True,
@@ -136,12 +131,11 @@ app.clientside_callback(
 )
 
 
-# -----------------------------------------------------------------------------
-# Entry point
-# -----------------------------------------------------------------------------
 def main() -> None:
-    print("[INFO] Starting Riverkeeper Dash app at http://127.0.0.1:8050")
-    app.run(host="127.0.0.1", port=8050, debug=False)
+    host = os.getenv("HOST", "0.0.0.0")
+    port = int(os.getenv("PORT", "8050"))
+    print(f"[INFO] Starting Riverkeeper Dash app at http://127.0.0.1:{port}")
+    app.run(host=host, port=port, debug=False)
 
 
 if __name__ == "__main__":

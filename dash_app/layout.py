@@ -84,7 +84,7 @@ def upload_card() -> dbc.Card:
                     children=html.Div(
                         [
                             html.Div("⬆  Drop a Riverkeeper-formatted CSV here", className="upload-zone-title"),
-                            html.Div("or click to browse — new donors will be merged and geocoded automatically", className="upload-zone-sub"),
+                            html.Div("or click to browse — the dashboard refreshes immediately and saves the upload when storage is configured", className="upload-zone-sub"),
                         ]
                     ),
                     className="upload-zone",

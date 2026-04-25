@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: riverkeeper-donor-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-dash.txt
+    startCommand: gunicorn dash_app.app:server --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SUPABASE_URL
+        value: https://bqwfuuzcmcfgywozszzx.supabase.co
+      - key: SUPABASE_STORAGE_BUCKET
+        value: riverkeeper-uploads
+      - key: SUPABASE_STORAGE_PREFIX
+        value: uploads
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
