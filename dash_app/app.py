@@ -16,7 +16,7 @@ import traceback
 from pathlib import Path
 
 import pandas as pd
-from dash import ClientsideFunction, Dash, Input, MATCH, Output, State, html, no_update
+from dash import ALL, ClientsideFunction, Dash, Input, MATCH, Output, State, ctx, dcc, html, no_update
 
 # Local package-relative imports; support running as module or script.
 if __package__ in (None, ""):
@@ -25,9 +25,9 @@ if __package__ in (None, ""):
         sys.path.insert(0, str(ROOT))
 
 from dash_app import figures
-from dash_app.data_io import clean, load_and_clean
+from dash_app.data_io import clean, enrich_uploaded_locations, load_and_clean
 from dash_app.layout import build_layout, build_state_breakdown, statistics_tab, overview_tab, heatmap_tab, table_tab
-from dash_app.storage import upload_csv
+from dash_app.storage import delete_csv, list_csv_uploads, upload_csv
 
 import dash_bootstrap_components as dbc
 
@@ -52,43 +52,149 @@ app.layout = build_layout(_current_data())
 server = app.server
 
 
+def _format_size(size: int | None) -> str:
+    if size is None:
+        return "unknown size"
+    if size < 1024:
+        return f"{size} B"
+    if size < 1024 * 1024:
+        return f"{size / 1024:.1f} KB"
+    return f"{size / (1024 * 1024):.1f} MB"
+
+
+def _render_upload_manager(notice=None):
+    result = list_csv_uploads()
+    children = []
+    if notice is not None:
+        children.append(notice)
+
+    if not result.enabled:
+        children.append(html.Div(result.message, className="upload-manager-empty"))
+        return children
+
+    if not result.ok:
+        children.append(dbc.Alert(result.message, color="warning", className="fade-up"))
+        return children
+
+    if not result.items:
+        children.append(html.Div("No saved CSV uploads found yet.", className="upload-manager-empty"))
+        return children
+
+    rows = []
+    for item in result.items:
+        meta = " · ".join(part for part in [_format_size(item.size), item.created_at[:10]] if part)
+        rows.append(
+            html.Div(
+                [
+                    html.Div(
+                        [
+                            html.Div(item.name, className="upload-manager-file"),
+                            html.Div(meta, className="upload-manager-meta"),
+                        ]
+                    ),
+                    dcc.ConfirmDialogProvider(
+                        children=dbc.Button("Delete", color="outline-danger", size="sm"),
+                        id={"type": "delete-upload", "path": item.object_path},
+                        message=f"Delete {item.name} from Supabase Storage? This cannot be undone.",
+                    ),
+                ],
+                className="upload-manager-row",
+            )
+        )
+
+    children.append(html.Div(rows, className="upload-manager-list"))
+    return children
+
+
+def _merge_uploaded_data(current: pd.DataFrame, uploaded: pd.DataFrame) -> tuple[pd.DataFrame, int]:
+    cleaned_upload = clean(enrich_uploaded_locations(uploaded.copy()))
+    before_count = len(current)
+    merged = pd.concat([current, cleaned_upload], ignore_index=True, sort=False)
+
+    if "Account ID" in merged.columns:
+        known_ids = merged["Account ID"].notna() & (merged["Account ID"].astype(str).str.strip() != "")
+        with_ids = merged[known_ids].drop_duplicates(subset=["Account ID"], keep="last")
+        without_ids = merged[~known_ids]
+        merged = pd.concat([with_ids, without_ids], ignore_index=True, sort=False)
+
+    return merged, max(len(merged) - before_count, 0)
+
+
 @app.callback(
     Output("upload-status", "children"),
     Output("main-tabs", "children"),
+    Output("upload-manager", "children"),
     Input("csv-upload", "contents"),
     State("csv-upload", "filename"),
     prevent_initial_call=True,
 )
 def handle_upload(contents, filename):
-    """Replace the current dataset with an uploaded CSV and rebuild every tab.
-
-    For now we treat the upload as a full replacement (no geocoding pipeline
-    from the browser yet — that can be added once we have a background worker).
-    """
+    """Append an uploaded CSV to the active dataset and rebuild every tab."""
     global _DATA
 
     if not contents:
-        return no_update, no_update
+        return no_update, no_update, no_update
 
     try:
         _, b64 = contents.split(",", 1)
         decoded = base64.b64decode(b64)
         new_df = pd.read_csv(io.BytesIO(decoded), on_bad_lines="skip", engine="python")
-        _DATA = clean(new_df.copy())
+        uploaded_rows = len(new_df)
+        _DATA, added_rows = _merge_uploaded_data(_current_data(), new_df)
         storage_result = upload_csv(decoded, filename)
     except Exception as exc:
         detail = html.Pre(traceback.format_exc(), style={"fontSize": "11px", "marginTop": "8px", "whiteSpace": "pre-wrap"})
-        return dbc.Alert([html.Strong("Could not parse file. "), str(exc), detail], color="danger", className="fade-up"), no_update
+        return dbc.Alert([html.Strong("Could not parse file. "), str(exc), detail], color="danger", className="fade-up"), no_update, no_update
 
     data = _current_data()
     storage_badge = html.Div(storage_result.message, className="upload-status-note")
     status = dbc.Alert(
-        [html.Strong("✓ Loaded "), f"{filename} — {len(data):,} rows", storage_badge],
+        [
+            html.Strong("✓ Merged "),
+            f"{filename} — {uploaded_rows:,} uploaded rows, {added_rows:,} new rows added, {len(data):,} total rows now",
+            storage_badge,
+        ],
         color="success",
         className="fade-up",
         dismissable=True,
     )
 
+    tabs = [
+        dbc.Tab(overview_tab(data), label="Overview", tab_id="tab-overview"),
+        dbc.Tab(statistics_tab(data), label="Statistics", tab_id="tab-stats"),
+        dbc.Tab(heatmap_tab(data), label="Heatmap", tab_id="tab-map"),
+        dbc.Tab(table_tab(data), label="Table Preview", tab_id="tab-table"),
+    ]
+    manager = _render_upload_manager() if storage_result.ok else no_update
+    return status, tabs, manager
+
+
+@app.callback(
+    Output("upload-manager", "children", allow_duplicate=True),
+    Input("refresh-uploads", "n_clicks"),
+    Input({"type": "delete-upload", "path": ALL}, "submit_n_clicks"),
+    prevent_initial_call=True,
+)
+def manage_saved_uploads(_refresh_clicks, _delete_clicks):
+    notice = None
+    triggered = ctx.triggered_id
+    if isinstance(triggered, dict) and triggered.get("type") == "delete-upload":
+        result = delete_csv(str(triggered.get("path", "")))
+        notice = dbc.Alert(result.message, color="success" if result.ok else "danger", className="fade-up", dismissable=True)
+    return _render_upload_manager(notice)
+
+
+@app.callback(
+    Output("upload-status", "children", allow_duplicate=True),
+    Output("main-tabs", "children", allow_duplicate=True),
+    Input("reset-dashboard", "n_clicks"),
+    prevent_initial_call=True,
+)
+def reset_dashboard(_n_clicks):
+    global _DATA
+    _DATA = load_and_clean()
+    data = _current_data()
+    status = dbc.Alert("Dashboard reset to the original bundled donor dataset.", color="info", className="fade-up", dismissable=True)
     tabs = [
         dbc.Tab(overview_tab(data), label="Overview", tab_id="tab-overview"),
         dbc.Tab(statistics_tab(data), label="Statistics", tab_id="tab-stats"),

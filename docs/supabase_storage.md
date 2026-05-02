@@ -54,6 +54,14 @@ Saved to Supabase Storage: uploads/20260425T120000Z-donor_data.csv
 
 When storage is not configured, uploads still work for the current session and the dashboard shows that the data is session-only.
 
+## Testing Uploads and Deletes
+
+Use a small test CSV first. After upload, the dashboard should show the saved file under "Saved CSVs" below the upload box.
+
+To remove an accidental upload, click "Delete" next to that CSV. Deletes are limited to `.csv` files inside the configured upload prefix, so the dashboard will refuse to delete unrelated bucket content.
+
+You can also refresh the saved file list without uploading by clicking "Refresh uploads".
+
 ## Hosting note
 
 For a multi-user nonprofit handoff, pair this with a persistent app host such as Render, Railway, or Fly.io. Vercel can run Python functions, but this Dash app is currently a long-running server with in-memory dashboard state, so a traditional Python app host is simpler.

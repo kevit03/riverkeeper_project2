@@ -41,6 +41,22 @@ class StorageResult:
     object_path: str = ""
 
 
+@dataclass(frozen=True)
+class UploadedCsv:
+    name: str
+    object_path: str
+    size: int | None = None
+    created_at: str = ""
+
+
+@dataclass(frozen=True)
+class UploadListResult:
+    enabled: bool
+    ok: bool
+    message: str
+    items: tuple[UploadedCsv, ...] = ()
+
+
 def is_enabled() -> bool:
     return bool(os.getenv("SUPABASE_URL") and os.getenv("SUPABASE_SERVICE_ROLE_KEY"))
 
@@ -58,6 +74,22 @@ def _safe_filename(filename: str | None) -> str:
     name = Path(filename or fallback).name
     safe = re.sub(r"[^A-Za-z0-9._-]+", "-", name).strip("-")
     return safe or fallback
+
+
+def _headers(content_type: str = "application/json") -> dict[str, str]:
+    _, key, _, _ = _config()
+    return {
+        "apikey": key,
+        "Authorization": f"Bearer {key}",
+        "Content-Type": content_type,
+    }
+
+
+def _with_prefix(name: str, prefix: str) -> str:
+    normalized = name.strip("/")
+    if normalized.startswith(f"{prefix}/"):
+        return normalized
+    return f"{prefix}/{normalized}" if prefix else normalized
 
 
 def upload_csv(contents: bytes, filename: str | None) -> StorageResult:
@@ -78,12 +110,7 @@ def upload_csv(contents: bytes, filename: str | None) -> StorageResult:
     object_path = f"{prefix}/{timestamp}-{_safe_filename(filename)}"
     encoded_path = quote(object_path, safe="/")
     endpoint = f"{url}/storage/v1/object/{bucket}/{encoded_path}"
-    headers = {
-        "apikey": key,
-        "Authorization": f"Bearer {key}",
-        "Content-Type": "text/csv; charset=utf-8",
-        "x-upsert": "false",
-    }
+    headers = _headers("text/csv; charset=utf-8") | {"x-upsert": "false"}
 
     try:
         response = requests.post(endpoint, headers=headers, data=contents, timeout=30)
@@ -107,4 +134,111 @@ def upload_csv(contents: bytes, filename: str | None) -> StorageResult:
         ok=True,
         message=f"Saved to Supabase Storage: {object_path}",
         object_path=object_path,
+    )
+
+
+def list_csv_uploads(limit: int = 25) -> UploadListResult:
+    """Return recent CSV objects from the configured upload prefix."""
+    if not is_enabled():
+        return UploadListResult(
+            enabled=False,
+            ok=False,
+            message="Supabase storage is not configured, so there are no saved CSVs to list.",
+        )
+
+    url, _, bucket, prefix = _config()
+    endpoint = f"{url}/storage/v1/object/list/{bucket}"
+    payload = {
+        "prefix": prefix,
+        "limit": limit,
+        "offset": 0,
+        "sortBy": {"column": "created_at", "order": "desc"},
+    }
+
+    try:
+        response = requests.post(endpoint, headers=_headers(), json=payload, timeout=10)
+        if response.status_code >= 400:
+            return UploadListResult(
+                enabled=True,
+                ok=False,
+                message=f"Could not list Supabase uploads: {response.status_code} {response.text[:180]}",
+            )
+        rows = response.json()
+    except (ValueError, requests.RequestException) as exc:
+        return UploadListResult(
+            enabled=True,
+            ok=False,
+            message=f"Could not list Supabase uploads: {exc}",
+        )
+
+    items: list[UploadedCsv] = []
+    for row in rows:
+        name = str(row.get("name", ""))
+        if not name or not name.lower().endswith(".csv"):
+            continue
+        metadata = row.get("metadata") or {}
+        items.append(
+            UploadedCsv(
+                name=Path(name).name,
+                object_path=_with_prefix(name, prefix),
+                size=metadata.get("size"),
+                created_at=str(row.get("created_at") or row.get("updated_at") or ""),
+            )
+        )
+
+    return UploadListResult(
+        enabled=True,
+        ok=True,
+        message=f"Showing {len(items)} saved CSV upload{'s' if len(items) != 1 else ''}.",
+        items=tuple(items),
+    )
+
+
+def delete_csv(object_path: str) -> StorageResult:
+    """Delete one uploaded CSV from Supabase Storage.
+
+    Deletion is intentionally limited to CSV files inside the configured upload
+    prefix so a mis-click cannot remove unrelated bucket content.
+    """
+    if not is_enabled():
+        return StorageResult(
+            enabled=False,
+            ok=False,
+            message="Supabase storage is not configured, so there is nothing to delete.",
+            object_path=object_path,
+        )
+
+    url, _, bucket, prefix = _config()
+    normalized = object_path.strip("/")
+    if not normalized.startswith(f"{prefix}/") or not normalized.lower().endswith(".csv"):
+        return StorageResult(
+            enabled=True,
+            ok=False,
+            message="Refused to delete because this file is outside the configured CSV upload folder.",
+            object_path=object_path,
+        )
+
+    endpoint = f"{url}/storage/v1/object/{bucket}"
+    try:
+        response = requests.delete(endpoint, headers=_headers(), json={"prefixes": [normalized]}, timeout=10)
+        if response.status_code >= 400:
+            return StorageResult(
+                enabled=True,
+                ok=False,
+                message=f"Supabase delete failed: {response.status_code} {response.text[:180]}",
+                object_path=normalized,
+            )
+    except requests.RequestException as exc:
+        return StorageResult(
+            enabled=True,
+            ok=False,
+            message=f"Supabase delete failed: {exc}",
+            object_path=normalized,
+        )
+
+    return StorageResult(
+        enabled=True,
+        ok=True,
+        message=f"Deleted {normalized}",
+        object_path=normalized,
     )

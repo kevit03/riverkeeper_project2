@@ -84,12 +84,36 @@ def upload_card() -> dbc.Card:
                     children=html.Div(
                         [
                             html.Div("⬆  Drop a Riverkeeper-formatted CSV here", className="upload-zone-title"),
-                            html.Div("or click to browse — the dashboard refreshes immediately and saves the upload when storage is configured", className="upload-zone-sub"),
+                            html.Div("or click to browse — uploaded rows are merged into the current dashboard and saved when storage is configured", className="upload-zone-sub"),
                         ]
                     ),
                     className="upload-zone",
                 ),
                 html.Div(id="upload-status"),
+                html.Div(
+                    [
+                        html.Div(
+                            [
+                                html.Div(
+                                    [
+                                        html.Div("Saved CSVs", className="upload-manager-title"),
+                                        html.Div("Review saved files. Deleting a CSV removes it from Supabase, not the current dashboard view.", className="upload-manager-sub"),
+                                    ]
+                                ),
+                                html.Div(
+                                    [
+                                        dbc.Button("Reset dashboard", id="reset-dashboard", color="outline-secondary", size="sm"),
+                                        dbc.Button("Refresh uploads", id="refresh-uploads", color="outline-secondary", size="sm"),
+                                    ],
+                                    className="upload-manager-actions",
+                                ),
+                            ],
+                            className="upload-manager-head",
+                        ),
+                        html.Div("Click Refresh uploads to check Supabase Storage.", id="upload-manager", className="upload-manager-empty"),
+                    ],
+                    className="upload-manager",
+                ),
             ]
         ),
         className="fade-up",
